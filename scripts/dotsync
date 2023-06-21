@@ -1,9 +1,37 @@
 #!/bin/bash
 
 # files in home to copy
-cp ~/.zshrc ~/archdots/
-cp ~/.dmrc ~/archdots/
-cp ~/.bashrc ~/archdots/
+if [ "~/archdots/.zshrc" ]
+then 
+    echo ".zshrc exists"
+    rm -rf ~/archdots/.zshrc
+    echo "adding new .zshrc"
+    cp ~/.zshrc ~/archdots
+else
+    echo "adding new .zshrc"
+    cp ~/.zshrc ~/archdots
+fi
+
+if [ "~/archdots/.dmrc" ]
+then 
+    echo ".dmrc exists"
+    rm -rf ~/archdots/.dmrc
+    echo "adding new .dmrc"
+    cp ~/.dmrc ~/archdots
+else
+    echo "adding new .zshrc"
+    cp ~/.dmrc ~/archdots
+fi
+
+if [ -d "~/archdots/scripts/" ]
+then
+    echo "scripts exist"
+    rm -rf ~/archdots/scripts/
+    echo "adding new scripts"
+    cp -r ~/.local/share/scripts/ ~/archdots/
+else
+    echo "adding new scripts"
+    cp -r ~/.local/share/scripts/ ~/archdots/
 
 # all of my scripts
 cp -r ~/.local/share/scripts ~/archdots
@@ -179,4 +207,7 @@ then
 else
     echo "adding mime"
     cp -r ~/.config/mimeapps.list ~/archdots/.config/
+fi
+
+echo "done!"
 fi

@@ -24,7 +24,6 @@ export GOPATH=$HOME/go
 alias make50='make CC=clang CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow" LDLIBS="-lcrypt -lcs50 -lm"'
 
 
-
 # export DB_FILE="~/Sync/todo/default.db" 
 plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
@@ -59,7 +58,7 @@ mkd ()
 
 
 
-[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+# [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 # User configuration
 # Preferred editor for local and remote sessions
@@ -95,28 +94,10 @@ alias lx='exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + e
 alias lS='exa -1'                                                              # one column, just names
 alias lt='exa --tree --level=2'                                         # tree
 
-
 alias vim='nvim'
-# git aliases
-alias ga="git add ."
-alias gc="git commit -m 'kekw'"
-alias gp="git push"
 alias gg="ga && gc && gp"
-
-# lazy config vim aliases
-# alias dvim="vim ~/.vimrc"
-# alias dpy="vim ~/.config/qtile/config.py"
-# alias das="vim ~/.config/qtile/autostart.sh"
+alias dfp='cd ~/archdots/ && gg ~/archdots'
 alias dzsh="vim ~/.zshrc"
-# alias dala="vim ~/.config/alacritty/alacritty.yml"
-# alias dpi='vim ~/.config/picom.conf'
-# alias sip='cd ~/.local/share/scripts'
-
-# alias vc='cd ~/.config/nvim/ && ls'
-# alias vcc='cd ~/.config/nvim/lua/toki/ && ls'
-# alias vcp='cd ~/.config/nvim/after/plugin/ && ls'
-# alias vpl='vim ~/.config/nvim/lua/toki/packer.lua/'
-# alias vrm='vim ~/.config/nvim/lua/toki/remap.lua'
 
 # pdf viewing 
 alias so="devour sioyek " 
@@ -142,8 +123,6 @@ alias gay="pridefetch -f bisexual"
 alias vid='cd ~/Videos/ && lf'
 
 # for syncthing
-# todo
-# - redo all of these dirs because i changed them all LMAO
 alias sdf='cd ~/Sync/'
 alias tb="ls ~/Sync/academics/textbooks/ | fzf"
 
@@ -154,8 +133,8 @@ alias qwer='tomatoshell -t 50 -d 10 -n 10'
 # alias rec='ffmpeg -f x11grab -s 1920x1200 -i :0.0 -f pulse -i default -filter:a "volume=5.5" out.mkv'
 
 # git shit
-alias dg="git clone https://github.com/tokisuno/dotfiles"
-alias config='/usr/bin/git --git-dir=/home/skinnyboot/pimeja --work-tree=/home/skinnyboot'
+# alias dg="git clone https://github.com/tokisuno/dotfiles"
+# alias config='/usr/bin/git --git-dir=/home/skinnyboot/pimeja --work-tree=/home/skinnyboot'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
