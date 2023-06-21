@@ -1,0 +1,184 @@
+#!/bin/bash
+
+# files in home to copy
+cp ~/.zshrc ~/archdots/
+cp ~/.dmrc ~/archdots/
+cp ~/.bashrc ~/archdots/
+
+# all of my scripts
+cp -r ~/.local/share/scripts ~/archdots
+
+# individual folders because i don't want to copy my entire .config
+
+if [ -d "~/archdots/.config" ]
+then
+    echo ".config exists in folder ... skipping dir creation"
+    rm -rf ~/archdots/.config
+else
+    mkdir ~/archdots/.config
+fi
+
+if [ -d "~/archdots/.config/alacritty/" ]
+then 
+    echo "removing old alacritty"
+    rm -rf ~/archdots/.config/alacritty/
+    echo "adding new alacritty dots"
+    cp -r ~/.config/alacritty/ ~/archdots/.config/
+else
+    echo "adding new alacritty dots"
+    cp -r ~/.config/alacritty/ ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/dconf/" ]
+then 
+    echo "removing old dconf"
+    rm -rf ~/archdots/.config/dconf/
+    echo "adding new dconf"
+    cp -r ~/.config/dconf/ ~/archdots/.config/
+else
+    echo "adding new dconf"
+    cp -r ~/.config/dconf/ ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/dunst" ]
+then 
+    echo "removing old dunst"
+    rm -rf ~/archdots/.config/dunst/
+    echo "adding new dunst"
+    cp -r ~/.config/dunst/ ~/archdots/.config/
+else
+    echo "adding new dunst"
+    cp -r ~/.config/dunst ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/flameshot" ]
+then 
+    echo "removing old flameshot"
+    rm -rf ~/archdots/.config/flameshot
+    echo "adding new flameshot"
+    cp -r ~/.config/flameshot ~/archdots/.config/
+else
+    echo "adding new flameshot"
+    cp -r ~/.config/flameshot ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/htop" ]
+then 
+    echo "removing old htop"
+    rm -rf ~/archdots/.config/htop
+    echo "adding new htop"
+    cp -r ~/.config/htop ~/archdots/.config/
+else
+    echo "adding new htop"
+    cp -r ~/.config/htop ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/lf" ]
+then 
+    echo "removing old lf"
+    rm -rf ~/archdots/.config/lf
+    echo "adding new lf"
+    cp -r ~/.config/lf ~/archdots/.config/
+else
+    echo "adding new lf"
+    cp -r ~/.config/lf ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/mpv" ]
+then 
+    echo "removing old mpv"
+    rm -rf ~/archdots/.config/mpv
+    echo "adding new mpv"
+    cp -r ~/.config/mpv ~/archdots/.config/
+else
+    echo "adding new mpv"
+    cp -r ~/.config/mpv ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/neofetch" ]
+then 
+    echo "removing old neofetch"
+    rm -rf ~/archdots/.config/neofetch
+    echo "adding new neofetch"
+    cp -r ~/.config/neofetch ~/archdots/.config/
+else
+    echo "adding new neofetch"
+    cp -r ~/.config/neofetch ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/nitrogen/" ]
+then 
+    echo "removing old nitrogen"
+    rm -rf ~/archdots/.config/nitrogen
+    echo "adding new nitrogen"
+    cp -r ~/.config/nitrogen ~/archdots/.config/
+else
+    echo "adding new nitrogen"
+    cp -r ~/.config/nitrogen ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/nvim" ]
+then 
+    echo "removing old nvim"
+    rm -rf ~/archdots/.config/nvim
+    echo "adding nvim"
+    cp -r ~/.config/nvim ~/archdots/.config/
+else
+    echo "adding nvim"
+    cp -r ~/.config/nvim ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/rofi" ]
+then 
+    echo "removing old rofi"
+    rm -rf ~/archdots/.config/rofi
+    echo "adding rofi"
+    cp -r ~/.config/rofi ~/archdots/.config/
+else
+    echo "adding rofi"
+    cp -r ~/.config/rofi ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/Thunar/" ]
+then 
+    echo "removing old Thunar"
+    rm -rf ~/archdots/.config/Thunar
+    echo "adding thunar"
+    cp -r ~/.config/Thunar ~/archdots/.config/
+else
+    echo "adding thunar"
+    cp -r ~/.config/Thunar ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/picom.conf" ]
+then 
+    echo "removing old picom"
+    rm -rf ~/archdots/.config/picom.conf
+    echo "adding picom"
+    cp ~/.config/picom.conf ~/archdots/.config/
+else
+    echo "adding picom"
+    cp -r ~/.config/picom.conf ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/hyfetch.json" ]
+then 
+    echo "removing old hyfetch"
+    rm -rf ~/archdots/.config/hyfetch.json
+    echo "adding hyfetch"
+    cp -r ~/.config/hyfetch.json ~/archdots/.config/
+else
+    echo "adding hyfetch"
+    cp -r ~/.config/hyfetch.json ~/archdots/.config/
+fi
+
+if [ -d "~/archdots/.config/mimeapp.list" ]
+then 
+    echo "removing old mime"
+    rm -rf ~/archdots/.config/mimeapps.list
+    echo "adding mime"
+    cp -r ~/.config/mimeapps.list ~/archdots/.config/
+else
+    echo "adding mime"
+    cp -r ~/.config/mimeapps.list ~/archdots/.config/
+fi
