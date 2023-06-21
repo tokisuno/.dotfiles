@@ -14,8 +14,6 @@ if [ -d "~/archdots/.config" ]
 then
     echo ".config exists in folder ... skipping dir creation"
     rm -rf ~/archdots/.config
-else
-    mkdir ~/archdots/.config
 fi
 
 if [ -d "~/archdots/.config/alacritty/" ]
