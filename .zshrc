@@ -95,8 +95,6 @@ alias lS='exa -1'                                                              #
 alias lt='exa --tree --level=2'                                         # tree
 
 alias vim='nvim'
-alias gg="ga && gc && gp"
-alias dfp='cd ~/archdots/ && gg ~/archdots'
 alias dzsh="vim ~/.zshrc"
 
 # pdf viewing 
@@ -109,7 +107,7 @@ alias sz="devour zathura "
 alias back="cd .."
 
 # for blog
-alias sdfh="cd ~/Documents/website/blog"
+alias sdfh="cd ~/projects/repos/blog"
 alias comd="hugo server -D"
 alias comx="hugo -t xmin"
 
@@ -131,10 +129,6 @@ alias qwer='tomatoshell -t 50 -d 10 -n 10'
 
 # record desktop
 # alias rec='ffmpeg -f x11grab -s 1920x1200 -i :0.0 -f pulse -i default -filter:a "volume=5.5" out.mkv'
-
-# git shit
-# alias dg="git clone https://github.com/tokisuno/dotfiles"
-# alias config='/usr/bin/git --git-dir=/home/skinnyboot/pimeja --work-tree=/home/skinnyboot'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

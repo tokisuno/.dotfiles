@@ -1,13 +1,13 @@
 #!/bin/bash
 
-cat ~/.local/share/scripts/jpurl | 
-fzf --height=50% \
-    --margin=5%,2%,2%,5% \
-    --layout=reverse-list \
-    --border=double \
-    --info=inline \
-    --prompt="search::" \
-    --pointer="->" \
-    --marker="!!" \
-    --header='CTRL-C or ESC to quit' \
-| ytfzf -t --format-selection=720 --type=playlist
+ ytfzf -t $(cat ~/.local/share/scripts/jpurl | fzf \
+                                        --height=50% \
+                                        --margin=5%,2%,2%,5% \
+                                        --layout=reverse-list \
+                                        --border=double \
+                                        --info=inline \
+                                        --prompt="search::" \
+                                        --pointer="->" \
+                                        --marker="!!" \
+                                        --header='CTRL-C or ESC to quit' \
+                                     )
