@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FTerm.nvim"] = {
+    loaded = true,
+    path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/FTerm.nvim",
+    url = "https://github.com/numToStr/FTerm.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -267,10 +272,20 @@ _G.packer_plugins = {
     path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/vim-snippets",
     url = "https://github.com/honza/vim-snippets"
   },
+  vimling = {
+    loaded = true,
+    path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/vimling",
+    url = "https://github.com/Lukesmithxyz/vimling"
+  },
   vimtex = {
     loaded = true,
     path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 

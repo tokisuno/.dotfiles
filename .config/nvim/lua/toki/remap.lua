@@ -2,9 +2,10 @@ require("true-zen.ataraxis")
 require("true-zen.minimalist")
 require("true-zen.narrow")
 require("true-zen.focus")
-
 -- rebinds --
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
+
 local ks = vim.keymap
 local api = vim.api
 
@@ -25,6 +26,13 @@ ks.set("n", "O", "O<esc>")
 ks.set("n", "J", "mzJ`z")
 ks.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- vimling stuff
+ks.set("n", "<localleader><localleader>d", ":call ToggleDeadKeys()<CR>", {})
+ks.set("i", "<localleader><localleader>d", "<esc>:call ToggleDeadKeys()<CR>a", {})
+
+ks.set("n", "<localleader><localleader>i", ":call ToggleIPA()<CR>", {})
+ks.set("i", "<localleader><localleader>i", "<esc>:call ToggleIPA()<CR>a", {})
+
 -- visual/replacement binds
 ks.set("n", "<C-d>", "<C-d>zz")
 ks.set("n", "<C-u>", "<C-u>zz")
@@ -41,11 +49,15 @@ ks.set("x", "<leader>p", [["_dP]])
 ks.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- custom binds
-ks.set('n', '<leader>w', "<cmd>w<cr>")
-ks.set('n', '<leader>s', "<cmd>so<cr>")
+ks.set('n', '<leader>wf', "<cmd>w<cr>")
+ks.set('n', '<leader>wer', "<cmd>wq<cr>")
+ks.set('n', '<leader>s', "<>so<cr>")
 ks.set("n", "<leader>f", "<cmd>Neotree<cr>", { silent = true })
 ks.set('n', 'j', 'gj')
 ks.set('n', 'k', 'gk')
+ks.set('i', '<C-h>', '<C-w>', {noremap = true})
 
--- todo:
--- - add tab keybindings.
+-- kill me
+-- vim.api.nvim_set_keymap('i', '<C-H>', '<C-W>', {noremap=true})
+-- vim.api.nvim_set_keymap('i', '<C-H>', '<Esc>caw', {noremap = true})
+

@@ -35,9 +35,12 @@ vim.opt.colorcolumn = "80"
 vim.g['tex_flavor'] = 'latex'
 vim.g['vimtex_compiler_latexmk_engines'] = {['_'] = '-xelatex'}
 vim.g['vimtex_view_method'] = 'zathura'
-vim.g['vimtex_view_general_viewer'] = 'okular'
+vim.g['vimtex_view_general_viewer'] = 'zathura'
 vim.g['vimtex_view_genral_options'] = '--unique file:@pdf#src@line@tex'
+vim.g['vimtex_compiler_method'] = 'latexrun'
 vim.g['vimtex_view_automatic'] = 1
+
+vim.g.vimwiki_list = {{path = '~/Sync/wiki/', syntax = 'markdown', ext = '.md'}}
 
 -- vim.g['autocmd!'] = "User GoyoEnter Limelight"
 -- vim.g['autocmd!'] = "User GoyoLeave Limelight!"

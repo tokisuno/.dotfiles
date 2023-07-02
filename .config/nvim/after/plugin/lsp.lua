@@ -5,6 +5,15 @@ lsp.ensure_installed({
 	'tsserver',
 	'eslint',
 	'lua_ls',
+    'pylsp',
+    'rust_analyzer',
+    'quick_lint_js',
+    'clangd',
+    'vimls',
+    'cssls',
+    'arduino_language_server',
+    'html',
+    'marksman'
 })
 
 lsp.nvim_workspace()

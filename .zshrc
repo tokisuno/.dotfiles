@@ -48,6 +48,12 @@ lfcd () {
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
+
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
+
 bindkey -s '^o' 'lfcd\n'
 
 mkd ()
@@ -94,8 +100,10 @@ alias lx='exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + e
 alias lS='exa -1'                                                              # one column, just names
 alias lt='exa --tree --level=2'                                         # tree
 
+
 alias vim='nvim'
 alias dzsh="vim ~/.zshrc"
+alias bd='vim ~/Sync/life/bd.md'
 
 # pdf viewing 
 alias so="devour sioyek " 
@@ -106,10 +114,12 @@ alias sz="devour zathura "
 
 alias back="cd .."
 
-# for blog
+# for programming
 alias sdfh="cd ~/projects/repos/blog"
 alias comd="hugo server -D"
 alias comx="hugo -t xmin"
+alias py='python'
+alias code='cd ~/projects/repos'
 
 # ssh into downstairs
 alias lkj='ssh server@192.168.0.203'
@@ -122,7 +132,8 @@ alias vid='cd ~/Videos/ && lf'
 
 # for syncthing
 alias sdf='cd ~/Sync/'
-alias tb="ls ~/Sync/academics/textbooks/ | fzf"
+alias tb="ls ~/Sync/academics/textbooks/ | fzfs"
+alias aca='ls ~/Sync/academics/linguistics/ | fzfs'
 
 # pomodoro timer: requires tomoshell
 alias qwer='tomatoshell -t 50 -d 10 -n 10'

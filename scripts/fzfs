@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/Sync/academics/linguistics/syntax/
+cd ~/Sync/academics/linguistics/swag/
 devour zathura $(fzf --height=50% \
     --margin=5%,2%,2%,5% \
     --layout=reverse-list \
