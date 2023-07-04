@@ -1,5 +1,6 @@
 # prob the messiest .zshrc in existence  
 # requires motivate repo 
+~/.local/share/scripts/weeknum
 motivate 
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then

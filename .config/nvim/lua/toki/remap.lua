@@ -57,6 +57,8 @@ ks.set('n', 'j', 'gj')
 ks.set('n', 'k', 'gk')
 ks.set('i', '<C-h>', '<C-w>', {noremap = true})
 
+ks.set('n', 'C-period', ':BufferNext<CR>')
+ks.set('n', 'C-comma', ':BufferNext<CR>')
 -- kill me
 -- vim.api.nvim_set_keymap('i', '<C-H>', '<C-W>', {noremap=true})
 -- vim.api.nvim_set_keymap('i', '<C-H>', '<Esc>caw', {noremap = true})
