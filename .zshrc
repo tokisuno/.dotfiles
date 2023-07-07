@@ -1,11 +1,18 @@
 # prob the messiest .zshrc in existence  
 # requires motivate repo 
-~/.local/share/scripts/weeknum
+# ~/.local/share/scripts/weeknum
 motivate 
 
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
+
+## configure node version manager
+export NVM_DIR=~/.nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use # This loads nvm
+alias node='unalias node ; unalias npm ; nvm use default ; node $@'
+alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
+
 PATH=$HOME/bin:/usr/local/bin:$PATH
 export GLFW_IM_MODULE=ibus
 export XMODIFIERS="@im=ibus"
@@ -15,18 +22,27 @@ export CC="clang"
 export CFLAGS="-ferror-limit=1 -gdwarf-4 -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-gnu-folding-constant -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable -Wshadow"
 export LDLIBS="-lcrypt -lcs50 -lm"
 setopt auto_cd
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="jovial"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/.local/share/scripts:$PATH"
 export EDITOR=/usr/bin/nvim
 export GOPATH=$HOME/go
-
+[[ -s /home/skinnyboot/.autojump/etc/profile.d/autojump.sh ]] && source /home/skinnyboot/.autojump/etc/profile.d/autojump.sh
 alias make50='make CC=clang CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow" LDLIBS="-lcrypt -lcs50 -lm"'
 
 
 # export DB_FILE="~/Sync/todo/default.db" 
-plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(
+  git
+  autojump
+  urltools
+  bgnotify
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh-history-enquirer
+  jovial
+)
 source $ZSH/oh-my-zsh.sh
 
 # zshrc or bashrc
@@ -133,8 +149,8 @@ alias vid='cd ~/Videos/ && lf'
 
 # for syncthing
 alias sdf='cd ~/Sync/'
-alias tb="ls ~/Sync/academics/textbooks/ | fzfs"
-alias aca='ls ~/Sync/academics/linguistics/ | fzfs'
+# alias tb="ls ~/Sync/academics/textbooks/ | fzfs"
+# alias aca='ls ~/Sync/academics/linguistics/ | fzfs'
 
 # pomodoro timer: requires tomoshell
 alias qwer='tomatoshell -t 50 -d 10 -n 10'
@@ -143,7 +159,7 @@ alias qwer='tomatoshell -t 50 -d 10 -n 10'
 # alias rec='ffmpeg -f x11grab -s 1920x1200 -i :0.0 -f pulse -i default -filter:a "volume=5.5" out.mkv'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 PATH="/home/woopityscoop/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/woopityscoop/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/woopityscoop/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;

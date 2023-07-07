@@ -11,9 +11,15 @@ return require('packer').startup(function(use)
     use {'nvim-telescope/telescope.nvim', tag = '0.1.1',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use({"ellisonleao/gruvbox.nvim"})
-    use {"windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end
+    use {
+        "startup-nvim/startup.nvim",
+        requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+            config = function()
+                require"startup".setup()
+            end
     }
+    use("ellisonleao/gruvbox.nvim")
+    use {"windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end }
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     use('vim-pandoc/vim-pandoc-syntax')
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -51,8 +57,8 @@ return require('packer').startup(function(use)
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
         requires = {
-          "nvim-lua/plenary.nvim",
-          "MunifTanjim/nui.nvim",
+            "nvim-lua/plenary.nvim",
+            "MunifTanjim/nui.nvim",
         }
     }
     -- lsp shit 

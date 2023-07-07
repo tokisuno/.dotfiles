@@ -8,16 +8,17 @@ vim.g.maplocalleader = ","
 
 local ks = vim.keymap
 local api = vim.api
+local opts = { noremap = true, silent = true }
 
--- writing 
-api.nvim_set_keymap("n", "<leader>an", ":TZNarrow<CR>", {})
-api.nvim_set_keymap("v", "<leader>an", ":'<,'>TZNarrow<CR>", {})
-api.nvim_set_keymap("n", "<leader>af", ":TZFocus<CR>", {})
-api.nvim_set_keymap("n", "<leader>am", ":TZMinimalist<CR>", {})
-api.nvim_set_keymap("n", "<leader>aa", ":TZAtaraxis<CR>", {})
-ks.set("n", "<leader>er", ":Twilight<CR>")
+-- writing
+api.nvim_set_keymap("n", "<leader>'n", ":TZNarrow<CR>", {})
+api.nvim_set_keymap("v", "<leader>'n", ":'<,'>TZNarrow<CR>", {})
+api.nvim_set_keymap("n", "<leader>'f", ":TZFocus<CR>", {})
+api.nvim_set_keymap("n", "<leader>'m", ":TZMinimalist<CR>", {})
+api.nvim_set_keymap("n", "<leader>'a", ":TZAtaraxis<CR>", {})
+ks.set("n", "<leader>'r", ":Twilight<CR>")
 
--- primeagen binds 
+-- primeagen binds
 ks.set("i", "<C-c>", "<Esc>")
 ks.set("v", "J", ":m '>+1<CR>gv=gv")
 ks.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -52,14 +53,15 @@ ks.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 ks.set('n', '<leader>wf', "<cmd>w<cr>")
 ks.set('n', '<leader>wer', "<cmd>wq<cr>")
 ks.set('n', '<leader>s', "<>so<cr>")
-ks.set("n", "<leader>f", "<cmd>Neotree<cr>", { silent = true })
+-- ks.set("n", "<F3>", "<Cmd>Neotree<CR>", { silent = true })
 ks.set('n', 'j', 'gj')
 ks.set('n', 'k', 'gk')
-ks.set('i', '<C-h>', '<C-w>', {noremap = true})
+-- ks.set('i', '<C-h>', '<C-w>', { noremap = true })
+ks.set('n', '<F5>', vim.cmd.UndotreeToggle)
 
-ks.set('n', 'C-period', ':BufferNext<CR>')
-ks.set('n', 'C-comma', ':BufferNext<CR>')
+vim.api.nvim_set_keymap('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
+vim.api.nvim_set_keymap('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
+vim.api.nvim_set_keymap('n', '<A-q>', '<Cmd>BufferClose<CR>', opts)
 -- kill me
 -- vim.api.nvim_set_keymap('i', '<C-H>', '<C-W>', {noremap=true})
 -- vim.api.nvim_set_keymap('i', '<C-H>', '<Esc>caw', {noremap = true})
-
