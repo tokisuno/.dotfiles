@@ -1,6 +1,4 @@
 #!/bin/bash
 
 var=$(date +%U)
-echo "-----------------"
 echo -e "\e[1;34m WELCOME TO W:$var\e[0m"
-echo "-----------------"

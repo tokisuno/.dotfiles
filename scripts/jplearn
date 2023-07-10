@@ -1,6 +1,6 @@
 #!/bin/bash
 
- ytfzf -t $(cat ~/.local/share/scripts/jpurl | fzf \
+ mpv --save-position-on-close $(cat ~/.local/share/scripts/jpurl | fzf \
                                         --height=50% \
                                         --margin=5%,2%,2%,5% \
                                         --layout=reverse-list \

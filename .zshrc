@@ -1,6 +1,7 @@
 # prob the messiest .zshrc in existence  
 # requires motivate repo 
 # ~/.local/share/scripts/weeknum
+habito list
 motivate 
 
 # if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -14,6 +15,8 @@ alias node='unalias node ; unalias npm ; nvm use default ; node $@'
 alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
 
 PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.local/share/scripts:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export GLFW_IM_MODULE=ibus
 export XMODIFIERS="@im=ibus"
 export QT_IM_MODULE=ibus
@@ -24,8 +27,6 @@ export LDLIBS="-lcrypt -lcs50 -lm"
 setopt auto_cd
 ZSH_THEME="jovial"
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$HOME/.config/emacs/bin:$PATH"
-export PATH="$HOME/.local/share/scripts:$PATH"
 export EDITOR=/usr/bin/nvim
 export GOPATH=$HOME/go
 [[ -s /home/skinnyboot/.autojump/etc/profile.d/autojump.sh ]] && source /home/skinnyboot/.autojump/etc/profile.d/autojump.sh
@@ -149,8 +150,6 @@ alias vid='cd ~/Videos/ && lf'
 
 # for syncthing
 alias sdf='cd ~/Sync/'
-# alias tb="ls ~/Sync/academics/textbooks/ | fzfs"
-# alias aca='ls ~/Sync/academics/linguistics/ | fzfs'
 
 # pomodoro timer: requires tomoshell
 alias qwer='tomatoshell -t 50 -d 10 -n 10'
