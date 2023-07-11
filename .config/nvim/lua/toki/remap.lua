@@ -57,6 +57,7 @@ ks.set('n', 'j', 'gj')
 ks.set('n', 'k', 'gk')
 ks.set('n', '<F5>', vim.cmd.UndotreeToggle)
 
-vim.api.nvim_set_keymap('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
-vim.api.nvim_set_keymap('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
-vim.api.nvim_set_keymap('n', '<A-q>', '<Cmd>BufferClose<CR>', opts)
+api.nvim_set_keymap('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
+api.nvim_set_keymap('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
+api.nvim_set_keymap('n', '<A-q>', '<Cmd>BufferClose<CR>', opts)
+

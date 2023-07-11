@@ -40,6 +40,7 @@ vim.g['vimtex_view_genral_options'] = '--unique file:@pdf#src@line@tex'
 vim.g['vimtex_compiler_method'] = 'latexrun'
 vim.g['vimtex_view_automatic'] = 1
 
+
 vim.g.vimwiki_list = {{path = '~/Sync/wiki/', syntax = 'markdown', ext = '.md'}}
 
 -- vim.g['autocmd!'] = "User GoyoEnter Limelight"
