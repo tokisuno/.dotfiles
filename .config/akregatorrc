@@ -1,0 +1,33 @@
+[Appearance]
+ColorNewArticles=255,78,105
+ColorUnreadArticles=51,0,138
+Fixed Font=Noto Sans
+Sans Serif Font=Sans Serif
+Serif Font=Serif
+Standard Font=Sans Serif
+UseCustomColors=true
+
+[General]
+Auto Fetch Interval=420
+
+[HTML Settings]
+Fonts=Sans Serif,Noto Sans,Sans Serif,Serif,Sans Serif,Sans Serif,0
+MediumFontSize=10
+MinimumFontSize=10
+
+[MainWindow]
+2 screens: Height=1144
+2 screens: Width=1888
+2 screens: XPosition=14
+2 screens: YPosition=38
+DP2-2 eDP1=DP2-2
+State=AAAA/wAAAAD9AAAAAAAAB2AAAAQlAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Migratekde4]
+Version=1
+
+[View]
+Splitter 1 Sizes=687,1197
+Splitter 2 Sizes=358,699
+View Mode=2
