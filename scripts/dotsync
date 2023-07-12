@@ -209,5 +209,11 @@ else
     cp -r ~/.config/mimeapps.list ~/archdots/.config/
 fi
 
+cd ~/archdots
+
+gp
+
 echo "done!"
 fi
+
+
