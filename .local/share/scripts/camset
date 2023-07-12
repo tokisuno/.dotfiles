@@ -1,0 +1,11 @@
+#!/bin/bash
+
+WEBCAM="/dev/video2"
+
+v4l2-ctl -d $WEBCAM --set-ctrl brightness="128"
+v4l2-ctl -d $WEBCAM --set-ctrl contrast="128"
+v4l2-ctl -d $WEBCAM --set-ctrl saturation="128"
+v4l2-ctl -d $WEBCAM --set-ctrl gain="158"
+v4l2-ctl -d $WEBCAM --set-ctrl auto_exposure="1"
+v4l2-ctl -d $WEBCAM --set-ctrl exposure_time_absolute="200"
+v4l2-ctl -d $WEBCAM --set-ctrl focus_automatic_continuous="1"

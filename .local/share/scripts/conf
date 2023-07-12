@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd ~/.config/
+fzf --height=50% \
+    --margin=5%,2%,2%,5% \
+    --layout=reverse-list \
+    --border=double \
+    --info=inline \
+    --prompt="search::" \
+    --pointer="->" \
+    --marker="!!" \
+    --header 'CTRL-D: Directories / CTRL-F: Files' \
+    --bind 'ctrl-d:change-prompt(Directories> )+reload(find * -type d)' \
+    --bind 'ctrl-f:change-prompt(Files> )+reload(find * -type f)' \
+| xargs nvim
