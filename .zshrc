@@ -2,11 +2,7 @@
 # requires motivate repo 
 # ~/.local/share/scripts/weeknum
 habito list
-motivate 
-
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
+# motivate 
 
 ## configure node version manager
 export NVM_DIR=~/.nvm

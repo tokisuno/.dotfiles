@@ -56,8 +56,8 @@ ks.set('n', '<leader>s', "<>so<cr>")
 ks.set('n', 'j', 'gj')
 ks.set('n', 'k', 'gk')
 ks.set('n', '<F5>', vim.cmd.UndotreeToggle)
+ks.set('n', '<leader>fj', vim.cmd.NvimTreeToggle)
 
-api.nvim_set_keymap('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
-api.nvim_set_keymap('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
-api.nvim_set_keymap('n', '<A-q>', '<Cmd>BufferClose<CR>', opts)
-
+ks.set('n', '<A-,>', vim.cmd.bprev)
+ks.set('n', '<A-.>', vim.cmd.bnext)
+api.nvim_set_keymap('n', '<A-q>', '<Cmd>bw<CR>', opts)

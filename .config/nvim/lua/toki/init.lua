@@ -41,7 +41,15 @@ require('lualine').setup {
   extensions = {}
 }
 require'colorizer'.setup()
-
+require("bufferline").setup{
+    options = {
+        themable = true,
+        numbers = "ordinal",
+        indicator = "underline",
+        separator_style = "slope",
+        diagnostics = "nvim_lsp"
+    }
+}
 require("gruvbox").setup({
   undercurl = true,
   underline = true,
@@ -93,3 +101,15 @@ vim.cmd[[
     smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
 ]]
 
+require("nvim-tree").setup({
+  sort_by = "case_sensitive",
+  view = {
+    width = 30,
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
+})

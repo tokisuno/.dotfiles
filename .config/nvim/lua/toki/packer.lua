@@ -25,12 +25,17 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('norcalli/nvim-colorizer.lua')
     use('nvim-treesitter/playground')
+    use('nvim-tree/nvim-tree.lua')
     use('nvim-tree/nvim-web-devicons') -- OPTIONAL: for file icons
     use('lewis6991/gitsigns.nvim') -- OPTIONAL: for git status
+    use('dapplebeforedawn/vim-typing-practice')
     use('xiyaowong/transparent.nvim')
     use('nvim-lualine/lualine.nvim')
-    use('romgrk/barbar.nvim')
     use('tpope/vim-fugitive')
+    use {'akinsho/bufferline.nvim',
+        tag = "*",
+        requires = 'nvim-tree/nvim-web-devicons'}
+
 
     -- navigation
     use('theprimeagen/harpoon')
@@ -51,16 +56,6 @@ return require('packer').startup(function(use)
     -- for funzies
     use('ThePrimeagen/vim-be-good')
 
-    -- Unless you are still migrating, remove the deprecated commands from v1.x
-    vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
-    use {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v2.x",
-        requires = {
-            "nvim-lua/plenary.nvim",
-            "MunifTanjim/nui.nvim",
-        }
-    }
     -- lsp shit 
     use {
         'VonHeikemen/lsp-zero.nvim',
