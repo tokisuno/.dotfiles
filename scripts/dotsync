@@ -32,9 +32,7 @@ then
 else
     echo "adding new scripts"
     cp -r ~/.local/share/scripts/ ~/archdots/
-
-# all of my scripts
-cp -r ~/.local/share/scripts ~/archdots
+fi
 
 # individual folders because i don't want to copy my entire .config
 
@@ -147,7 +145,7 @@ if [ -d "~/archdots/.config/nvim" ]
 then 
     echo "removing old nvim"
     rm -rf ~/archdots/.config/nvim
-    echo "adding nvim"
+    echo "adding new nvim"
     cp -r ~/.config/nvim ~/archdots/.config/
 else
     echo "adding nvim"
@@ -158,7 +156,7 @@ if [ -d "~/archdots/.config/rofi" ]
 then 
     echo "removing old rofi"
     rm -rf ~/archdots/.config/rofi
-    echo "adding rofi"
+    echo "adding new rofi"
     cp -r ~/.config/rofi ~/archdots/.config/
 else
     echo "adding rofi"
@@ -169,7 +167,7 @@ if [ -d "~/archdots/.config/Thunar/" ]
 then 
     echo "removing old Thunar"
     rm -rf ~/archdots/.config/Thunar
-    echo "adding thunar"
+    echo "adding new thunar"
     cp -r ~/.config/Thunar ~/archdots/.config/
 else
     echo "adding thunar"
@@ -180,7 +178,7 @@ if [ -d "~/archdots/.config/picom.conf" ]
 then 
     echo "removing old picom"
     rm -rf ~/archdots/.config/picom.conf
-    echo "adding picom"
+    echo "adding new picom"
     cp ~/.config/picom.conf ~/archdots/.config/
 else
     echo "adding picom"
@@ -191,7 +189,7 @@ if [ -d "~/archdots/.config/hyfetch.json" ]
 then 
     echo "removing old hyfetch"
     rm -rf ~/archdots/.config/hyfetch.json
-    echo "adding hyfetch"
+    echo "adding new hyfetch"
     cp -r ~/.config/hyfetch.json ~/archdots/.config/
 else
     echo "adding hyfetch"
@@ -202,7 +200,7 @@ if [ -d "~/archdots/.config/mimeapp.list" ]
 then 
     echo "removing old mime"
     rm -rf ~/archdots/.config/mimeapps.list
-    echo "adding mime"
+    echo "adding new mime"
     cp -r ~/.config/mimeapps.list ~/archdots/.config/
 else
     echo "adding mime"
