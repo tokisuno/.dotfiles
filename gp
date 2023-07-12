@@ -1,1 +1,0 @@
-/home/skinnyboot/.local/share/scripts/gp
