@@ -1,6 +1,0 @@
-#!/bin/bash
-
-read -p "commit: " commitvar
-git add . 
-git commit -m "$commitvar"
-git push
