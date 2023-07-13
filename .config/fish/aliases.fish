@@ -17,25 +17,28 @@ if status is-interactive
     
     alias vim='nvim'
     alias dzsh="vim ~/.zshrc"
-    alias bd='vim ~/Sync/life/bd.md'
+    alias rip='cd ~/.local/share/scripts' 
+    alias sfh='cd ~/.config/fish && fzfw'
+    alias vmn='cd ~/.config/nvim/ && fzfw'
     
+    #reading
     alias so="devour sioyek " 
     alias sz="devour zathura "
-    alias back="cd .."
     
-    # for programming
+    # for blog 
     alias sdfh="cd ~/projects/repos/blog"
     alias comd="hugo server -D"
     alias comx="hugo -t xmin"
+    
+    # for programming
     alias py='python'
     alias code='cd ~/projects/repos'
     
-    # ssh into downstairs
+    # misc
+    alias back="cd .."
     alias lkj='ssh server@192.168.0.203'
     alias mpv='devour mpv' 
     alias gay="pridefetch -f bisexual"
     alias vid='cd ~/Videos/ && lf'
-    
-    # pomodoro timer: requires tomoshell
-    alias qwer='tomatoshell -t 50 -d 10 -n 10'
+    alias qwer='tomatoshell -t 50 -d 10 -n 10' # requires tomatoshell
 end

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd 
 fzf --height=50% \
     --margin=5%,2%,2%,5% \
     --layout=reverse-list \
