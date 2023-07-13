@@ -1,5 +1,6 @@
-set previewer lf-previewer
-set cleaner lf-cleaner
+set ratios 1:2:3
+set previewer ~/.config/lf/previewer
+set cleaner ~/.config/lf/cleaner
 
 set ignorecase true
 set icons true

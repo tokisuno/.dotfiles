@@ -20,6 +20,7 @@ ln -sf ~/.dotfiles/.config/qtile/ ~/.config
 ln -sf ~/.dotfiles/.config/rofi/ ~/.config
 ln -sf ~/.dotfiles/.config/Thunar/ ~/.config
 ln -sf ~/.dotfiles/.config/zathura/ ~/.config
+ln -sf ~/.dotfiles/.config/fish/ ~/.config
 
 ln -sf ~/.dotfiles/.config/akregatorrc ~/.config
 ln -sf ~/.dotfiles/.config/hyfetch.json ~/.config

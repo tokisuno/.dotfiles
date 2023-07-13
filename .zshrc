@@ -1,7 +1,7 @@
 # prob the messiest .zshrc in existence  
 # requires motivate repo 
 # ~/.local/share/scripts/weeknum
-habito list
+# habito list
 # motivate 
 
 ## configure node version manager
