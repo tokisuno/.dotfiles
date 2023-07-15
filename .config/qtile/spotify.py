@@ -189,4 +189,3 @@ class Spotify(base.ThreadPoolText):
 
         is_running = play != ""
         return is_running
-

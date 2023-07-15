@@ -1,9 +1,10 @@
 # - tokisuno config
-
 import os
 import subprocess
+
+# literally haven't used these once
 import wttr
-from spotify import Spotify 
+import spotify
 
 from libqtile import qtile
 from libqtile import bar, layout, hook
@@ -16,12 +17,10 @@ from qtile_extras.widget.decorations import RectDecoration
 from qtile_extras.widget.decorations import PowerLineDecoration
 
 mod = 'mod1'
-terminal = 'alacritty'
 file_manager = 'thunar'
 popup = '/'
 browser = 'firefox'
 email = 'thunderbird'
-screenshot = "flameshot gui --path ~/photos/screenshots"
 # password = "bitwarden-desktop"
 # ----------------- #
 # Bindings/Mappings #
@@ -32,7 +31,6 @@ keys = [
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
-    # Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
     Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
     Key([mod, "shift"], "l", lazy.layout.shuffle_right(), desc="Move window to the right"),
     Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
@@ -48,17 +46,13 @@ keys = [
     Key([mod, "shift"], "Return", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack"),
 
     # Launching programs
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
+    Key([mod], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t foss"'), desc="Launch terminal"),
     Key([mod], "c", lazy.spawn(file_manager), desc="Launch file manager"),
     Key([mod], "o", lazy.spawn('rofi -modes "drun,run" -show drun'), desc="Launch rofi"),
     Key([mod], "w", lazy.spawn(browser), desc="Launch browser"),
     Key([mod, "control"], "f", lazy.spawn(email), desc="Spawn email"),
     Key([mod, "control", "shift"], "s", lazy.spawn("systemctl suspend"), desc="suspends system"),
-    Key([mod], "y", lazy.spawn('alacritty -e ytfzf -t -f'), desc='launches yt client'),
-    Key([mod, "shift"], "u", lazy.spawn('zsh -c "alacritty --working-directory ~/Sync/wiki -e nvim ~/Sync/wiki/index.md"')),
-
-    # idk why tf this doesn't work
-    # Key([], "Print", lazy.spawn("flameshot gui --path ~/photos/screenshots")),
+    Key([mod, "shift"], "u", lazy.spawn('fish -c "alacritty -e tmux attach-session -t vimwiki"')),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
@@ -100,15 +94,13 @@ for i in groups:
         ])
 groups.append(ScratchPad('scratchpad', [
     DropDown('mixer', 'pavucontrol', width=0.4, x=0.3, y=0.2),
-    DropDown('term', terminal, width=0.5, height=0.5, x=0.25, y=0.25),
+    DropDown('term', 'fish -c "alacritty -e tmux attach-session -t float"', width=0.5, height=0.5, x=0.25, y=0.25),
     DropDown('kanji', 'tagainijisho', width=0.3, height=0.65, x=0.6, y=0.2, on_focus_lost_hide=False),
-    DropDown('vimwiki', 'zsh -c "alacritty --working-directory ~/Sync/wiki -e nvim ~/Sync/wiki/index.md"', width=0.35, height=0.8, x=0.0, y=0.0, on_focus_lost_hide=False, opacity=0.97)
     ]))
 keys.extend([
     Key([mod], "v", lazy.group['scratchpad'].dropdown_toggle('mixer')),
     Key([mod], "p", lazy.group['scratchpad'].dropdown_toggle('term')),
     Key([mod], "m", lazy.group['scratchpad'].dropdown_toggle('kanji')),
-    Key([mod], "u", lazy.group['scratchpad'].dropdown_toggle('vimwiki')),
     ])
 
 # ------------ #
@@ -177,7 +169,7 @@ screens = [
                 widget.Wttr(
                     background="#343434",
                     lang='en',
-                    location={'Hamilton Ontario Canada': 'Uni'},
+                    location={'Hamilton Ontario': 'Uni'},
                     format='%l: %C, temp: %t, feels: %f',
                     units='m',
                     update_interval=30,

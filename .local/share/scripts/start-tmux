@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# tmux kill-session
+
+session="foss"
+session_exists=$(tmux list-sessions | grep $session)
+if [ "$session_exists" = "" ]
+then
+    tmux new-session -d -s $session
+    tmux rename-window -t 0 'main'
+    tmux new-window -t $session:1 -n 'spare'
+fi
+
+session="vimwiki"
+session_exists=$(tmux list-sessions | grep $session)
+if [ "$session_exists" = "" ]
+then
+    tmux new-session -d -s $session
+    tmux rename-window -t 0 'vimwiki'
+fi
+
+
+session="float"
+session_exists=$(tmux list-sessions | grep $session)
+if [ "$session_exists" = "" ]
+then
+    tmux new-session -d -s $session
+    tmux rename-window -t 0 'scratch'
+fi
+
+tmux source-file ~/.config/tmux/tmux.conf
+

@@ -2,6 +2,7 @@ from urllib.parse import quote, urlencode
 
 from libqtile.widget import GenPollUrl, base
 
+
 class Wttr(GenPollUrl):
     """Display weather widget provided by wttr.in_.
 
@@ -43,6 +44,7 @@ class Wttr(GenPollUrl):
 
     Cities will change randomly every update.
     """
+
     orientation = base.ORIENTATION_HORIZONTAL
     defaults = [
         (
