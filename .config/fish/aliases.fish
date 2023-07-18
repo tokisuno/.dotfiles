@@ -1,8 +1,8 @@
 if status is-interactive
     alias make50='make CC=clang CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow" LDLIBS="-lcrypt -lcs50 -lm"'
     
-    alias node='unalias node ; unalias npm ; nvm use default ; node $argv'
-    alias npm='unalias node ; unalias npm ; nvm use default ; npm $argv'
+    # alias node='unalias node; unalias npm; nvm use default ; node $argv'
+    # alias npm='unalias node; unalias npm ; nvm use default ; npm $argv'
 
     alias lf='lfrun'
 

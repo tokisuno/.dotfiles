@@ -23,6 +23,11 @@ if status is-interactive
     set -gx PATH $HOME/.local/share/scripts $PATH
     set -gx PATH $HOME/go $PATH
 
+    # for npm global
+    set NPM_PACKAGES "$HOME/.npm-packages"
+    set PATH $PATH $NPM_PACKAGES/bin
+    set MANPATH $NPM_PACKAGES/share/man $MANPATH  
+
     set -gx NPM_DIR "$HOME/.npm-data"
     set -gx NODE_PATH "$NPM_DIR/lib/node_modules:$NODE_PATH"
     set -gx PATH ~/bin $NPM_DIR/bin $HOME/.local/bin $PATH

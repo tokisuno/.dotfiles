@@ -20,12 +20,12 @@ then
 fi
 
 
-session="float"
+session="floating"
 session_exists=$(tmux list-sessions | grep $session)
 if [ "$session_exists" = "" ]
 then
     tmux new-session -d -s $session
-    tmux rename-window -t 0 'scratch'
+    tmux rename-window -t 0 'scratchpad'
 fi
 
 tmux source-file ~/.config/tmux/tmux.conf

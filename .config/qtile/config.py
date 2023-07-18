@@ -48,7 +48,7 @@ keys = [
     # Launching programs
     Key([mod], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t foss"'), desc="Launch terminal"),
     Key([mod], "c", lazy.spawn(file_manager), desc="Launch file manager"),
-    Key([mod], "o", lazy.spawn('rofi -modes "drun,run" -show drun'), desc="Launch rofi"),
+    Key([mod], "p", lazy.spawn('rofi -modes "drun,run" -show drun'), desc="Launch rofi"),
     Key([mod], "w", lazy.spawn(browser), desc="Launch browser"),
     Key([mod, "control"], "f", lazy.spawn(email), desc="Spawn email"),
     Key([mod, "control", "shift"], "s", lazy.spawn("systemctl suspend"), desc="suspends system"),
@@ -94,12 +94,10 @@ for i in groups:
         ])
 groups.append(ScratchPad('scratchpad', [
     DropDown('mixer', 'pavucontrol', width=0.4, x=0.3, y=0.2),
-    DropDown('term', 'fish -c "alacritty -e tmux attach-session -t float"', width=0.5, height=0.5, x=0.25, y=0.25),
     DropDown('kanji', 'tagainijisho', width=0.3, height=0.65, x=0.6, y=0.2, on_focus_lost_hide=False),
     ]))
 keys.extend([
     Key([mod], "v", lazy.group['scratchpad'].dropdown_toggle('mixer')),
-    Key([mod], "p", lazy.group['scratchpad'].dropdown_toggle('term')),
     Key([mod], "m", lazy.group['scratchpad'].dropdown_toggle('kanji')),
     ])
 
