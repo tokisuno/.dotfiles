@@ -10,13 +10,14 @@ if status is-interactive
     export CFLAGS="-ferror-limit=1 -gdwarf-4 -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-gnu-folding-constant -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable -Wshadow"
     export LDLIBS="-lcrypt -lcs50 -lm"
     export NVM_DIR=~/.nvm
+    export DISCORD_TOKEN=$(cat ~/Sync/priv_keys/discord)
     # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use # This loads nvm
 
     set -U fish_history_ignore_spaces
     set -U fish_history_ignore_duplicates
     set -U fish_history_save
     set -U fish_history_max 1000
-    
+     
     set -gx PATH $HOME/bin $PATH
     set -gx PATH /usr/local/bin $PATH
     set -gx PATH $HOME/.cargo/bin $PATH

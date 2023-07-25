@@ -4,8 +4,9 @@ if status is-interactive
     # alias node='unalias node; unalias npm; nvm use default ; node $argv'
     # alias npm='unalias node; unalias npm ; nvm use default ; npm $argv'
 
-    alias lf='lfrun'
+    alias wiki='vim ~/Sync/wiki/index.md'
 
+    alias lf='lfrun'
     alias ls='exa'
     alias l='exa -lbF --git'
     alias ll='exa -lbGF --git'

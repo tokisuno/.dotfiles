@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read -p "project name: " commitvar
+cargo new "$commitvar" --vcs=none

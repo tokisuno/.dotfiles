@@ -15,6 +15,8 @@ SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ebudimanjojo/tmux\x2efish\x1ejorge
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _hydro_git_1385:\x1d
 SETUVAR _hydro_git_1460:main\u2022\x20
+SETUVAR _hydro_git_2021:\x1d
+SETUVAR _hydro_git_2321:\x1d
 SETUVAR _hydro_git_2493:\x1d
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
