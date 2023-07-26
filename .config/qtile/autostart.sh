@@ -2,6 +2,7 @@
 
 start-tmux
 nitrogen --restore 
+setxkbmap -option 'ctrl:nocaps'
 setxkbmap -option 'ctrl:nocaps' 
 picom -c -C -b 
 xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' -0.5 

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while true; do
+    read -p "(p)ersonal or (w)ork?: " pw
+    case $pw in
+        [Pp]* ) git config user.email "lucaswmei@gmail.com" && git config user.name "tokisuno"; echo "repo assigned to personal email!"; break;;
+        [Ww]* ) git config user.email "lucaswmei@outlook.com" && git config user.name "lucasmei"; echo "repo assigned to work email!"; break;;
+        * ) echo "please chose p or w";;
+    esac
+done
+
