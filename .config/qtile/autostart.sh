@@ -1,12 +1,12 @@
 #!/bin/bash
 
-start-tmux
 nitrogen --restore 
 setxkbmap -option 'ctrl:nocaps'
 setxkbmap -option 'ctrl:nocaps' 
 picom -c -C -b 
 xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' -0.5 
 ibus-daemon -drxR
+start-tmux
 syncthing &
 # flameshot &
 # xrandr --output eDP1 --below DP-2-2 xrandr --output DP2-2 --mode 1920x1200 --primary 

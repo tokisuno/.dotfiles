@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["Nvim-R"] = {
+    loaded = true,
+    path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/Nvim-R",
+    url = "https://github.com/jalvesaq/Nvim-R"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/bufferline.nvim",

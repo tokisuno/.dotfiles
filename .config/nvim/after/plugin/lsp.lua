@@ -21,7 +21,8 @@ lsp.ensure_installed({
     'arduino_language_server',
     'html',
     'marksman',
-    'jdtls'
+    'jdtls',
+    'r_language_server'
 })
 
 lsp.nvim_workspace()
