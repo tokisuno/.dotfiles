@@ -5,6 +5,8 @@ if status is-interactive
     # alias npm='unalias node; unalias npm ; nvm use default ; npm $argv'
 
     alias wiki='vim ~/Sync/wiki/index.md'
+    
+    alias ka='killall'
 
     alias lf='lfrun'
     alias ls='exa'
@@ -34,6 +36,12 @@ if status is-interactive
     # for programming
     alias py='python'
     alias code='cd ~/projects/repos'
+
+    # tomatoshell
+    alias todo='vim ~/Sync/wiki/todo.md'
+    alias today='bat ~/Sync/wiki/todo.md'
+
+    alias doro='tomatoshell -t 50 -d 10 -n 10 -f'
     
     # misc
     alias back="cd .."
@@ -41,5 +49,4 @@ if status is-interactive
     alias mpv='devour mpv' 
     alias gay="pridefetch -f bisexual"
     alias vid='cd ~/Videos/ && lf'
-    alias qwer='tomatoshell -t 50 -d 10 -n 10' # requires tomatoshell
 end

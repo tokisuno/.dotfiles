@@ -1,6 +1,11 @@
 # if fish isn't running, don't do shit
 if status is-interactive
-    set fish_greeting
+    set -U fish_greeting
+    function fish_greeting
+        command bat ~/Sync/wiki/todo.md
+    end
+
+
     # Commands to run in interactive sessions can go here
     export GLFW_IM_MODULE=ibus
     export XMODIFIERS="@im=ibus"
