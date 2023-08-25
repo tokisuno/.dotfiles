@@ -8,6 +8,7 @@ if status is-interactive
     
     alias ka='killall'
 
+    alias syu='sudo pacman -Syu'
     alias lf='lfrun'
     alias ls='exa'
     alias l='exa -lbF --git'
@@ -17,8 +18,10 @@ if status is-interactive
     alias lx='exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale'
     alias lS='exa -1'
     alias lt='exa --tree --level=2'
+    alias lA='ls -a'
     
     alias vim='nvim'
+    alias vi='/bin/vim'
     alias dzsh="vim ~/.zshrc"
     alias rip='cd ~/.local/share/scripts' 
     alias sfh='cd ~/.config/fish && fzfw'
@@ -27,11 +30,12 @@ if status is-interactive
     #reading
     alias so="devour sioyek " 
     alias sz="devour zathura "
+    alias genki="sz ~/Sync/read/zzz/langs/jp/genki2.pdf"
     
     # for blog 
     alias sdfh="cd ~/projects/repos/blog"
     alias comd="hugo server -D"
-    alias comx="hugo -t xmin"
+    alias comx="hugo --gc -t hugo-simplecss"
     
     # for programming
     alias py='python'
