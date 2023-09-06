@@ -1,18 +1,13 @@
 # if fish isn't running, don't do shit
 if status is-interactive
-    set -U fish_greeting
-    function fish_greeting
-        command bat ~/Sync/wiki/todo.md
-    end
-
-
     # Commands to run in interactive sessions can go here
     export GLFW_IM_MODULE=ibus
     export XMODIFIERS="@im=ibus"
     export QT_IM_MODULE=ibus
     export GTK_IM_MODULE=ibus
     export CC="clang"
-    export CFLAGS="-ferror-limit=1 -gdwarf-4 -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-gnu-folding-constant -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable -Wshadow"
+    # used to be a flag: -std=c11 <--- doesn't work with C++
+    export CFLAGS="-ferror-limit=1 -gdwarf-4 -ggdb3 -O0 -Wall -Werror -Wextra -Wno-gnu-folding-constant -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable -Wshadow"
     export LDLIBS="-lcrypt -lcs50 -lm"
     export NVM_DIR=~/.nvm
     export DISCORD_TOKEN=$(cat ~/Sync/priv_keys/discord)

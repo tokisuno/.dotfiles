@@ -52,7 +52,7 @@ keys = [
     Key([mod], "w", lazy.spawn(browser), desc="Launch browser"),
     Key([mod, "control"], "f", lazy.spawn(email), desc="Spawn email"),
     Key([mod, "control", "shift"], "s", lazy.spawn("systemctl suspend"), desc="suspends system"),
-    Key([mod, "shift"], "u", lazy.spawn('fish -c "alacritty -e tmux attach-session -t vimwiki"')),
+    Key([mod, "shift"], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t vimwiki"')),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
@@ -61,9 +61,19 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
+    # opening certain websites
+    Key([mod], "i", lazy.spawn('firefox https://goodreads.com'), desc="goodreads"),
+    Key([mod], "o", lazy.spawn('firefox https://jisho.org'), desc="jisho"),
+    Key([mod], "u", lazy.spawn('firefox https://metafy.gg/account/bookmarks'), desc="metafy"),
+
+
     # Laptop/Volume Mappings
     Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -10%"), desc="Lower Volume by 5%"),
     Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +10%"), desc="Raise Volume by 5%"),
+
+    Key([mod], "minus", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -10%"), desc="Lower Volume by 5%"),
+    Key([mod], "plus", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +10%"), desc="Raise Volume by 5%"),
+
     Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"), desc="Mute/Unmute Volume"),    # multiple stack panes
     Key([], "XF86MonBrightnessUp", lazy.spawn('xbacklight -inc 10'), desc="Raise brightness"),
     Key([], "XF86MonBrightnessDown", lazy.spawn('xbacklight -dec 10'), desc="Lower brightness"),
@@ -173,11 +183,12 @@ screens = [
                     update_interval=30,
                     **powerline,
                 ),
-                widget.PulseVolume(fmt='vol:{}', update_interval=0.5, padding=5, background="#414141", **powerline),
+                widget.PulseVolume(fmt='vol:{}', update_interval=0.25, padding=5, background="#414141", **powerline),
                 widget.Net(background="#4f4f4f", **powerline),
                 widget.Systray(background="#353535", **powerline),
                 widget.Clock(format="%Y-%m-%d %Hh%M", background="#282828", **powerline),
                 widget.UPowerWidget(background="#1a1a1a", **powerline),
+ 
             ],
             24,
         ),
