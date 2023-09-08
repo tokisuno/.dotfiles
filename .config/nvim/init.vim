@@ -52,3 +52,8 @@ lua vim.g['vimtex_view_genral_options'] = '--unique file:@pdf#src@line@tex'
 lua vim.g['vimtex_compiler_method'] = 'latexrun'
 lua vim.g['vimtex_view_automatic'] = 1
 
+if exists("g:neovide")
+   set guifont=JetBrainsMono\ NF:h10
+   let g:neovide_input_ime = v:true
+   let g:neovide_cursor_vfx_mode = "railgun"
+endif

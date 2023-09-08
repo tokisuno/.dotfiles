@@ -3,15 +3,19 @@ if status is-interactive
 
     # better ls command 
     alias lf='lfrun'
-    alias ls='exa'
-    alias l='exa -lbF --git'
-    alias ll='exa -lbGF --git'
-    alias llm='exa -lbGd --git --sort=modified'
-    alias la='exa -lbhHigUmuSa --time-style=long-iso --git --color-scale' 
-    alias lx='exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale'
-    alias lS='exa -1'
-    alias lt='exa --tree --level=2'
+    alias ls='eza'
+    alias l='eza -lbF --git'
+    alias ll='eza -lbGF --git'
+    alias llm='eza -lbGd --git --sort=modified'
+    alias la='eza -lbhHigUmuSa --time-style=long-iso --git --color-scale' 
+    alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --git --color-scale'
+    alias lS='eza -1'
+    alias lt='eza --tree --level=2'
     alias lA='ls -a'
+
+    alias course='cd ~/Sync/mac/41 && lA'
+    alias bits='vim ~/Sync/wiki/habits.md'
+    alias leer='cd ~/Sync/read/'
     
     # vim shit
     alias vim='nvim'
@@ -25,6 +29,8 @@ if status is-interactive
     alias sz="devour zathura "
     alias genki="sz ~/Sync/read/zzz/langs/jp/genki2.pdf"
     
+    # not working and idk why
+    # alias thing='xmodmap -e "keycode 22 = backslash bar" && xmodmap -e "keycode 51 = BackSpace'
     # for blog 
     alias sdfh="cd ~/projects/repos/blog"
     alias comt="hugo server -D"
@@ -37,6 +43,7 @@ if status is-interactive
 
     # tomatoshell
     alias goals='bat ~/Sync/wiki/todo.md'
+    alias newgoal='vim ~/Sync/wiki/todo.md'
     alias doro='tomatoshell -t 50 -d 10 -n 10 -f'
     
     # misc
