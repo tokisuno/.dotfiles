@@ -1,0 +1,10 @@
+#!/bin/bash
+cd ~/
+read -p "select (a) personal or (b) university folder: " choice
+case $choice in
+    a) cd ~/projects/repos/personal/ ;;
+    b) cd ~/projects/repos/university/ ;;
+    *) echo "unrecognized: $choice" ;;
+esac
+
+

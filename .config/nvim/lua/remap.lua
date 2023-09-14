@@ -67,18 +67,12 @@ ks.set('n', '<leader>sco', '<cmd>lua vim.opt.signcolumn="no"<cr>')
 ks.set('n', '<C-h>', '<CMD>lua require("FTerm").toggle()<CR>')
 ks.set('t', '<C-h>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
--- luasnip binds
+-- ultisnip latex-snippets-vim
 vim.cmd[[
-    " Use Tab to expand and jump through snippets
-    imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
-    smap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'
-    
-    " Jump forward in through tabstops in insert and visual mode with Control-f
-    imap <silent><expr> <C-f> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-f>'
-    smap <silent><expr> <C-f> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-f>'
 
-    " Use Shift-Tab to jump backwards through snippets
-    imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
-    smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
+    let g:UltiSnipsExpandTrigger = '<tab>'
+    let g:UltiSnipsJumpForwardTrigger = '<c-j>'
+    let g:UltiSnipsJumpBackwardTrigger = '<c-k>'
+
 ]]
 

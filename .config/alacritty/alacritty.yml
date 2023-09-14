@@ -1,8 +1,12 @@
 # The definition of color schemes.
+# fonts i like
+# MesloLGS NF (any)
+# Victor Mono NF (AUR)
+# JetBrains Mono NF (AUR)
 
 font:
   normal: 
-    family: JetBrains Mono Nerd Font
+    family: Victor Mono NF
     style: Regular
   size: 12
 

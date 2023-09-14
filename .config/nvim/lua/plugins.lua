@@ -50,6 +50,9 @@ return require('packer').startup(function(use)
     use('folke/twilight.nvim')
     use('lervag/vimtex')
     use('xuhdev/vim-latex-live-preview')
+    use{'ckunte/latex-snippets-vim', tag = "*" }
+    use('sirver/ultisnips')
+    use('preservim/tagbar')
 
     -- life management
     use('vimwiki/vimwiki')

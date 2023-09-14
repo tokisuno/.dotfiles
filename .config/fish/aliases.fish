@@ -39,7 +39,7 @@ if status is-interactive
     
     # for programming
     alias py='python'
-    alias code='cd ~/projects/repos'
+    # alias code='cd ~/projects/repos'
 
     # tomatoshell
     alias goals='bat ~/Sync/wiki/todo.md'

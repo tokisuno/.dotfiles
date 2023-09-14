@@ -53,6 +53,7 @@ keys = [
     Key([mod, "control"], "f", lazy.spawn(email), desc="Spawn email"),
     Key([mod, "control", "shift"], "s", lazy.spawn("systemctl suspend"), desc="suspends system"),
     Key([mod, "shift"], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t vimwiki"')),
+    Key([], "Print", lazy.spawn("flameshot gui")),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
