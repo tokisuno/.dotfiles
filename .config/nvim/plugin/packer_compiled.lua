@@ -144,11 +144,6 @@ _G.packer_plugins = {
     path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-  ["latex-snippets-vim"] = {
-    loaded = true,
-    path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/latex-snippets-vim",
-    url = "https://github.com/ckunte/latex-snippets-vim"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -257,11 +252,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/twilight.nvim",
     url = "https://github.com/folke/twilight.nvim"
-  },
-  ultisnips = {
-    loaded = true,
-    path = "/home/skinnyboot/.local/share/nvim/site/pack/packer/start/ultisnips",
-    url = "https://github.com/sirver/ultisnips"
   },
   undotree = {
     loaded = true,

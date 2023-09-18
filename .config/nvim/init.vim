@@ -3,7 +3,7 @@ lua vim.opt.termguicolors = true
 lua require('remap')
 lua require('plugins')
 lua require('colorizer').setup()
-lua require('luasnip.loaders.from_lua').load({paths = "~/.config/nvim/LuaSnip/"})
+lua require('luasnip.loaders.from_lua').lazy_load({paths = "~/.config/nvim/LuaSnip/"})
 
 colorscheme gruvbox
 
@@ -42,6 +42,8 @@ set showcmd showmode showmatch
 set history=100
 set mouse=a
 set t_Co=256
+
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 lua vim.g.vimwiki_list = {{path = '~/Sync/wiki/', syntax = 'markdown', ext = '.md'}}
 lua vim.g['tex_flavor'] = 'latex'

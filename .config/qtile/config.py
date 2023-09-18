@@ -64,8 +64,8 @@ keys = [
 
     # opening certain websites
     Key([mod], "i", lazy.spawn('firefox https://goodreads.com'), desc="goodreads"),
-    Key([mod], "o", lazy.spawn('firefox https://jisho.org'), desc="jisho"),
     Key([mod], "u", lazy.spawn('firefox https://metafy.gg/account/bookmarks'), desc="metafy"),
+    Key([mod], "o", lazy.spawn('firefox https://avenue.mcmaster.ca'), desc="metafy"),
 
 
     # Laptop/Volume Mappings

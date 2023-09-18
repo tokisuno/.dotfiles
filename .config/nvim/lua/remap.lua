@@ -67,12 +67,25 @@ ks.set('n', '<leader>sco', '<cmd>lua vim.opt.signcolumn="no"<cr>')
 ks.set('n', '<C-h>', '<CMD>lua require("FTerm").toggle()<CR>')
 ks.set('t', '<C-h>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
--- ultisnip latex-snippets-vim
+-- luasnips
+vim.keymap.set('n', '<Leader>L', '<Cmd>lua require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/LuaSnip/"})<CR>')
+
 vim.cmd[[
 
-    let g:UltiSnipsExpandTrigger = '<tab>'
-    let g:UltiSnipsJumpForwardTrigger = '<c-j>'
-    let g:UltiSnipsJumpBackwardTrigger = '<c-k>'
+" Expand or jump in insert mode
+imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
+
+" Expand snippets in insert mode with Tab
+imap <silent><expr> <Tab> luasnip#expandable() ? '<Plug>luasnip-expand-snippet' : '<Tab>'
+
+" Jump forward in through tabstops in insert and visual mode with Control-f
+imap <silent><expr> <C-r> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-r>'
+smap <silent><expr> <C-r> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-r>'
+
+" For changing choices in choiceNodes (not strictly necessary for a basic setup).
+imap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-e>'
+smap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-e>'
+
 
 ]]
 

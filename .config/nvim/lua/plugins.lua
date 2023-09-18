@@ -20,9 +20,6 @@ return require('packer').startup(function(use)
     }
     use("ellisonleao/gruvbox.nvim")
     use {"windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end }
-    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-    use('vim-pandoc/vim-pandoc-syntax')
-    use('jalvesaq/Nvim-R')
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('norcalli/nvim-colorizer.lua')
     use('nvim-treesitter/playground')
@@ -50,9 +47,10 @@ return require('packer').startup(function(use)
     use('folke/twilight.nvim')
     use('lervag/vimtex')
     use('xuhdev/vim-latex-live-preview')
-    use{'ckunte/latex-snippets-vim', tag = "*" }
-    use('sirver/ultisnips')
     use('preservim/tagbar')
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+    use('vim-pandoc/vim-pandoc-syntax')
+    use('jalvesaq/Nvim-R')
 
     -- life management
     use('vimwiki/vimwiki')

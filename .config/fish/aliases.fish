@@ -23,7 +23,8 @@ if status is-interactive
     alias rip='cd ~/.local/share/scripts' 
     alias sfh='cd ~/.config/fish && fzfw'
     alias vmn='cd ~/.config/nvim/ && fzfw'
-    
+    alias snips="vim ~/.config/nvim/LuaSnip/tex.lua"
+
     #reading
     alias so="devour sioyek " 
     alias sz="devour zathura "
@@ -46,6 +47,7 @@ if status is-interactive
     alias newgoal='vim ~/Sync/wiki/todo.md'
     alias doro='tomatoshell -t 50 -d 10 -n 10 -f'
     
+
     # misc
     alias back="cd .."
     alias lkj='ssh server@192.168.0.203'
