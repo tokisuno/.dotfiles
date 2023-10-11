@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
                 require"startup".setup()
             end
     }
-    use("ellisonleao/gruvbox.nvim")
+    use { "catppuccin/nvim", as = "catppuccin" }
     use {"windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end }
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('norcalli/nvim-colorizer.lua')
@@ -52,9 +52,6 @@ return require('packer').startup(function(use)
     use('vim-pandoc/vim-pandoc-syntax')
     use('jalvesaq/Nvim-R')
 
-    -- life management
-    use('vimwiki/vimwiki')
-    use('mattn/calendar-vim')
     -- for funzies
     use('ThePrimeagen/vim-be-good')
 

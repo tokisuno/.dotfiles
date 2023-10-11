@@ -5,7 +5,7 @@ lua require('plugins')
 lua require('colorizer').setup()
 lua require('luasnip.loaders.from_lua').lazy_load({paths = "~/.config/nvim/LuaSnip/"})
 
-colorscheme gruvbox
+colorscheme catppuccin 
 
 set nocompatible
 filetype on

@@ -30,6 +30,7 @@ if status is-interactive
     alias sz="devour zathura "
     alias genki="sz ~/Sync/read/zzz/langs/jp/genki2.pdf"
     
+    alias code="cd ~/projects/repos/"
     # not working and idk why
     # alias thing='xmodmap -e "keycode 22 = backslash bar" && xmodmap -e "keycode 51 = BackSpace'
     # for blog 
@@ -43,8 +44,7 @@ if status is-interactive
     # alias code='cd ~/projects/repos'
 
     # tomatoshell
-    alias goals='bat ~/Sync/wiki/todo.md'
-    alias newgoal='vim ~/Sync/wiki/todo.md'
+    alias goals='vim ~/Sync/wiki/goals.md'
     alias doro='tomatoshell -t 50 -d 10 -n 10 -f'
     
 
@@ -56,7 +56,7 @@ if status is-interactive
     alias vid='cd ~/Videos/ && lf'
     alias wiki='vim ~/Sync/wiki/index.md'
     alias weron='xrandr --auto && xrandr --output eDP1 --left-of DP2-2 && nitrogen --restore'
-    alias weroff='xrandr --output eDP1 --off && nitrogen --restore' 
+    alias desktop='xrandr --auto && xrandr --output eDP1 --off && nitrogen --restore' 
     alias ka='killall'
     alias syu='sudo pacman -Syu'
 

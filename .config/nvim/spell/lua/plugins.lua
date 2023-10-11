@@ -18,7 +18,6 @@ return require('packer').startup(function(use)
                 require"startup".setup()
             end
     }
-    use("ellisonleao/gruvbox.nvim")
     use {"windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end }
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     use('vim-pandoc/vim-pandoc-syntax')

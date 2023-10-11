@@ -3,8 +3,8 @@ import os
 import subprocess
 
 # literally haven't used these once
-import wttr
-import spotify
+# import wttr
+# import spotify
 
 from libqtile import qtile
 from libqtile import bar, layout, hook
@@ -54,6 +54,7 @@ keys = [
     Key([mod, "control", "shift"], "s", lazy.spawn("systemctl suspend"), desc="suspends system"),
     Key([mod, "shift"], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t vimwiki"')),
     Key([], "Print", lazy.spawn("flameshot gui")),
+    Key([mod], "i", lazy.spawn("zathura ~/Sync/university/ipa.pdf")),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
@@ -61,11 +62,6 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
-
-    # opening certain websites
-    Key([mod], "i", lazy.spawn('firefox https://goodreads.com'), desc="goodreads"),
-    Key([mod], "u", lazy.spawn('firefox https://metafy.gg/account/bookmarks'), desc="metafy"),
-    Key([mod], "o", lazy.spawn('firefox https://avenue.mcmaster.ca'), desc="metafy"),
 
 
     # Laptop/Volume Mappings
@@ -118,8 +114,8 @@ keys.extend([
 def init_layout_theme():
     return {"margin": 14,
             "border_width": 2,
-            "border_focus": "#EFDF00",
-            "border_normal": "#474200"}
+            "border_focus": "#85b4ea",
+            "border_normal": "#7c818c"}
 
 layout_theme = init_layout_theme()
 floating_layout = layout.Floating(
@@ -160,9 +156,9 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayoutIcon(background="#181818"),
-                widget.TextBox(" ", background="#181818"),
-                widget.CurrentLayout(background="#181818", **powerline),
+                widget.CurrentLayoutIcon(),
+                widget.CurrentLayout(),
+                widget.Sep(),
                 widget.GroupBox(
                     center_aligned=True,
                     borderwidth=2,
@@ -170,53 +166,29 @@ screens = [
                     highlight_color="#1f1f1f",
                     highlight_method="text",
                     this_current_screen_border="#d1d1d1",
-                    background="#1f1f1f",
-                    **powerline
                 ),
-                widget.Prompt(background="#928371", **powerline),
-                widget.WindowName(markup=True, background='#2a2a2a', **powerline),
-                widget.Wttr(
-                    background="#343434",
-                    lang='en',
-                    location={'Hamilton Ontario': 'Uni'},
-                    format='%l: %C, temp: %t, feels: %f',
-                    units='m',
-                    update_interval=30,
-                    **powerline,
-                ),
-                widget.PulseVolume(fmt='vol:{}', update_interval=0.25, padding=5, background="#414141", **powerline),
-                widget.Net(background="#4f4f4f", **powerline),
-                widget.Systray(background="#353535", **powerline),
-                widget.Clock(format="%Y-%m-%d %Hh%M", background="#282828", **powerline),
-                widget.UPowerWidget(background="#1a1a1a", **powerline),
- 
+                widget.Prompt(),
+                widget.Sep(),
+                widget.WindowName(markup=True),
+                # widget.Wttr(
+                #     lang='en',
+                #     location={'Hamilton Ontario': 'Uni'},
+                #     format='%l: %C, temp: %t, feels: %f',
+                #     units='m',
+                #     update_interval=30,
+                # ),
+                # widget.Sep(),
+                # widget.PulseVolume(fmt='vol:{}', update_interval=0.2, padding=5),
+                widget.Sep(),
+                widget.Net(),
+                widget.Sep(),
+                widget.Systray(),
+                widget.Sep(),
+                widget.Clock(format="%Y-%m-%d %H:%M"),
+                widget.Sep(),
+                widget.UPowerWidget(),
             ],
             24,
-        ),
-    ),
-
-    Screen(
-        top=bar.Bar(
-            [
-                widget.CurrentLayoutIcon(background="#181818"),
-                widget.TextBox(" ", background="#181818"),
-                widget.CurrentLayout(background="#181818", **powerline),
-                widget.GroupBox(
-                    center_aligned=True,
-                    borderwidth=2,
-                    active="#a8a8a8",
-                    highlight_color="#1f1f1f",
-                    highlight_method="text",
-                    this_current_screen_border="#d1d1d1",
-                    background="#1f1f1f",
-                    **powerline
-                ),
-                widget.Prompt(background="#928371", **powerline),
-                widget.WindowName(markup=True, background='#2a2a2a', **powerline),
-                widget.Clock(format="%Y-%m-%d %Hh%M", background="#3a3a3a", **powerline),
-                widget.UPowerWidget(background="#4f4f4f", **powerline),
-            ],
-            24, background="#181818",
         ),
     ),
 ]
@@ -231,8 +203,9 @@ mouse = [
 dgroups_key_binder = None
 dgroups_app_rules = []  # type: list
 follow_mouse_focus = True
-bring_front_click = False
-cursor_warp = True
+bring_front_click = True
+wmname = "qtile"
+# cursor_warp = True
 floating_layout = layout.Floating(
         border_width=0,
         border_focus="#000000",
@@ -261,4 +234,3 @@ reconfigure_screens = True
 auto_minimize = True
 wl_input_rules = None
 
-wmname = "qtile"

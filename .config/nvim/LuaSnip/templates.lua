@@ -1,26 +1,26 @@
 -- Abbreviations used in this article and the LuaSnip docs
 local ls = require("luasnip")
 local s = ls.snippet
+local sn = ls.snippet_node
+local t = ls.text_node
 local i = ls.insert_node
+local f = ls.function_node
+local d = ls.dynamic_node
+local fmt = require("luasnip.extras.fmt").fmt
 local fmta = require("luasnip.extras.fmt").fmta
+local rep = require("luasnip.extras").rep
 
 return {
-    s({trig="-rpr", dscr="report"},
+    s({trig="zrpr", dscr="report"},
         fmta(
             [[
-                % ------- %
-                % PREFACE %
-                % ------- %
                 \documentclass[12pt]{report} 
                 \usepackage[yyyymmdd]{datetime} 
                 \renewcommand{\dateseparator}{-}
-                
                 \usepackage{fullpage, amsthm, natbib, gb4e}
                 \newtheorem{example}{Example}
-                
                 \usepackage{fancyhdr}
                 \pagestyle{fancy}
-                
                 \fancyhf{}
                 \makeatletter
                 \makeatother
@@ -29,16 +29,15 @@ return {
                 \addtolength\topmargin{-15pt}
                 \AtBeginDocument{\thispagestyle{empty}}
                 \fancyhead[L]{STUDENT_NUMBER --- SURNAME}
-                
                 \bibliographystyle{abbrvnat}
                 \setcitestyle{authoryear, aysep{comma}}
-                
-                \title{Finnish Tense-Aspect}
+                \title{<>}
                 \author{FULL_NAME --- STUDENT_NUMBER}
-            ]]
+            ]],
+            {i(1)}
         )
     ),
-    s({trig="-tris", dscr="syntax report"},
+    s({trig="ztris", dscr="syntax report"},
         fmta(
             [[
                 \documentclass[12pt]{report}
