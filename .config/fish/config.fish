@@ -11,6 +11,7 @@ if status is-interactive
     export LDLIBS="-lcrypt -lcs50 -lm"
     export NVM_DIR=~/.nvm
     export DISCORD_TOKEN=$(cat ~/Sync/priv_keys/discord)
+    export TMUX_POWERLINE_THEME=my-theme
     # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use # This loads nvm
 
     set -U fish_history_ignore_spaces

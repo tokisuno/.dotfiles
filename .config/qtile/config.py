@@ -112,7 +112,7 @@ keys.extend([
 # LAYOUT STUFF #
 # ------------ #
 def init_layout_theme():
-    return {"margin": 14,
+    return {"margin": 8,
             "border_width": 2,
             "border_focus": "#85b4ea",
             "border_normal": "#7c818c"}
@@ -149,7 +149,7 @@ widget_defaults = dict(
     font="JetBrains Mono Nerd Font",
     fontsize=12,
     padding=2,
-    background="#1d2021")
+    background="#000000")
 
 extension_defaults = widget_defaults.copy()
 screens = [
@@ -187,7 +187,7 @@ screens = [
                 widget.Clock(format="%Y-%m-%d %H:%M"),
                 widget.Sep(),
                 widget.UPowerWidget(),
-            ],
+            ], 
             24,
         ),
     ),
@@ -205,7 +205,7 @@ dgroups_app_rules = []  # type: list
 follow_mouse_focus = True
 bring_front_click = True
 wmname = "qtile"
-# cursor_warp = True
+cursor_warp = False
 floating_layout = layout.Floating(
         border_width=0,
         border_focus="#000000",
