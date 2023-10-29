@@ -46,13 +46,13 @@ keys = [
     Key([mod, "shift"], "Return", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack"),
 
     # Launching programs
-    Key([mod], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t foss"'), desc="Launch terminal"),
+    Key([mod], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t term"'), desc="Launch terminal"),
     Key([mod], "c", lazy.spawn(file_manager), desc="Launch file manager"),
     Key([mod], "p", lazy.spawn('rofi -modes "drun,run" -show drun'), desc="Launch rofi"),
     Key([mod], "w", lazy.spawn(browser), desc="Launch browser"),
     Key([mod, "control"], "f", lazy.spawn(email), desc="Spawn email"),
     Key([mod, "control", "shift"], "s", lazy.spawn("systemctl suspend"), desc="suspends system"),
-    Key([mod, "shift"], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t vimwiki"')),
+    Key([mod, "shift"], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t alt-term"')),
     Key([], "Print", lazy.spawn("flameshot gui")),
     Key([mod], "i", lazy.spawn("zathura ~/Sync/university/ipa.pdf")),
 
@@ -101,7 +101,7 @@ for i in groups:
         ])
 groups.append(ScratchPad('scratchpad', [
     DropDown('mixer', 'pavucontrol', width=0.4, x=0.3, y=0.2),
-    DropDown('kanji', 'tagainijisho', width=0.3, height=0.65, x=0.6, y=0.2, on_focus_lost_hide=False),
+    DropDown('kanji', 'tagainijisho', width=0.3, height=0.7, x=0.7, y=0.3, on_focus_lost_hide=False),
     ]))
 keys.extend([
     Key([mod], "v", lazy.group['scratchpad'].dropdown_toggle('mixer')),
