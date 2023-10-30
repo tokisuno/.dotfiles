@@ -8,7 +8,7 @@ import subprocess
 
 from libqtile import qtile
 from libqtile import bar, layout, hook
-from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
+from libqtile.config import Click, Drag, Group, Key, KeyChord, Match, Screen, ScratchPad, DropDown
 from libqtile.lazy import lazy
 
 # qtile-extras-git from AUR
@@ -75,6 +75,11 @@ keys = [
     Key([], "XF86MonBrightnessUp", lazy.spawn('xbacklight -inc 10'), desc="Raise brightness"),
     Key([], "XF86MonBrightnessDown", lazy.spawn('xbacklight -dec 10'), desc="Lower brightness"),
 
+    # Anki Card Creation Hotkeys
+    KeyChord([mod], "a", [
+        Key([], "c", lazy.spawn(os.path.expanduser("~/.local/share/scripts/anki_cla"), shell=True)),
+        Key([], "j", lazy.spawn(os.path.expanduser("~/.local/share/scripts/anki_jp"), shell=True))
+    ]),
 ]
 
 # ---------- #
