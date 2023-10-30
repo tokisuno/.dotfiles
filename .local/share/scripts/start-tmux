@@ -2,30 +2,23 @@
 
 # tmux kill-session
 
-session="foss"
+session="term"
 session_exists=$(tmux list-sessions | grep $session)
 if [ "$session_exists" = "" ]
 then
     tmux new-session -d -s $session
-    tmux rename-window -t 0 'main'
-    tmux new-window -t $session:1 -n 'spare'
+    tmux rename-window -t 0 'one'
+    tmux new-window -t $session:1 -n 'two'
+    tmux new-window -t $session:2 -n 'tree'
 fi
 
-session="vimwiki"
+session="alt-term"
 session_exists=$(tmux list-sessions | grep $session)
 if [ "$session_exists" = "" ]
 then
     tmux new-session -d -s $session
-    tmux rename-window -t 0 'vimwiki'
-fi
-
-
-session="floating"
-session_exists=$(tmux list-sessions | grep $session)
-if [ "$session_exists" = "" ]
-then
-    tmux new-session -d -s $session
-    tmux rename-window -t 0 'scratchpad'
+    tmux rename-window -t 0 'uno'
+    tmux new-window -t $session:1 -n 'dos'
 fi
 
 tmux source-file ~/.config/tmux/tmux.conf

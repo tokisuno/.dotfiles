@@ -76,7 +76,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn('xbacklight -dec 10'), desc="Lower brightness"),
 
     # Anki Card Creation Hotkeys
-    KeyChord([mod], "a", [
+    KeyChord([mod], "d", [
         Key([], "c", lazy.spawn(os.path.expanduser("~/.local/share/scripts/anki_cla"), shell=True)),
         Key([], "j", lazy.spawn(os.path.expanduser("~/.local/share/scripts/anki_jp"), shell=True))
     ]),
