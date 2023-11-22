@@ -3,8 +3,7 @@ lua vim.opt.termguicolors = true
 lua require('remap')
 lua require('plugins')
 lua require('colorizer').setup()
-lua require('luasnip.loaders.from_lua').lazy_load({paths = "~/.config/nvim/LuaSnip/"})
-
+lua require("luasnip.loaders.from_lua").lazy_load({paths = "~/.config/nvim/LuaSnip/"})
 colorscheme catppuccin 
 
 set nocompatible
@@ -51,7 +50,7 @@ lua vim.g['vimtex_compiler_latexmk_engines'] = {['_'] = '-xelatex'}
 lua vim.g['vimtex_view_method'] = 'zathura'
 lua vim.g['vimtex_view_general_viewer'] = 'zathura'
 lua vim.g['vimtex_view_genral_options'] = '--unique file:@pdf#src@line@tex'
-lua vim.g['vimtex_compiler_method'] = 'latexrun'
+lua vim.g['vimtex_compiler_method'] = 'latexmk'
 lua vim.g['vimtex_view_automatic'] = 1
 
 if exists("g:neovide")

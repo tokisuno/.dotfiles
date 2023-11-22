@@ -51,7 +51,16 @@ return require('packer').startup(function(use)
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     use('vim-pandoc/vim-pandoc-syntax')
     use('jalvesaq/Nvim-R')
-
+    use {
+        "iurimateus/luasnip-latex-snippets.nvim",
+        -- vimtex isn't required if using treesitter
+        requires = { "L3MON4D3/LuaSnip", "lervag/vimtex" },
+        config = function()
+        require'luasnip-latex-snippets'.setup()
+        -- or setup({ use_treesitter = true })
+        require("luasnip").config.setup { enable_autosnippets = true }
+      end,
+    }
     -- for funzies
     use('ThePrimeagen/vim-be-good')
 

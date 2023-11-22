@@ -83,8 +83,8 @@ imap <silent><expr> <C-r> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-
 smap <silent><expr> <C-r> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-r>'
 
 " For changing choices in choiceNodes (not strictly necessary for a basic setup).
-imap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-e>'
-smap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-e>'
+imap <silent><expr> <C-e> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-e>'
+smap <silent><expr> <C-e> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-e>'
 
 
 ]]

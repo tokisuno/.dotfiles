@@ -1,0 +1,12 @@
+#!/bin/bash
+
+LAPTOPSYNC=$HOME/Sync
+DESKTOPSYNC=$HOME/qjtd7-veo9h
+
+if [ -d "$HOME/Sync" ]; then
+    ( cd $LAPTOPSYNC )
+elif [ -d "$HOME/qjtd7-veo9h" ]; then
+    ( cd $DESKTOPSYNC )
+else 
+    echo "dir not found"
+fi

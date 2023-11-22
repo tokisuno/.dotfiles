@@ -29,7 +29,9 @@ if status is-interactive
     set NPM_PACKAGES "$HOME/.npm-packages"
     set PATH $PATH $NPM_PACKAGES/bin
     set MANPATH $NPM_PACKAGES/share/man $MANPATH  
-
+    set -gx SYNCPATH $HOME/qjtd7-veo9h $SYNCPATH
+    set -gx SYNCPATH $HOME/Sync $SYNCPATH
+    
     set -gx NPM_DIR "$HOME/.npm-data"
     set -gx NODE_PATH "$NPM_DIR/lib/node_modules:$NODE_PATH"
     set -gx PATH ~/bin $NPM_DIR/bin $HOME/.local/bin $PATH
@@ -40,4 +42,5 @@ if status is-interactive
     if test -f ~/.config/fish/aliases.fish
         source ~/.config/fish/aliases.fish
     end
+    
 end

@@ -1,35 +1,51 @@
--- Abbreviations used in this article and the LuaSnip docs
 local ls = require("luasnip")
 local s = ls.snippet
-local sn = ls.snippet_node
 local t = ls.text_node
 local i = ls.insert_node
-local f = ls.function_node
-local d = ls.dynamic_node
 local fmt = require("luasnip.extras.fmt").fmt
 local fmta = require("luasnip.extras.fmt").fmta
-local rep = require("luasnip.extras").rep
-
+local extras = require("luasnip.extras")
+local rep = extras.rep
 return {
-    -- more of shortform aliases
-    s("hi",
-        {t("Hello World")}),
-    s("foo",
-        {t("another snippet")}),
-
-    -- snippet for writing snippets LMAO
-    s({trig="snip", dscr="for writing snippets"},
-        fmta(
+    s({trig=";glos", dscr="creating glosses"},
+    fmta(
         [[
-            s({trig="<>", dscr="<>"},
-                fmta(
-                    \[\[
-                        <>
-                    \]\]
-                )
-            ),
+            \ex\label{<>}
+            \gll{<>}\\
+            {<>}\\ 
+            \trans`<>'
         ]],
-        {i(1, "trigger"), i(2, "description"), i(3, "function")}
+        { i(1), i(2), i(3), i(4) }
         )
+    ),
+    s({trig="tt", dscr="Expands 'tt' into '\texttt{}'"},
+      fmta(
+        "\\texttt{<>}",
+        { i(1) }
+      )
+    ),
+    s({trig="tsc", dscr="Expands 'tsc' into '\textsc{}'"},
+      fmta(
+        "\\textsc{<>}",
+        { i(1) }
+      )
+    ),
+    s({trig=";beg", dscr="creates '\begin thing'"},
+      fmta(
+        [[
+            \begin{<>}
+
+            \end{<>}
+        ]],
+        { i(1), rep(1) }
+      )
+    ),
+    s({trig=";sec", dscr="creates section", snippetType="autosnippet"},
+      fmta(
+        [[
+            \section{<>}
+        ]],
+        { i(1) }
+      )
     ),
 }
