@@ -5,15 +5,12 @@ ln -sf ~/.dotfiles/.local/share/scripts/ ~/.local/share
 # ln -sf ~/.dotfiles/.dmrc ~/.dotfiles
 # ln -sf ~/.dotfiles/.zshrc ~/.dotfiles
 
-ln -sf ~/.dotfiles/.config/alacritty/ ~/.config
+ln -sf ~/.dotfiles/.config/kitty/ ~/.config
 ln -sf ~/.dotfiles/.config/dconf/ ~/.config
 ln -sf ~/.dotfiles/.config/dunst/ ~/.config
-ln -sf ~/.dotfiles/.config/flameshot/ ~/.config
-ln -sf ~/.dotfiles/.config/habito/ ~/.config
 ln -sf ~/.dotfiles/.config/htop/ ~/.config
 ln -sf ~/.dotfiles/.config/lf/ ~/.config
 ln -sf ~/.dotfiles/.config/mpv/ ~/.config
-ln -sf ~/.dotfiles/.config/neofetch/ ~/.config
 ln -sf ~/.dotfiles/.config/nvim/ ~/.config
 ln -sf ~/.dotfiles/.config/qtile/ ~/.config
 ln -sf ~/.dotfiles/.config/rofi/ ~/.config
@@ -23,7 +20,6 @@ ln -sf ~/.dotfiles/.config/fish/ ~/.config
 ln -sf ~/.dotfiles/.config/tmux/ ~/.config
 
 ln -sf ~/.dotfiles/.config/akregatorrc ~/.config
-ln -sf ~/.dotfiles/.config/hyfetch.json ~/.config
 ln -sf ~/.dotfiles/.config/mimeapps.list ~/.config
 ln -sf ~/.dotfiles/.config/picom.conf ~/.config
 

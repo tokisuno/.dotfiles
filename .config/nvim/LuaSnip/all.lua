@@ -18,23 +18,29 @@ return {
         { i(1), i(2), i(3), i(4) }
         )
     ),
-    s({trig="tt", dscr="Expands 'tt' into '\texttt{}'"},
+    s({trig=";tt", dscr="Expands 'tt' into '\texttt{}'"},
       fmta(
         "\\texttt{<>}",
         { i(1) }
       )
     ),
-    s({trig="tsc", dscr="Expands 'tsc' into '\textsc{}'"},
+    s({trig=";tit", dscr="Expands 'tit' into '\textit{}'"},
+      fmta(
+        "\\textit{<>}",
+        { i(1) }
+      )
+    ),
+    s({trig=";tsc", dscr="Expands 'tsc' into '\textsc{}'"},
       fmta(
         "\\textsc{<>}",
         { i(1) }
       )
     ),
-    s({trig=";beg", dscr="creates '\begin thing'"},
+    s({trig=";sta", dscr="creates '\begin thing'"},
       fmta(
         [[
             \begin{<>}
-
+                
             \end{<>}
         ]],
         { i(1), rep(1) }
@@ -48,4 +54,41 @@ return {
         { i(1) }
       )
     ),
+    s({trig=";f", dscr="quotation marks", snippetType="autosnippet"},
+      fmta(
+        [[
+            ``<>''
+        ]],
+        { i(1) }
+      )
+    ),
+    s({trig=";ci", dscr="citation", snippetType="autosnippet"},
+      fmta(
+        [[
+            \cite{<>}
+        ]],
+        { i(1) }
+      )
+    ),
+    s({trig=";art", dscr="citation", snippetType="autosnippet"},
+      fmta(
+        [[
+          @article{<>,
+            title={<>},
+            author={<>},
+            journal={<>},
+            volume={<>},
+            pages={<>},
+            year={<>},
+            publisher={<>},
+            doi={<>},
+          },
+        ]],
+        { i(1), i(2), i(3), i(4), i(5), i(6), i(7), i(8), i(9) }
+      )
+    ),
+
+
+
 }
+

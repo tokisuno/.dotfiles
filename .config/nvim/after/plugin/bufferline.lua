@@ -3,7 +3,7 @@ require("bufferline").setup{
         themable = true,
         numbers = "ordinal",
         indicator = "underline",
-        separator_style = "slope",
+        separator_style = "thin",
         diagnostics = "nvim_lsp"
     }
 }

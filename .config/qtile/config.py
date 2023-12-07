@@ -45,14 +45,17 @@ keys = [
     Key([mod], "s", lazy.next_screen(), desc="toggles screen"),
     Key([mod, "shift"], "Return", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack"),
 
+    # Attaching to tmux sessions
+    Key([mod, "control"], "1", lazy.spawn('fish -c "kitty -e tmux attach-session -t term"'), desc="Launch terminal"),
+    Key([mod, "control"], "2", lazy.spawn('fish -c "kitty -e tmux attach-session -t alt-term"'), desc="Launch terminal"),
+
+
     # Launching programs
-    Key([mod], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t term"'), desc="Launch terminal"),
     Key([mod], "c", lazy.spawn(file_manager), desc="Launch file manager"),
     Key([mod], "p", lazy.spawn('rofi -modes "drun,run" -show drun'), desc="Launch rofi"),
     Key([mod], "w", lazy.spawn(browser), desc="Launch browser"),
     Key([mod, "control"], "f", lazy.spawn(email), desc="Spawn email"),
     Key([mod, "control", "shift"], "s", lazy.spawn("systemctl suspend"), desc="suspends system"),
-    Key([mod, "shift"], "Return", lazy.spawn('fish -c "alacritty -e tmux attach-session -t alt-term"')),
     Key([], "Print", lazy.spawn("flameshot gui")),
     Key([mod], "i", lazy.spawn("zathura ~/Sync/university/ipa.pdf")),
 
@@ -77,7 +80,6 @@ keys = [
 
     # Anki Card Creation Hotkeys
     KeyChord([mod], "d", [
-        Key([], "c", lazy.spawn(os.path.expanduser("~/.local/share/scripts/anki_cla"), shell=True)),
         Key([], "j", lazy.spawn(os.path.expanduser("~/.local/share/scripts/anki_jp"), shell=True))
     ]),
 ]
@@ -117,7 +119,7 @@ keys.extend([
 # LAYOUT STUFF #
 # ------------ #
 def init_layout_theme():
-    return {"margin": 8,
+    return {"margin": 16,
             "border_width": 2,
             "border_focus": "#85b4ea",
             "border_normal": "#7c818c"}
@@ -192,7 +194,7 @@ screens = [
                 widget.Clock(format="%Y-%m-%d %H:%M"),
                 widget.Sep(),
                 widget.UPowerWidget(),
-            ], 
+            ],
             24,
         ),
     ),

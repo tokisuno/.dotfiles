@@ -6,19 +6,19 @@ session="term"
 session_exists=$(tmux list-sessions | grep $session)
 if [ "$session_exists" = "" ]
 then
-    tmux new-session -d -s $session
-    tmux rename-window -t 0 'one'
-    tmux new-window -t $session:1 -n 'two'
-    tmux new-window -t $session:2 -n 'tree'
+  tmux new-session -d -s $session
+  tmux rename-window -t 0 ':3'
+  # tmux new-window -t $session:1 -n 'two'
+  # tmux new-window -t $session:2 -n 'tree'
 fi
 
 session="alt-term"
 session_exists=$(tmux list-sessions | grep $session)
 if [ "$session_exists" = "" ]
 then
-    tmux new-session -d -s $session
-    tmux rename-window -t 0 'uno'
-    tmux new-window -t $session:1 -n 'dos'
+  tmux new-session -d -s $session
+  tmux rename-window -t 0 ':p'
+  # tmux new-window -t $session:1 -n 'dos'
 fi
 
 tmux source-file ~/.config/tmux/tmux.conf

@@ -18,6 +18,7 @@ ks.set("n", "<leader>'f", ":TZFocus<CR>", {})
 ks.set("n", "<leader>'m", ":TZMinimalist<CR>", {})
 ks.set("n", "<leader>'a", ":TZAtaraxis<CR>", {})
 ks.set("n", "<leader>'r", ":Twilight<CR>")
+ks.set("n", "<leader>wor", ":VimtexCountWords<CR>")
 
 -- primeagen binds
 ks.set("i", "<C-c>", "<Esc>")
@@ -71,21 +72,18 @@ ks.set('t', '<C-h>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 vim.keymap.set('n', '<Leader>L', '<Cmd>lua require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/LuaSnip/"})<CR>')
 
 vim.cmd[[
-
-" Expand or jump in insert mode
-imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
-
-" Expand snippets in insert mode with Tab
-imap <silent><expr> <Tab> luasnip#expandable() ? '<Plug>luasnip-expand-snippet' : '<Tab>'
-
-" Jump forward in through tabstops in insert and visual mode with Control-f
-imap <silent><expr> <C-r> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-r>'
-smap <silent><expr> <C-r> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-r>'
-
-" For changing choices in choiceNodes (not strictly necessary for a basic setup).
-imap <silent><expr> <C-e> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-e>'
-smap <silent><expr> <C-e> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-e>'
-
-
+  " Expand or jump in insert mode
+  imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
+  
+  " Expand snippets in insert mode with Tab
+  imap <silent><expr> <Tab> luasnip#expandable() ? '<Plug>luasnip-expand-snippet' : '<Tab>'
+  
+  " Jump forward in through tabstops in insert and visual mode with Control-f
+  imap <silent><expr> <C-r> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-r>'
+  smap <silent><expr> <C-r> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<C-r>'
+  
+  " For changing choices in choiceNodes (not strictly necessary for a basic setup).
+  imap <silent><expr> <C-e> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-e>'
+  smap <silent><expr> <C-e> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-e>'
 ]]
 

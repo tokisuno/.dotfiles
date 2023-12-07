@@ -1,6 +1,10 @@
 if status is-interactive
     alias make50='make CC=clang CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow" LDLIBS="-lcrypt -lcs50 -lm"'
 
+    function tab --wraps zathura --description "lmao"
+        devour tabbed -c zathura {$argv} -e
+    end
+
     # better ls command 
     alias lf='lfrun'
     alias ls='eza'
@@ -12,9 +16,9 @@ if status is-interactive
     alias lS='eza -1'
     alias lt='eza --tree --level=2'
     alias lA='ls -a'
+    alias work='cd ~/Sync'
 
     alias course='cd ~/Sync/mac/41 && lA'
-    alias bits='vim ~/Sync/wiki/habits.md'
     alias leer='cd ~/Sync/read/'
     
     # vim shit
@@ -44,7 +48,6 @@ if status is-interactive
     # alias code='cd ~/projects/repos'
 
     # tomatoshell
-    alias goals='vim ~/Sync/wiki/goals.md'
     alias doro='tomatoshell -t 50 -d 10 -n 10 -f'
     
 
@@ -54,7 +57,6 @@ if status is-interactive
     alias mpv='devour mpv' 
     alias gay="pridefetch -f bisexual"
     alias vid='cd ~/Videos/ && lf'
-    alias wiki='vim ~/Sync/wiki/index.md'
     alias weron='xrandr --auto && xrandr --output eDP1 --left-of DP2-2 && nitrogen --restore'
     alias desktop='xrandr --auto && xrandr --output eDP1 --off && nitrogen --restore' 
     alias ka='killall'
