@@ -49,7 +49,6 @@ keys = [
     Key([mod, "control"], "1", lazy.spawn('fish -c "kitty -e tmux attach-session -t term"'), desc="Launch terminal"),
     Key([mod, "control"], "2", lazy.spawn('fish -c "kitty -e tmux attach-session -t alt-term"'), desc="Launch terminal"),
 
-
     # Launching programs
     Key([mod], "c", lazy.spawn(file_manager), desc="Launch file manager"),
     Key([mod], "p", lazy.spawn('rofi -modes "drun,run" -show drun'), desc="Launch rofi"),
@@ -58,6 +57,7 @@ keys = [
     Key([mod, "control", "shift"], "s", lazy.spawn("systemctl suspend"), desc="suspends system"),
     Key([], "Print", lazy.spawn("flameshot gui")),
     Key([mod], "i", lazy.spawn("zathura ~/Sync/university/ipa.pdf")),
+    Key([mod], "o", lazy.spawn(os.path.expanduser("sxiv ~/Sync/backgrounds/roles.png"), shell=True)),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),

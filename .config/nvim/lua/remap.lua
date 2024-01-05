@@ -11,6 +11,11 @@ vim.g.maplocalleader = ","
 local ks = vim.keymap
 local opts = { noremap = true, silent = true }
 
+-- fzf
+ks.set("n", "<leader>fi", ":Files<CR>")
+ks.set("n", "<leader>fig", ":GFiles<CR>")
+ks.set("n", "<leader>bf", ":Buffers<CR>")
+
 -- writing
 ks.set("n", "<leader>'n", ":TZNarrow<CR>", {})
 ks.set("v", "<leader>'n", ":'<,'>TZNarrow<CR>", {})

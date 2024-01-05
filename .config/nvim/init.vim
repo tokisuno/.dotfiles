@@ -35,6 +35,7 @@ set noswapfile nobackup
 lua vim.opt.undodir=os.getenv("HOME") .. "/.vim/undodir"
 lua vim.opt.isfname:append("@-@")
 set undofile 
+
 set nohlsearch incsearch
 set smartcase smarttab smartindent breakindent
 set showcmd showmode showmatch
