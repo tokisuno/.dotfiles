@@ -1,3 +1,0 @@
-#!/bin/bash
-
-curl localhost:8765 -X POST -d "{\"action\": \"guiAddCards\", \"version\": 6, \"params\": {\"note\": {\"deckName\": \"personal_jp\", \"modelName\": \"super_cool_japanese_card_type\", \"tags\":[]}}}"

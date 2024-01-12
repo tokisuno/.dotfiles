@@ -1,0 +1,3 @@
+#!/bin/bash
+SELECTED=$(ls ~/.local/share/scripts/anki_scripts/ | rofi -dmenu -drun -p "Run: ")
+/bin/bash $HOME/.local/share/scripts/anki_scripts/$SELECTED

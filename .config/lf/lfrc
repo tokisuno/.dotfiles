@@ -18,8 +18,5 @@ cmd mkdir ${{
 }}
 
 map md mkdir
-map gD cd ~/downloads
-map gd cd ~/Sync/academics/linguistics/
-map gs cd ~/Sync/academics/linguistics/syntax/
 
 

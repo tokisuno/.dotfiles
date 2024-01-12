@@ -1,7 +1,10 @@
 if status is-interactive
     alias make50='make CC=clang CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow" LDLIBS="-lcrypt -lcs50 -lm"'
-
-    function tab --wraps zathura --description "lmao"
+  
+    function zkn --wraps zk --description "for making notes fast"
+      zk new --title "$argv"
+    end
+    function tab --wraps zathura --description "to tab pdfs"
         devour tabbed -c zathura {$argv} -e
     end
 
@@ -16,27 +19,17 @@ if status is-interactive
     alias lS='eza -1'
     alias lt='eza --tree --level=2'
     alias lA='ls -a'
-    alias work='cd ~/Sync'
-
-    alias course='cd ~/Sync/mac/41 && lA'
-    alias leer='cd ~/Sync/read/'
     
     # vim shit
     alias vim='nvim'
     alias vi='/bin/vim'
     alias rip='cd ~/.local/share/scripts' 
-    alias sfh='cd ~/.config/fish && fzfw'
-    alias vmn='cd ~/.config/nvim/ && fzfw'
     alias snips="vim ~/.config/nvim/LuaSnip/tex.lua"
 
     #reading
     alias so="devour sioyek " 
     alias sz="devour zathura "
-    alias genki="sz ~/Sync/read/zzz/langs/jp/genki2.pdf"
     
-    alias code="cd ~/projects/repos/"
-    # not working and idk why
-    # alias thing='xmodmap -e "keycode 22 = backslash bar" && xmodmap -e "keycode 51 = BackSpace'
     # for blog 
     alias sdfh="cd ~/projects/repos/blog"
     alias comt="hugo server -D"
@@ -47,18 +40,11 @@ if status is-interactive
     alias py='python'
     # alias code='cd ~/projects/repos'
 
-    # tomatoshell
-    alias doro='tomatoshell -t 50 -d 10 -n 10 -f'
-    
-
     # misc
     alias back="cd .."
     alias lkj='ssh server@192.168.0.203'
     alias mpv='devour mpv' 
     alias gay="pridefetch -f bisexual"
-    alias vid='cd ~/Videos/ && lf'
-    alias weron='xrandr --auto && xrandr --output eDP1 --left-of DP2-2 && nitrogen --restore'
-    alias desktop='xrandr --auto && xrandr --output eDP1 --off && nitrogen --restore' 
     alias ka='killall'
     alias syu='sudo pacman -Syu'
 

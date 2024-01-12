@@ -2,6 +2,7 @@ require("true-zen.ataraxis")
 require("true-zen.minimalist")
 require("true-zen.narrow")
 require("true-zen.focus")
+local builtin = require('telescope.builtin')
 
 -- rebinds --
 vim.g.mapleader = " "
@@ -12,9 +13,21 @@ local ks = vim.keymap
 local opts = { noremap = true, silent = true }
 
 -- fzf
-ks.set("n", "<leader>fi", ":Files<CR>")
-ks.set("n", "<leader>fig", ":GFiles<CR>")
-ks.set("n", "<leader>bf", ":Buffers<CR>")
+-- ks.set("n", "<leader>oiu", ":Files<CR>")
+-- ks.set("n", "<leader>bf", ":Buffers<CR>")
+
+-- telescope
+ks.set('n', '<leader>ff', builtin.find_files, {})
+ks.set('n', '<leader>fg', builtin.live_grep, {})
+ks.set('n', '<leader>fb', builtin.buffers, {})
+ks.set('n', '<leader>fh', builtin.help_tags, {})
+
+-- zk-nvim
+ks.set("n", "<leader>zn", "<Cmd>ZkNew { title = vim.fn.input('Title: ') }<CR>", opts)  -- Create a new note after asking for its title.
+ks.set("n", "<leader>zo", "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", opts) -- Open notes.
+ks.set("n", "<leader>zt", "<Cmd>ZkTags<CR>", opts) -- Open notes associated with the selected tags.
+ks.set("n", "<leader>zf", "<Cmd>ZkNotes { sort = { 'modified' }, match = { vim.fn.input('Search: ') } }<CR>", opts) -- Search for the notes matching a given query.
+ks.set("v", "<leader>zf", ":'<,'>ZkMatch<CR>", opts) -- Search for the notes matching the current visual selection.
 
 -- writing
 ks.set("n", "<leader>'n", ":TZNarrow<CR>", {})
@@ -58,10 +71,9 @@ ks.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 -- custom binds
 ks.set('n', '<leader>wf', "<cmd>w<cr>")
 ks.set('n', '<leader>wer', "<cmd>wq<cr>")
-ks.set('n', '<leader>s', "<>so<cr>")
+ks.set('n', '<leader>s', ":so<cr>")
 ks.set('n', 'j', 'gj')
 ks.set('n', 'k', 'gk')
-ks.set('n', '<F5>', vim.cmd.UndotreeToggle)
 ks.set('n', '<leader>jf', vim.cmd.NvimTreeToggle)
 ks.set('n', '<A-,>', vim.cmd.bprev)
 ks.set('n', '<A-.>', vim.cmd.bnext)
@@ -75,7 +87,6 @@ ks.set('t', '<C-h>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
 -- luasnips
 vim.keymap.set('n', '<Leader>L', '<Cmd>lua require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/LuaSnip/"})<CR>')
-
 vim.cmd[[
   " Expand or jump in insert mode
   imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 

@@ -1,11 +1,12 @@
 lua vim.opt.termguicolors = true
-
 lua vim.g.mapleader = " "
 lua vim.g.maplocalleader = ","
+lua require('notational-fzf-vim')
 lua require('lazy-config')
 lua require('remap')
+lua require('wiki')
 lua require('colorizer').setup()
-lua require("luasnip.loaders.from_lua").lazy_load({paths = "~/.config/nvim/LuaSnip/"})
+lua require('luasnip.loaders.from_lua').lazy_load({paths = '~/.config/nvim/LuaSnip/'})
 colorscheme dracula-soft
 
 set wildmenu
@@ -17,7 +18,6 @@ filetype on
 filetype plugin on 
 syntax on
 syntax enable
-let R_assign = 0
 
 set guicursor=""
 set nu 
@@ -36,6 +36,11 @@ lua vim.opt.undodir=os.getenv("HOME") .. "/.vim/undodir"
 lua vim.opt.isfname:append("@-@")
 set undofile 
 
+let g:netrw_preview = 1
+let g:netrw_preview   = 1
+let g:netrw_liststyle = 3
+let g:netrw_winsize   = 30
+
 set nohlsearch incsearch
 set smartcase smarttab smartindent breakindent
 set showcmd showmode showmatch
@@ -43,6 +48,7 @@ set showcmd showmode showmatch
 set history=100
 set mouse=a
 set t_Co=256
+let g:nv_search_paths = ['~/Sync/zet']
 
 lua vim.g['tex_flavor'] = 'latex'
 lua vim.g['vimtex_compiler_latexmk_engines'] = {['_'] = '-xelatex'}

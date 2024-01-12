@@ -9,19 +9,49 @@ return {
   {'nvim-lualine/lualine.nvim'},
   {'nvim-treesitter/nvim-treesitter'},
   {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
-  {'junegunn/fzf'},
-  {'junegunn/fzf.vim'},
   -- navigation
   {"numToStr/FTerm.nvim"},
   -- writing,
-  {'preservim/tagbar'},
   {'vim-pandoc/vim-pandoc'},
   {'Lukesmithxyz/vimling'},
   {'Pocco81/true-zen.nvim'},
   {'lervag/vimtex'},
   {'xuhdev/vim-latex-live-preview'},
-  { "iamcco/markdown-preview.nvim", build = "cd app && npm install", init = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, },
-  {'vim-pandoc/vim-pandoc-syntax'},
+  {'vimwiki/vimwiki'},
+  {'zk-org/zk-nvim',
+    config = function()
+      require("zk").setup({
+        picker = "select",
+        lsp = {
+          config = {
+            cmd = { "zk", "lsp" },
+            name = "zk",
+          },
+          auto_attach = {
+            enabled = true,
+            filetypes = { "markdown" },
+          },
+        },
+      })
+    end
+  },
+  -- {'jghauser/papis.nvim',
+  --   dependencies = {
+  --     "kkharji/sqlite.lua",
+  --     "nvim-lua/plenary.nvim",
+  --     "MunifTanjim/nui.nvim",
+  --     "nvim-treesitter/nvim-treesitter",
+  --   },
+  --   config = function()
+  --     require("papis").setup({
+  --     -- Your configuration goes here
+  --     })
+  --   end,
+  -- },
+  {'junegunn/fzf'},
+  {'junegunn/fzf.vim'},
+  {'alok/notational-fzf-vim'},
+  -- lsp
   {'williamboman/mason.nvim'},
   {'williamboman/mason-lspconfig.nvim'},
   {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
@@ -29,5 +59,4 @@ return {
   {'hrsh7th/cmp-nvim-lsp'},
   {'hrsh7th/nvim-cmp'},
   {'L3MON4D3/LuaSnip'},
-  {'jalvesaq/Nvim-R', lazy = false},
 }

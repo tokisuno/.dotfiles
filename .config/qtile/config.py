@@ -46,8 +46,9 @@ keys = [
     Key([mod, "shift"], "Return", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack"),
 
     # Attaching to tmux sessions
-    Key([mod, "control"], "1", lazy.spawn('fish -c "kitty -e tmux attach-session -t term"'), desc="Launch terminal"),
-    Key([mod, "control"], "2", lazy.spawn('fish -c "kitty -e tmux attach-session -t alt-term"'), desc="Launch terminal"),
+    Key([mod], "y", lazy.spawn('fish -c "kitty -e tmux attach-session -t term"'), desc="Launch terminal"),
+    Key([mod], "u", lazy.spawn('fish -c "kitty -e tmux attach-session -t alt-term"'), desc="Launch terminal"),
+    Key([mod], "d", lazy.spawn(os.path.expanduser("~/.local/share/scripts/script_launcher")), desc="launch scriopt launcher"),
 
     # Launching programs
     Key([mod], "c", lazy.spawn(file_manager), desc="Launch file manager"),
@@ -77,11 +78,6 @@ keys = [
     Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"), desc="Mute/Unmute Volume"),    # multiple stack panes
     Key([], "XF86MonBrightnessUp", lazy.spawn('xbacklight -inc 10'), desc="Raise brightness"),
     Key([], "XF86MonBrightnessDown", lazy.spawn('xbacklight -dec 10'), desc="Lower brightness"),
-
-    # Anki Card Creation Hotkeys
-    KeyChord([mod], "d", [
-        Key([], "j", lazy.spawn(os.path.expanduser("~/.local/share/scripts/anki_jp"), shell=True))
-    ]),
 ]
 
 # ---------- #
@@ -125,6 +121,14 @@ def init_layout_theme():
             "border_normal": "#7c818c"}
 
 layout_theme = init_layout_theme()
+def init_vert_layout():
+    return{"margin": 8,
+           "border_width": 2,
+           "border_focus": "#85b4ea",
+           "border_normal": "#7c818c"}
+
+vert_theme = init_vert_layout()
+
 floating_layout = layout.Floating(
     border_width=0,
     border_focus="#000000",
@@ -132,6 +136,7 @@ floating_layout = layout.Floating(
 )
 layouts = [
     layout.MonadTall(**layout_theme),
+    layout.VerticalTile(**vert_theme),
     layout.Max(),
 ]
 # -------------------- #

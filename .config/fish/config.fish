@@ -10,11 +10,13 @@ if status is-interactive
   export CFLAGS="-ferror-limit=1 -gdwarf-4 -ggdb3 -O0 -Wall -Werror -Wextra -Wno-gnu-folding-constant -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable -Wshadow"
   export LDLIBS="-lcrypt -lcs50 -lm"
   export NVM_DIR=~/.nvm
+  export EDITOR="/usr/bin/nvim"
   # export DISCORD_TOKEN=$(cat ~/Sync/priv_keys/discord)
   export TMUX_POWERLINE_THEME=my-theme
   # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use # This loads nvm
-  export ZK_NOTEBOOK_DIR=$HOME/Sync/zet
+  set -gx ZK_NOTEBOOK_DIR $HOME/Sync/zet
   
+  bind \cd delete-char
   set -U fish_history_ignore_spaces
   set -U fish_history_ignore_duplicates
   set -U fish_history_save
