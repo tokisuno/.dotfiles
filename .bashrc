@@ -6,9 +6,22 @@ esac
 
 [[ $- != *i* ]] && return
 
+# pdf viewing 
 sz () { 
   zathura $1 & 
 }
+tab () {
+  tabbed -c zathura "$1" -e &
+}
+
+# zettelkasten 
+zkn () {
+  zk new --title "$1"
+}
+zlkj () {
+  zk list --interactive -t $1
+}
+  
 
 
 export OSH="$HOME/.oh-my-bash"
@@ -55,10 +68,6 @@ alias vi='/bin/vim'
 alias rip='cd ~/.local/share/scripts' 
 alias snips="vim ~/.config/nvim/LuaSnip/tex.lua"
 
-#reading
-alias so="devour sioyek " 
-# alias sz="devour zathura "
-
 # for blog 
 alias sdfh="cd ~/projects/repos/blog"
 alias comt="hugo server -D"
@@ -74,7 +83,10 @@ alias lkj='ssh server@192.168.0.203'
 alias mpv='devour mpv' 
 alias gay="pridefetch -f bisexual"
 alias ka='killall'
-alias syu='sudo pacman -Syu'
+alias syu="sudo pacman -Syu"
+
+# zettelkasten
+alias zlk="zk list --interactive"
 
 # OMB settings
 PS1='[\u@\h \W]\$ '

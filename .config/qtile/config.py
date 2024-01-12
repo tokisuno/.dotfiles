@@ -46,8 +46,8 @@ keys = [
     Key([mod, "shift"], "Return", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack"),
 
     # Attaching to tmux sessions
-    Key([mod], "y", lazy.spawn('fish -c "kitty -e tmux attach-session -t term"'), desc="Launch terminal"),
-    Key([mod], "u", lazy.spawn('fish -c "kitty -e tmux attach-session -t alt-term"'), desc="Launch terminal"),
+    Key([mod], "y", lazy.spawn('bash -c "kitty -e tmux attach-session -t term"'), desc="Launch terminal"),
+    Key([mod], "u", lazy.spawn('bash -c "kitty -e tmux attach-session -t alt-term"'), desc="Launch terminal"),
     Key([mod], "d", lazy.spawn(os.path.expanduser("~/.local/share/scripts/script_launcher")), desc="launch scriopt launcher"),
 
     # Launching programs
