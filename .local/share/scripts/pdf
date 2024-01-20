@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+OUTPUT=$(fzf)
+if [[ -n $OUTPUT ]]
+then 
+  zathura $OUTPUT &
+else 
+  printf -- "exiting..\n"
+  exit
+fi

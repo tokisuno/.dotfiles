@@ -1,0 +1,1 @@
+/home/skinnyboot/.config/emacs/elpaca/repos/writeroom-mode/writeroom-mode.el

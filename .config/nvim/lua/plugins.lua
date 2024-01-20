@@ -12,9 +12,9 @@ return {
   -- navigation
   {"numToStr/FTerm.nvim"},
   -- writing,
+  {'Pocco81/true-zen.nvim'},
   {'vim-pandoc/vim-pandoc'},
   {'Lukesmithxyz/vimling'},
-  {'Pocco81/true-zen.nvim'},
   {'lervag/vimtex'},
   {'xuhdev/vim-latex-live-preview'},
   {'vimwiki/vimwiki'},

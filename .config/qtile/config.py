@@ -115,18 +115,18 @@ keys.extend([
 # LAYOUT STUFF #
 # ------------ #
 def init_layout_theme():
-    return {"margin": 16,
+    return {"margin": 12,
             "border_width": 2,
             "border_focus": "#85b4ea",
             "border_normal": "#7c818c"}
 
 layout_theme = init_layout_theme()
+
 def init_vert_layout():
-    return{"margin": 8,
+    return{"margin": 6,
            "border_width": 2,
            "border_focus": "#85b4ea",
            "border_normal": "#7c818c"}
-
 vert_theme = init_vert_layout()
 
 floating_layout = layout.Floating(
@@ -137,7 +137,7 @@ floating_layout = layout.Floating(
 layouts = [
     layout.MonadTall(**layout_theme),
     layout.VerticalTile(**vert_theme),
-    layout.Max(),
+#    layout.Max(),
 ]
 # -------------------- #
 # WIDGET CUSTOMIZATION #
@@ -152,10 +152,6 @@ powerline = {
     "decorations": [
         PowerLineDecoration()
     ]}
-weather = dict(
-    update_interval=60,
-    metric=True,
-    format='{condition_text} {condition_temp}°')
 
 widget_defaults = dict(
     font="JetBrains Mono Nerd Font",
@@ -182,17 +178,6 @@ screens = [
                 widget.Prompt(),
                 widget.Sep(),
                 widget.WindowName(markup=True),
-                # widget.Wttr(
-                #     lang='en',
-                #     location={'Hamilton Ontario': 'Uni'},
-                #     format='%l: %C, temp: %t, feels: %f',
-                #     units='m',
-                #     update_interval=30,
-                # ),
-                # widget.Sep(),
-                # widget.PulseVolume(fmt='vol:{}', update_interval=0.2, padding=5),
-                widget.Sep(),
-                widget.Net(),
                 widget.Sep(),
                 widget.Systray(),
                 widget.Sep(),
@@ -200,7 +185,7 @@ screens = [
                 widget.Sep(),
                 widget.UPowerWidget(),
             ],
-            24,
+            20,
         ),
     ),
 ]

@@ -1,0 +1,1 @@
+/home/skinnyboot/.config/emacs/elpaca/repos/helm-bibtex/bibtex-completion.el

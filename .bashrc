@@ -6,26 +6,8 @@ esac
 
 [[ $- != *i* ]] && return
 
-# pdf viewing 
-sz () { 
-  zathura $1 & 
-}
-tab () {
-  tabbed -c zathura "$1" -e &
-}
-
-# zettelkasten 
-zkn () {
-  zk new --title "$1"
-}
-zlkj () {
-  zk list --interactive -t $1
-}
-  
-
 
 export OSH="$HOME/.oh-my-bash"
-
 # env vars
 export PAGER=less
 export GLFW_IM_MODULE=ibus
@@ -39,6 +21,9 @@ export NVM_DIR=~/.nvm
 export EDITOR="/usr/bin/nvim"
 export TMUX_POWERLINE_THEME=my-theme
 export PATH="$PATH:$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.local/share/scripts:$HOME/go:$NPM_PACKAGES/bin"
+
+# FZF
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --inline-info" 
 
 # npm shit
 export NPM_DIR="$HOME/.npm-data"
@@ -97,19 +82,36 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS='[yyyy-mm-dd]'
 OMB_USE_SUDO=true
 
+# functions
+sz () { 
+  zathura "$1" & 
+}
+tab () {
+  tabbed -c zathura "$1" -e &
+}
+2pdf () {
+  pandoc $1 -o $1.pdf
+}
+
+# zettelkasten 
+zkn () {
+  zk new --title "$1"
+}
+zlkj () {
+  zk list --interactive -t $1
+}
+
 completions=(
   git
   composer
   ssh
 )
 
-# aliases=(
-#   general
-# )
-
 plugins=(
   git
   bashmarks
 )
 
+source ~/.local/share/scripts/fzf_scripts/completion.bash
+source ~/.local/share/scripts/fzf_scripts/key-bindings.bash
 source "$OSH"/oh-my-bash.sh

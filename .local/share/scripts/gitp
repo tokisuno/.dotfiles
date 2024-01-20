@@ -1,4 +1,2 @@
 #!/bin/bash
-
 xclip -sel c ~/Sync/priv_keys/github
-xclip -sel c ~/qjtd7-veo9h/priv_keys/github

@@ -1,0 +1,1 @@
+/home/skinnyboot/.config/emacs/elpaca/repos/modus-themes/modus-operandi-tinted-theme.el

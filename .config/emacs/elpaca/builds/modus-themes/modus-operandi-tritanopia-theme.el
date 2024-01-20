@@ -1,0 +1,1 @@
+/home/skinnyboot/.config/emacs/elpaca/repos/modus-themes/modus-operandi-tritanopia-theme.el
