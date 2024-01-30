@@ -1,0 +1,1 @@
+/home/skinnyboot/.config/emacs/elpaca/repos/ebib/ebib-ivy.el

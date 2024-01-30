@@ -8,7 +8,6 @@ local extras = require("luasnip.extras")
 local rep = extras.rep
 return {
   -- Other
-  
 
   -- LaTeX
   s({trig=";glos", dscr="creating glosses"},

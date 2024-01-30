@@ -54,8 +54,8 @@ ks.set("n", "<localleader><localleader>i", ":call ToggleIPA()<CR>", {})
 ks.set("i", "<localleader><localleader>i", "<esc>:call ToggleIPA()<CR>a", {})
 
 -- visual/replacement binds
--- ks.set("n", "<C-d>", "<C-d>zz")
--- ks.set("n", "<C-u>", "<C-u>zz")
+ks.set("n", "<C-d>", "<C-d>zz")
+ks.set("n", "<C-u>", "<C-u>zz")
 ks.set("n", "n", "nzzzv")
 ks.set("n", "N", "Nzzzv")
 ks.set("n", "<C-k>", "<cmd>cnext<CR>zz")

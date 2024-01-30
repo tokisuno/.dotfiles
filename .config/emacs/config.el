@@ -3,75 +3,71 @@
 (defvar elpaca-builds-directory (expand-file-name "builds/" elpaca-directory))
 (defvar elpaca-repos-directory (expand-file-name "repos/" elpaca-directory))
 (defvar elpaca-order '(elpaca :repo "https://github.com/progfolio/elpaca.git"
-			      :ref nil
-			      :files (:defaults "elpaca-test.el" (:exclude "extensions"))
-			      :build (:not elpaca--activate-package)))
+                            :ref nil
+                            :files (:defaults "elpaca-test.el" (:exclude "extensions"))
+                            :build (:not elpaca--activate-package)))
 (let* ((repo  (expand-file-name "elpaca/" elpaca-repos-directory))
-       (build (expand-file-name "elpaca/" elpaca-builds-directory))
-       (order (cdr elpaca-order))
-       (default-directory repo))
-  (add-to-list 'load-path (if (file-exists-p build) build repo))
-  (unless (file-exists-p repo)
+        (build (expand-file-name "elpaca/" elpaca-builds-directory))
+        (order (cdr elpaca-order))
+        (default-directory repo))
+(add-to-list 'load-path (if (file-exists-p build) build repo))
+(unless (file-exists-p repo)
     (make-directory repo t)
     (when (< emacs-major-version 28) (require 'subr-x))
     (condition-case-unless-debug err
-	(if-let ((buffer (pop-to-buffer-same-window "*elpaca-bootstrap*"))
-		 ((zerop (call-process "git" nil buffer t "clone"
-				       (plist-get order :repo) repo)))
-		 ((zerop (call-process "git" nil buffer t "checkout"
-				       (or (plist-get order :ref) "--"))))
-		 (emacs (concat invocation-directory invocation-name))
-		 ((zerop (call-process emacs nil buffer nil "-Q" "-L" "." "--batch"
-				       "--eval" "(byte-recompile-directory \".\" 0 'force)")))
-		 ((require 'elpaca))
-		 ((elpaca-generate-autoloads "elpaca" repo)))
-	    (progn (message "%s" (buffer-string)) (kill-buffer buffer))
-	  (error "%s" (with-current-buffer buffer (buffer-string))))
-      ((error) (warn "%s" err) (delete-directory repo 'recursive))))
-  (unless (require 'elpaca-autoloads nil t)
+        (if-let ((buffer (pop-to-buffer-same-window "*elpaca-bootstrap*"))
+                ((zerop (call-process "git" nil buffer t "clone"
+                                        (plist-get order :repo) repo)))
+                ((zerop (call-process "git" nil buffer t "checkout"
+                                        (or (plist-get order :ref) "--"))))
+                (emacs (concat invocation-directory invocation-name))
+                ((zerop (call-process emacs nil buffer nil "-Q" "-L" "." "--batch"
+                                        "--eval" "(byte-recompile-directory \".\" 0 'force)")))
+                ((require 'elpaca))
+                ((elpaca-generate-autoloads "elpaca" repo)))
+            (progn (message "%s" (buffer-string)) (kill-buffer buffer))
+        (error "%s" (with-current-buffer buffer (buffer-string))))
+    ((error) (warn "%s" err) (delete-directory repo 'recursive))))
+(unless (require 'elpaca-autoloads nil t)
     (require 'elpaca)
     (elpaca-generate-autoloads "elpaca" repo)
     (load "./elpaca-autoloads")))
 (add-hook 'after-init-hook #'elpaca-process-queues)
 (elpaca `(,@elpaca-order))
-
-;; Install a package via the elpaca macro
-;; See the "recipes" section of the manual for more details.
-
-;; (elpaca example-package)
-
-;; Install use-package support
 (elpaca elpaca-use-package
-  ;; Enable :elpaca use-package keyword.
-  (elpaca-use-package-mode)
-  ;; Assume :elpaca t unless otherwise specified.
-  (setq elpaca-use-package-by-default t))
-
-;; Block until current queue processed.
+(elpaca-use-package-mode)
+(setq elpaca-use-package-by-default t))
 (elpaca-wait)
 
-;;When installing a package which modifies a form used at the top-level
-;;(e.g. a package which adds a use-package key word),
-;;use `elpaca-wait' to block until that package has been installed/configured.
-;;For example:
-;;(use-package general :demand t)
-;;(elpaca-wait)
+(defun reload-init-file ()
+  (interactive)
+  (load-file user-init-file)
+  (load-file user-init-file)
+  (load-theme 'timu-rouge t)
+  (customize-set-variable 'timu-rouge-mode-line-border t)
+  (customize-set-variable 'timu-rouge-org-intense-colors t))
 
 ;; Expands to: (elpaca evil (use-package evil :demand t))
 (use-package evil
+  :ensure t
   :init      ;; tweak evil's configuration before loading it
   (setq evil-want-integration t) ;; This is optional since it's already set to t by default.
+  (setq evil-respect-visual-line-mode t)
   (setq evil-want-keybinding nil)
+
   (setq evil-vsplit-window-right t)
   (setq evil-split-window-below t)
   (setq evil-want-C-u-scroll t)
+  :config
   (evil-mode))
+
 (use-package evil-collection
   :after evil
+  :ensure t
   :config
-  (setq evil-collection-mode-list '(dashboard dired ibuffer))
+  (setq evil-collection-mode-list '(dashboard dired ibuffer pdf))
   (evil-collection-init))
-(use-package evil-tutor)
+(with-eval-after-load 'pdf (evil-collection-pdf-setup))
 
 ;;Turns off elpaca-use-package-mode current declaration
 ;;Note this will cause the declaration to be interpreted immediately (not deferred).
@@ -79,58 +75,133 @@
 (use-package emacs :elpaca nil :config (setq ring-bell-function #'ignore))
 
 ;; Don't install anything. Defer execution of BODY
-(elpaca nil (message "deferred"))
+(elpaca nil (message "welcome"))
 
 (use-package general
-  :config
-  (general-evil-setup)
-  (evil-set-undo-system 'undo-redo)
-  ;; set up 'SPC' as the global leader key
-  (general-create-definer toki/leader-keys
-    :states '(normal insert visual emacs)
-    :keymaps 'override
-    :prefix "SPC" ;; set leader
-    :global-prefix "M-SPC") ;; access leader in insert mode
+:config
+(general-evil-setup)
+(evil-set-undo-system 'undo-redo)
+;; set up 'SPC' as the global leader key
+(general-create-definer toki/leader-keys
+  :states '(normal insert visual emacs)
+  :keymaps 'override
+  :prefix "SPC" ;; set leader
+  :global-prefix "M-SPC") ;; access leader in insert mode
 
-  (toki/leader-keys
-    "b" '(:ignore t :wk "buffer")
-    "bb" '(switch-to-buffer :wk "Switch buffer")
-    "bk" '(kill-this-buffer :wk "Kill this buffer")
-    "bn" '(next-buffer :wk "Next buffer")
-    "bp" '(previous-buffer :wk "Previous buffer")
-    "br" '(revert-buffer :wk "Reload buffer"))
+;; !! -- Keybinding Template -- !!
+;; Top line is always going to be a prefix/header for related commands
+;;   ex. Prefix+b = Buffer
+;;   Everything below that has to do with the buffer!
+(toki/leader-keys
+  "." '(find-file :wk "Find file")
+  "f c" '((lambda () (interactive) (find-file "~/.config/emacs/config.org")) :wk "Edit emacs config")
+  "f r" '(counsel-recentf :wk "Find recent files")
+  "TAB TAB" '(comment-line :wk "Comment lines"))
+
+(toki/leader-keys
+  "b" '(:ignore t :wk "Buffer")
+  "b b" '(switch-to-buffer :wk "Switch buffer")
+  "b i" '(ibuffer :wk "Ibuffer")
+  "b k" '(kill-this-buffer :wk "Kill this buffer")
+  "b n" '(next-buffer :wk "Next buffer")
+  "b p" '(previous-buffer :wk "Previous buffer")  
+  "b r" '(revert-buffer :wk "Reload buffer"))
+
+(toki/leader-keys
+  "e" '(:ignore t :wk "Evaluate")
+  "e b" '(eval-buffer :wk "Evaluate elisp in buffer")
+  "e d" '(eval-defun :wk "Evaluate defun containing or after point")
+  "e e" '(eval-expression :wk "Evaluate an elisp expression")
+  "e l" '(eval-last-sexp :wk "Evaluate elisp expression before point")
+  "e r" '(eval-region :wk "Evaluate elisp in region"))
+
+(toki/leader-keys
+  "h" '(:ignore t :wk "Help")
+  "h f" '(describe-function :wk "Describe function")
+  "h v" '(describe-variable :wk "Describe variable")
+  "h r r" '(reload-init-file :wk "Reload emacs config"))
+
+(toki/leader-keys
+  "t" '(:ignore t :wk "Toggle")
+  "t l" '(display-line-numbers-mode :wk "Toggle line numbers")
+  "t t" '(visual-line-mode :wk "Toggle truncated lines")
+  "t v" '(vterm-toggle :wk "Toggle vterm"))
+
+(toki/leader-keys
+  "w" '(:ignore t :wk "Windows")
+  ;; Window splits
+  "w c" '(evil-window-delete :wk "Close window")
+  "w n" '(evil-window-new :wk "New window")
+  "w s" '(evil-window-split :wk "Horizontal split window")
+  "w v" '(evil-window-vsplit :wk "Vertical split window")
+  ;; Window motions
+  "w h" '(evil-window-left :wk "Window left")
+  "w j" '(evil-window-down :wk "Window down")
+  "w k" '(evil-window-up :wk "Window up")
+  "w l" '(evil-window-right :wk "Window right")
+  "w w" '(evil-window-next :wk "Goto next window")
+  ;; Move Windows
+  "w H" '(buf-move-left :wk "Buffer move left")
+  "w J" '(buf-move-down :wk "Buffer move down")
+  "w K" '(buf-move-up :wk "Buffer move up")
+  "w L" '(buf-move-right :wk "Buffer move right"))
+
+(toki/leader-keys
+  "o" '(:ignore t :wk "Org")
+  "o a" '(org-agenda :wk "Org agenda")
+  "o e" '(org-export-dispatch :wk "Org export dispatch")
+  "o i" '(org-toggle-item :wk "Org toggle item")
+  "o t" '(org-todo :wk "Org todo")
+  "o B" '(org-babel-tangle :wk "Org babel tangle")
+  "o T" '(org-todo-list :wk "Org todo list"))
+
+(toki/leader-keys
+  "d" '(:ignore t :wk "Dired")
+  "d d" '(dired :wk "Open dired")
+  "d j" '(dired-jump :wk "Dired jump to current")
+  "d n" '(neotree-dir :wk "Open directory in neotree")
+  "d p" '(peep-dired :wk "Peep-dired"))
+(toki/leader-keys
+  "m b" '(:ignore t :wk "Tables")
+  "m b -" '(org-table-insert-hline :wk "Insert hline in table"))
+
+(toki/leader-keys
+  "m d" '(:ignore t :wk "Date/deadline")
+  "m d t" '(org-time-stamp :wk "Org time stamp"))
 )
 
-(use-package org-roam
-:ensure t
-:custom
-(org-roam-directory (file-truename "~/Sync/org"))
-:bind (("C-c n l" . org-roam-buffer-toggle)
-       ("C-c n f" . org-roam-node-find)
-       ("C-c n g" . org-roam-graph)
-       ("C-c n i" . org-roam-node-insert)
-       ("C-c n c" . org-roam-capture)
-       ;; Dailies
-       ("C-c n j" . org-roam-dailies-capture-today))
-:config
-;; If you're using a vertical completion framework, you might want a more informative completion interface
-(setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
-(org-roam-db-autosync-mode)
-;; If using org-roam-protocol
-(require 'org-roam-protocol))
+(use-package diminish)
+(use-package flycheck
+  :ensure t
+  :defer t
+  :diminish
+  :init (global-flycheck-mode))
 
-(set-face-attribute 'default nil
-  :font "JetBrains Mono"
-  :height 110
-  :weight 'medium)
-(set-face-attribute 'variable-pitch nil
-  :font "Ubuntu"
-  :height 120
-  :weight 'medium)
-(set-face-attribute 'fixed-pitch nil
-  :font "JetBrains Mono"
-  :height 110
-  :weight 'medium)
+(use-package company
+  :defer 2
+  :diminish
+  :custom
+  (company-begin-commands '(self-insert-command))
+  (company-idle-delay .1)
+  (company-minimum-prefix-length 2)
+  (company-show-numbers t)
+  (company-tooltip-align-annotations 't)
+  (global-company-mode t))
+(use-package company-box
+  :after company
+  :diminish
+  :hook (company-mode . company-box-mode))
+
+(use-package all-the-icons
+  :ensure t
+  :if (display-graphic-p))
+
+(use-package all-the-icons-dired
+  :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
+
+(set-face-attribute 'default nil :font "JetBrains Mono Nerd Font" :height 110 :weight 'medium)
+(set-face-attribute 'variable-pitch nil :font "Ubuntu" :height 120 :weight 'medium)
+(set-face-attribute 'fixed-pitch nil :font "JetBrains Mono Nerd Font" :height 110 :weight 'medium)
 ;; Makes commented text and keywords italics.
 ;; This is working in emacsclient but not emacs.
 ;; Your font must have an italic face available.
@@ -147,20 +218,186 @@
 ;; Uncomment the following line if line spacing needs adjusting.
 (setq-default line-spacing 0.12)
 
+(global-set-key (kbd "C-=") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+(global-set-key (kbd "<C-wheel-up>") 'text-scale-increase)
+(global-set-key (kbd "<C-wheel-down>") 'text-scale-decrease)
+
+(use-package timu-rouge-theme
+  :ensure t
+  :config
+  (load-theme 'timu-rouge t))
+(customize-set-variable 'timu-rouge-mode-line-border t)
+(customize-set-variable 'timu-rouge-org-intense-colors t)
+
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+(set-fringe-mode 0)
+
+;; use-package with Elpaca:
+(use-package dashboard
+  :elpaca t
+  :config
+  (add-hook 'elpaca-after-init-hook #'dashboard-insert-startupify-lists)
+  (add-hook 'elpaca-after-init-hook #'dashboard-initialize)
+  (dashboard-setup-startup-hook))
+(setq dashboard-center-content t)
+(setq dashboard-items '((recents  . 5)
+                      (bookmarks . 5)
+                      (projects . 3)))
+
+(use-package projectile
+  :config
+  (projectile-mode 1))
 
 (global-display-line-numbers-mode 1)
 (global-visual-line-mode t)
+
+(setq org-directory (list "~/Sync/org"))
+(setq org-agenda-files (list "~/Sync/org/agenda.org"))
+
+(use-package evil-org
+  :ensure t
+  :after org
+  :hook (org-mode . (lambda () evil-org-mode))
+  :config
+  (require 'evil-org-agenda)
+  (evil-org-agenda-set-keys))
+
+(use-package org-roam
+:ensure t
+:custom
+(org-roam-directory (file-truename "~/Sync/org"))
+:bind (("C-c n t" . org-roam-buffer-toggle)
+        ("C-c n f" . org-roam-node-find)
+        ("C-c n g" . org-roam-graph)
+        ("C-c n i" . org-roam-node-insert)
+        ("C-c n c" . org-roam-capture)
+        ;; Dailies
+        ("C-c n j" . org-roam-dailies-capture-today))
+:config
+;; If you're using a vertical completion framework, you might want a more informative completion interface
+(setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
+(org-roam-db-autosync-mode)
+;; If using org-roam-protocol
+(require 'org-roam-protocol))
+
+(require 'org-tempo)
+
+(use-package ebib)
+
+(electric-indent-mode -1)
+(setq org-edit-src-content-indentation 2)
+
+(add-hook 'org-mode-hook 'org-indent-mode)
+(use-package org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 (use-package toc-org
   :commands toc-org-enable
   :init (add-hook 'org-mode-hook 'toc-org-enable))
 
-(add-hook 'org-mode-hook 'org-indent-mode)
-(use-package org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+(require 'windmove)
+
+;;;###autoload
+(defun buf-move-up ()
+  "Swap the current buffer and the buffer above the split.
+If there is no split, ie now window above the current one, an
+error is signaled."
+;;  "Switches between the current buffer, and the buffer above the
+;;  split, if possible."
+  (interactive)
+  (let* ((other-win (windmove-find-other-window 'up))
+       (buf-this-buf (window-buffer (selected-window))))
+    (if (null other-win)
+        (error "No window above this one")
+      ;; swap top with this one
+      (set-window-buffer (selected-window) (window-buffer other-win))
+      ;; move this one to top
+      (set-window-buffer other-win buf-this-buf)
+      (select-window other-win))))
+
+;;;###autoload
+(defun buf-move-down ()
+"Swap the current buffer and the buffer under the split.
+If there is no split, ie now window under the current one, an
+error is signaled."
+  (interactive)
+  (let* ((other-win (windmove-find-other-window 'down))
+       (buf-this-buf (window-buffer (selected-window))))
+    (if (or (null other-win) 
+            (string-match "^ \\*Minibuf" (buffer-name (window-buffer other-win))))
+        (error "No window under this one")
+      ;; swap top with this one
+      (set-window-buffer (selected-window) (window-buffer other-win))
+      ;; move this one to top
+      (set-window-buffer other-win buf-this-buf)
+      (select-window other-win))))
+
+;;;###autoload
+(defun buf-move-left ()
+"Swap the current buffer and the buffer on the left of the split.
+If there is no split, ie now window on the left of the current
+one, an error is signaled."
+  (interactive)
+  (let* ((other-win (windmove-find-other-window 'left))
+       (buf-this-buf (window-buffer (selected-window))))
+    (if (null other-win)
+        (error "No left split")
+      ;; swap top with this one
+      (set-window-buffer (selected-window) (window-buffer other-win))
+      ;; move this one to top
+      (set-window-buffer other-win buf-this-buf)
+      (select-window other-win))))
+
+;;;###autoload
+(defun buf-move-right ()
+"Swap the current buffer and the buffer on the right of the split.
+If there is no split, ie now window on the right of the current
+one, an error is signaled."
+  (interactive)
+  (let* ((other-win (windmove-find-other-window 'right))
+       (buf-this-buf (window-buffer (selected-window))))
+    (if (null other-win)
+        (error "No right split")
+      ;; swap top with this one
+      (set-window-buffer (selected-window) (window-buffer other-win))
+      ;; move this one to top
+      (set-window-buffer other-win buf-this-buf)
+      (select-window other-win))))
+
+(use-package counsel
+  :after ivy
+  :config (counsel-mode))
+
+(use-package ivy
+  :bind
+  ;; ivy-resume resumes the last Ivy-based completion.
+  (("C-c C-r" . ivy-resume)
+   ("C-x B" . ivy-switch-buffer-other-window))
+  :custom
+  (setq ivy-use-virtual-buffers t)
+  (setq ivy-count-format "(%d/%d) ")
+  (setq enable-recursive-minibuffers t)
+  :config
+  (ivy-mode))
+
+(use-package all-the-icons-ivy-rich
+  :ensure t
+  :init (all-the-icons-ivy-rich-mode 1))
+
+(use-package ivy-rich
+  :after ivy
+  :ensure t
+  :init (ivy-rich-mode 1) ;; this gets us descriptions in M-x.
+  :custom
+  (ivy-virtual-abbreviate 'full
+   ivy-rich-switch-buffer-align-virtual-buffer t
+   ivy-rich-path-style 'abbrev)
+  :config
+  (ivy-set-display-transformer 'ivy-switch-buffer
+                               'ivy-rich-switch-buffer-transformer))
 
 (use-package auctex
 :elpaca  (auctex :pre-build (("./autogen.sh")
@@ -171,16 +408,9 @@
 (use-package tablist)
 
 (use-package pdf-tools
-  :defer t
-  :commands (pdf-loader-install)
-  :mode "\\.pdf\\'"
-  :bind (:map pdf-view-mode-map
-    ("j" . pdf-view-next-line-or-next-page)
-    ("k" . pdf-view-previous-line-or-previous-page)
-    ("C-=" . pdf-view-enlarge)
-    ("C--" . pdf-view-strink))
-  :init (pdf-loader-install)
-  :config (add-to-list 'revert-without-query ".pdf"))
+  :ensure t
+  :config
+  (pdf-tools-install))
 (add-hook 'pdf-view-mode-hook #'(lambda () (interactive) (display-line-numbers-mode -1)))
 
 (use-package markdown-mode)
@@ -188,6 +418,25 @@
   :bind (("<f9>" . writeroom-mode))
   :config
   (setq writeroom-width 96))
+
+(use-package neotree
+  :config
+  (setq neo-smart-open t
+        neo-show-hidden-files t
+        neo-window-width 55
+        neo-window-fixed-size nil
+        inhibit-compacting-font-caches t
+        projectile-switch-project-action 'neotree-projectile-action) 
+        ;; truncate long file names in neotree
+        (add-hook 'neo-after-create-hook
+           #'(lambda (_)
+               (with-current-buffer (get-buffer neo-buffer-name)
+                 (setq truncate-lines t)
+                 (setq word-wrap nil)
+                 (make-local-variable 'auto-hscroll-mode)
+                 (setq auto-hscroll-mode nil)))))
+
+;; show hidden files
 
 (use-package which-key
   :init
@@ -203,12 +452,29 @@
       which-key-side-window-max-height 0.25
       which-key-idle-delay 0.8
       which-key-max-description-length 25
-      which-key-allow-imprecise-window-fit t
+      which-key-allow-imprecise-window-fit nil
       which-key-separator " → " ))
 
-(use-package timu-rouge-theme
-  :ensure t
+(use-package vterm
   :config
-  (load-theme 'timu-rouge t))
-(customize-set-variable 'timu-rouge-mode-line-border t)
-(customize-set-variable 'timu-rouge-org-intense-colors t)
+  (setq shell-file-name "/bin/sh"
+        vterm-max-scrollback 5000))
+
+(use-package vterm-toggle
+  :after vterm
+  :config
+  (setq vterm-toggle-fullscreen-p nil)
+  (setq vterm-toggle-scope 'project)
+  (add-to-list 'display-buffer-alist
+               '((lambda (buffer-or-name _)
+                     (let ((buffer (get-buffer buffer-or-name)))
+                       (with-current-buffer buffer
+                         (or (equal major-mode 'vterm-mode)
+                             (string-prefix-p vterm-buffer-name (buffer-name buffer))))))
+                  (display-buffer-reuse-window display-buffer-at-bottom)
+                  ;;(display-buffer-reuse-window display-buffer-in-direction)
+                  ;;display-buffer-in-direction/direction/dedicated is added in emacs27
+                  ;;(direction . bottom)
+                  ;;(dedicated . t) ;dedicated is supported in emacs27
+                  (reusable-frames . visible)
+                  (window-height . 0.3))))

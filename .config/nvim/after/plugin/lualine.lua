@@ -19,9 +19,17 @@ require('lualine').setup {
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'filename'},
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_b = {{'buffers',
+      max_length = vim.o.columns * 2 / 3,
+      filetype_names = {
+        TelescopePrompt = 'Telescope',
+        fzf = 'FZF',
+      },
+      use_mode_colors = false,},
+    },
+    lualine_c = {'branch', 'diff', 'diagnostics'},
+    lualine_d = {'filename'},
+    lualine_x = {'encoding', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
   },

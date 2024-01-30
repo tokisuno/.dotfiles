@@ -1,1 +1,0 @@
-/home/skinnyboot/.config/emacs/elpaca/repos/modus-themes/modus-vivendi-deuteranopia-theme.el

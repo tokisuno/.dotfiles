@@ -1,0 +1,1 @@
+/home/skinnyboot/.config/emacs/elpaca/repos/org-noter/org-noter.el

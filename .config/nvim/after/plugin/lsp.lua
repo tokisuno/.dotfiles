@@ -6,11 +6,8 @@ lsp.set_sign_icons({
     hint = '⚑',
     info = '»'
 })
-
 lsp.preset('recommended')
 lsp.on_attach(function(client, bufnr)
-  -- see :help lsp-zero-keybindings
-  -- to learn the available actions
   lsp.default_keymaps({buffer = bufnr})
 end)
 
@@ -20,18 +17,17 @@ require('mason-lspconfig').setup({
 	    'tsserver',
 	    'eslint',
 	    'lua_ls',
-        'pylsp',
-        'rust_analyzer',
-        'quick_lint_js',
-        'clangd',
-        'vimls',
-        'cssls',
-        'arduino_language_server',
-        'html',
-        'marksman',
-        'jdtls',
-        'r_language_server'
-
+      'pylsp',
+      'rust_analyzer',
+      'quick_lint_js',
+      'clangd',
+      'vimls',
+      'cssls',
+      'arduino_language_server',
+      'html',
+      'marksman',
+      'jdtls',
+      'r_language_server'
     },
         handlers = {
         lsp.default_setup,

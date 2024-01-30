@@ -1,8 +1,8 @@
+(server-start)
 (org-babel-load-file
  (expand-file-name
   "config.org"
   user-emacs-directory))
-(server-start)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -11,7 +11,9 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(wombat))
  '(custom-safe-themes
-   '("88267200889975d801f6c667128301af0bc183f3450c4b86138bfb23e8a78fb1" "0af489efe6c0d33b6e9b02c6690eb66ab12998e2649ea85ab7cfedfb39dd4ac9" "f5661fd54b1e60a4ae373850447efc4158c23b1c7c9d65aa1295a606278da0f8" default)))
+   '("88267200889975d801f6c667128301af0bc183f3450c4b86138bfb23e8a78fb1" "0af489efe6c0d33b6e9b02c6690eb66ab12998e2649ea85ab7cfedfb39dd4ac9" "f5661fd54b1e60a4ae373850447efc4158c23b1c7c9d65aa1295a606278da0f8" default))
+ '(org-agenda-files '("/home/skinnyboot/Sync/org/agenda.org"))
+ '(pdf-util-fast-image-format t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

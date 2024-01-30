@@ -1,0 +1,1 @@
+/home/skinnyboot/.config/emacs/elpaca/repos/company-mode/company-semantic.el

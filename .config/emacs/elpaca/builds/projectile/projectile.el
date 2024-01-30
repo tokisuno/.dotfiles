@@ -1,0 +1,1 @@
+/home/skinnyboot/.config/emacs/elpaca/repos/projectile/projectile.el

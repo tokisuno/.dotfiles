@@ -41,6 +41,8 @@ let g:netrw_preview   = 1
 let g:netrw_liststyle = 3
 let g:netrw_winsize   = 30
 
+let g:vimwiki_global_ext = 0
+
 set nohlsearch incsearch
 set smartcase smarttab smartindent breakindent
 set showcmd showmode showmatch

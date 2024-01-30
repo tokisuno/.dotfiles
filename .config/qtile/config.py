@@ -52,6 +52,7 @@ keys = [
 
     # Launching programs
     Key([mod], "c", lazy.spawn(file_manager), desc="Launch file manager"),
+    Key([mod], "e", lazy.spawn('bash -c "emacs --init-directory ~/.config/emacs"'), desc="Launch file manager"),
     Key([mod], "p", lazy.spawn('rofi -modes "drun,run" -show drun'), desc="Launch rofi"),
     Key([mod], "w", lazy.spawn(browser), desc="Launch browser"),
     Key([mod, "control"], "f", lazy.spawn(email), desc="Spawn email"),
@@ -87,14 +88,12 @@ groups = [Group(i) for i in "123456789"]
 for i in groups:
     keys.extend(
         [
-            # mod1 + letter of group = switch to group
             Key(
                 [mod],
                 i.name,
                 lazy.group[i.name].toscreen(),
                 desc="Switch to group {}".format(i.name),
             ),
-            # mod1 + shift + letter of group = switch to & move focused window to group
             Key(
                 [mod, "shift"],
                 i.name,
@@ -127,17 +126,12 @@ def init_vert_layout():
            "border_width": 2,
            "border_focus": "#85b4ea",
            "border_normal": "#7c818c"}
+
 vert_theme = init_vert_layout()
 
-floating_layout = layout.Floating(
-    border_width=0,
-    border_focus="#000000",
-    border_normal="#000000",
-)
 layouts = [
     layout.MonadTall(**layout_theme),
     layout.VerticalTile(**vert_theme),
-#    layout.Max(),
 ]
 # -------------------- #
 # WIDGET CUSTOMIZATION #
@@ -155,9 +149,9 @@ powerline = {
 
 widget_defaults = dict(
     font="JetBrains Mono Nerd Font",
-    fontsize=12,
+    fontsize=14,
     padding=2,
-    background="#000000")
+    background="#111111")
 
 extension_defaults = widget_defaults.copy()
 screens = [
@@ -185,7 +179,7 @@ screens = [
                 widget.Sep(),
                 widget.UPowerWidget(),
             ],
-            20,
+            23, background=["#E3CBA7"]
         ),
     ),
 ]
@@ -201,7 +195,7 @@ dgroups_key_binder = None
 dgroups_app_rules = []  # type: list
 follow_mouse_focus = True
 bring_front_click = True
-wmname = "qtile"
+wmname = "cringe"
 cursor_warp = False
 floating_layout = layout.Floating(
         border_width=0,
@@ -230,4 +224,3 @@ def autostart():
 reconfigure_screens = True
 auto_minimize = True
 wl_input_rules = None
-

@@ -8,6 +8,7 @@ esac
 
 
 export OSH="$HOME/.oh-my-bash"
+export DICTIONARY=en_US
 # env vars
 export PAGER=less
 export GLFW_IM_MODULE=ibus
@@ -20,7 +21,7 @@ export LDLIBS="-lcrypt -lcs50 -lm"
 export NVM_DIR=~/.nvm
 export EDITOR="/usr/bin/nvim"
 export TMUX_POWERLINE_THEME=my-theme
-export PATH="$PATH:$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.local/share/scripts:$HOME/go:$NPM_PACKAGES/bin"
+export PATH="$PATH:$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.local/share/scripts:$HOME/go:$NPM_PACKAGES/bin:$HOME/.luarocks/bin/digestif"
 
 # FZF
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --inline-info" 
@@ -75,7 +76,7 @@ alias zlk="zk list --interactive"
 
 # OMB settings
 PS1='[\u@\h \W]\$ '
-OSH_THEME="sexy"
+OSH_THEME="simple"
 OMB_CASE_SENSITIVE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
@@ -93,10 +94,11 @@ tab () {
   pandoc $1 -o $1.pdf
 }
 
+fullpath() {
+  local -r full=$(perl -e 'use Cwd "abs_path";print abs_path(shift)' "$1")
+  echo "$full"
+} 
 # zettelkasten 
-zkn () {
-  zk new --title "$1"
-}
 zlkj () {
   zk list --interactive -t $1
 }
