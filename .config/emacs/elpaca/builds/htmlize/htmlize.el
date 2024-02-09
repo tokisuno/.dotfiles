@@ -1,1 +1,0 @@
-/home/skinnyboot/.config/emacs/elpaca/repos/emacs-htmlize/htmlize.el

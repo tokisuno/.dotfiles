@@ -1,1 +1,0 @@
-/home/skinnyboot/.config/emacs/elpaca/repos/f/f-shortdoc.el

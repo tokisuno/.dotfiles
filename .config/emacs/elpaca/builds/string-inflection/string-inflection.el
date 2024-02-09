@@ -1,1 +1,0 @@
-/home/skinnyboot/.config/emacs/elpaca/repos/string-inflection/string-inflection.el

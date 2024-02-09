@@ -1,1 +1,0 @@
-/home/skinnyboot/.config/emacs/elpaca/repos/timu-rouge-theme/timu-rouge-theme.el

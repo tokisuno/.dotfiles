@@ -1,1 +1,0 @@
-/home/skinnyboot/.config/emacs/elpaca/repos/ox-pandoc/ox-pandoc.el
