@@ -1,2 +1,2 @@
-# dotfilez
-Whenever i push these to git, there are some misc syncthing commit conflicts that get bunched into the rest of my config files. Those are to be ignored.
+# update 2024-02-14
+i sync all my dotfile changes through syncthing. i will eventually go back to git once i figure out how to sync changes across devices automatically, but until then this repo will be out of date for the foreseeable future.
