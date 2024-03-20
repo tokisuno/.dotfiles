@@ -24,14 +24,14 @@ This is cloned as a git repo in $HOME. They are managed through manually-created
 ## TODO
 Re-organizing how I sync files between computers
 
-[ ] Backgrounds -> Dropbox
-[ ] Books -> Syncthing
-[ ] Keys -> Dropbox
-[ ] LaTeX -> Dropbox
-[ ] Scripts -> Google Drive
-[ ] Textbooks/Papers -> Zotero
-[ ] Todo -> Dropbox
-[ ] University -> Dropbox
-[x] Dotfiles -> Github 
+* [ ] Backgrounds -> Dropbox
+* [ ] Books -> Syncthing
+* [ ] Keys -> Dropbox
+* [ ] LaTeX -> Dropbox
+* [ ] Scripts -> Google Drive
+* [ ] Textbooks/Papers -> Zotero
+* [ ] Todo -> Dropbox
+* [ ] University -> Dropbox
+* [x] Dotfiles -> Github 
 
 *for my neovim config, refer to [this](https://github.com/tokisuno/nvim)*
