@@ -1,0 +1,4 @@
+#!/bin/bash
+
+var=$(date +%U)
+echo -e "$var"

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# scripts folder
+ln -sf ~/.dotfiles/.local/share/scripts/ ~/.local/share
+
+# config folders 
+ln -sf ~/.dotfiles/.config/kitty/ ~/.config
+ln -sf ~/.dotfiles/.config/dconf/ ~/.config
+ln -sf ~/.dotfiles/.config/dunst/ ~/.config
+ln -sf ~/.dotfiles/.config/htop/ ~/.config
+ln -sf ~/.dotfiles/.config/lf/ ~/.config
+ln -sf ~/.dotfiles/.config/mpv/ ~/.config
+ln -sf ~/.dotfiles/.config/nvim/ ~/.config
+ln -sf ~/.dotfiles/.config/qtile/ ~/.config
+ln -sf ~/.dotfiles/.config/rofi/ ~/.config
+ln -sf ~/.dotfiles/.config/Thunar/ ~/.config
+ln -sf ~/.dotfiles/.config/zathura/ ~/.config
+ln -sf ~/.dotfiles/.config/tmux/ ~/.config
+ln -sf ~/.dotfiles/.config/emacs ~/.config
+ln -sf ~/.dotfiles/.config/conky ~/.config
+
+# config files
+ln -sf ~/.dotfiles/.config/akregatorrc ~/.config
+ln -sf ~/.dotfiles/.config/mimeapps.list ~/.config
+ln -sf ~/.dotfiles/.config/picom.conf ~/.config
+
+
+ln -sf ~/.dotfiles/.bashrc ~/

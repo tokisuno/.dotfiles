@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gcalcli calm | tee file.txt

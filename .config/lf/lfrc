@@ -1,0 +1,22 @@
+set ratios 1:2:3
+set previewer ~/.config/lf/previewer
+set cleaner ~/.config/lf/cleaner
+
+set ignorecase true
+set icons true
+
+map x quitcd
+cmd quitcd ${{
+	echo "1" > "$LF_TEMPDIR"/cdtolastdir
+	lf -remote "send $id quit"
+}}
+
+cmd mkdir ${{
+    printf "dir name: "
+    read ans
+    mkdir $ans
+}}
+
+map md mkdir
+
+
