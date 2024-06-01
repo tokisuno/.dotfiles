@@ -1,0 +1,6 @@
+#!/bin/bash
+
+newsboat -u "$HOME/.config/newsboat/urls" \
+  -C "$HOME/.config/newsboat/config" \
+  --cache-file="$HOME/.config/newsboat/cache.db"
+

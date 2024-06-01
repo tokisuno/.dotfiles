@@ -1,0 +1,51 @@
+auto-reload yes
+reload-time 120
+reload-threads 10
+browser "mpv --profile=ytv %u"
+text-width 80
+goto-next-feed no
+
+
+bind-key j down
+bind-key k up
+
+bind-key j down feedlist
+bind-key k up feedlist
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key j down article
+bind-key k up article
+
+bind-key G end
+bind-key g home
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key p prev-unread
+
+bind-key u pageup
+bind-key d pagedown
+
+unbind-key C feedlist
+confirm-exit yes
+cleanup-on-quit no
+
+color background default default
+color listnormal color255 default
+color listfocus color238 color255 standout
+color listnormal_unread color47 default
+color listfocus_unread color238 color47 standout
+color info color141 color236
+
+# highlights
+highlight all "---.*---" yellow
+highlight feedlist ".*(0/0))" black
+highlight article "(^Feed:|^Title:|^Date:|^Link:|^Author:)" cyan default bold
+highlight article "https?://[^ ]+" yellow default
+highlight article "\\[[0-9][0-9]*\\]" magenta default bold
+highlight article "\\[image\\ [0-9]+\\]" green default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" green default bold
+highlight article ":.*\\(link\\)$" cyan default
+highlight article ":.*\\(image\\)$" blue default
+highlight article ":.*\\(embedded flash\\)$" magenta default

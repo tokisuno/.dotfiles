@@ -1,0 +1,2 @@
+#!/bin/bash
+xclip -sel c ~/Dropbox/priv_keys/github

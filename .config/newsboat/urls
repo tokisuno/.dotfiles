@@ -1,0 +1,31 @@
+# --- Converting to RSS --- #
+# https://www.youtube.com/feeds/videos.xml?channel_id=<channel-id>
+# https://www.youtube.com/feeds/videos.xml?playlist_id=<playlist-id>
+
+"query:Creativity:tags # \"creatif\""
+"query:Self-help:tags # \"self-help\""
+"query:Technology:tags # \"tech\""
+"query:Vlogs:tags # \"irl\""
+"query:Playlist:tags # \"playlist\""
+
+# --- Creativity --- #
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-JHo-f0HyAmysL3Tg0RUSQ "!" "creatif"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVLw9wKPHxdBbboXEduN5jA "!" "creatif"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCq3Wpi10SyZkzVeS7vzB5Lw "!" "creatif"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCKtiMrNZq0gGbPTnsMu7Bsw "!" "creatif"
+
+# --- Playlists --- #
+https://www.youtube.com/feeds/videos.xml?playlist_id=PLGb4FUDIBjtUItKa21sayUCef7u9PYPAE "!" "playlist"
+https://www.youtube.com/feeds/videos.xml?playlist_id=PLGb4FUDIBjtVwnz0svwtrMZDacRSl2TZ5 "!" "playlist"
+
+# --- Self Help --- #
+https://www.youtube.com/feeds/videos.xml?channel_id=UCvcEBQ0K3UsQ8bzWKHKQmbw "!" "self-help"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbDmEdLs-SB3FjrDFQJ4TDg "!" "self-help"
+
+# --- Technology --- #
+https://www.youtube.com/feeds/videos.xml?channel_id=UCcaTUtGzOiS4cqrgtcsHYWg "!" "tech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXzw-OdotBUcNA9yhuYQBwA "!" "tech"
+
+# --- Real Life --- #
+https://www.youtube.com/feeds/videos.xml?channel_id=UCgv4dPk_qZNAbUW9WkuLPSA "!" "irl"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9RM-iSvTu1uPJb8X5yp3EQ "!" "irl"

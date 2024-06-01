@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+tomatoshell -t 60 -d 10 -n 3
