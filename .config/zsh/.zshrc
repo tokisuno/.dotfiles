@@ -27,10 +27,6 @@ alias ka='killall'
 
 ## Pacman & Yay
 alias syu="yes | sudo pacman -Scc && sudo pacman -Syu && setxkbmap -option 'ctrl:nocaps'"
-alias sps="sudo pacman -S"
-alias spr="sudo pacman -R"
-alias yas="yay -S"
-alias yar="yay -R"
 
 ## Navigation
 alias aa='cd -'
