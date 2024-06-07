@@ -40,11 +40,14 @@ alias zki="zk list --interactive"
 alias zkm="zk list --interactive --sort=modified"
 alias org='vim $(vizel unconnected ~/Dropbox/zet)'
 alias todo='vim ~/Dropbox/todo/todo.md'
-alias dodo='bat ~/Dropbox/todo/todo.md'
+alias what='vim ~/Dropbox/todo/what-todo.md'
 alias thot='vim ~/Dropbox/todo/thoughts.md'
-alias cheat='cht.sh'
+
+alias refup='sudo reflector --latest 5 --country canada --sort rate --save /etc/pacman.d/mirrorlist'
 
 alias fonts='fc-cache -f -v'
+
+alias terminal-font="echo ~/.config/fontconfig/fonts.conf"
 
 # Auto-completion
 autoload -U compinit
