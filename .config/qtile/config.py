@@ -83,18 +83,22 @@ keys = [
     # Launching programs
     Key([], "Print",
         lazy.spawn("flameshot gui")),
-    Key([mod], "c",
-        lazy.spawn('rofi -modes "calc" -show calc')),
-    Key([mod], "m",
+    Key([mod, "shift"], "m",
         lazy.spawn('mpv --player-operation-mode=pseudo-gui')),
-    Key([mod], "p",
-        lazy.spawn('rofi -modes "drun" -show drun')),
     Key([mod], "s",
         lazy.spawn('firefox --new-window https://www.lifeofdiscipline.com/my-habits')),
     Key([mod], "w",
         lazy.spawn(browser)),
     Key([mod], "z",
         lazy.spawn(file_manager)),
+
+    # Rofi stuff
+    Key([mod], "p",
+        lazy.spawn('rofi -modes "drun" -show drun')),
+    Key([mod], "c",
+        lazy.spawn('rofi -modes "calc" -show calc')),
+    Key([mod], "m",
+        lazy.spawn('rofi-mixer')),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab",

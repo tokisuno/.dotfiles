@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl localhost:8765 -X POST -d "{\"action\": \"guiAddCards\", \"version\": 6, \"params\": {\"note\": {\"deckName\": \"General::Default\", \"modelName\": \"All\", \"tags\":[]}}}"

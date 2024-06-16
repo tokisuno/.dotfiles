@@ -8825,1297 +8825,168 @@ clear
 clear
 syu
 clear
-git-token
 clear
+ka obs-studio
 htop
-clera
+htop
 clear
-cd lucas
-ls
-cd init.lua
-vim init.lua
-cd
+obs
 clear
-clear
-cd lazy
-ls
-rm -rf fterm.lua
-vim
-bk
-vim keymaps.lua
-bath
-vim
-ls
-vim set.lua
-git-token
-cd .config
-ls
-cd phat
-ls
-clear
-ls
-cd phat
-ls
-git pull
-clear
-clear
-ls
-vim cmd
-cd cmd
-ls
-clear
-ls
-bk
-clear
-ls
-cd cmd
-ls
-bk
-clear
-ls
-cd cmd
-ls
-touch write.records.go
-mv clear_screen.go clr.go
-clear
-ls
-vim write-re
-rm -rf write.records.go
-vim write-records.go
-go run write-records.go
-clear
-ls
-vim test.go
-bk
-go build -o phat main.go
-clear
-ls
-./phat test
-clear
-ls
-./phat
-clear
-ls
-./phat help
-cd cmd
-ls
-vim test.go
-clear
-go build -o phat main.go
-bk
-go build -o phat main.go
-./phat help
-./phat test
-clear
-cmd
-cd cmd
-ls
-vim write-records.go
-go mod tidy
-clear
-ls
-vim write-records.go
-clear
-bk
-go build -o phat main.go
-./phat test
-vim cmd/write-records.go
-go build -o phat main.go
-vim cmd/
-go build -o phat main.go
-./phat test
-clear
-ls
-vim cmd
-clear
-go build -o phat main.go
-./phat save
-vim cmd
-go build -o phat main.go
-./phat config
-./phat data
-clear
-ls
-cd cmd
-bk
-vim cmd
-vim cmd
-clear
-ls
-cd cmd
-ls
-vim root.go
-clear
-clear
-ls
-clear
-ls
-bk
-ls
-rm -rf config.go
-clear
-cd cmd
-ls
-vim pomo
-vim pomo_func.go
-go mod tidy
-clear
-vim pomo_func.go
-bk
-go build -o phat main.go
-./phat
-./phat pomo
-clear
-clear
-ls
-cd cmd
-ls
-bk
-vim cmd
-clear
-ls
-vim cmd
-vim cmd
-clear
-ls
-cd cmd
-ls
-vim write-records.go
-vim test.go
-rm -rf write-records.go
-clear
-vim test.go
-clear
-clear
-ls
-clear
-bk
-ls
-rm -rf project.md
-vim README.md
-clear
-ls
-clear
-bk
-ls
-mkd csvtest
-gmod csvtest
-ls
-ls
-touch main.go
-clear
-ls
-vi
-ls
-vim data.csv
-vim main.go
-ls
-go run 
-go run main.go
-go run 
-vim main.go
-go run main.go
-clear
-ls
-clear
-ls
-bk
-clear
-cd phat
-ls
-clear
-ls
-git add .
-git commit -m 'added user config'
-git-token
-git push
-clear
-ls
-bk
-ls
-cd csvtest
-ls
-vim main.go
-clear
-ls
-go run main.go
-bat data.csv
-vim main.go
-go run main.go
-bat data.csv
-clear
-ls
-vim main.go
-clear
-bk
-clear
-ls
-cd phat
-ls
-cd cmd
-ls
-cd test.go
-vim test.go
-mv test.go userinfo.go
-clear
-ls
-vim read-write.go
-clear
-ls
-mv pomo_func.go func-pomo.go
-clear
-ls
-mv clr.go func-clr.go
-claer
-ls
-mv pomo.go init-pomo.go
-clear
-ls
-mv read-write.go func-rw.go
-clear
-ls
-vim func-rw.go
-clear
-ls
-vim userinfo.go
-clear
-ls
-mv userinfo.go init-userinfo.go
-clear
-ls
-mv version.go init-ver.go
-clear
-ls
-vim func-rw.go
-clear
-ls
-vim root.go
-bk
-vim main.go
-cd cmd
-ls
-vim func-pomo.go
-vim func-pomo-menu.go
-clear
-bk
-bk
-ls
-mkd gotest
-gmod gotest
-clear
-ls
-vim main.go
-go mod tidy
-clear
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-vim main.go
-go run main.go
-vim main.go
-clear
-bk
-rm -rf gotest
-ls
-rm -rf golings
-clear
-ls
-cd gofast
-ls
-cd cmd
-ls
-bk
-bk
-rm -rf gofast
-clear
-ls
-rm -rf tourgo
-rm -rf sun
-rm -rf wethder
-clear
-ls
-cd phat
-ls
-cd cmd
-ls
-l
-clear
-l
-vim func-rw.go
-bk
-go build -o phat main.go
-./phat pomo
-clear
-ls
-cd cmd
-ls
-vim func-pomo
-vim func-pomo-menu.go
-bk
-go build -o phat main.go
-vim cmd
-go build -o phat main.go
-./phat pomo
-vim cmd
-vim cmd
-clear
-ls
-go build -o phat main.go
-./phat pomo
-clear
-ls
-git-token
-git add .
-git commit -m 'added ui to pick what you're studying'
-git commit -m "added ui to pick your study topic"
-git push
-clear
-yq
-clear
-cd .config
-ls
-cd phat
-ls
-yq config.yaml
-yq 'topics' config.yaml
-yq 'topics' config.yaml
-clear
-ls
-vim config.yaml
-clear
-git-token
-clear
-ls
-cd JavaScript30
-ls
-clear
-ls
-cd 10\ -\ Hold\ Shift\ and\ Check\ Checkboxes
-ls
-vim main.js
-firefox index-START.html &
-vim main.js
-clear
-bk
-ls
-cd 11\ -\ Custom\ Video\ Player
-ls
-firefox index.html & 
-vim index.html scripts.js
-vim index.html scripts.js
-vim index.html scripts.js
-clear
-vim scripts.js
-clear
-bk
-clear
-cd 12
-ls
-clear
-ls
-cd
-clear
-ls
-cd js
-clear
-ls
-cd JavaScript30
-ls
-cd 12\ -\ Key\ Sequence\ Detection
-clear
-ls
-clear
-ls
-vim cornify.js
-clear
-ls
-vim index-START.html
-firefox index.html & 
-firefox index-START.html &
-vim main.js
-clear
-ls
-rm -rf main.js
-clear
-bk
-clear
-ls
-clear
-git add .
-git commit -m 'added 10-12'
-git-token
-git push
-clear
-clear
-ls
-cd phat
-ls
-cd cmd
-ls
-bk
-clear
-./phat pomo
-clear
-clear
-ls
-cd cmd
-bk
-vim cmd
-bk
-ls
-cd roadmap
-ls
-bk
-clear
-ls
-rm -rf roadmap
-clear
-ls
-cd phat
-ls
-cd cmd
-ls
-bat init-userinfo.go
-clear
-ls
-bk
-bk
-clear
-ls
-ls
-mkd gotest
-ls
-gmod gotest
-ls
-vim main.go
-go mod tidy
-ls
-vim main.go
-clear
-ls
-vim config.yaml
-clear
-ls
-vim main.go
-go run main.go
-clear
-ls
-vim config.yaml
-clear
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go 
-bk
-clear
-ls
-cd phat
-ls
-cd cmd
-ls
-vim func-pomo-menu.go
-clear
-ls
-clear
-ls
-vim func-pomo.go
-vim func-pomo.go
-bk
-go build -o phat main.go
-./phat
-./phat pomo
-clear
-clear
-ls
-cd cmd
-ls
-vim func-pomo-menu
-vim func-pomo-menu.go
-celar
-ls
-clear
-bk
-ls
-bk
-ls
-clear
-ls
-git clone https://github.com/tokisuno/gocliselect-vim.git
-clear
-ls
-cd gocliselect-vim
-ls
-vim gocliselect.go
-go mod tidy
-vim gocliselect.go
-clear
-git add .
-git commit -m 'vim keys because arrow keys are for losers'
-git-email
-git commit -m 'vim keys because arrow keys are for losers'
-git-token
-git push
-clear
-bk
-clear
-ls
-cd phat
-ls
-vim cmd
-go mod tidy
-vim cmd
-vim cmd
-vim cmd
-go mod tidy
-go clean
-go mod tidy
-bk
-clea
-rls
-clear
-ls
-cd gocliselect-vim
-clear
-ls
-rm -rf go.mod go.sum
-gmod gocliselect-vim
-go mod tify
-go mod tidy
-ls
-vim go.mod
-clear
-ls
-git add .
-git commit -m 'edited files'
-git push
-bk
-clear
-cd phat
-ls
-go mod tidy
-go mod tidy
-cd ..
-ls
-cd gocliselect-vim
-ls
-vim go.mod
-git add .
-git commit -m 'lmao'
-git push
-aa
-cd phat
-go mod tidy
-clear
-clear
-go mod tidy
-clear
-ls
-go clean
-ls
-vim go.mod
-go mod tidy
-vim go.mod
-clear
-ls
-cd ../gocliselect-vim
-clear
-ls
-vim gocliselect.go
-clear
-ls
-aa
-aa
-vim go.mod
-clear
-ls
-aa
-vim cmd
-go mod tidy
-aa
-clear
-ls
-vim go.mod
-ls
-bk
-clear
-ls
-mv gocliselect-vim gocliselect-vim
-mv gocliselect-vim gocliselect
-clear
-ls
-aa
-clear
-cd phat
-ls
-cd ../gocliselect
-ls
-git add .
-git commit -m 'god damn it'
-git push
-clear
-ls
-bk
-clear
-ls
-cd phat
-ls
-go mod tidy
-go build -o phat main.go
-./phat pomo
-clear
-./phat pomo
-clear
-ls
-git add . 
-git commit -m 'added vim key movement in cli'
-clear
-git push
-cd ../gocliselect
-ls
-vim README.md
-git add .
-git commit -m 'updated readme'
-git push
-clear
-ls
-bk
-aa
-cd ../phat
-ls
-clear
-./phat pomo
-clear
-ls
-clear
-cd cmd
-ls
-vim func-pomo-menu.go
-clear
-bk
-bk
-clear
-ls
-cd gotest
-ls
-vim main.go
-go run main.go
-clear
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main
-go run main.go
-clear
-ls
-vim main.go
-run main.go
-go run main.go
-clear
-vim main.go
-clear
-go run main.go
-vim main.go
-clear
-bk
-clear
-cd phat
-ls
-vim cmd
-bk
-cd gotest
-ls
-vim main.go
-go mod tidy
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-vim main.go
-go run main.go
-ls
-vim config.yaml
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-go run main.go
-vim main.go
-clear
-ls
-vim test.yml
-clear
-ls
-go run main.go
-vim config.yaml
-vim test.yml
-vim main.go
-vim test.yml
-go run main.go
-vim test.yml
-vim main.go
-go run main.go
-vim test.yml
-clear
-ls
-rm -rf main.go
-clear
-ls
-rm -rf test.yml
-vim main.go
-go run main.go
-clear
-ls
-vim main.go 
-go run main.go
-vim main.go 
-cd
-aa
-bk
-rm -rf gotest
-clear
-ls
-cd phat
-vim cmd/func-pomo-menu.go
-go mod tidy
-go build -o phat main.go
-./phat pomo
-vim cmd/func-pomo-menu.go
-go build -o phat main.go
-go build -o phat main.go && ./phat pomo
-vim cmd/func-pomo-menu.go
-go build -o phat main.go && ./phat pomo
-vim cmd/func-pomo-menu.go
-clear
-go build -o phat main.go && ./phat pomo
-vim cmd/func-pomo-menu.go
-vim cmd/func-pomo-menu.go
-go build -o phat main.go && ./phat pomo
-go build -o phat main.go && ./phat pomo
-go build -o phat main.go && ./phat pomo
-clear
-ls
-clear
-ls
-vim cmd/func-pomo-menu.go
-go build -o phat main.go && ./phat pomo
-vim cmd/func-pomo-menu.go
-vim cmd/func-pomo-menu.go
-go build -o phat main.go && ./phat pomo
-vim cmd/func-pomo-menu.go
-go build -o phat main.go && ./phat pomo
-vim cmd/func-pomo-menu.go
-go build -o phat main.go && ./phat pomo
-clear
-ls
-clear
-ls
-git add .
-git commit -m 'i want to die'
-git push
-clear
-ls
-clear
-ls
-clear
-ls
-vim main.go
-vim main.go
-git add .
-git commit -m 'removed some lines'
-git-token
-git push
-clear
-clear
-bath
-clear
-sudo tlp ac
-clear
-ls
-./phat pomo
-clear
-ls
-vim main.go
-clear
-ls
-./phat
-vim cmd
-lear
-./phat version
-vim cmd
-vim cmd
-clear
-go build -o phat main.go
-./phat pomo
-clear
-ls
-vim cmd
-go build -o phat main.go
-./phat pomo
-clear
-ls
-vim cmd
-ear
-clear
-clear
-ls
-go build -o phat main.go
-./phat pomo
-c;ear
-clear
-ls
-tmux-pomodoro
-clea
-./phat pomo
-clear
-ls
-clear
-ls
-clear
-cd
-neofetch
-clear
-bath
-clear
-clear
-clear
-clear
-cd phat
-ls
-cd cmd
-ls
-vim pomo
-vim pomo.go
-clear
-ls
-bk
-clear
-ls
-clear
-ls
-vim main.go 
-clear
-ls
-vim main.go
-vim main.go
-nvim --startuptime
-nvim --startuptime log
-clear
-syu
-clear
-sudo pacman -S neovim
-clear
-nvim
-nvim --startuptime log.log
-vim log.log
-clear
-ls
-vim
-vim
-clear
-ls
-vim main.go
-clear
-clear
-ls
-vim
-ls
-rm -rf log log.log
-clear
-nvim --startuptime log.log
-clea
-clear
-vim log.log
-clear
-clear
-ls
-cd lucas
-ls
-vim set.lua
-clear
-ls
-vim init.lua
-vim
-vim
-cd phat
-ls
-vim main.go
-clear
-rm -rf log.log
-nvim --startuptime log
-vim log
-clear
-vim
-clear
-ls
-cd lucas
-ls
-vim set.lua
-vim init.lua
-clear
-vim
-cd phat
-ls
-vim main.go
-vim main.go
-rm -rf log
-nvim --startuptime log
-vim log
-clear
-clear
-cd
-clear
-cd lucas
-bk
-bk
-git-token
-git add .
-git commit -m 'fixed nvim'
-git push
-clear
-clear
-cd phat
-clear
-clear
-ls
-vim project.md
-clear
-ls
-vim main.go
-clear
-vim RAD
-vim README.md
-clear
-clear
-ls
-go build -o phat main.go
-clear
-clear
-go build -o phat main.go
-clear
-./phat pomo
-clear
-ls
-vim
-vim README.md
-vim main.go
-vim project.md
-vim README.md
-clear
-ls
-nvim --startuptime log
-nvim project.md --startuptime log 
-vim log
-clear
-clear
-clear
-clear
-zsh
-clera
-clear
-zsh
-git-token
-cd odin
-ls
-cd tables
-ls
-cd data-structuring
-ls
-vim index.html
-cd data-
-bat planets-data.txt
-clear
-journalctl -b
-clear
-qtile config-cmd
-qtile cmd-obj 
-qtile cmd-obj -o root -f reload_config
-qtile cmd-obj -o root -f reload_config
-cd .config
-ls
-cd qtile
-ls
-python config.py
-python config.py
-vim config.py
-vim config.py
-qtile cmd-obj -o root -f reload_config
-clear
-start-conky
-clear
-syu
-./startup.sh
-clear
-cd
-clear
+obs
 clear
 tmux-pomodoro
-c
 clear
-ls
 clear
-ibus-daemon restart
-ibus restart
-ka alacritty
-a
-clear
+what-to
+what-todo
 todo
+whatotdo
+whatdo
+wado
 clear
-emacs
-sudo pacman -S emacs
-clear
-sudo pacman -Syu
-clear
-clear
-ls
-clear
-emacs
-cd .config
-ls
-clear
-ls
-mkd emacs
-clear
-ls
-touch init.el
-emacs
-clear
-emacs -q -l init.el
- clear
-cd .local/share
-ls
-cd applications
-ls
-cp /usr/share/applications/emacs.desktop .
-cp /usr/share/applications/emacsclient.desktop
-cp /usr/share/applications/emacsclient.desktop .
-clear
-ls
-vim zotero.desktop
-rm -rf zotero.desktop
-clear
-ls
-vim emacs.desktop
-xdg-desktop-menu emacs.desktop
-xdg-desktop-menu install emacs.desktop
-update-desktop-database ~/.local/share/applications
-clear
-cd
-clear
-cd .config/emacs
-ls
-rm -rf init.el\~ config.org\~ \#config.org\#
-clear
-ls
-cd
-ls -a
-rm -rf .emacs.d
-ls
-ls -a
-ls
-la
-clear
-l
-l-
-la
-lA
-clear
-ls -a
-ka emacs
-clear
-cd emacs
-ls
-rm -rf \#early-init.el\# elpaca straight init.el\~ config.org\~ auto-save-list
-clear
-ls
-rm -rf early-init.el\~
-clear
-ls
-rm -rf config.el elpa
-clear
-ls
-clear
-fcd
-clear
-clear
-ls
-cd
-clear
-clear
-clear
-cd nvim
-ls
-cd lazy
-ls
-vim lsp.lua
-vim lsp.lua
-claer
-clear
-cd
-clear
-ls
-cd code
-ls
-mkd web
-clear
-ls
-vim index.html
-clear
-vim
-clear
-tmux-pomodoro
-what
-what
-clear
-ka conky
-start-conky
-syu
-clear
-ls
-git clone https://github.com/tokisuno/odin.git
-clear
-cd odin
-ls
-cd tablesl
-cd tables
-ls
-cd data-structuring
-clear
-ls
-cd lucas
-ls
-bk
-cd lucas
-ls
-vim set.lua
-clear
-cd
+zse
 clear
 what
-sudo pacman -S pinta
 clear
-clear
-cd
-syu
 clear
 ts
+clear
+clear
+ls
+ts
 tmux-pomodoro
-powerof
-poweroff
-cd odin
+clear
+clear
+clear
 ls
-cd tables/data-structuring
+cd phat
+ls
+cd cmd
 ls
 clear
 ls
-vim index.html
-vim index.html
-vim index.html
+vim pomo_func.go
+go mod tidy
+vim pomo_func.go
+bk
+ls
+go build -o phat main.go
+vim cmd
+go build -o phat main.go
+./phat
+./phat pomo
+clear
+clear
+vim cmd
+clear
+go build -o phat main.go
+./phat pomo
 clear
 ls
-bk
-bk
+vim cmd
+go mod tidy
+go mod clean
+go clean
+clear
+vim cmd
+clear
+go mod tidy
+go clean
+vim cmd
+go mod tidy
+vim cmd
+clear
+go build -o phat main.go
+./phat pomo
+clear
+./phat pomo
+clear
+vim cmd
+go build -o phat main.go
+./phat pomo
+clear
+vim cmd
+vim cmd
+go build -o phat main.go
+./phat pomo
+clear
+ls
+vim cmd
+clear
+ls
+go build -o phat main.go
+./phat pomo
+clear
+./phat pomo
+clear
+vim cmd
+clear
+go build -o phat main.go
+./phat pomo
+clear
+vim cmd
+./phat pomo
+go build -o phat main.go
+./phat pomo
+clear
+vim cmd
+go build -o phat main.go
+./phat pomo
+go build -o phat main.go
+vim cmd
+go build -o phat main.go
+./phat pomo
+vim cmd
+clear
+go build -o phat main.go
+clear
+vim cmd
+clear
+vim cmd
+clear
+go build -o phat main.go
+./phat 
+./phat h
+./phat -h
+./phat -p
+clear
+ls
+./phat pomo
+clear
+ls
+vim cmd
+go build -o phat main.go
+./phat pomo
+vim cmd
+go build -o phat main.go
+./phat pomo
+vim cmd
+go build -o phat main.go
+./phat pomo
+clear
+vim cmd
+go build -o phat main.go
+./phat pomo
+vim cmd
+go build -o phat main.go
+./phat pomo
+clear
+ls
+vim cmd
+clear
+go build -o phat main.go
+./phat pomo
+clear
+vim cmd
+go build -o phat main.go
+./phat pomo
+clear
+ls
+clear
+ls
 git add .
-git commit -m 'did tables assignment'
-git-email
-git commit -m 'did tables assignment'
+git add .
+clear
+git commit -m 'coloured output'
 git-token
 git push
-clear
-ls
-mkd intermediate-html-concepts
-bk
-mv tables intermediate-html-concepts
-clear
-ls
-bk
-clear
-ls
-cd odin
-ls
-clear
-ls
-mkd intermediate-css-concepts
-clear
-bk
-ls
-git add .
-git commit -m 'moved some things around'
-git push
-clear
-clear
-clear
-ls -al
-ls
-neofetch
-clear
-clear
-vterm_print
-vterm_printf
-clear
-clear
-neofetch
-printf "\eP\e]%s\007\e\\" "$1"
-clear
-ls
-clear
-la
-clear
-ls
-clear
-zsh
-clear
-ls
-syu
-clear
-neofetch
-clear
-cd
-clear
-cd lucas
-clear
-ls
-cd
-clear
-adfasd
-clear
-clear\
-Q\
-1
-clear
-cd
-clear
-cd .config
-ls
-cd emacs
-ls

@@ -8,18 +8,15 @@
 #   - Dropbox doesn't have this issue since it syncs to a cloud server
 #   - I do not have the networking knowledge nor the patience to try and troubleshoot this
 
-# Bash
-ln -sf ~/Dropbox/.dotfiles/.bashrc ~/
-
 # Scripts folder
 ln -sf ~/Dropbox/.dotfiles/.local/share/scripts/ ~/.local/share
 
 # Config folders
-ln -sf ~/Dropbox/.dotfiles/.config/Thunar/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/alacritty/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/conky ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/dconf/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/dunst/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/emacs/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/mpv/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/newsboat/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/nvim/ ~/.config
