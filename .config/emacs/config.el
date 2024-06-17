@@ -39,6 +39,15 @@
 (use-package org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
+(use-package dashboard
+  :config
+  (setq
+   dashboard-center-content t
+   dashboard-set-init-info t)
+  :init
+  (dashboard-setup-startup-hook)
+  (setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*"))))
+
 (use-package vterm
   :ensure t)
 (use-package vterm-toggle)
@@ -162,11 +171,11 @@
   (toki/leader-keys
     "p v" 'dired-find-file :which-key "project view")
   (toki/leader-keys
-    "r f" '(lambda () (interactive) (load-file (expand-file-name "~/.config/emacs/init.el"))) :which-key "run config"))
+    "r f" '(lambda () (interactive) (load-file (expand-file-name "~/.config/emacs/init.el"))) :which-key "run config")
 (toki/leader-keys
   "t t" 'counsel-load-theme :which-key "choose theme")
 (toki/leader-keys
-  "w f" 'evil-write :which-key "write file")
+  "w f" 'evil-write :which-key "write file"))
 
 (general-define-key
  "C-M-j" 'counsel-switch-buffer)
