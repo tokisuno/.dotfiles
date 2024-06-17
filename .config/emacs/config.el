@@ -41,12 +41,17 @@
 
 (use-package dashboard
   :config
-  (setq
-   dashboard-center-content t
-   dashboard-set-init-info t)
-  :init
   (dashboard-setup-startup-hook)
-  (setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*"))))
+  (setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
+  :init
+  (setq dashboard-banner-logo-title "bienvenue a tokimacs")
+  (setq dashboard-center-content t)
+  (setq dashboard-navigation-cycle t)
+  (setq dashboard-set-init-info t)
+  (setq dashboard-set-heading-icons t)
+  (setq dashboard-icon-type 'nerd-icons)
+  (setq dashboard-items '((recents . 5)
+			  (agenda . 5))))
 
 (use-package vterm
   :ensure t)
@@ -129,12 +134,15 @@
   :ensure t
   :init
   (setq doom-modeline-support-imenu t)
+  (setq doom-modeline-support-imenu t)
   (setq doom-modeline-height 20)
   (setq doom-modeline-project-detection 'auto)
   (setq doom-modeline-icon t)
   (setq doom-modeline-major-mode-icon t)
   (setq doom-modeline-major-mode-color-icon t)
   (setq doom-modeline-buffer-state-icon t)
+  (setq doom-modeline-buffer-modification-icon t)
+  (setq doom-modeline-time-icon t)
   :config
   (doom-modeline-mode 1))
 
@@ -169,13 +177,13 @@
     :prefix "SPC"
     :global-prefix "C-SPC")
   (toki/leader-keys
-    "p v" 'dired-find-file :which-key "project view")
+    "p f" 'find-file :which-key "project view")
   (toki/leader-keys
     "r f" '(lambda () (interactive) (load-file (expand-file-name "~/.config/emacs/init.el"))) :which-key "run config")
-(toki/leader-keys
-  "t t" 'counsel-load-theme :which-key "choose theme")
-(toki/leader-keys
-  "w f" 'evil-write :which-key "write file"))
+  (toki/leader-keys
+    "t t" 'vterm-toggle :which-key "toggle terminal")
+  (toki/leader-keys
+    "w f" 'evil-write :which-key "write file"))
 
 (general-define-key
  "C-M-j" 'counsel-switch-buffer)
