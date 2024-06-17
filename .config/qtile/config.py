@@ -79,6 +79,8 @@ keys = [
     # Terminal of choice
     Key([mod], "Return",
         lazy.spawn('alacritty')),
+    Key([mod], "space",
+        lazy.spawn('emacsclient -c')),
 
     # Launching programs
     Key([], "Print",
