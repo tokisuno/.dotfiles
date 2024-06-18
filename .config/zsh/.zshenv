@@ -8,7 +8,12 @@ export HISTSIZE=10000
 export SAVEHIST=10000
 
 export TERM="xterm-256color"
-export EDITOR="/usr/bin/nvim"
+
+# all hail the church of emacs
+export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -t"                  # $EDITOR opens in terminal
+export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI mode
+
 export DICTIONARY=en_US
 export PAGER=less
 

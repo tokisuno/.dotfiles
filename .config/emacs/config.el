@@ -11,15 +11,22 @@
 (global-display-line-numbers-mode 1)
 (column-number-mode)
 
-(set-face-attribute 'default nil :font "JetBrainsMono Nerd Font" :height 120)
+(set-face-attribute 'default nil :font "JetBrainsMono Nerd Font" :height 125)
 
-(dolist (mode '(term-mode-hook eshell-mode-hook shell-mode-hook vterm-mode-hook))
+(dolist (mode '(term-mode-hook
+		eshell-mode-hook
+		shell-mode-hook
+		vterm-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
 (setq mouse-wheel-progressive-speed nil)
 
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
+(setq auto-save-default nil)
+(setq make-backup-files nil)
+(setq create-lockfiles nil)
 
 (require 'package)
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
@@ -36,15 +43,13 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-(use-package org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
-
 (use-package dashboard
   :config
   (dashboard-setup-startup-hook)
   (setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
   :init
   (setq dashboard-banner-logo-title "bienvenue a tokimacs")
+  (setq dashboard-startup-banner "~/Dropbox/.dotfiles/.config/emacs/icon.png")
   (setq dashboard-center-content t)
   (setq dashboard-navigation-cycle t)
   (setq dashboard-set-init-info t)
@@ -52,6 +57,18 @@
   (setq dashboard-icon-type 'nerd-icons)
   (setq dashboard-items '((recents . 5)
 			  (agenda . 5))))
+
+(add-hook 'python-mode-hook 'eglot-ensure)
+
+(use-package emmet-mode
+  :ensure t
+  :commands
+  (emmet-expand-line emmet-expand)
+  :config
+  (add-hook 'sgml-mode-hook 'emmet-mode)
+  (add-hook 'css-mode-hook  'emmet-mode)
+  (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2)))
+  (setq emmet-move-cursor-between-quotes t))
 
 (use-package vterm
   :ensure t)
@@ -70,8 +87,6 @@
 	       ;;(dedicated . t) ;dedicated is supported in emacs27
 	       (reusable-frames . visible)
 	       (window-height . 0.3)))
-
-(use-package command-log-mode)
 
 (use-package projectile)
 (projectile-mode +1)
@@ -104,6 +119,11 @@
   :init
   (ivy-rich-mode 1))
 
+(use-package command-log-mode)
+
+(use-package emojify
+  :hook (after-init . global-emojify-mode))
+
 (use-package nerd-icons
   :custom
   (nerd-icons-font-family "JetBrainsMono Nerd Font"))
@@ -122,12 +142,19 @@
   (nerd-icons-ivy-rich-mode 1)
   (ivy-rich-mode 1))
 
+(use-package olivetti
+  :hook (org-mode . olivetti-mode)
+	(dashboard-mode . olivetti-mode))
+(setq olivetti-body-width 120)
+
+(hl-line-mode t)
+
 (use-package doom-themes
   :ensure t
   :config
   (setq doom-themes-enable-bold t)
   (setq doom-themes-enable-italic t)
-  (load-theme 'doom-gruvbox t)
+  (load-theme 'doom-badger t)
   (doom-themes-visual-bell-config))
 
 (use-package doom-modeline
@@ -145,6 +172,12 @@
   (setq doom-modeline-time-icon t)
   :config
   (doom-modeline-mode 1))
+
+(setq org-agenda-file-to-front "~/Dropbox/orgmode/todo.org")
+(setq org-agenda-files '("~/Dropbox/orgmode/todo.org"))
+
+(use-package org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 (use-package which-key
   :init (which-key-mode)
@@ -177,14 +210,20 @@
     :prefix "SPC"
     :global-prefix "C-SPC")
   (toki/leader-keys
-    "p f" 'find-file :which-key "project view")
+    "SPC" 'find-file :which-key "project view")
+  (toki/leader-keys
+    "g h" 'dashboard-open :which-key "go home")
   (toki/leader-keys
     "r f" '(lambda () (interactive) (load-file (expand-file-name "~/.config/emacs/init.el"))) :which-key "run config")
   (toki/leader-keys
     "t t" 'vterm-toggle :which-key "toggle terminal")
   (toki/leader-keys
-    "w f" 'evil-write :which-key "write file"))
-
+    "w f" 'evil-write :which-key "write file"
+    "w l" 'evil-quit :which-key "quit out of file")
+  (toki/leader-keys
+    "i" 'ibuffer :which-key "launch ibuffer"
+    "j" 'previous-buffer :which-key "previous buffer"
+    "k" 'next-buffer :which-key "next buffer"))
 (general-define-key
  "C-M-j" 'counsel-switch-buffer)
 ;; this makes me want to rip my dick off
