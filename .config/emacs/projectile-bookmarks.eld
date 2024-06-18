@@ -1,1 +1,0 @@
-("~/Dropbox/.dotfiles/.config/emacs/" "~/code/web/odin/foundations/css-exercises/" "~/Dropbox/.dotfiles/" "~/code/web/odin/")
