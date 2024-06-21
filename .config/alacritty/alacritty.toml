@@ -20,8 +20,8 @@ family = "terminal-font"
 style = "Regular"
 
 [shell]
-args = ["-l", "-c", "tmux attach || tmux"]
 program = "/usr/bin/zsh"
+args = ["-l", "-c", "tmux attach || tmux"]
 
 [[hints.enabled]]
 regex = "[^ ]+\\.rs:\\d+:\\d+"

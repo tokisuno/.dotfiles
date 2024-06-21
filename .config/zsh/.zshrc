@@ -4,6 +4,12 @@ RPROMPT='$GITSTATUS_PROMPT'
 alias neofetch='archfetch'
 ZVM_CURSOR_STYLE_ENABLED=true
 
+if which tmux 2>&1 >/dev/null; then
+    if [ $TERM != "xterm-256color" ] && [  $TERM != "xterm" ]; then
+        tmux attach -t home || tmux new -s home; exit
+    fi
+fi
+
 # ALIASES
 ## ls replacement
 alias ls='eza'
@@ -57,7 +63,8 @@ compinit
 _comp_options+=(globdots)
 eval "$(zoxide init --cmd cd zsh)"
 
-
+bindkey "^H" backward-delete-char
+bindkey "^?" backward-delete-char
 # Custom functions
 sz () {
   zathura "$@" &

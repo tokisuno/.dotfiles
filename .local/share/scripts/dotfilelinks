@@ -12,15 +12,15 @@
 ln -sf ~/Dropbox/.dotfiles/.local/share/scripts/ ~/.local/share
 
 # Config folders
-ln -sf ~/Dropbox/.dotfiles/.config/alacritty/ ~/.config
-ln -sf ~/Dropbox/.dotfiles/.config/conky ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/kitty/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/conky/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/dconf/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/dunst/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/emacs/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/mpv/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/newsboat/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/nvim/ ~/.config
-ln -sf ~/Dropbox/.dotfiles/.config/qtile/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/awesome/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/rofi/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/tmux/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/zathura/ ~/.config

@@ -78,7 +78,7 @@ keys = [
 
     # Terminal of choice
     Key([mod], "Return",
-        lazy.spawn('alacritty')),
+        lazy.spawn('kitty -e tmux')),
     Key([mod], "space",
         lazy.spawn('emacsclient -c')),
 
