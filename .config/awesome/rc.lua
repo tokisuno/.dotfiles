@@ -2,6 +2,7 @@
 local awesome = awesome
 local client = client
 local root = root
+local screen = screen
 
 -- If LuaRocks is installed, make sure that packages installed through it are
 --                  found (e.g. lgi). If LuaRocks is not installed, do nothing.
@@ -47,7 +48,7 @@ do
 end
 -- }}}
 
-beautiful.init("~/.config/awesome/themes/gruvbox/theme.lua")
+beautiful.init("~/.config/awesome/themes/default/theme.lua")
 
 terminal = "kitty"
 browser = "firefox"
@@ -103,30 +104,23 @@ local tasklist_buttons = gears.table.join(
                                               awful.client.focus.byidx(-1)
                                           end))
 
-local function set_wallpaper(s)
-    -- Wallpaper
-    if beautiful.wallpaper then
-        local wallpaper = beautiful.wallpaper
-        -- If wallpaper is a function, call it with the screen
-        if type(wallpaper) == "function" then
-            wallpaper = wallpaper(s)
-        end
-        gears.wallpaper.maximized(wallpaper, s, true)
-    end
+local function set_wallpaper()
+    gears.wallpaper.set("#000000")
 end
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s)
-    -- Wallpaper
-    set_wallpaper(s)
+    set_wallpaper()
 
-    -- Each screen has its own tag table.
     local names = { " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● " }
     local l = awful.layout.suit  -- Just to save some typing: use an alias.
-    local layouts = { l.tile.left, l.tile.left, l.tile.left, l.tile.left, l.tile.left,
-        l.tile.left, l.tile.left, l.tile.left, l.tile.left}
+    local layouts = {
+        l.tile.left, l.tile.left, l.tile.left,
+        l.tile.left, l.tile.left, l.tile.left,
+        l.tile.left, l.tile.left, l.tile.left
+    }
     awful.tag(names, s, layouts)
 
     -- Create a promptbox for each screen
@@ -139,6 +133,7 @@ awful.screen.connect_for_each_screen(function(s)
                            awful.button({ }, 3, function () awful.layout.inc(-1) end),
                            awful.button({ }, 4, function () awful.layout.inc( 1) end),
                            awful.button({ }, 5, function () awful.layout.inc(-1) end)))
+
     -- Create a taglist widget
     s.mytaglist = awful.widget.taglist {
         screen  = s,
@@ -167,7 +162,6 @@ awful.screen.connect_for_each_screen(function(s)
         },
         s.mytaglist,
         expand="none",
-        -- s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
@@ -175,7 +169,6 @@ awful.screen.connect_for_each_screen(function(s)
         },
     }
 end)
--- }}}
 
 -- mouse binds
 root.buttons(gears.table.join(
@@ -185,7 +178,7 @@ root.buttons(gears.table.join(
 
 -- remaps (should put into a keys.lua or something)
 globalkeys = gears.table.join(
-    awful.key({ modkey }, "s", hotkeys_popup.show_help, {
+    awful.key({ modkey, "Shift" }, "m", hotkeys_popup.show_help, {
         description = "show help",
         group = "awesome"
     }),
@@ -240,9 +233,16 @@ globalkeys = gears.table.join(
             description = "launch thunar",
             group = "launcher"
         }),
+    awful.key({ modkey }, "s",
+        function ()
+            awful.spawn("firefox --new-window https://www.lifeofdiscipline.com/my-habits")
+        end, {
+            description = "launch habit tracker",
+            group = "launcher"
+        }),
 
 
-    -- layout manipulation
+    -- layout movement/manipulation
     awful.key({ modkey, "Shift" }, "j",
         function ()
             awful.client.swap.byidx(1)
@@ -350,12 +350,40 @@ globalkeys = gears.table.join(
             group = "layout"
         }),
 
-
+    -- rofi modes
     awful.key({ modkey }, "p",
         function()
-            awful.spawn("rofi -show drun")
+            awful.spawn('rofi -modes "drun" -show drun')
         end, {
-            description = "launch rofi",
+            description = "launch rofi-drun",
+            group = "launcher"
+        }),
+    awful.key({ modkey }, "m",
+        function()
+            awful.spawn('rofi -modes "window" -show window')
+        end, {
+            description = "launch rofi-window",
+            group = "launcher"
+        }),
+    awful.key({}, "XF86AudioMute",
+        function ()
+            awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")
+        end, {
+            description = "Mute audio while on laptop",
+            group = "launcher"
+        }),
+    awful.key({}, "XF86MonBrightnessUp",
+        function ()
+            awful.spawn("xbacklight -inc 10")
+        end, {
+            description = "Laptop brightness up",
+            group = "launcher"
+        }),
+    awful.key({}, "XF86MonBrightnessDown",
+        function ()
+            awful.spawn("xbacklight -dec 10")
+        end, {
+            description = "Laptop brightness down",
             group = "launcher"
         })
 )
@@ -546,7 +574,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 
-awful.spawn("nitrogen --restore")
 awful.spawn("picom -CGb")
 awful.spawn("xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' -0.5")
 awful.spawn("xinput --set-prop 'Logitech Wireless Mouse PID:4096' 'Coordinate Transformation Matrix' 0.8 0 0 0 0.8 0 0 0 1")
