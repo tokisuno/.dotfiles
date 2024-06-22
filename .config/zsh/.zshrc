@@ -53,7 +53,7 @@ alias refup='sudo reflector --latest 5 --country canada --sort rate --save /etc/
 
 alias fonts='fc-cache -f -v'
 
-alias terminal-font="echo ~/.config/fontconfig/fonts.conf"
+alias fontconf="echo ~/.config/fontconfig/fonts.conf"
 
 # Auto-completion
 autoload -U compinit

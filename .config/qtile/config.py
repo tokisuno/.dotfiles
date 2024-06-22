@@ -113,10 +113,6 @@ keys = [
         lazy.reload_config()),
 
     # Laptop/Desktop Volume Mappings
-    Key([], "XF86AudioLowerVolume",
-        lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -10%")),
-    Key([], "XF86AudioRaiseVolume",
-        lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +10%")),
     Key([], "XF86AudioMute",
         lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
     Key([], "XF86MonBrightnessUp",
