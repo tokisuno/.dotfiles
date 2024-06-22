@@ -46,37 +46,21 @@ do
 end
 -- }}}
 
--- {{{ Variable definitions
--- Themes define colours, icons, font and wallpapers.
-beautiful.init("~/.config/awesome/themes/zenburn/theme.lua")
+beautiful.init("~/.config/awesome/themes/gruvbox/theme.lua")
 
--- This is used later as the default terminal and editor to run.
 terminal = "kitty"
 browser = "firefox"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
-
--- Default modkey.
--- Usually, Mod4 is the key with a logo between Control and Alt.
--- If you do not like this or do not have such a key,
--- I suggest you to remap Mod4 to another key using xmodmap or other tools.
--- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
 
--- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.tile.left,
     awful.layout.suit.spiral,
     awful.layout.suit.max,
 }
--- }}}
 
-mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mymainmenu })
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
-
--- {{{ Wibar
--- Create a textclock widget
-mytextclock = wibox.widget.textclock()
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -140,8 +124,8 @@ awful.screen.connect_for_each_screen(function(s)
     -- Each screen has its own tag table.
     local names = { " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● " }
     local l = awful.layout.suit  -- Just to save some typing: use an alias.
-    local layouts = { l.floating, l.tile, l.floating, l.fair, l.max,
-        l.floating, l.tile.left, l.floating, l.floating }
+    local layouts = { l.tile.left, l.tile.left, l.tile.left, l.tile.left, l.tile.left,
+        l.tile.left, l.tile.left, l.tile.left, l.tile.left}
     awful.tag(names, s, layouts)
 
     -- Create a promptbox for each screen
@@ -185,7 +169,8 @@ awful.screen.connect_for_each_screen(function(s)
         -- s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            wibox.widget.systray()
+            wibox.widget.systray(),
+            wibox.widget.textclock(' [%A] '),
         },
     }
 end)
@@ -193,7 +178,6 @@ end)
 
 -- mouse binds
 root.buttons(gears.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
@@ -226,6 +210,7 @@ globalkeys = gears.table.join(
         }),
 
 
+    -- programs
     awful.key({ modkey }, "w",
         function ()
             awful.spawn(browser)
@@ -240,6 +225,14 @@ globalkeys = gears.table.join(
             description = "open a terminal",
             group = "launcher"
         }),
+    awful.key({ modkey }, "z",
+        function ()
+            awful.spawn("thunar")
+        end, {
+            description = "launch thunar",
+            group = "launcher"
+        }),
+
 
     -- layout manipulation
     awful.key({ modkey, "Shift" }, "j",
@@ -270,12 +263,13 @@ globalkeys = gears.table.join(
             description = "focus the previous screen",
             group = "screen"
         }),
+
+    -- client-based remaps
     awful.key({ modkey }, "u",
         awful.client.urgent.jumpto, {
             description = "jump to urgent client",
             group = "client"
         }),
-
 
     awful.key({ modkey, "Control" }, "r",
         awesome.restart, {
@@ -288,7 +282,7 @@ globalkeys = gears.table.join(
             group = "awesome"
         }),
 
-
+    -- resize layouts
     awful.key({ modkey }, "l",
         function ()
             awful.tag.incmwfact( 0.05)
@@ -319,7 +313,7 @@ globalkeys = gears.table.join(
         }),
     awful.key({ modkey, "Control" }, "h",
         function ()
-            awful.tag.incncol( 1, nil, true)
+            awful.tag.incncol(1, nil, true)
         end, {
             description = "increase the number of columns",
             group = "layout"
@@ -331,14 +325,16 @@ globalkeys = gears.table.join(
             description = "decrease the number of columns",
             group = "layout"
         }),
-    awful.key({ modkey }, "space",
+
+    -- change layouts
+    awful.key({ modkey }, "Tab",
         function ()
-            awful.layout.inc( 1)
+            awful.layout.inc(1)
         end, {
             description = "select next",
             group = "layout"
         }),
-    awful.key({ modkey, "Shift"   }, "space",
+    awful.key({ modkey, "Shift" }, "Tab",
         function ()
             awful.layout.inc(-1)
         end, {
@@ -347,13 +343,11 @@ globalkeys = gears.table.join(
         }),
 
 
-    -- Menubar
-    -- TODO: have this run rofi instead
     awful.key({ modkey }, "p",
         function()
             awful.spawn("rofi -show drun")
         end, {
-            description = "show the menubar",
+            description = "launch rofi",
             group = "launcher"
         })
 )
