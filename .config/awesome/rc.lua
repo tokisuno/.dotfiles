@@ -4,7 +4,7 @@ local client = client
 local root = root
 
 -- If LuaRocks is installed, make sure that packages installed through it are
--- found (e.g. lgi). If LuaRocks is not installed, do nothing.
+--                  found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
 local gears = require("gears")
@@ -16,8 +16,9 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 
 local naughty = require("naughty")
-local menubar = require("menubar")
+naughty.config.defaults['icon_size'] = 60
 
+local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 
@@ -228,6 +229,13 @@ globalkeys = gears.table.join(
     awful.key({ modkey }, "z",
         function ()
             awful.spawn("thunar")
+        end, {
+            description = "launch thunar",
+            group = "launcher"
+        }),
+    awful.key({ modkey }, "v",
+        function ()
+            awful.spawn("pavucontrol")
         end, {
             description = "launch thunar",
             group = "launcher"

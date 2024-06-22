@@ -28,5 +28,5 @@ ln -sf ~/Dropbox/.dotfiles/.config/zsh/ ~/.config
 
 
 # Config files
-ln -sf ~/Dropbox/.dotfiles/.config/mimeapps.list ~/.config
-ln -sf ~/Dropbox/.dotfiles/.config/picom.conf ~/.config
+ln -s ~/Dropbox/.dotfiles/.config/mimeapps.list ~/.config/
+ln -s ~/Dropbox/.dotfiles/.config/picom.conf ~/.config/
