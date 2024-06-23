@@ -1,8 +1,9 @@
 # Prompt
 PS1='%F{white}%~ %(?.%F{yellow}.%F{red})%#%f '
+
 RPROMPT='$GITSTATUS_PROMPT'
-alias neofetch='archfetch'
 ZVM_CURSOR_STYLE_ENABLED=true
+
 
 if which tmux 2>&1 >/dev/null; then
     if [ $TERM != "xterm-256color" ] && [  $TERM != "xterm" ]; then
@@ -11,6 +12,8 @@ if which tmux 2>&1 >/dev/null; then
 fi
 
 # ALIASES
+alias neofetch='archfetch'
+
 ## ls replacement
 alias ls='eza'
 alias l='eza -lbF --git'
