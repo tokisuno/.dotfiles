@@ -253,6 +253,29 @@ globalkeys = gears.table.join(
             description = "launch habit tracker",
             group = "launcher"
         }),
+    awful.key({modkey, "Shift"}, "p",
+        function()
+            awful.spawn("emacsclient -c ~/Dropbox/org/todo.org")
+        end, {
+            description = "open emacs for org-mode",
+            group = "launcher"
+        }),
+    awful.key({}, "Print",
+        function()
+            awful.spawn("flameshot gui")
+        end, {
+            description = "open emacs for org-mode",
+            group = "launcher"
+        }),
+    awful.key({modkey, "Shift"}, "v",
+        function()
+            awful.spawn("/home/poto/.local/share/scripts/restart-pipewire")
+        end, {
+            description = "restarts pipewire (audio issues)",
+            group = "launcher"
+        }),
+
+
 
 
     -- layout movement/manipulation
@@ -369,13 +392,6 @@ globalkeys = gears.table.join(
             awful.spawn('rofi -modes "drun" -show drun')
         end, {
             description = "launch rofi-drun",
-            group = "launcher"
-        }),
-    awful.key({modkey}, "m",
-        function()
-            awful.spawn('rofi -modes "window" -show window')
-        end, {
-            description = "launch rofi-window",
             group = "launcher"
         }),
     awful.key({}, "XF86AudioMute",

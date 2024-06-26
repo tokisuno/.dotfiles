@@ -56,6 +56,7 @@ export FZF_COMPLETION_TRIGGER=']]'
 export FZF_COMPLETION_OPTS='--border --info=inline'
 
 # npm shit
+export PATH=${PATH}:"~/.npm-global/bin"
 export NPM_DIR="$HOME/.npm-data"
 NPM_PACKAGES="$HOME/.npm-packages"
 

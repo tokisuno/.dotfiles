@@ -12,7 +12,6 @@ if which tmux 2>&1 >/dev/null; then
 fi
 
 # ALIASES
-alias neofetch='archfetch'
 
 ## ls replacement
 alias ls='eza'
@@ -101,3 +100,5 @@ vterm_printf() {
 gmod () {
   go mod init github.com/tokisuno/$@
 }
+
+beatit() { play -n -c1 synth 0.001 sine 1000 pad `awk "BEGIN { print 60/$1 -.001 }"` repeat 9999999 ; } 

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+notify-send "Restarting pipewire.service"
+systemctl --user restart pipewire.service
+pactl set-sink-volume @DEFAULT_SINK@ 30%
+notify-send "Done!"

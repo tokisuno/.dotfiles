@@ -7,28 +7,32 @@ run() {
 }
 
 # compositor
-run "picom -CGb"
+picom -CGb
 
 # trackpoint settings
-run "xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' -0.5"
+xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' -0.5
 
 # trackball sensitivity
-run "xinput --set-prop 'Logitech Wireless Mouse PID:4096' 'Coordinate Transformation Matrix' 0.8 0 0 0 0.8 0 0 0 1"
+xinput --set-prop 'Logitech Wireless Mouse PID:4096' 'Coordinate Transformation Matrix' 0.8 0 0 0 0.8 0 0 0 1
 
 # ibus input manager
-run "ibus-daemon -drxR"
+ibus-daemon -drxR
 
 # screenshot client
-run "flameshot"
+flameshot
 
 # file syncing
 run "dropbox"
 
-# conky for lists and schedule
-run "~/.local/share/scripts/start-conky"
+# emacs daemon
+( exec "$HOME/.local/share/scripts/macdr" )
 
 # maps caps to ctrl
-run "setxkbmap -option 'ctrl:nocaps'"
+setxkbmap -option 'ctrl:nocaps'
 
 # volume icon
 run "volumeicon"
+
+# audio fuckery to get it working consistently
+pactl set-sink-volume @DEFAULT_SINK@ 30%
+systemctl --user restart pipewire.service
