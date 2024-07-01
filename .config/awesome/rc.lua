@@ -14,7 +14,10 @@ local awful = require("awful")
 
 local wibox = require("wibox")
 
+local xresources = require("beautiful.xresources")
 local beautiful = require("beautiful")
+
+local dpi = xresources.apply_dpi
 
 local naughty = require("naughty")
 naughty.config.defaults['icon_size'] = 60
@@ -124,69 +127,80 @@ end
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
+shape = function (cr, w, h)
+  gears.shape.rounded_rect(cr, w, h, 20)
+end
+
 awful.screen.connect_for_each_screen(function(s)
-    set_wallpaper()
+  set_wallpaper()
 
-    local names = { " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● " }
-    local l = awful.layout.suit  -- Just to save some typing: use an alias.
-    local layouts = {
-        l.tile.left, l.tile.left, l.tile.left,
-        l.tile.left, l.tile.left, l.tile.left,
-        l.tile.left, l.tile.left, l.tile.left
-    }
-    awful.tag(names, s, layouts)
+  local names = { " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● " }
+  local l = awful.layout.suit  -- Just to save some typing: use an alias.
+  local layouts = {
+    l.tile.left, l.tile.left, l.tile.left,
+    l.tile.left, l.tile.left, l.tile.left,
+    l.tile.left, l.tile.left, l.tile.left
+  }
+  awful.tag(names, s, layouts)
 
-    -- Create a promptbox for each screen
-    s.mypromptbox = awful.widget.prompt()
-    -- Create an imagebox widget which will contain an icon indicating which layout we're using.
-    -- We need one layoutbox per screen.
-    s.mylayoutbox = awful.widget.layoutbox(s)
-    s.mylayoutbox:buttons(gears.table.join(
-                           awful.button({}, 1, function() awful.layout.inc( 1) end),
-                           awful.button({}, 3, function() awful.layout.inc(-1) end),
-                           awful.button({}, 4, function() awful.layout.inc( 1) end),
-                           awful.button({}, 5, function() awful.layout.inc(-1) end)))
+  -- Create a promptbox for each screen
+  s.mypromptbox = awful.widget.prompt()
+  -- Create an imagebox widget which will contain an icon indicating which layout we're using.
+  -- We need one layoutbox per screen.
+  s.mylayoutbox = awful.widget.layoutbox(s)
+  s.mylayoutbox:buttons(gears.table.join(
+  awful.button({}, 1, function() awful.layout.inc( 1) end),
+  awful.button({}, 3, function() awful.layout.inc(-1) end),
+  awful.button({}, 4, function() awful.layout.inc( 1) end),
+  awful.button({}, 5, function() awful.layout.inc(-1) end)))
 
-    -- Create a taglist widget
-    s.mytaglist = awful.widget.taglist {
-        screen  = s,
-        filter  = awful.widget.taglist.filter.all,
-        buttons = taglist_buttons
-    }
+  -- Create a taglist widget
+  s.mytaglist = awful.widget.taglist {
+    screen  = s,
+    filter  = awful.widget.taglist.filter.all,
+    buttons = taglist_buttons
+  }
 
-    -- Create a tasklist widget
-    s.mytasklist = awful.widget.tasklist {
-        screen  = s,
-        filter  = awful.widget.tasklist.filter.currenttags,
-        buttons = tasklist_buttons
-    }
+  -- Create a tasklist widget
+  s.mytasklist = awful.widget.tasklist {
+    screen  = s,
+    filter  = awful.widget.tasklist.filter.currenttags,
+    buttons = tasklist_buttons
+  }
 
-    -- Create the wibox
-    s.mywibox = awful.wibar({ position = "bottom", screen = s })
+  -- Create the wibox
+  s.mywibox = awful.wibar({
+    position = "bottom",
+    screen = s,
+    opacity = 0.7,
+    -- border_width = dpi(8),
+    -- shape = shape,
+    height = 30,
+  })
 
-    -- Add widgets to the wibox
-    s.mywibox:setup {
-        layout = wibox.layout.align.horizontal,
-        { -- Left widgets
-            s.mylayoutbox,
-            layout = wibox.layout.fixed.horizontal,
-            s.mytasklist,
-            s.mypromptbox,
-        },
-        s.mytaglist,
-        expand="none",
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            wibox.layout.margin(wibox.widget.systray(), 4, 4, 4, 4),
-            wibox.widget.textclock(' [%A] '),
-        },
-    }
+  -- Add widgets to the wibox
+  s.mywibox:setup {
+    layout = wibox.layout.align.horizontal,
+    { -- Left widgets
+      s.mylayoutbox,
+      layout = wibox.layout.fixed.horizontal,
+      s.mytasklist,
+      s.mypromptbox,
+    },
+    s.mytaglist,
+    expand="none",
+    { -- Right widgets
+      layout = wibox.layout.fixed.horizontal,
+      wibox.layout.margin(wibox.widget.systray(), 3, 3, 3, 3),
+      wibox.widget.textclock(' %A '),
+    },
+  }
 end)
 
 -- mouse binds
 root.buttons(gears.table.join(
-    awful.button({ }, 4, awful.tag.viewnext),
-    awful.button({ }, 5, awful.tag.viewprev)
+  awful.button({ }, 4, awful.tag.viewnext),
+  awful.button({ }, 5, awful.tag.viewprev)
 ))
 
 -- remaps (should put into a keys.lua or something)
@@ -274,9 +288,6 @@ globalkeys = gears.table.join(
             description = "restarts pipewire (audio issues)",
             group = "launcher"
         }),
-
-
-
 
     -- layout movement/manipulation
     awful.key({modkey, "Shift"}, "j",
@@ -394,6 +405,15 @@ globalkeys = gears.table.join(
             description = "launch rofi-drun",
             group = "launcher"
         }),
+    awful.key({modkey}, "s",
+        function()
+            awful.spawn('rofi-pass')
+        end, {
+            description = "launch rofi-pass",
+            group = "launcher"
+        }),
+
+    -- laptop keys
     awful.key({}, "XF86AudioMute",
         function()
             awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")
@@ -512,78 +532,81 @@ for i = 1, 9 do
 end
 
 clientbuttons = gears.table.join(
-    awful.button({}, 1,
-        function(c)
-            c:emit_signal("request::activate", "mouse_click", {raise = true})
-        end),
-    awful.button({modkey}, 1,
-        function(c)
-            c:emit_signal("request::activate", "mouse_click", {raise = true})
-            awful.mouse.client.move(c)
-        end),
-    awful.button({modkey}, 3,
-        function(c)
-            c:emit_signal("request::activate", "mouse_click", {raise = true})
-            awful.mouse.client.resize(c)
-        end))
+  awful.button({}, 1,
+    function(c)
+      c:emit_signal("request::activate", "mouse_click", {raise = true})
+    end),
+
+  awful.button({modkey}, 1,
+    function(c)
+      c:emit_signal("request::activate", "mouse_click", {raise = true})
+      awful.mouse.client.move(c)
+    end),
+
+  awful.button({modkey}, 3,
+    function(c)
+      c:emit_signal("request::activate", "mouse_click", {raise = true})
+      awful.mouse.client.resize(c)
+    end))
 
 root.keys(globalkeys)
 
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
-    -- All clients will match this rule.
-    { rule = {},
-        properties = {
-            border_width = beautiful.border_width,
-            border_color = beautiful.border_normal,
-            focus = awful.client.focus.filter,
-            raise = true,
-            keys = clientkeys,
-            buttons = clientbuttons,
-            screen = awful.screen.preferred,
-            placement = awful.placement.no_overlap+awful.placement.no_offscreen
-        }
+  -- All clients will match this rule.
+  {
+    rule = {},
+    properties = {
+      border_width = beautiful.border_width,
+      border_color = beautiful.border_normal,
+      focus = awful.client.focus.filter,
+      raise = true,
+      keys = clientkeys,
+      buttons = clientbuttons,
+      screen = awful.screen.preferred,
+      placement = awful.placement.no_overlap+awful.placement.no_offscreen
+    }
+  },
+
+-- Floating clients.
+  {
+    rule_any = {
+      instance = {
+        "DTA",  -- Firefox addon DownThemAll.
+        "copyq",  -- Includes session name in class.
+        "pinentry",
+      },
+      class = {
+        "Arandr",
+        "Blueman-manager",
+        "Gpick",
+        "Kruler",
+        "MessageWin",  -- kalarm.
+        "Sxiv",
+        "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
+        "Wpa_gui",
+        "veromix",
+        "xtightvncviewer"
+      },
+      name = {
+        "Event Tester",  -- xev.
+      },
+      role = {
+        "AlarmWindow",  -- Thunderbird's calendar.
+        "ConfigManager",  -- Thunderbird's about:config.
+        "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
+      }
     },
-
-    -- Floating clients.
-    { rule_any = {
-        instance = {
-            "DTA",  -- Firefox addon DownThemAll.
-            "copyq",  -- Includes session name in class.
-            "pinentry",
-        },
-        class = {
-            "Arandr",
-            "Blueman-manager",
-            "Gpick",
-            "Kruler",
-            "MessageWin",  -- kalarm.
-            "Sxiv",
-            "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
-            "Wpa_gui",
-            "veromix",
-            "xtightvncviewer"
-        },
-
-        -- Note that the name property shown in xprop might be set slightly after creation of the client
-        -- and the name shown there might not match defined rules here.
-        name = {
-            "Event Tester",  -- xev.
-        },
-        role = {
-            "AlarmWindow",  -- Thunderbird's calendar.
-            "ConfigManager",  -- Thunderbird's about:config.
-            "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
-        }
-      }, properties = { floating = true }},
-
-    { rule = { class = "Firefox" },
-        properties = {
-            screen = 1,
-            tag = "2"
-        }
-    },
+    properties = { floating = true }
+  },
+  {
+    rule = { class = "Firefox" },
+    properties = {
+      screen = 1,
+      tag = "2"
+    }
+  },
 }
 -- }}}
 
@@ -606,4 +629,4 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-awful.spawn.with_shell("~/.config/awesome/autostart.sh")
+awful.spawn("/home/poto/Dropbox/.dotfiles/.config/awesome/autostart.sh")

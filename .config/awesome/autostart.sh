@@ -6,20 +6,24 @@ run() {
     fi
 }
 
-# compositor
-picom -CGb
+run "nitrogen" --restore
 
-# trackpoint settings
-xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' -0.5
+# compositor
+run "picom"
+
+# These break startup for some reason so comment out one or the other when you need it
+
+# # trackpoint settings
+# xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' -0.5 &
 
 # trackball sensitivity
-xinput --set-prop 'Logitech Wireless Mouse PID:4096' 'Coordinate Transformation Matrix' 0.8 0 0 0 0.8 0 0 0 1
+run "xinput" --set-prop 'Logitech ERGO M575' 'Coordinate Transformation Matrix' 0.8 0 0 0 0.8 0 0 0 1
 
 # ibus input manager
-ibus-daemon -drxR
+run "ibus-daemon" -drxR
 
 # screenshot client
-flameshot
+run "flameshot"
 
 # file syncing
 run "dropbox"
@@ -28,11 +32,11 @@ run "dropbox"
 ( exec "$HOME/.local/share/scripts/macdr" )
 
 # maps caps to ctrl
-setxkbmap -option 'ctrl:nocaps'
+run "setxkbmap" -option 'ctrl:nocaps'
 
 # volume icon
 run "volumeicon"
 
 # audio fuckery to get it working consistently
-pactl set-sink-volume @DEFAULT_SINK@ 30%
-systemctl --user restart pipewire.service
+run "pactl" set-sink-volume @DEFAULT_SINK@ 30%
+
