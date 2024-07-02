@@ -405,13 +405,6 @@ globalkeys = gears.table.join(
             description = "launch rofi-drun",
             group = "launcher"
         }),
-    awful.key({modkey}, "s",
-        function()
-            awful.spawn('rofi-pass')
-        end, {
-            description = "launch rofi-pass",
-            group = "launcher"
-        }),
 
     -- laptop keys
     awful.key({}, "XF86AudioMute",

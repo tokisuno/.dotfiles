@@ -51,10 +51,14 @@ alias todo='vim ~/Dropbox/todo/todo.md'
 alias what='vim ~/Dropbox/todo/what-todo.md'
 alias thot='vim ~/Dropbox/todo/thoughts.md'
 
+# Git 
+alias ga='git add .'
+alias gc='git commit -m'
+alias gp='git push'
+alias gt='git-token'
+
 alias refup='sudo reflector --latest 5 --country canada --sort rate --save /etc/pacman.d/mirrorlist'
-
 alias fonts='fc-cache -f -v'
-
 alias fontconf="echo ~/.config/fontconfig/fonts.conf"
 
 # Auto-completion
@@ -101,4 +105,9 @@ gmod () {
   go mod init github.com/tokisuno/$@
 }
 
+cn () {
+    cargo new "$@" --vcs none
+}
+
 beatit() { play -n -c1 synth 0.001 sine 1000 pad `awk "BEGIN { print 60/$1 -.001 }"` repeat 9999999 ; } 
+source /usr/share/nvm/init-nvm.sh
