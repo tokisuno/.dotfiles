@@ -32,6 +32,7 @@ alias vi='/bin/vim'
 alias rip='cd ~/.local/share/scripts'
 alias zse='vim ~/.config/zsh/.zshrc'
 alias ka='killall'
+alias pain='vim ~/Dropbox/life/FLEETING/affirmations.md'
 
 ## Pacman & Yay
 alias syu="yes | sudo pacman -Scc && sudo pacman -Syu && setxkbmap -option 'ctrl:nocaps'"
@@ -39,6 +40,10 @@ alias syu="yes | sudo pacman -Scc && sudo pacman -Syu && setxkbmap -option 'ctrl
 ## Navigation
 alias aa='cd -'
 alias bk='cd ..'
+alias bkk='cd ../..'
+alias bkkk='cd ../../..'
+
+# Tmux
 alias ts='tmux-sessionizer'
 alias tp='tmux-pomodoro'
 alias tw='tmux-session-switcher'
@@ -57,7 +62,10 @@ alias gc='git commit -m'
 alias gp='git push'
 alias gt='git-token'
 
+# Mirrors
 alias refup='sudo reflector --latest 5 --country canada --sort rate --save /etc/pacman.d/mirrorlist'
+
+# Font jazz
 alias fonts='fc-cache -f -v'
 alias fontconf="echo ~/.config/fontconfig/fonts.conf"
 
