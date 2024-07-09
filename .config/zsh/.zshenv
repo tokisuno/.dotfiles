@@ -1,6 +1,5 @@
 #!/usr/bin/zsh
 
-
 # zsh
 export ZDOTDIR="$HOME/.config/zsh"
 export HISTFILE="$ZDOTDIR/.zhistory"
@@ -57,7 +56,6 @@ export FZF_COMPLETION_OPTS='--border --info=inline'
 
 # npm shit
 export PATH=${PATH}:"~/.npm-global/bin"
-export PATH=${PATH}:"/usr/local/share/npm/bin"
 export NPM_DIR="$HOME/.npm-data"
 NPM_PACKAGES="$HOME/.npm-packages"
 

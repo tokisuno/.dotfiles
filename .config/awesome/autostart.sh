@@ -39,4 +39,3 @@ run "volumeicon"
 
 # audio fuckery to get it working consistently
 run "pactl" set-sink-volume @DEFAULT_SINK@ 30%
-
