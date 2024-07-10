@@ -9,7 +9,7 @@ run() {
 run "nitrogen" --restore
 
 # compositor
-run "picom"
+run "picom" -b
 
 # These break startup for some reason so comment out one or the other when you need it
 
@@ -29,7 +29,8 @@ run "flameshot"
 run "dropbox"
 
 # emacs daemon
-( exec "$HOME/.local/share/scripts/macdr" )
+# gets annoying to run every time
+# ( exec "$HOME/.local/share/scripts/macdr" )
 
 # maps caps to ctrl
 run "setxkbmap" -option 'ctrl:nocaps'

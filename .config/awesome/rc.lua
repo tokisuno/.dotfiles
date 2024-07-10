@@ -54,7 +54,7 @@ end
 beautiful.init("~/.config/awesome/themes/default/theme.lua")
 
 terminal = "kitty"
-browser = "firefox"
+browser = "brave"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
@@ -145,7 +145,6 @@ awful.screen.connect_for_each_screen(function(s)
 
   -- Create a promptbox for each screen
   s.mypromptbox = awful.widget.prompt()
-  -- Create an imagebox widget which will contain an icon indicating which layout we're using.
   -- We need one layoutbox per screen.
   s.mylayoutbox = awful.widget.layoutbox(s)
   s.mylayoutbox:buttons(gears.table.join(
@@ -165,34 +164,40 @@ awful.screen.connect_for_each_screen(function(s)
   s.mytasklist = awful.widget.tasklist {
     screen  = s,
     filter  = awful.widget.tasklist.filter.currenttags,
-    buttons = tasklist_buttons
+    buttons = tasklist_buttons,
+    style   = {
+      shape_border_width = 1,
+      shape_border_color = '#ccc',
+      shape  = gears.shape.rounded_bar,
+    },
+    layout = {
+      spacing = 5,
+      max_widget_size = awful.screen.focused().workarea.width * 0.25,
+      layout  = wibox.layout.flex.horizontal
+    },
   }
 
   -- Create the wibox
   s.mywibox = awful.wibar({
     position = "bottom",
     screen = s,
-    opacity = 0.7,
-    -- border_width = dpi(8),
-    -- shape = shape,
-    height = 30,
+    opacity = 1,
+    height = 26,
   })
 
   -- Add widgets to the wibox
   s.mywibox:setup {
     layout = wibox.layout.align.horizontal,
     { -- Left widgets
-      s.mylayoutbox,
       layout = wibox.layout.fixed.horizontal,
-      s.mytasklist,
-      s.mypromptbox,
+      s.mytaglist,
     },
-    s.mytaglist,
-    expand="none",
+    wibox.layout.margin(s.mytasklist, 1, 1, 1, 1);
     { -- Right widgets
       layout = wibox.layout.fixed.horizontal,
-      wibox.layout.margin(wibox.widget.systray(), 3, 3, 3, 3),
-      wibox.widget.textclock(' %A '),
+      wibox.layout.margin(wibox.widget.systray(), 2, 2, 2, 2),
+      wibox.widget.textclock(' [%a] '),
+      s.mylayoutbox,
     },
   }
 end)
@@ -258,13 +263,6 @@ globalkeys = gears.table.join(
             awful.spawn("pavucontrol")
         end, {
             description = "launch thunar",
-            group = "launcher"
-        }),
-    awful.key({modkey}, "s",
-        function()
-            awful.spawn("firefox --new-window https://www.lifeofdiscipline.com/my-habits")
-        end, {
-            description = "launch habit tracker",
             group = "launcher"
         }),
     awful.key({modkey, "Shift"}, "p",
@@ -622,4 +620,5 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-awful.spawn("~/Dropbox/.dotfiles/.config/awesome/autostart.sh")
+awful.spawn("/home/poto/Dropbox/.dotfiles/.config/awesome/autostart.sh")
+awful.spawn("/home/skinnyboot/Dropbox/.dotfiles/.config/awesome/autostart.sh")
