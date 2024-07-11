@@ -1,0 +1,5 @@
+#!/bin/bash
+
+xrandr --output HDMI-0 --right-of DVI-I-1 --mode 1920x1080 
+
+nitrogen --restore

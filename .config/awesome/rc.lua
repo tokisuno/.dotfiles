@@ -237,82 +237,58 @@ globalkeys = gears.table.join(
 
 
     -- programs
-    awful.key({modkey}, "w",
-        function()
-            awful.spawn(browser)
-        end, {
+    awful.key({ modkey }, "w", function() awful.spawn(browser) end, {
             description = "show main menu",
             group = "awesome"
         }),
-    awful.key({modkey}, "Return",
-        function()
-            awful.spawn(terminal)
-        end, {
+    awful.key({ modkey }, "Return", function() awful.spawn(terminal) end, {
             description = "open a terminal",
             group = "launcher"
         }),
-    awful.key({modkey}, "z",
+    awful.key({ modkey }, "z",
         function()
             awful.spawn("thunar")
         end, {
             description = "launch thunar",
             group = "launcher"
         }),
-    awful.key({modkey}, "v",
-        function()
-            awful.spawn("pavucontrol")
-        end, {
+    awful.key({ modkey }, "v", function() awful.spawn("pavucontrol") end, {
             description = "launch thunar",
             group = "launcher"
         }),
-    awful.key({modkey, "Shift"}, "p",
-        function()
-            awful.spawn("emacsclient -c ~/Dropbox/org/todo.org")
-        end, {
+    awful.key({ modkey, "Shift" }, "p", function() awful.spawn("emacsclient -c ~/Dropbox/org/todo.org") end, {
             description = "open emacs for org-mode",
             group = "launcher"
         }),
-    awful.key({}, "Print",
-        function()
-            awful.spawn("flameshot gui")
-        end, {
+    awful.key({}, "Print", function() awful.spawn("flameshot gui") end, {
             description = "open emacs for org-mode",
             group = "launcher"
         }),
-    awful.key({modkey, "Shift"}, "v",
-        function()
-            awful.spawn("/home/poto/.local/share/scripts/restart-pipewire")
-        end, {
+    awful.key({ modkey, "Shift" }, "v", function() awful.spawn("/home/poto/.local/share/scripts/restart-pipewire") end, {
+            description = "restarts pipewire (audio issues)",
+            group = "launcher"
+        }),
+    awful.key({ modkey }, ".", function() awful.spawn("find-cursor -o 2 -c blue -O red -g --distance 50 -w 400") end, {
             description = "restarts pipewire (audio issues)",
             group = "launcher"
         }),
 
     -- layout movement/manipulation
-    awful.key({modkey, "Shift"}, "j",
-        function()
-            awful.client.swap.byidx(1)
-        end, {
+    awful.key({ modkey, "Shift" }, "j", function() awful.client.swap.byidx(1) end, {
             description = "swap with next client by index",
             group = "client"
         }),
-    awful.key({modkey, "Shift"}, "k",
-        function()
-            awful.client.swap.byidx(-1)
-        end, {
+    awful.key({ modkey, "Shift" }, "k", function() awful.client.swap.byidx(-1) end, {
             description = "swap with previous client by index",
             group = "client"
         }),
-    awful.key({modkey, "Control"}, "j",
-        function()
-            awful.screen.focus_relative(1)
-        end, {
+
+    -- moving to next monitor
+    awful.key({ modkey }, "s", function() awful.screen.focus_relative(1) end, {
             description = "focus the next screen",
             group = "screen"
         }),
-    awful.key({modkey, "Control"}, "k",
-        function()
-            awful.screen.focus_relative(-1)
-        end, {
+    awful.key({modkey, "Shift"}, "s", function() awful.screen.focus_relative(-1) end, {
             description = "focus the previous screen",
             group = "screen"
         }),
@@ -336,93 +312,57 @@ globalkeys = gears.table.join(
         }),
 
     -- resize layouts
-    awful.key({modkey}, "l",
-        function()
-            awful.tag.incmwfact( 0.05)
-        end, {
+    awful.key({modkey}, "l", function() awful.tag.incmwfact( 0.05) end, {
             description = "increase master width factor",
             group = "layout"
         }),
-    awful.key({modkey}, "h",
-        function()
-            awful.tag.incmwfact(-0.05)
-        end, {
+    awful.key({modkey}, "h", function() awful.tag.incmwfact(-0.05) end, {
             description = "decrease master width factor",
             group = "layout"
         }),
-    awful.key({modkey, "Shift"}, "h",
-        function()
-            awful.tag.incnmaster( 1, nil, true)
-        end, {
+    awful.key({modkey, "Shift"}, "h", function() awful.tag.incnmaster( 1, nil, true) end, {
             description = "increase the number of master clients",
             group = "layout"
         }),
-    awful.key({modkey, "Shift"}, "l",
-        function()
-            awful.tag.incnmaster(-1, nil, true)
-        end, {
+    awful.key({modkey, "Shift"}, "l", function() awful.tag.incnmaster(-1, nil, true) end, {
             description = "decrease the number of master clients",
             group = "layout"
         }),
-    awful.key({modkey, "Control"}, "h",
-        function()
-            awful.tag.incncol(1, nil, true)
-        end, {
+    awful.key({modkey, "Control"}, "h", function() awful.tag.incncol(1, nil, true) end, {
             description = "increase the number of columns",
             group = "layout"
         }),
-    awful.key({modkey, "Control"}, "l",
-        function()
-            awful.tag.incncol(-1, nil, true)
-        end, {
+    awful.key({modkey, "Control"}, "l", function() awful.tag.incncol(-1, nil, true) end, {
             description = "decrease the number of columns",
             group = "layout"
         }),
 
     -- change layouts
-    awful.key({modkey}, "Tab",
-        function()
-            awful.layout.inc(1)
-        end, {
+    awful.key({modkey}, "Tab", function() awful.layout.inc(1) end, {
             description = "select next",
             group = "layout"
         }),
-    awful.key({modkey, "Shift"}, "Tab",
-        function()
-            awful.layout.inc(-1)
-        end, {
+    awful.key({modkey, "Shift"}, "Tab", function() awful.layout.inc(-1) end, {
             description = "select previous",
             group = "layout"
         }),
 
     -- rofi modes
-    awful.key({modkey}, "p",
-        function()
-            awful.spawn('rofi -modes "drun" -show drun')
-        end, {
+    awful.key({modkey}, "p", function() awful.spawn('rofi -modes "drun" -show drun') end, {
             description = "launch rofi-drun",
             group = "launcher"
         }),
 
     -- laptop keys
-    awful.key({}, "XF86AudioMute",
-        function()
-            awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")
-        end, {
+    awful.key({}, "XF86AudioMute", function() awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end, {
             description = "Mute audio while on laptop",
             group = "launcher"
         }),
-    awful.key({}, "XF86MonBrightnessUp",
-        function()
-            awful.spawn("xbacklight -inc 10")
-        end, {
+    awful.key({}, "XF86MonBrightnessUp", function() awful.spawn("xbacklight -inc 10") end, {
             description = "Laptop brightness up",
             group = "launcher"
         }),
-    awful.key({}, "XF86MonBrightnessDown",
-        function()
-            awful.spawn("xbacklight -dec 10")
-        end, {
+    awful.key({}, "XF86MonBrightnessDown", function() awful.spawn("xbacklight -dec 10") end, {
             description = "Laptop brightness down",
             group = "launcher"
         })
@@ -437,10 +377,7 @@ clientkeys = gears.table.join(
             description = "toggle fullscreen",
             group = "client"
         }),
-    awful.key({modkey}, "q",
-        function (c)
-            c:kill()
-        end, {
+    awful.key({modkey}, "q", function (c) c:kill() end, {
             description = "close",
             group = "client"
         }),
@@ -449,24 +386,15 @@ clientkeys = gears.table.join(
             description = "toggle floating",
             group = "client"
         }),
-    awful.key({modkey, "Control"}, "Return",
-        function (c)
-            c:swap(awful.client.getmaster())
-        end, {
+    awful.key({modkey, "Control"}, "Return", function (c) c:swap(awful.client.getmaster()) end, {
             description = "move to master",
             group = "client"
         }),
-    awful.key({modkey}, "o",
-        function (c)
-            c:move_to_screen()
-        end, {
+    awful.key({modkey}, "o", function (c) c:move_to_screen() end, {
             description = "move to screen",
             group = "client"
         }),
-    awful.key({modkey}, "t",
-        function (c)
-            c.ontop = not c.ontop
-        end, {
+    awful.key({modkey}, "t", function (c) c.ontop = not c.ontop end, {
             description = "toggle keep on top",
             group = "client"
         })
