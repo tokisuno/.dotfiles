@@ -134,7 +134,8 @@ end
 awful.screen.connect_for_each_screen(function(s)
   set_wallpaper()
 
-  local names = { " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● " }
+  -- local names = { " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● " }
+  local names = {"一", "二", "三", "四", "五", "六", "七", "八", "九"}
   local l = awful.layout.suit  -- Just to save some typing: use an alias.
   local layouts = {
     l.tile.left, l.tile.left, l.tile.left,
@@ -168,11 +169,11 @@ awful.screen.connect_for_each_screen(function(s)
     style   = {
       shape_border_width = 1,
       shape_border_color = '#ccc',
-      shape  = gears.shape.rounded_bar,
+      shape  = gears.shape.partially_rounded_rect,
     },
     layout = {
       spacing = 5,
-      max_widget_size = awful.screen.focused().workarea.width * 0.25,
+      max_widget_size = awful.screen.focused().workarea.width * 0.30,
       layout  = wibox.layout.flex.horizontal
     },
   }
@@ -182,7 +183,7 @@ awful.screen.connect_for_each_screen(function(s)
     position = "bottom",
     screen = s,
     opacity = 1,
-    height = 26,
+    height = 28,
   })
 
   -- Add widgets to the wibox

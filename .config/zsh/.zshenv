@@ -6,17 +6,17 @@ export HISTFILE="$ZDOTDIR/.zhistory"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
-# all hail the church of emacs
 export ALTERNATE_EDITOR=""
 # export EDITOR="emacsclient -t"                  # $EDITOR opens in terminal
 # export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI mode
 export EDITOR="/usr/bin/nvim"                     # I will go back to Emacs eventually
-                                                  #      ... but now isn't the time
 
 export DICTIONARY=en_US
 export PAGER=less
 
 export PASSWORD_STORE_DIR=$HOME/Dropbox/pass
+
+export GTK_THEME=Arc-Dark
 
 # path
 export PATH="$PATH:$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.local/share/scripts:$HOME/go:$NPM_PACKAGES/bin:$HOME/.luarocks/bin/digestif:/usr/bin/:/bin"
