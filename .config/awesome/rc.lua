@@ -1,55 +1,44 @@
 -- these are to shut up my lsp
 local awesome = awesome
-local client = client
-local root = root
-local screen = screen
+local client  = client
+local root    = root
+local screen  = screen
 
--- If LuaRocks is installed, make sure that packages installed through it are
---                  found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
 local gears = require("gears")
 local awful = require("awful")
               require("awful.autofocus")
-
 local wibox = require("wibox")
-
 local xresources = require("beautiful.xresources")
 local beautiful = require("beautiful")
-
 local dpi = xresources.apply_dpi
-
 local naughty = require("naughty")
-naughty.config.defaults['icon_size'] = 60
-
+      naughty.config.defaults['icon_size'] = 60
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
-require("awful.hotkeys_popup.keys")
+                      require("awful.hotkeys_popup.keys")
 
--- {{{ Error handling
--- Check if awesome encountered an error during startup and fell back to
--- another config (This code will only ever execute for the fallback config)
+-- Load Widgets
+local battery       = require("awesome-wm-widgets.battery-widget.battery")
+local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
+
 if awesome.startup_errors then
-    naughty.notify({ preset = naughty.config.presets.critical,
-                     title = "Oops, there were errors during startup!",
-                     text = awesome.startup_errors })
+  naughty.notify({ preset = naughty.config.presets.critical,
+  title = "Oops, there were errors during startup!",
+  text = awesome.startup_errors })
 end
-
--- Handle runtime errors after startup
 do
-    local in_error = false
-    awesome.connect_signal("debug::error", function (err)
-        -- Make sure we don't go into an endless error loop
-        if in_error then return end
-        in_error = true
-
-        naughty.notify({ preset = naughty.config.presets.critical,
-                         title = "Oops, an error happened!",
-                         text = tostring(err) })
-        in_error = false
-    end)
+  local in_error = false
+  awesome.connect_signal("debug::error", function (err)
+    if in_error then return end
+    in_error = true
+    naughty.notify({ preset = naughty.config.presets.critical,
+    title = "Oops, an error happened!",
+    text = tostring(err) })
+    in_error = false
+  end)
 end
--- }}}
 
 beautiful.init("~/.config/awesome/themes/default/theme.lua")
 
@@ -133,8 +122,6 @@ end
 
 awful.screen.connect_for_each_screen(function(s)
   set_wallpaper()
-
-  -- local names = { " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● ", " ● " }
   local names = {"一", "二", "三", "四", "五", "六", "七", "八", "九"}
   local l = awful.layout.suit  -- Just to save some typing: use an alias.
   local layouts = {
@@ -197,7 +184,14 @@ awful.screen.connect_for_each_screen(function(s)
     { -- Right widgets
       layout = wibox.layout.fixed.horizontal,
       wibox.layout.margin(wibox.widget.systray(), 2, 2, 2, 2),
-      wibox.widget.textclock(' [%a] '),
+      wibox.widget.textbox(" "),
+      battery(),
+      wibox.widget.textbox(" "),
+      volume_widget({
+        widget_type='icon_and_text',
+        device='default',
+      }),
+      wibox.widget.textclock(' %a '),
       s.mylayoutbox,
     },
   }
@@ -235,7 +229,6 @@ globalkeys = gears.table.join(
             description = "focus previous by index",
             group = "client"
         }),
-
 
     -- programs
     awful.key({ modkey }, "w", function() awful.spawn(browser) end, {
@@ -354,7 +347,16 @@ globalkeys = gears.table.join(
             group = "launcher"
         }),
 
-    -- laptop keys
+    -- Media keys
+    awful.key({ modkey }, "]", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%") end),
+    awful.key({ modkey }, "[", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%") end),
+    awful.key({ modkey }, "\\", function() awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end),
+
+    awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%") end),
+    awful.key({}, "XF86AudioLowerVolume", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%") end),
+    awful.key({}, "XF86AudioMute", function() awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end),
+
+    --
     awful.key({}, "XF86AudioMute", function() awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end, {
             description = "Mute audio while on laptop",
             group = "launcher"
