@@ -278,15 +278,20 @@ globalkeys = gears.table.join(
         }),
 
     -- moving to next monitor
-    awful.key({ modkey }, "s", function() awful.screen.focus_relative(1) end, {
-            description = "focus the next screen",
-            group = "screen"
-        }),
-    awful.key({modkey, "Shift"}, "s", function() awful.screen.focus_relative(-1) end, {
-            description = "focus the previous screen",
-            group = "screen"
-        }),
-
+    awful.key({ modkey }, "space", function()
+        awful.screen.focus_relative(1)
+        awful.spawn("find-cursor -o 2 -c blue -O red -g --distance 50 -w 400")
+      end, {
+        description = "focus the next screen",
+        group = "screen"
+      }),
+    awful.key({modkey, "Shift"}, "space", function()
+        awful.screen.focus_relative(1)
+        awful.spawn("find-cursor -o 2 -c blue -O red -g --distance 50 -w 400")
+      end, {
+        description = "focus on the previous screen",
+        group = "screen"
+      }),
     -- client-based remaps
     awful.key({modkey}, "u",
         awful.client.urgent.jumpto, {

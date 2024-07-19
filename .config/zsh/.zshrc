@@ -28,11 +28,13 @@ alias ltr='eza -s modified -r'
 
 ## Quality of life
 alias vim='nvim'
-alias vi='/bin/vim'
+alias ivm='nvim'
+alias vi='nvim'
+alias oldvim='/bin/vim'
 alias rip='cd ~/.local/share/scripts'
 alias zse='vim ~/.config/zsh/.zshrc'
 alias ka='killall'
-alias pain='vim ~/Dropbox/life/FLEETING/affirmations.md'
+alias logd='vim ~/Dropbox/life/log.md'
 
 ## Pacman & Yay
 alias syu="yes | sudo pacman -Scc && sudo pacman -Syu && setxkbmap -option 'ctrl:nocaps'"
