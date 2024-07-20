@@ -3,43 +3,39 @@
 ----------------------------
 
 local theme_assets = require("beautiful.theme_assets")
-local xresources = require("beautiful.xresources")
-local dpi = xresources.apply_dpi
+local xresources   = require("beautiful.xresources")
+local dpi          = xresources.apply_dpi
 
-local gfs = require("gears.filesystem")
+local gfs         = require("gears.filesystem")
 local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
 theme.font          = "DejaVu Sans Mono 10"
 
-theme.bg_normal     = "#232533"
-theme.bg_focus      = "#323449"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#383838"
+theme.bg_normal     = "#0a0903"
+theme.bg_focus      = "#333333"
+theme.bg_urgent     = "#b75d69"
+theme.bg_minimize   = "#bbbac6"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#ffffff"
-theme.fg_focus      = "#ffffff"
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_normal     = "#f0ffce"
+theme.fg_focus      = "#f0ffce"
+theme.fg_urgent     = "#f0ffce"
+theme.fg_minimize   = "#f0ffce"
 
 theme.useless_gap   = dpi(6)
 theme.border_width  = dpi(2)
 theme.border_normal = "#383838"
-theme.border_focus  = "#c1d7d4"
-theme.border_marked = "#91231c"
+theme.border_focus  = "#ccc9a1"
+theme.border_marked = "#ef8275"
 
 theme.systray_icon_spacing = 4
 
 -- Generate taglist squares:
-local taglist_square_size = dpi(6)
-theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
-    taglist_square_size, theme.fg_normal
-)
-theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
-    taglist_square_size, theme.fg_normal
-)
+local taglist_square_size   = dpi(6)
+theme.taglist_squares_sel   = theme_assets.taglist_squares_sel  (taglist_square_size, theme.fg_normal)
+theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_size, theme.fg_normal)
 
 theme.menu_submenu_icon = themes_path.."default/submenu.png"
 theme.menu_height       = dpi(15)

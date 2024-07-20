@@ -116,9 +116,6 @@ end
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
-shape = function (cr, w, h)
-  gears.shape.rounded_rect(cr, w, h, 20)
-end
 
 awful.screen.connect_for_each_screen(function(s)
   set_wallpaper()
@@ -145,7 +142,8 @@ awful.screen.connect_for_each_screen(function(s)
   s.mytaglist = awful.widget.taglist {
     screen  = s,
     filter  = awful.widget.taglist.filter.all,
-    buttons = taglist_buttons
+    buttons = taglist_buttons,
+    -- style = { gears.shape.powerline },
   }
 
   -- Create a tasklist widget
@@ -170,7 +168,7 @@ awful.screen.connect_for_each_screen(function(s)
     position = "bottom",
     screen = s,
     opacity = 1,
-    height = 28,
+    height = 30,
   })
 
   -- Add widgets to the wibox
