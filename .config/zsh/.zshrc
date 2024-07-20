@@ -1,9 +1,10 @@
 # Prompt
-PS1='%F{white}%~ %(?.%F{yellow}.%F{red})%#%f '
+# PS1='%F{white}%~ %(?.%F{yellow}.%F{red})%#%f '
 
-RPROMPT='$GITSTATUS_PROMPT'
+# RPROMPT='$GITSTATUS_PROMPT'
 ZVM_CURSOR_STYLE_ENABLED=true
 
+eval "$(oh-my-posh init zsh --config ~/.config/zsh/onehalf.minimal.omp.json)"
 
 if which tmux 2>&1 >/dev/null; then
     if [ $TERM != "xterm-256color" ] && [  $TERM != "xterm" ]; then
