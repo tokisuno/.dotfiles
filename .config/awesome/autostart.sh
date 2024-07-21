@@ -38,5 +38,9 @@ run "setxkbmap" -option 'ctrl:nocaps'
 # volume icon
 # run "volumeicon"
 
+run "pactl" set-default-sink alsa_output.usb-GeneralPlus_USB_Audio_Device-00.analog-stereo
+
 # audio fuckery to get it working consistently
 run "pactl" set-sink-volume @DEFAULT_SINK@ 30%
+
+

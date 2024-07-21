@@ -143,7 +143,6 @@ awful.screen.connect_for_each_screen(function(s)
     screen  = s,
     filter  = awful.widget.taglist.filter.all,
     buttons = taglist_buttons,
-    -- style = { gears.shape.powerline },
   }
 
   -- Create a tasklist widget
@@ -184,11 +183,6 @@ awful.screen.connect_for_each_screen(function(s)
       wibox.layout.margin(wibox.widget.systray(), 2, 2, 2, 2),
       wibox.widget.textbox(" "),
       battery(),
-      wibox.widget.textbox(" "),
-      volume_widget({
-        widget_type='icon_and_text',
-        device='default',
-      }),
       wibox.widget.textclock(' %a '),
       s.mylayoutbox,
     },
@@ -213,55 +207,34 @@ globalkeys = gears.table.join(
     }),
 
     -- default movement
-    awful.key({ modkey }, "j",
-        function()
-            awful.client.focus.byidx(1)
-        end, {
+    awful.key({ modkey }, "j", function() awful.client.focus.byidx(1) end, {
             description = "focus next by index",
             group = "client"
         }),
-    awful.key({ modkey }, "k",
-        function()
-            awful.client.focus.byidx(-1)
-        end, {
+    awful.key({ modkey }, "k", function() awful.client.focus.byidx(-1) end, {
             description = "focus previous by index",
             group = "client"
         }),
 
     -- programs
     awful.key({ modkey }, "w", function() awful.spawn(browser) end, {
-            description = "show main menu",
+            description = "open brave (browser)",
             group = "awesome"
         }),
     awful.key({ modkey }, "Return", function() awful.spawn(terminal) end, {
-            description = "open a terminal",
+            description = "open kitty",
             group = "launcher"
         }),
-    awful.key({ modkey }, "z",
-        function()
-            awful.spawn("thunar")
-        end, {
+    awful.key({ modkey }, "z", function() awful.spawn("thunar") end, {
             description = "launch thunar",
             group = "launcher"
         }),
     awful.key({ modkey }, "v", function() awful.spawn("pavucontrol") end, {
-            description = "launch thunar",
-            group = "launcher"
-        }),
-    awful.key({ modkey, "Shift" }, "p", function() awful.spawn("emacsclient -c ~/Dropbox/org/todo.org") end, {
-            description = "open emacs for org-mode",
+            description = "launch pavucontrol",
             group = "launcher"
         }),
     awful.key({}, "Print", function() awful.spawn("flameshot gui") end, {
-            description = "open emacs for org-mode",
-            group = "launcher"
-        }),
-    awful.key({ modkey, "Shift" }, "v", function() awful.spawn("/home/poto/.local/share/scripts/restart-pipewire") end, {
-            description = "restarts pipewire (audio issues)",
-            group = "launcher"
-        }),
-    awful.key({ modkey }, ".", function() awful.spawn("find-cursor -o 2 -c blue -O red -g --distance 50 -w 400") end, {
-            description = "restarts pipewire (audio issues)",
+            description = "take screenshot",
             group = "launcher"
         }),
 
@@ -291,19 +264,16 @@ globalkeys = gears.table.join(
         group = "screen"
       }),
     -- client-based remaps
-    awful.key({modkey}, "u",
-        awful.client.urgent.jumpto, {
+    awful.key({modkey}, "u", awful.client.urgent.jumpto, {
             description = "jump to urgent client",
             group = "client"
         }),
 
-    awful.key({modkey, "Control"}, "r",
-        awesome.restart, {
+    awful.key({modkey, "Control"}, "r", awesome.restart, {
             description = "reload config",
             group = "awesome"
         }),
-    awful.key({modkey, "Shift"}, "q",
-        awesome.quit, {
+    awful.key({modkey, "Shift"}, "q", awesome.quit, {
             description = "exit awesome wm",
             group = "awesome"
         }),
@@ -343,34 +313,45 @@ globalkeys = gears.table.join(
             description = "select previous",
             group = "layout"
         }),
-
-    -- rofi modes
     awful.key({modkey}, "p", function() awful.spawn('rofi -modes "drun" -show drun') end, {
             description = "launch rofi-drun",
             group = "launcher"
         }),
 
     -- Media keys
-    awful.key({ modkey }, "]", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%") end),
-    awful.key({ modkey }, "[", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%") end),
-    awful.key({ modkey }, "\\", function() awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end),
+    awful.key({ modkey }, "]", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%") end, {
+            description = "vol +5%",
+            group = "volume"
+        }),
+    awful.key({ modkey }, "[", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%") end, {
+            description = "vol -5%",
+            group = "volume"
+        }),
+    awful.key({ modkey }, "\\", function() awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end, {
+            description = "vol MUTE",
+            group = "volume"
+        }),
 
-    awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%") end),
-    awful.key({}, "XF86AudioLowerVolume", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%") end),
-    awful.key({}, "XF86AudioMute", function() awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end),
-
-    --
+    -- Laptop media keys
+    awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%") end, {
+            description = "vol +5%",
+            group = "laptop"
+        }),
+    awful.key({}, "XF86AudioLowerVolume", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%") end, {
+            description = "vol -5%",
+            group = "laptop"
+        }),
     awful.key({}, "XF86AudioMute", function() awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end, {
-            description = "Mute audio while on laptop",
-            group = "launcher"
+            description = "vol MUTE",
+            group = "laptop"
         }),
     awful.key({}, "XF86MonBrightnessUp", function() awful.spawn("xbacklight -inc 10") end, {
             description = "Laptop brightness up",
-            group = "launcher"
+            group = "laptop"
         }),
     awful.key({}, "XF86MonBrightnessDown", function() awful.spawn("xbacklight -dec 10") end, {
             description = "Laptop brightness down",
-            group = "launcher"
+            group = "laptop"
         })
 )
 
