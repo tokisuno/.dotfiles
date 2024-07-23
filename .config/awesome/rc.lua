@@ -6,6 +6,8 @@ local screen  = screen
 
 pcall(require, "luarocks.loader")
 
+package.loaded["naughty.dbus"] = {}
+
 local gears = require("gears")
 local awful = require("awful")
               require("awful.autofocus")
@@ -235,6 +237,10 @@ globalkeys = gears.table.join(
         }),
     awful.key({}, "Print", function() awful.spawn("flameshot gui") end, {
             description = "take screenshot",
+            group = "launcher"
+        }),
+    awful.key({ modkey, "Shift" }, "s", function() awful.spawn(os.getenv("HOME") .. "/.local/share/scripts/lock") end, {
+            description = "lockscreen",
             group = "launcher"
         }),
 
