@@ -319,7 +319,13 @@ globalkeys = gears.table.join(
             description = "select previous",
             group = "layout"
         }),
+
+    -- rofi modes
     awful.key({modkey}, "p", function() awful.spawn('rofi -modes "drun" -show drun') end, {
+            description = "launch rofi-drun",
+            group = "launcher"
+        }),
+    awful.key({modkey}, "c", function() awful.spawn('rofi -show calc -modi calc -no-show-match -no-sort') end, {
             description = "launch rofi-drun",
             group = "launcher"
         }),
