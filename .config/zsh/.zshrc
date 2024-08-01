@@ -46,6 +46,7 @@ alias bk='cd ..'
 alias bkk='cd ../..'
 alias bkkk='cd ../../..'
 
+
 # Tmux
 alias ts='tmux-sessionizer'
 alias tp='tmux-pomodoro'
@@ -91,14 +92,6 @@ mkd () {
   mkdir -p "$@" && cd "$@"
 }
 
-run () {
-  rm -rf a.out && g++ -std=c++23 -Wall -Wextra -Werror -O2 $@ && ./a.out
-}
-
-zkn () {
-  zk new --title="$@"
-}
-
 vterm_printf() {
     if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ]); then
         # Tell tmux to pass the escape sequences through
@@ -111,6 +104,7 @@ vterm_printf() {
     fi
 }
 
+livels() { while :; do clear; tmux display-message -p -F "#{pane_current_path}" -t0 | xargs tree -L 1 ; sleep 1; done }
 
 gmod () {
   go mod init github.com/tokisuno/$@
@@ -122,3 +116,5 @@ cn () {
 
 beatit() { play -n -c1 synth 0.001 sine 1000 pad `awk "BEGIN { print 60/$1 -.001 }"` repeat 9999999 ; } 
 source /usr/share/nvm/init-nvm.sh
+
+source /home/poto/.config/broot/launcher/bash/br

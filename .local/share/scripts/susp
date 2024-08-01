@@ -3,4 +3,4 @@
 local home = os.getenv("HOME")
 local lock_script = home .. "/.local/share/scripts/lock"
 
-os.execute("xautolock -time 5 -locker " .. lock_script)
+os.execute(lock_script .. " && systemctl suspend")
