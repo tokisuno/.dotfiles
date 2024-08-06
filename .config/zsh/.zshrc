@@ -42,9 +42,9 @@ alias syu="yes | sudo pacman -Scc && sudo pacman -Syu && setxkbmap -option 'ctrl
 
 ## Navigation
 alias aa='cd -'
-alias bk='cd ..'
-alias bkk='cd ../..'
-alias bkkk='cd ../../..'
+alias b='cd ..'
+alias bb='cd ../..'
+alias bbb='cd ../../..'
 
 
 # Tmux
@@ -59,6 +59,7 @@ alias org='vim $(vizel unconnected ~/Dropbox/zet)'
 alias todo='vim ~/Dropbox/todo/todo.md'
 alias what='vim ~/Dropbox/todo/what-todo.md'
 alias thot='vim ~/Dropbox/todo/thoughts.md'
+alias life='cd ~/Dropbox/life'
 
 # Git 
 alias ga='git add .'
