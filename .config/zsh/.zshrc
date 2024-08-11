@@ -5,6 +5,7 @@
 ZVM_CURSOR_STYLE_ENABLED=true
 
 eval "$(oh-my-posh init zsh --config ~/.config/zsh/onehalf.minimal.omp.json)"
+eval $(thefuck --alias fk)
 
 if which tmux 2>&1 >/dev/null; then
     if [ $TERM != "xterm-256color" ] && [  $TERM != "xterm" ]; then
