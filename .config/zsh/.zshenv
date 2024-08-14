@@ -23,7 +23,7 @@ export PATH="$PATH:$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$H
 export PATH=${PATH}:`go env GOPATH`/bin
 export PATH=${PATH}:"~/.local/share/applications"
 export PATH=${PATH}:"/home/poto/.local/share/gem/ruby/3.0.0/bin"
-
+export PATH=${PATH}:"$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin"
 # keyboard
 export GLFW_IM_MODULE=ibus
 export XMODIFIERS="@im=ibus"

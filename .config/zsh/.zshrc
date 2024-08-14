@@ -37,6 +37,7 @@ alias rip='cd ~/.local/share/scripts'
 alias zse='vim ~/.config/zsh/.zshrc'
 alias ka='killall'
 alias logd='vim ~/Dropbox/life/log.md'
+alias path='vim ~/.config/zsh/.zshenv'
 
 ## Pacman & Yay
 alias syu="yes | sudo pacman -Scc && sudo pacman -Syu && setxkbmap -option 'ctrl:nocaps'"
