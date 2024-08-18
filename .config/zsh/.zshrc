@@ -48,7 +48,6 @@ alias b='cd ..'
 alias bb='cd ../..'
 alias bbb='cd ../../..'
 
-
 # Tmux
 alias ts='tmux-sessionizer'
 alias tp='tmux-pomodoro'
