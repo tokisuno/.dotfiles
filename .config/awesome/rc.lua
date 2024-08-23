@@ -4,6 +4,9 @@ local client  = client
 local root    = root
 local screen  = screen
 
+local mouse = mouse
+
+
 pcall(require, "luarocks.loader")
 
 package.loaded["naughty.dbus"] = {}
@@ -23,7 +26,6 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 
 -- Load Widgets
 local battery       = require("awesome-wm-widgets.battery-widget.battery")
-local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
 
 if awesome.startup_errors then
   naughty.notify({ preset = naughty.config.presets.critical,
@@ -41,6 +43,7 @@ do
     in_error = false
   end)
 end
+
 
 beautiful.init("~/.config/awesome/themes/default/theme.lua")
 
@@ -121,7 +124,7 @@ screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s)
   set_wallpaper()
-  local names = {"一", "二", "三", "四", "五", "六", "七", "八", "九"}
+  local names = {"1", "2", "3", "4", "5", "6", "7", "8", "9"}
   local l = awful.layout.suit  -- Just to save some typing: use an alias.
   local layouts = {
     l.tile.left, l.tile.left, l.tile.left,
@@ -212,47 +215,55 @@ globalkeys = gears.table.join(
     awful.key({ modkey }, "j", function() awful.client.focus.byidx(1) end, {
             description = "focus next by index",
             group = "client"
-        }),
+    }),
     awful.key({ modkey }, "k", function() awful.client.focus.byidx(-1) end, {
             description = "focus previous by index",
             group = "client"
-        }),
+    }),
 
     -- programs
     awful.key({ modkey }, "w", function() awful.spawn(browser) end, {
             description = "open brave (browser)",
             group = "awesome"
-        }),
+    }),
     awful.key({ modkey }, "Return", function() awful.spawn(terminal) end, {
             description = "open kitty",
             group = "launcher"
-        }),
+    }),
     awful.key({ modkey }, "z", function() awful.spawn("thunar") end, {
             description = "launch thunar",
             group = "launcher"
-        }),
+    }),
     awful.key({ modkey }, "v", function() awful.spawn("pavucontrol") end, {
             description = "launch pavucontrol",
             group = "launcher"
-        }),
+    }),
     awful.key({}, "Print", function() awful.spawn("flameshot gui") end, {
             description = "take screenshot",
             group = "launcher"
-        }),
+    }),
     awful.key({ modkey, "Shift" }, "s", function() awful.spawn(os.getenv("HOME") .. "/.local/share/scripts/lock") end, {
             description = "lockscreen",
             group = "launcher"
-        }),
+    }),
 
     -- layout movement/manipulation
     awful.key({ modkey, "Shift" }, "j", function() awful.client.swap.byidx(1) end, {
             description = "swap with next client by index",
             group = "client"
-        }),
+    }),
     awful.key({ modkey, "Shift" }, "k", function() awful.client.swap.byidx(-1) end, {
             description = "swap with previous client by index",
             group = "client"
-        }),
+    }),
+
+    -- testing 
+    awful.key({ modkey, "Shift"}, "b", function ()
+      require('lucas.find-cursor').find_cursor()
+    end, {
+        description = "Test",
+        group = "test"
+    }),
 
     -- moving to next monitor
     awful.key({ modkey }, "space", function()
@@ -261,110 +272,110 @@ globalkeys = gears.table.join(
       end, {
         description = "focus the next screen",
         group = "screen"
-      }),
+    }),
     awful.key({modkey, "Shift"}, "space", function()
         awful.screen.focus_relative(1)
         awful.spawn("find-cursor -o 2 -c blue -O red -g --distance 50 -w 400")
       end, {
         description = "focus on the previous screen",
         group = "screen"
-      }),
+    }),
     -- client-based remaps
     awful.key({modkey}, "u", awful.client.urgent.jumpto, {
             description = "jump to urgent client",
             group = "client"
-        }),
+    }),
 
     awful.key({modkey, "Control"}, "r", awesome.restart, {
             description = "reload config",
             group = "awesome"
-        }),
+    }),
     awful.key({modkey, "Shift"}, "q", awesome.quit, {
             description = "exit awesome wm",
             group = "awesome"
-        }),
 
+          }),
     -- resize layouts
     awful.key({modkey}, "l", function() awful.tag.incmwfact( 0.05) end, {
             description = "increase master width factor",
             group = "layout"
-        }),
+    }),
     awful.key({modkey}, "h", function() awful.tag.incmwfact(-0.05) end, {
             description = "decrease master width factor",
             group = "layout"
-        }),
+    }),
     awful.key({modkey, "Shift"}, "h", function() awful.tag.incnmaster( 1, nil, true) end, {
             description = "increase the number of master clients",
             group = "layout"
-        }),
+    }),
     awful.key({modkey, "Shift"}, "l", function() awful.tag.incnmaster(-1, nil, true) end, {
             description = "decrease the number of master clients",
             group = "layout"
-        }),
+    }),
     awful.key({modkey, "Control"}, "h", function() awful.tag.incncol(1, nil, true) end, {
             description = "increase the number of columns",
             group = "layout"
-        }),
+    }),
     awful.key({modkey, "Control"}, "l", function() awful.tag.incncol(-1, nil, true) end, {
             description = "decrease the number of columns",
             group = "layout"
-        }),
+    }),
 
     -- change layouts
     awful.key({modkey}, "Tab", function() awful.layout.inc(1) end, {
             description = "select next",
             group = "layout"
-        }),
+    }),
     awful.key({modkey, "Shift"}, "Tab", function() awful.layout.inc(-1) end, {
             description = "select previous",
             group = "layout"
-        }),
+    }),
 
     -- rofi modes
     awful.key({modkey}, "p", function() awful.spawn('rofi -modes "drun" -show drun') end, {
             description = "launch rofi-drun",
             group = "launcher"
-        }),
+    }),
     awful.key({modkey}, "c", function() awful.spawn('rofi -show calc -modi calc -no-show-match -no-sort') end, {
             description = "launch rofi-drun",
             group = "launcher"
-        }),
+    }),
 
     -- Media keys
     awful.key({ modkey }, "]", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%") end, {
             description = "vol +5%",
             group = "volume"
-        }),
+    }),
     awful.key({ modkey }, "[", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%") end, {
             description = "vol -5%",
             group = "volume"
-        }),
+    }),
     awful.key({ modkey }, "\\", function() awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end, {
             description = "vol MUTE",
             group = "volume"
-        }),
+    }),
 
     -- Laptop media keys
     awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%") end, {
             description = "vol +5%",
             group = "laptop"
-        }),
+    }),
     awful.key({}, "XF86AudioLowerVolume", function() awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%") end, {
             description = "vol -5%",
             group = "laptop"
-        }),
+    }),
     awful.key({}, "XF86AudioMute", function() awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end, {
             description = "vol MUTE",
             group = "laptop"
-        }),
+    }),
     awful.key({}, "XF86MonBrightnessUp", function() awful.spawn("xbacklight -inc 10") end, {
             description = "Laptop brightness up",
             group = "laptop"
-        }),
+    }),
     awful.key({}, "XF86MonBrightnessDown", function() awful.spawn("xbacklight -dec 10") end, {
             description = "Laptop brightness down",
             group = "laptop"
-        })
+    })
 )
 
 clientkeys = gears.table.join(

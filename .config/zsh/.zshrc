@@ -5,7 +5,6 @@
 ZVM_CURSOR_STYLE_ENABLED=true
 
 eval "$(oh-my-posh init zsh --config ~/.config/zsh/onehalf.minimal.omp.json)"
-eval $(thefuck --alias fk)
 
 if which tmux 2>&1 >/dev/null; then
     if [ $TERM != "xterm-256color" ] && [  $TERM != "xterm" ]; then
@@ -48,6 +47,8 @@ alias b='cd ..'
 alias bb='cd ../..'
 alias bbb='cd ../../..'
 
+alias igen='go run ~/code/projects/igen/main.go'
+
 # Tmux
 alias ts='tmux-sessionizer'
 alias tp='tmux-pomodoro'
@@ -57,9 +58,6 @@ alias tw='tmux-session-switcher'
 alias zki="zk list --interactive"
 alias zkm="zk list --interactive --sort=modified"
 alias org='vim $(vizel unconnected ~/Dropbox/zet)'
-alias todo='vim ~/Dropbox/todo/todo.md'
-alias what='vim ~/Dropbox/todo/what-todo.md'
-alias thot='vim ~/Dropbox/todo/thoughts.md'
 alias life='cd ~/Dropbox/life'
 
 # Git 
