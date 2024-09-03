@@ -1,4 +1,4 @@
-#files: 851	version: 5.9
+#files: 856	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -147,7 +147,7 @@ _comps=(
 'catchsegv' '_precommand'
 'cc' '_gcc'
 'ccal' '_ccal'
-'cd' '_cd'
+'cd' '__zoxide_z_complete'
 'cdc' '_sccs'
 'cdcd' '_cdcd'
 'cdr' '_cdr'
@@ -341,6 +341,7 @@ _comps=(
 'eza' '_eza'
 'fakeroot' '_fakeroot'
 'false' '_nothing'
+'fastfetch' '_fastfetch'
 'fc' '_fc'
 'fc-list' '_xft_fonts'
 'fc-match' '_xft_fonts'
@@ -370,6 +371,7 @@ _comps=(
 'fixwpps' '_psutils'
 'fixwwps' '_psutils'
 'flac' '_flac'
+'flameshot' '_flameshot'
 'flex' '_flex'
 'flex++' '_flex'
 'flipdiff' '_patchutils'
@@ -543,6 +545,7 @@ _comps=(
 'gtail' '_tail'
 'gtar' '_tar'
 'gtee' '_tee'
+'gti' '_gti'
 'gtimeout' '_timeout'
 'gtouch' '_touch'
 'gtr' '_tr'
@@ -605,6 +608,8 @@ _comps=(
 'hotjava' '_webbrowser'
 'htop' '_htop'
 'hugo' '_hugo'
+'hurl' '_hurl'
+'hurlfmt' '_hurlfmt'
 'iceweasel' '_mozilla'
 'icombine' '_ispell'
 'iconv' '_iconv'
@@ -890,6 +895,7 @@ _comps=(
 'ntalk' '_other_accounts'
 'numfmt' '_numfmt'
 'nvim' '_vim'
+'nvm' '_bash_complete -o default -F __nvm'
 'objdump' '_objdump'
 'od' '_od'
 'ogg123' '_vorbis'
@@ -1538,6 +1544,7 @@ _comps=(
 'xzcat' '_xz'
 'yafc' '_yafc'
 'yash' '_sh'
+'yay' '_yay'
 'yazi' '_yazi'
 'ypbind' '_yp'
 'ypcat' '_yp'
@@ -1610,6 +1617,7 @@ _services=(
 'gnupod_INIT.pl' 'gnupod_INIT'
 'gnupod_search.pl' 'gnupod_search'
 'gpg2' 'gpg'
+'gti' 'git'
 'gzcat' 'gunzip'
 'iceweasel' 'firefox'
 'lzcat' 'unxz'
@@ -1717,20 +1725,21 @@ bindkey '^[~' _bash_complete-word
 autoload -Uz _bind _bat _bootctl _btm _busctl \
             _bwrap _calibre _cargo _chafa _checkupdates \
             _coredumpctl _curl _dotnet _downgrade _dunst \
-            _dunstctl _eza _fd _ghcup _hostnamectl \
-            _hugo _img2sixel _journalctl _jupyter _kernel-install \
+            _dunstctl _eza _fastfetch _fd _flameshot \
+            _ghcup _gti _hostnamectl _hugo _hurl \
+            _hurlfmt _img2sixel _journalctl _jupyter _kernel-install \
             _kitty _lf _libinput _localectl _loginctl \
             _luarocks _luarocks-admin _machinectl _mkinitcpio _mpv \
             _networkctl _nnn _oomctl _paccache _pacdiff \
             _pacignore _paclist _paclog-pkglist _pacman _pacscripts \
-            _pacsearch _pacsort _pactree _paru _pass \
-            _pip _poetry _pulseaudio _qpdf _rankmirrors \
-            _resolvectl _rg _run0 _rustup _sd_hosts_or_user_at_host \
-            _sd_machines _sd_outputmodes _sd_unit_files _systemctl _systemd \
-            _systemd-analyze _systemd-delta _systemd-inhibit _systemd-nspawn _systemd-path \
-            _systemd-run _systemd-tmpfiles _task _taskwarrior-tui _the_silver_searcher \
-            _timedatectl _udevadm _udisks2 _updpkgsums _varlinkctl \
-            _watson _xwallpaper _yazi _yt-dlp _zathura \
+            _pacsearch _pacsort _pactree _pass _pip \
+            _poetry _pulseaudio _qpdf _rankmirrors _resolvectl \
+            _rg _run0 _rustup _sd_hosts_or_user_at_host _sd_machines \
+            _sd_outputmodes _sd_unit_files _systemctl _systemd _systemd-analyze \
+            _systemd-delta _systemd-inhibit _systemd-nspawn _systemd-path _systemd-run \
+            _systemd-tmpfiles _task _taskwarrior-tui _the_silver_searcher _timedatectl \
+            _udevadm _udisks2 _updpkgsums _varlinkctl _watson \
+            _xwallpaper _yay _yazi _yt-dlp _zathura \
             _zoxide _cdr _all_labels _all_matches _alternative \
             _approximate _arg_compile _arguments _bash_completions _cache_invalid \
             _call_function _combination _complete _complete_debug _complete_help \

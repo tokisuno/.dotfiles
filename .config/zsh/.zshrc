@@ -11,7 +11,7 @@ if which tmux 2>&1 >/dev/null; then
         tmux attach -t home || tmux new -s home; exit
     fi
 fi
-
+fpath=(path/to/zsh-completions/src $fpath)
 # ALIASES
 
 ## ls replacement
@@ -40,6 +40,9 @@ alias path='vim ~/.config/zsh/.zshenv'
 
 ## Pacman & Yay
 alias syu="yes | sudo pacman -Scc && sudo pacman -Syu && setxkbmap -option 'ctrl:nocaps'"
+
+# cobra-cli 
+alias ccli='cobra-cli'
 
 ## Navigation
 alias aa='cd -'
@@ -74,8 +77,9 @@ alias fonts='fc-cache -f -v'
 alias fontconf="echo ~/.config/fontconfig/fonts.conf"
 
 # Auto-completion
-autoload -U compinit
+autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)

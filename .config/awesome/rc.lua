@@ -6,7 +6,6 @@ local screen  = screen
 
 local mouse = mouse
 
-
 pcall(require, "luarocks.loader")
 
 package.loaded["naughty.dbus"] = {}
@@ -155,11 +154,6 @@ awful.screen.connect_for_each_screen(function(s)
     screen  = s,
     filter  = awful.widget.tasklist.filter.currenttags,
     buttons = tasklist_buttons,
-    style   = {
-      shape_border_width = 1,
-      shape_border_color = '#ccc',
-      shape  = gears.shape.partially_rounded_rect,
-    },
     layout = {
       spacing = 5,
       max_widget_size = awful.screen.focused().workarea.width * 0.30,
@@ -169,10 +163,10 @@ awful.screen.connect_for_each_screen(function(s)
 
   -- Create the wibox
   s.mywibox = awful.wibar({
-    position = "bottom",
+    position = "top",
     screen = s,
     opacity = 1,
-    height = 30,
+    height = 24,
   })
 
   -- Add widgets to the wibox

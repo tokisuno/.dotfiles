@@ -11,6 +11,9 @@
 # Scripts folder
 ln -sf ~/Dropbox/.dotfiles/.local/share/scripts/ ~/.local/share
 
+# Suckless software
+ln -sf ~/Dropbox/.dotfiles/.config/suckless ~/.config
+
 # Config folders
 ln -sf ~/Dropbox/.dotfiles/.config/kitty/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/conky/ ~/.config
