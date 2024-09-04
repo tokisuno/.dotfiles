@@ -4,14 +4,14 @@
 # RPROMPT='$GITSTATUS_PROMPT'
 ZVM_CURSOR_STYLE_ENABLED=true
 
-eval "$(oh-my-posh init zsh --config ~/.config/zsh/onehalf.minimal.omp.json)"
-
 if which tmux 2>&1 >/dev/null; then
     if [ $TERM != "xterm-256color" ] && [  $TERM != "xterm" ]; then
         tmux attach -t home || tmux new -s home; exit
     fi
 fi
-fpath=(path/to/zsh-completions/src $fpath)
+# fpath=(path/to/zsh-completions/src $fpath)
+fpath+=($HOME/Dropbox/.dotfiles/.config/zsh/pure)
+
 # ALIASES
 
 ## ls replacement
@@ -31,11 +31,10 @@ alias ltr='eza -s modified -r'
 alias vim='nvim'
 alias ivm='nvim'
 alias vi='nvim'
-alias oldvim='/bin/vim'
+alias ogvim='/bin/vim'
 alias rip='cd ~/.local/share/scripts'
 alias zse='vim ~/.config/zsh/.zshrc'
 alias ka='killall'
-alias logd='vim ~/Dropbox/life/log.md'
 alias path='vim ~/.config/zsh/.zshenv'
 
 ## Pacman & Yay
@@ -49,8 +48,6 @@ alias aa='cd -'
 alias b='cd ..'
 alias bb='cd ../..'
 alias bbb='cd ../../..'
-
-alias igen='go run ~/code/projects/igen/main.go'
 
 # Tmux
 alias ts='tmux-sessionizer'
@@ -84,6 +81,9 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 eval "$(zoxide init --cmd cd zsh)"
+
+autoload -U promptinit; promptinit
+prompt pure
 
 bindkey "^H" backward-delete-char
 bindkey "^?" backward-delete-char
@@ -120,5 +120,3 @@ cn () {
 
 beatit() { play -n -c1 synth 0.001 sine 1000 pad `awk "BEGIN { print 60/$1 -.001 }"` repeat 9999999 ; } 
 source /usr/share/nvm/init-nvm.sh
-
-source /home/poto/.config/broot/launcher/bash/br

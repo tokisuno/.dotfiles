@@ -59,7 +59,7 @@ export PATH=${PATH}:"~/.npm-global/bin"
 export NPM_DIR="$HOME/.npm-data"
 NPM_PACKAGES="$HOME/.npm-packages"
 
-source $ZDOTDIR/gitstatus/gitstatus.prompt.zsh
+# source $ZDOTDIR/gitstatus/gitstatus.prompt.zsh
 source $ZDOTDIR/zsh-edit/zsh-edit.plugin.zsh
 source $ZDOTDIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZDOTDIR/.zshrc
