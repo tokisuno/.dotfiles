@@ -47,7 +47,7 @@ end
 beautiful.init("~/.config/awesome/themes/default/theme.lua")
 
 terminal = "kitty"
-browser = "brave"
+browser = "firefox"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
