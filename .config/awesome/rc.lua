@@ -240,6 +240,10 @@ globalkeys = gears.table.join(
             description = "lockscreen",
             group = "launcher"
     }),
+    awful.key({ modkey }, "a", function() awful.spawn("emacsclient -c -a \"\"") end, {
+            description = "emacsclient",
+            group = "launcher"
+    }),
 
     -- layout movement/manipulation
     awful.key({ modkey, "Shift" }, "j", function() awful.client.swap.byidx(1) end, {

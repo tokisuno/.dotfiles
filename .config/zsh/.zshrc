@@ -26,7 +26,6 @@ alias lt='eza --tree --level=2'
 alias lz='ls -a'
 alias ltr='eza -s modified -r'
 
-
 ## Quality of life
 alias vim='nvim'
 alias ivm='nvim'
@@ -36,6 +35,7 @@ alias rip='cd ~/.local/share/scripts'
 alias zse='vim ~/.config/zsh/.zshrc'
 alias ka='killall'
 alias path='vim ~/.config/zsh/.zshenv'
+alias cb="cbonsai -i -l -w 3"
 
 ## Pacman & Yay
 alias syu="yes | sudo pacman -Scc && sudo pacman -Syu && setxkbmap -option 'ctrl:nocaps'"

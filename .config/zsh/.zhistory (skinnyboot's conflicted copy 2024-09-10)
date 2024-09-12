@@ -10247,133 +10247,115 @@ clear
 ls
 vim intro-activity.md
 hhkb
-cbonsai a
-cbonsai aadfas
-cbonsai aadfasasdkjfhasdjf
-cbonsai -help
-cbonsai -i -l -w 3
-cbonsai -i -l -w 3
+cd dropbox
+ls
+cd zk
+vim hello.md
+clear
+ls
+zsh
+cdl
+cd
+clear
+cd zk
+ls
+vim hello.md
+rm -rf hello.md
+clear
+zk init .
+clear
+ls
+ls -a
+clear
+vim
+clear
+ls
+ls
+rm -rf lwbu.md 
+ls
+vim .zk
+clear
+cd
+clear
+clear
+rip
+ls
+hhkb
+clear
+vim hhkb
+vim hhkb
+hhkb
+sadfa||\\|a
+clear
+vim
+clear
+clear
+cd
+macd
+sudo pacman -S emacs
+clear
+ka emacs
+emacs kill-server
+macd
+emacsclient
+clear
 clear
 cd lucas
 ls
 cd lazy
 ls
-rm -rf zk.lua
-\:q
-b
-vim keymaps.lua
+vim zk.lua
+vim zk.lua
+vim zk.lua
+zshenv
+zsenv
+zenv
+zse
+path
 clear
-cbonsai -i -l -w 3
-clear
-cd tmux
-vim tmux.conf
-emacsclient
-macd
-cd .local
-ls
-cd share/applications
-ls
-vim emacs.desktop
-vim emacsclient.desktop
-clear
-clear
-cd awesome
-vim rc.lua
-emacsclient
-clear
-emacsclient.desktop
-clear
-ls
-vim rc.lua
-clear
-cd local share app
-ls
-./emacsclient.desktop
-clear
-ls
-gtk-launch
-gtk-launch emacsclient.desktop
-clear
-tmux-neorg
-tmux-neorg
-tmux-neorg
-clear
-clear
-syu
-dropbox &
-clear
-htop
-clera
-htop
-ka brave
-gpg --delete-secret-key lucaswmei@gmail.com
-clera
-iwctl
-clear
-neorg
-clear
-norg
-clear
-life
 cd
-clear
-ls
-cd rip
-ls
-tmux-neorg
-./tmux-neorg
-clear
-tmux kill-server
-\:
-clear
-clear
-hhkb
 cd Dropbox
 ls
-cd o\neorg
-cd neorg
+mk zk
+mkd zk
+clear
+clear
+cd lucas
 ls
-vim -c "Neorg workspace life"
-vim 
-vim -c "Neorg workspace life"
-vim -c "Neorg workspace life"
+vim keymaps.lua
+vim keymaps.lua
+clear
 clear
 ls
-vim -c "Neorg workspace life"
-clear
-vim -c "Neorg workspace life"
-clear
-vim -c "Neorg workspace life"
-tmux-neorg
-clear
-rip
-ls
-vim tmux-neorg
-vim tmux-neorg
-tmux-neorg
-clear
-cd
-clear
+vim keymaps.lua
+vim keymaps.lua
+vim
+yay -S arc-gtk-theme-git
+yay -Scc
+sudo pacman -S arc-icon-theme
+yay -Scc
 clear
 syu
 refup
 clear
-poweroff
-hhkb
-tmux-neorg
+syu
 clear
-rip
-vim tmux-neorg
-tmux-neorg
-cd neorg
-ls
 clear
-sudo ltp ac
-sudo tlp a
-sudo tlp ac
+htop
+htop
 clear
+brave
+clear
+htop
+brave
+brave
+brave
+clear
+yay -S brave-bin
 clear
 syu
 clear
-vim -c "Neorg workspace life"
-tmux kill-server
+clear
+cd
+clear
+zsh
