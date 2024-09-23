@@ -8,8 +8,6 @@ local modkey = "Mod4"
 local client = client
 local dpi = xresources.apply_dpi
 
-beautiful.init("~/.config/awesome/themes/default/theme.lua")
-
 awful.layout.layouts = {
     awful.layout.suit.tile.left,
 }

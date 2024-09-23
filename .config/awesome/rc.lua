@@ -2,10 +2,6 @@ pcall(require, "luarocks.loader")
 
 package.loaded["naughty.dbus"] = {}
 
--- config files
-require("config.remaps")
-require("config.wibar")
-
 local gears = require("gears")
 local awful = require("awful")
 require("awful.autofocus")
@@ -15,9 +11,15 @@ local beautiful = require("beautiful")
 local wibox = require("wibox")
 local dpi = xresources.apply_dpi
 
+-- theme
+beautiful.init("~/.config/awesome/themes/default/theme.lua")
+
 local naughty = require("naughty")
 naughty.config.defaults['icon_size'] = 60
 
+-- config files
+require("config.remaps")
+require("config.wibar")
 
 if awesome.startup_errors then
   naughty.notify({

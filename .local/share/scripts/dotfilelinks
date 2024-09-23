@@ -28,6 +28,7 @@ ln -sf ~/Dropbox/.dotfiles/.config/rofi/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/tmux/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/zathura/ ~/.config
 ln -sf ~/Dropbox/.dotfiles/.config/zsh/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/wezterm/ ~/.config
 
 
 # Config files

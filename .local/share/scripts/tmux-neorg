@@ -1,17 +1,19 @@
 #!/usr/bin/bash
 
-selected_name="neorg"
-selected=$selected_name
+session="neorg"
 
-tmux_running=$(pgrep tmux)
+tmux new-sesssion -d -s $session
 
-if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
-    tmux new-session -s $selected_name -c $selected
-    exit 0
-fi
+window=0
+tmux rename-window -t $session:$window "life"
+tmux send-keys -t $session:$window 'vim -c "Neorg workspace life"' C-m
 
-if ! tmux has-session -t=$selected_name 2> /dev/null; then
-    tmux new-session -ds $selected_name -c $selected
-fi
+window=1
+tmux rename-window -t $session:$window "notes"
+tmux send-keys -t $session:$window 'vim -c "Neorg workspace notes"' C-m
 
-tmux switch-client -t $selected_name
+window=2
+tmux rename-window -t $session:$window "yt"
+tmux send-keys -t $session:$window 'vim -c "Neorg workspace yt"' C-m
+
+tmux attach-session -t $session
