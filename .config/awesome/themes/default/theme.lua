@@ -1,6 +1,7 @@
 ----------------------------
 -- tokisuno awesome theme --
 ----------------------------
+--- very shit
 
 local theme_assets = require("beautiful.theme_assets")
 local xresources   = require("beautiful.xresources")
@@ -24,7 +25,7 @@ theme.fg_focus      = "#f0ffce"
 theme.fg_urgent     = "#f0ffce"
 theme.fg_minimize   = "#f0ffce"
 
-theme.useless_gap   = dpi(4)
+theme.useless_gap   = dpi(6)
 theme.border_width  = dpi(2)
 theme.border_normal = "#383838"
 theme.border_focus  = "#ccc9a1"
@@ -33,7 +34,7 @@ theme.border_marked = "#ef8275"
 theme.systray_icon_spacing = 4
 
 -- Generate taglist squares:
-local taglist_square_size   = dpi(6)
+local taglist_square_size   = dpi(5)
 theme.taglist_squares_sel   = theme_assets.taglist_squares_sel  (taglist_square_size, theme.fg_normal)
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_size, theme.fg_normal)
 
