@@ -28,6 +28,7 @@ alias ltr='eza -s modified -r'
 
 ## Quality of life
 alias vim='nvim'
+alias iv='nvim'
 alias ivm='nvim'
 alias vi='nvim'
 alias ogvim='/bin/vim'
@@ -37,10 +38,16 @@ alias ka='killall'
 alias path='vim ~/.config/zsh/.zshenv'
 alias cb="cbonsai -i -l -w 3"
 
+## Neorg
+alias ni='vim -c "Neorg index"'
+alias life='vim -c "Neorg workspace life"'
+alias notes='vim -c "Neorg workspace notes"'
+alias yt='vim -c "Neorg workspace yt"'
+
 ## Pacman & Yay
 alias syu="yes | sudo pacman -Scc && sudo pacman -Syu && setxkbmap -option 'ctrl:nocaps'"
 
-# cobra-cli 
+# cobra-cli
 alias ccli='cobra-cli'
 
 ## Navigation
@@ -52,15 +59,8 @@ alias bbb='cd ../../..'
 # Tmux
 alias ts='tmux-sessionizer'
 alias tp='tmux-pomodoro'
-alias tw='tmux-session-switcher'
 
-# Studying
-alias zki="zk list --interactive"
-alias zkm="zk list --interactive --sort=modified"
-alias org='vim $(vizel unconnected ~/Dropbox/zet)'
-alias life='cd ~/Dropbox/life'
-
-# Git 
+# Git
 alias ga='git add .'
 alias gc='git commit -m'
 alias gp='git push'

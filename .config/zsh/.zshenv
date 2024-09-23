@@ -21,8 +21,8 @@ export GTK_THEME=Arc-Dark
 # path
 export PATH="$PATH:$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.local/share/scripts:$HOME/go:$NPM_PACKAGES/bin:$HOME/.luarocks/bin/digestif:/usr/bin/:/bin"
 export PATH=${PATH}:`go env GOPATH`/bin
-export PATH=${PATH}:"~/.local/share/applications"
-export PATH=${PATH}:"/home/poto/.local/share/gem/ruby/3.0.0/bin"
+export PATH=${PATH}:"$HOME/.local/share/applications"
+export PATH=${PATH}:"$HOME/.local/share/gem/ruby/3.2.0/bin"
 export PATH=${PATH}:"$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin"
 # keyboard
 export GLFW_IM_MODULE=ibus
