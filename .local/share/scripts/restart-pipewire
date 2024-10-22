@@ -1,0 +1,5 @@
+#!/bin/sh
+
+notify-send "setting default sink"
+pactl set-sink-volume @DEFAULT_SINK@ 30%
+notify-send "Done!"

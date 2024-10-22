@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git config user.email "lucaswmei@gmail.com" && git config user.name "tokisuno"; echo "email assigned!"
+

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# * Creating symlinks for my configs
+# * Shared across computers using Dropbox
+# * Abandoning Syncthing
+#   - Syncthing doesn't work well when you frequently use restricted networks which cut off the syncthing ports
+#   - Eduroam blocks Syncthing from syncing my home computer and laptop
+#   - Dropbox doesn't have this issue since it syncs to a cloud server
+#   - I do not have the networking knowledge nor the patience to try and troubleshoot this
+
+# Scripts folder
+ln -sf ~/Dropbox/.dotfiles/.local/share/scripts/ ~/.local/share
+
+# Suckless software
+ln -sf ~/Dropbox/.dotfiles/.config/suckless ~/.config
+
+# Config folders
+ln -sf ~/Dropbox/.dotfiles/.config/conky/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/dconf/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/dunst/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/mpv/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/newsboat/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/nvim/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/awesome/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/rofi/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/tmux/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/zathura/ ~/.config
+ln -sf ~/Dropbox/.dotfiles/.config/zsh/ ~/.config
+
+
+
+# Config files
+ln -s ~/Dropbox/.dotfiles/.config/mimeapps.list ~/.config/
+ln -s ~/Dropbox/.dotfiles/.config/picom.conf ~/.config/
+
+# .desktop files
+ln -s ~/Dropbox/.dotfiles/.local/share/applications/dwm-twm.desktop ~/.local/share/applications/dwm-twm.desktop

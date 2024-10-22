@@ -1,0 +1,24 @@
+#!/bin/bash
+
+tmux has-session -t "home"
+if [ $? != 0 ]
+then
+    tmux new-session -s "home" -d
+fi
+
+tmux has-session -t "neorg"
+if [ $? != 0 ]
+then
+    tmux new-session -s "neorg" -d
+
+    tmux rename-window -t "neorg":0 "life"
+    tmux send-keys -t "life" 'vim -c "Neorg workspace life"' C-m
+
+    tmux new-window -t "neorg":1 -n "notes"
+    tmux send-keys -t "notes" 'vim -c "Neorg workspace notes"' C-m
+
+    tmux new-window -t "neorg":2 -n "yt"
+    tmux send-keys -t "yt" 'vim -c "Neorg workspace yt"' C-m
+fi
+
+tmux attach -t "home":0

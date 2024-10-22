@@ -1,0 +1,2 @@
+#!/bin/bash
+xclip -sel c ~/Dropbox/asdf/github

@@ -1,0 +1,15 @@
+#!/bin/lua
+
+local lines = {}
+local handle = io.popen("tmux list-sessions")
+local result = handle:read("*a")
+
+for line in result:gmatch("[^\r\n]+") do
+  table.insert(lines, line)
+end
+
+
+
+print(table.concat(lines, '\n\n'))
+handle:close()
+

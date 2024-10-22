@@ -1,0 +1,4 @@
+#!/bin/bash
+
+conky -d -q -c ~/.config/conky/main/conky.conf & conky -d -q -c ~/.config/conky/guidance/guidance.conf
+

@@ -1,0 +1,12 @@
+[submodule ".config/awesome/widgets"]
+	path = .config/awesome/widgets
+	url = https://github.com/streetturtle/awesome-wm-widgets
+[submodule ".config/awesome/awesome-wm-widgets"]
+	path = .config/awesome/awesome-wm-widgets
+	url = https://github.com/streetturtle/awesome-wm-widgets
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/tokisuno/nvim
+[submodule ".config/emacs"]
+	path = .config/emacs
+	url = https://github.com/tokisuno/emacs

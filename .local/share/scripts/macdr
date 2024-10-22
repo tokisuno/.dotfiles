@@ -1,0 +1,7 @@
+#!/bin/bash
+
+notify-send "Restarting Emacs daemon"
+killall emacs
+emacs -q -l ~/.config/emacs/init.el --daemon
+notify-send "Daemon started!"
+

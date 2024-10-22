@@ -1,0 +1,10361 @@
+ls
+cd code
+ls
+clear
+ls
+cd c
+ls
+cd 57
+ls
+mv *.c ../../exercises-for-programmers
+clear
+bk
+ls
+cd 57
+ls
+bk
+rm -rf 57
+clear
+clear
+ls
+clear
+ls
+cd fullstack/javascript/projects/tictactoe
+clear
+ls
+vim test.js
+mv test.js game.js
+vim index.html
+clear
+ls
+vim index.html game.js style.css
+clear
+ls
+gitui
+gitui
+git add .
+git commit -m 'refactored, implementing dialogue box for username'
+git-token
+git push
+clear
+ls
+lz
+cd .git
+ls
+vim gui
+vim gitui
+vim config
+clear
+bk
+clear
+git
+git status
+clear
+git diff
+clear
+clear
+ls
+vim index.html game.js style.css
+clear
+ls
+git add .
+rm -rf main.js
+git add .
+git commit -m 'for the love of god i am done'
+git-token
+git push
+clear
+ls
+vim readme.md
+clear
+git add.
+git add .
+git commit -m 'readme'
+git push
+clear
+ls
+vim game.js
+git add .
+git commit -m 'accidentally disabled player2 win checking after player1 gets a point'
+git push
+clear
+ls
+vim game.js
+clear
+ls
+vim game.js
+clear
+git add .
+git commit -m 'okay now everything is fixed and chill'
+git-token
+git push
+clear
+clear
+ls
+vim game.js
+clear
+git add .
+git commit -m 'names input in options menu are reflected in results screen'
+git push
+clear
+ls
+cd
+clear
+clear
+cd odin
+ls
+cd fullstack
+ls
+git add .
+git commit -m 'changes'
+git-token
+git push
+clear
+ls
+cd javascript
+ls
+clear
+ls
+mkd classes
+ls
+vim getters-setters.js
+clear
+vim accessor-fullname.js
+clear
+vim smarter-getset.js
+clear
+ls
+mkdir accessors
+mv *.js accessors
+ls
+cd accessors
+ls
+clear
+ls
+vim birthday.js
+clear
+bk
+ls
+vim my-first-class.js
+clear
+clear
+ls
+vim class-introspection.js
+clear
+vim check-for-new.js
+clear
+clear
+ls
+vim class-getset.js
+clear
+ls
+vim function-binding.js
+clear
+clear
+ls
+clear
+ls
+vim clock.js
+clear
+syu
+clear
+clear
+clear
+clear
+ls
+git add .
+git commit -m 'classes examples'
+git-token
+git push
+cd library
+ls
+clear
+ls
+git checkout -b classes
+clear
+ls
+git add .
+git commit -m 'new branch'
+clear
+ls
+vim main.js
+clear
+ls
+vim class.js
+clear
+clear
+ls
+vim main.js class.js
+clear
+ls
+git add .
+git commit -m '
+git commit -m '(todo) fix bug that draws as many books as there was before the removal'
+git-token
+git psuh
+git push
+git push -u origin classes
+bk
+bk
+bk
+git add .
+git commit -m 'mmm'
+git push
+clear
+ls
+cd Downloads
+ls
+cd Down
+mkd rust-hooks
+bk
+unzip rusty-hooks-font.zip -d rust-hooks
+ls
+cd rust-hooks
+ls
+bk
+mv rust-hooks ../code/web/odin/fullstack/javascript/asset-management/src/my-font.ttf
+ls
+mkdir hussar
+unzip hussar-bold-web-edition-font.zip -d hussar
+ls
+mv hussar ../code/web/odin/fullstack/javascript/asset-management/src
+ls
+cd
+cd Downloads
+ls
+mkd oswald
+bk
+unzip Noto_Emoji,Oswald.zip -d oswald
+ls
+cd oswald
+ls
+cd oswal
+ls
+cd Oswald
+ls
+cd static
+ls
+bk
+ls
+vim README.txt
+cp Oswald-VariableFont_wght.ttf my-font.ttf
+mv my-font.ttf ../../../code/web/odin/fullstack/javascript/asset-management/src/
+livels
+livels
+ls
+cd code
+ls
+bk
+ls
+cd .local
+ls
+cd bin
+ls
+ls
+ls
+ls
+rm -rf tmux-filetree
+vim .zshenv
+vim .zshenv
+clear
+ls
+cd zsh
+ls
+vim .zshenv
+zsh
+clear
+cd builds
+ls
+cd tmux-filetree
+ls
+lua tmux-filetree.lua
+lua tmux-filetree.lua
+lua tmux-filetree.lua
+lua tmux-filetree.lua -d 1
+clear
+livels
+cd code
+ls
+cd c
+ls
+cd raylib
+ls
+vim window.c
+vim window.c
+vim window.c
+cd Dropbox
+ls
+cd life
+ls
+livels
+clear
+cd lucas
+ls
+bat keymaps.lua
+clear
+ls
+vim set.lua
+clear
+ls
+vim set.lua
+vim init.lua
+clear
+ls
+cd lazy
+ls
+vim
+clear
+ls
+vim
+clear
+bk
+ls
+b
+ls
+vim init.lua
+clear
+vim
+clear
+ls
+vim
+clear
+clear
+ls
+life
+ls
+cd youtube
+ls
+clear
+ls
+cd scripts
+ls
+vim 20240708_study-pc-workflow.md
+clear
+cd lucas
+ls
+vim set.lua
+aa
+ls
+vim 20240708_study-pc-workflow.md
+clear
+ls
+mv 20240708_study-pc-workflow.md 20240802_study-pc-workflow.md
+clear
+ls
+cd
+cd nvim
+kls
+cd lucas
+ls
+cd lazy
+ls
+vim ui.lua
+vim ui.lua
+clear
+ls
+bk
+b
+vim keymaps.lua
+clear
+vim
+clear
+clear
+ls
+clear
+ls
+vim init.lua
+clear
+bk
+bk
+b
+bb
+cd nvim
+git add .
+git commit -m 'fterm added'
+git-token
+git push
+clear
+cd
+clear
+ls
+cd web
+ls
+aa
+cd code
+ls
+cd web
+ls
+cd strt
+ls
+vim .
+clear
+bk
+cd lazy
+vim ui.lua
+aa
+clear
+clear
+ls
+vim style.css
+clear
+git add .
+git commit -m '(ui) colourscheme: tokyonight-storm, style overhaul'
+git-token
+git push
+clear
+vim style.css
+clear
+ls
+git add .
+git commit -m '(fix) hopefully fixes ios safari button styling'
+git-token
+git push
+clear
+clear
+ls
+vim index.
+vim index.js
+clear
+git add .
+git commit -m 'checking something'
+git push
+clear
+make install
+clear
+ls
+zsh
+livels
+clear
+bk
+clear
+ls
+cd zsh
+ls
+vim .zshrc
+clear
+ls
+zsh
+monitor
+clear
+cd build
+ls
+./equibop.AppImage
+sudo pacman -S fuse
+./equibop.AppImage
+clear
+clear
+clear
+ls
+mv equibop.AppImage equibop
+mv equibop ~/.local/bin/
+clear
+ls
+cd
+clear
+ls
+cd ~/.local/bin
+ls
+vim vizel
+bk
+ls
+cd share
+ls
+cd applications
+ls
+cp dev.zed.Zed-Preview.desktop equibop.desktop
+vim equibop.desktop
+clear
+ls
+clear
+ls
+sudo update-desktop-database
+clear
+clear
+syu
+clear
+clear
+ls
+cd
+clear
+clear
+vim
+vim
+clear
+cd config
+ls
+cd lucas
+ls
+cd init
+clear
+ls
+cd lazy
+ls
+vim writing.lua
+clear
+ls
+vim lsp.lua
+clear
+ls
+vim lualine.lua
+clear
+ls
+vim oil.lua
+vim telescope.lua
+clear
+ls
+vim web.lua
+vim tmux.lua
+clear
+vim cmp.lua
+clear
+ls
+vim ex.lua
+clear
+ls
+vim mini.lua
+clear
+ls
+vim which-key.lua
+clear
+tsc
+clear
+syu
+clear
+bk
+bk
+git add .
+git commit -m 'removed some plugins'
+git-token
+git push
+clear
+cd odin
+ls
+aa
+cd
+clear
+tp
+clear
+clear
+syu
+clear
+neofetch
+sudo pacman -S pcmanfm
+clear
+ls
+ ls-a
+ls -a
+clear
+ls
+cd config
+ls
+cd pcmanfm
+ls
+cd default/
+ls
+vim pcmanfm.conf
+clear
+cd
+clear
+clear
+clear
+clear
+ts
+ka brave
+htop
+htop
+htop
+clear
+ts
+clear
+clear
+ghc
+ghci
+clear
+clear
+ls
+syu
+clear
+tp
+syu
+clear
+figlet hi
+clear
+figlet why hello there
+clear
+clear
+cd Dropbox
+ls
+cd life
+ls
+cd youtube
+ls
+syu
+clear
+clear
+clear
+syu
+clear
+refl
+refup
+syu
+clear
+ts
+clear
+cd code
+ls
+cd exercises-for-programmers
+ls
+git init
+git-token
+echo "# exercises-for-programmers" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git branch -M main\
+git remote add origin https://github.com/tokisuno/exercises-for-programmers.git\
+git push -u origin main
+git-email
+echo "# exercises-for-programmers" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git branch -M main\
+git remote add origin https://github.com/tokisuno/exercises-for-programmers.git\
+git push -u origin main
+clear
+ls
+vim README.md
+rm -rf README.md
+vim readme.md
+clear
+ls
+git add.
+git add .
+git commit -m 'readme'
+git push
+clear
+ls
+clear
+ls
+mkdir 01
+mkdir 02
+ls
+mv 01-hello.c 01/hello.c
+ls
+mv 02-name-length.c 02/name-length.c
+clear
+ls
+clear
+ls
+clear
+ls
+cd 02
+ls
+bk
+ls
+git add .
+git commit -m 'added old solutions'
+git push
+clear
+ls
+cd 01
+ls
+clear
+ls
+cn rust
+cd rust
+ls
+vim src/main.rs
+cargo run
+vim src/main.rs
+clear
+bk
+cd 02
+ls
+aa
+clear
+ls
+bk
+ls
+cd 02
+ls
+cn rust
+cd rust
+ls
+vim src/main.rs
+clear
+bk
+bk
+git add .
+ls
+git commit -m 'added some rust solutions'
+git revert
+git revert --abort
+git abort
+got back
+git back
+git revert
+git reset
+clear
+ls
+git-token
+git push
+clear
+ls
+cd 01
+ls
+cd rust
+ls
+clear
+vim .gitignore
+clear
+ls
+git rm --cached target
+git rm --cached target -r
+bk
+ls
+bk
+ls
+cd 02
+ls
+cd rust
+ls
+vim .gitignore
+git rm --cached target -r
+ls
+bk
+clear
+ls
+bk
+clear
+ls
+clear
+ls
+git add .
+git commit -m 'added .gitignore for rust solutions'
+git push
+clear
+ls
+mkd 03
+clear
+ls
+cn rust
+cargo miri
+clear
+ls
+cd rust
+ls
+vim .gitignore
+clear
+ls
+ignore
+clear
+ls
+clear
+ls
+vim src/main.rs
+clear
+bk
+clear
+git add .
+git commit -m 'printing quotes done'
+git-token
+gitpush
+git pus
+git push
+clear
+ls
+bk
+ls
+mkd 04
+ls
+cn rust
+clear
+ls
+cd rust
+ls
+vim .gitignore
+clear
+ls
+vim src/main.rs
+clear
+ls
+bk
+clear
+bk
+clear
+git add .
+git commit -m 'exercise 4 done; (todo) try implementing challenges'
+git-token
+git push
+clear
+syu
+clear
+syu
+clear
+ls
+clear
+ls
+clear
+ls
+cd
+clear
+tp
+clear
+clear
+cd config
+cd obs-studio
+ls
+cd plugin_config
+ls
+bk
+ls
+mkd plugins
+ls
+clear
+cd
+lsusb
+syu
+clear
+sudo pacman -S broot
+broot
+shell
+zsh
+clear
+cd
+cd zsh
+vim .zshenv
+clear
+claer
+ls
+clear
+ls
+cd
+clear
+ls
+cd builds
+ls
+bk
+clear
+cd builds
+bk
+ls
+cd Downloads
+ls
+cd Save_webP
+clear
+cd
+cd .config
+clear
+ls
+clear
+ls
+cd tmux
+ls
+vim tmux.conf
+ls
+bk
+vim tmux.conf
+ls
+cd tmux
+vim tmux.conf
+bk
+ls
+vim tmux.conf
+cd tmux
+vim tmux.conf
+clear
+clear
+bk
+zse
+zsh
+broot
+broot
+broot
+clear
+br -sdp
+clear
+ sudo pacman -R broot
+zsh
+LS
+clear
+vim .zshrcv
+vim .zshrc
+zsh
+make install
+clear
+ls
+lua tmux-filetree.lua
+clear
+ls
+clear
+ls
+zsenv
+zenv
+zsh
+make install
+zsh
+livels
+clear
+ls
+bk
+clear
+ls
+clear
+ls
+cd code
+ls
+cd js
+htop
+live()
+livels
+clear
+clear
+clear
+cd lucas
+ls
+ls
+bk
+ls
+bk
+ls
+clear
+ls
+cd lua
+ls
+cd lucas
+ls
+clear
+ls
+vim init.lua
+clear
+ls
+cd lazy
+ls
+vim cmp.lua
+clear
+ls
+clear
+ls
+vim cmp.lua
+clear
+ls
+bk
+ls
+ls
+vim globals.lua
+clear
+ls
+vim set.lua
+vim init.lua
+vim
+ls
+mkd snips
+ls
+vim lua.lua
+ls
+vim all.lua
+vim all.lua
+clear
+clear
+ls
+vim all.lua
+vim all.lua
+ls
+bk
+ls
+vim init.lua
+vim init.lua
+clear
+ls
+cd snips
+ls
+vim all.lua
+vim all.lua
+clear
+ls
+vim js.lua
+clear
+clear
+ls
+rm -rf js.lua
+ls
+bkls
+bk
+ls
+cd snips
+ls
+bk
+clear
+ls
+vim init.lua
+clear
+ls
+cd snips
+ls
+clear
+ls
+ls
+bk
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+ls
+bk
+bk
+ls
+mkd after
+mkd ftplugin
+vim luasnip.lua
+vim luasnip.lua
+ls
+bk
+bk
+ls
+vim init.lua
+vim
+aa
+ls
+cd ftplugin
+ls
+vim luasnip.lua
+ls
+mv luasnip.lua ..
+ls
+bk
+ls
+rm -rf ftplugin
+mkdir plugin
+mv luasnip.lua plugin
+ls
+vim
+ls
+cd plugin
+ls
+vim luasnip.lua
+clear
+bk
+bk
+ls
+cd lua
+ls
+cd lucas
+ls
+cd lazy
+ls
+vim cmp.lua
+vim cmp.lua
+clear
+aa
+ls
+bk
+bk
+ls
+rm -rf after
+ls
+cd lua
+ls
+cd lucas
+ls
+clear
+ls
+vim keymaps.lua
+ls
+cd lazy
+ls
+vim cmp.lua
+vim
+ls
+vim cmp.lua
+vim cmp.lua
+clear
+ls
+claer
+ls
+clear
+ls
+ls
+bk
+ls
+vim snips.lua
+vim snips.lua
+clear
+ls
+vim init.lua
+clear
+vim
+ls
+vim snips.lua
+vim snips.lua
+vim
+ls
+vim snips.lua
+vim
+ls
+vim snips.lua
+vim snips.lua
+vim snips.lua
+clear
+ls
+vim
+clear
+vim
+ear
+clear
+ls
+bk
+bk
+ls
+git add .
+git commit -m 'new luasnips config'
+git-token
+git push
+clear
+ls
+cd lua
+ls
+cd lucas
+ls
+vim snips.lua
+claer
+clear
+ls
+vim
+clear
+ls
+bk
+clear
+ls
+git add .
+git commit -m 'added some javascript snippets'
+git push
+syu
+refup
+syu
+clear
+clear
+cd zsh
+ls
+cd tmux
+ls
+vim tmux.conf
+clear
+ls
+vim tmux.conf
+clear
+ls
+bk
+cd .dot
+git add .
+git commit -m 'tmux & zsh & other shit changes'
+git-token
+git push
+clear
+clear
+cd
+clear
+susp
+cd
+tp
+clear
+syu
+clear
+ls
+ear
+clear
+cd awesome
+ls
+vim rc.lua
+clear
+cd kitty
+ls
+vim kitty.conf
+clear
+neofetch
+clear
+clear
+syu
+clear
+ls
+clear
+cd
+clear
+ls
+clear
+clear
+clear
+clear
+vim
+claer
+vim
+clear
+clear
+lcd
+clear
+ls
+life
+clear
+zse
+clear
+zsh
+clear
+clear
+broot
+clear
+nnn
+sudo pacman -S nnn
+nnn
+claer
+nnn
+clear
+lf
+clear
+ paru -S wordle-cli-bin
+wordle
+wordle random
+clear
+clear
+ts
+clear
+clear
+cd tmux
+ls
+cd plugins
+ls
+bk
+ls
+vim tmux.conf
+vim tmux.conf
+tmux-filetree
+clear
+ls
+vim tmux.conf
+cd zsh
+ls
+vim .zshrc
+zsh
+ls
+bk
+clear
+ls
+htop
+clear
+cd
+clear
+cd builds
+ls
+git clone https://github.com/PhilipRoman/tmux-filetree
+cd tmux-filetree
+ls
+make install
+ls
+vim tmux-filetree.lua
+clear
+ls
+echo $PREFIX
+clear
+ls
+zse
+ls
+zsh
+clear
+ls
+clear
+npm start
+npm start
+npm start
+clear
+ls
+vim webpack.config.js
+vim package.json
+npm run watch
+clear
+clear
+ls
+vim webpack.config.js
+npm start
+npm start
+npm start
+clear
+npm start
+b
+aa
+clear
+ls
+npm install --save-dev webpack-dev-server
+vim package.json
+clear
+ls
+npm install --save-dev webpack-dev-server
+vim package.json
+npm install --save-dev webpack-dev-server
+claer
+clear
+ls
+vim package.json
+clear
+npms tart
+npm start
+clear
+ls
+clear
+ls
+clear
+cd src
+ls
+vim print.js
+clear
+bk
+b
+ls
+npm install --save-dev express webpack-dev-middleware
+syu
+clear
+clear
+ls
+vim webpack.config.js
+clear
+ls
+vim server.js
+vim server.js
+clear
+ls
+vim package.json
+clear
+npm run server
+clear
+clear
+ls
+bk
+ls
+b
+ls
+lz
+cd webpack-demo
+ls
+bk
+ls
+cd dist
+ls
+bk
+ls
+b
+ls
+vim package.json
+clear
+ls
+vim webpack.config.js
+clear
+clear
+ls
+ls
+cd src
+ls
+vim math.js
+clear
+ls
+clear
+ls
+clear
+ls
+npm install --save webpack-merge
+clear
+clear
+ls
+bk
+ls
+b
+ls
+rm -rf webpack.config.js
+ls
+touch webpack.common.js webpack.dev.js webpack.prod.js
+ls
+vim webpack.
+vim webpack.common.js
+npm install html-webpack-plugin
+npm install --save-dev html-webpack-plugin
+clear
+ls
+npm install html-webpack-plugin
+clear
+ls
+vim webpack.dev.js
+clear
+vim package.json
+clear
+npm start
+npm build
+npm run build
+clear
+sudo pacman -S shotcut
+ls
+vim webpack.prod.js
+clear
+clear
+ls
+cd src
+vim index.js
+clear
+clear
+ls
+clear
+ls
+bk
+v
+b
+vim webpack.prod.js
+clear
+bk
+bk
+b
+aa
+bb
+ls
+cd javascript
+ls
+mkdir webpack-examples
+ls
+mv webpack-examples webpack
+mv webpack-* webpack/
+ls
+cd webpack
+ls
+bk
+ls
+b
+ls
+clear
+ls
+cd projects
+ls
+mkd restaurant
+npm init
+clear
+npm install webpack webpack-cli --save-dev
+bk
+b
+ls
+b
+ls
+cd webpack
+ls
+la
+lz
+bk
+lz
+b
+lz
+vim .gitignore
+clear
+ls
+clear
+ls
+cd projects
+ls
+ls
+ls
+cd restaurant
+ls
+mkdir src dist
+ls
+cd src
+ls
+touch index.html index.js
+clear
+ls
+bk
+ls
+b
+ls
+vim .gitignore
+clear
+clear
+ls
+git init
+git add .
+git commit -m 'beginning of the end'
+git-email
+git commit -m 'beginning of the end'
+clear
+git remote add origin https://github.com/tokisuno/restaurant.git\
+git branch -M main\
+git push -u origin main
+git-token
+git push -u origin main
+clear
+npm install html-webpack-plugin
+clear
+clear
+ls
+cd src
+ls
+vim index.html
+b
+ls
+vim webpack.config.js
+clear
+ls
+bk
+ls
+b
+b
+ls
+cd webpack
+ls
+cd webpack-output-management
+ls
+vim webpack.config.js
+ls
+bk
+b
+ls
+cd webpack-asset-management
+ls
+vim webpack.config.js
+bk
+b
+ls
+vim webpack-development/webpack.config.js
+aa
+b
+b
+cd projects
+ls
+cd restaurant
+ls
+clear
+ls
+vim webpack.config.js
+clear
+ls
+clear
+ls
+ls
+vim webpack.config.js
+clear
+ls
+vim .
+clear
+ls
+vim .
+clear
+clear
+ls
+vim package.json
+clear
+npm run build
+ls
+cd dist
+ls
+brave index.html
+npm install --save-dev webpack-dev-server
+bk
+ls
+b
+ls
+vim webpack.config.js
+vim webpack.config.js
+clear
+vim package.json
+npm start
+vim package.json
+npm run watch
+clear
+ls
+cd dist
+ls
+bk
+ls
+rm -rf *
+bk
+ls
+b
+ls
+npm run watch
+npm install --save-dev webpack-dev-server
+claer
+ls
+clear
+ls
+vim package.json
+npm install --save-dev html-webpack-plugin
+clear
+npm start
+npm install --save-dev webpack-dev-middleware
+vim webpack.config.js
+clear
+npm start
+clear
+ls
+vim webpack.config.js
+npm start
+clear
+clear
+ls
+vim webpack.config.js
+npm run build
+clear
+ls
+vim webpack.config.js
+npm run build
+vim webpack.config.js
+npm run build
+clear
+ls
+clear
+ls
+vim src
+clear
+npm run build
+clear
+ls
+vim webpack.config.js
+npm run build
+clear
+npm start
+clear
+ls
+clear
+ls
+clear
+ls
+cd src
+bk
+b
+clear
+ls
+vim src
+clear
+ls
+vim src
+clear
+ls
+vim src
+ls
+cd src
+ls
+clear
+ls
+vim loadDOM.js
+clear
+ls
+clear
+ls
+b
+vim webpack.config.js
+clear
+ls
+npm install --save-dev css-loader style-loader
+clear
+ls
+ls
+cd src
+ls
+clear
+ls
+vim loadDOM.js
+clear
+bk
+bk
+bb
+cd restaurant
+git add .
+git commit -m 'the base page loads and has content on it'
+git-token
+git push
+ls
+cd fullstack
+ls
+cd javascript
+ls
+bk
+ls
+cd javascript
+ls
+cd projects
+ls
+cd library
+ls
+vim class.js
+clear
+ls
+vim index.html
+clear
+git add .
+git commit -m 'finished'
+git-token
+git push
+clear
+clear
+ls
+rm -rf main.js
+git add .
+git commit -m 'removed old main.js'
+git push
+clear
+ls
+clear
+bk
+clear
+git add .
+git commit -m 'changes'
+git push
+clear
+clear
+ls
+bk
+ls
+mkd webpack-demo
+npm init -y
+npm install webpack webpack-cli --save-dev
+clear
+clear
+ls
+vim index.html
+clear
+ls
+ls
+vim package-lock.json
+clear
+ls
+cd node_modules
+ls
+bk
+ls
+vim package
+vim package.json
+clear
+ls
+vim index.html
+clear
+ls
+rm -rf index.html
+mkd dist
+ls
+touch index.html
+bk
+npm install --save lodash
+clear
+ls
+vim package
+vim package.json
+clear
+clear
+ls
+vim src/index.js
+clear
+ls
+vim dist/index.html
+npx webpack
+ls
+cd dist
+ls
+bk
+ls
+cd dis
+ls
+brave index.html &
+clear
+clear
+ls
+vim main.js
+clear
+bat main.js
+clear
+clear
+ls
+ls
+bk
+vim webpack.config.js
+npx webpack --config webpack.config.js
+clear
+ls
+vim package.json
+clear
+npm run build
+clear
+vim package.json
+npm run build
+clear
+ls
+bk
+ls
+mkd es6modules
+npm init -y
+ls
+vim package.json
+npm install webpack webpack-cli --save-dev
+clear
+ls
+vim webpack.config.js
+mkdir dist
+ls
+cd dist
+ls
+vim index.thml
+vim index.html
+clear
+bk
+ls
+vim src
+ls
+rm -rf src
+mkd src
+vim src
+ls
+bk
+ls
+cd src
+ls
+vim index.js
+npm install --save lodash
+clear
+ls
+vim functionOne.js
+npm run build
+ls
+bk
+sl
+ls
+ls
+cd dist
+ls
+brave index.html
+clear
+clear
+ls
+bk
+ls
+cd src
+ls
+rm -rf functionOne.js
+vim index.js
+clear
+ls
+vim myName.js
+npm run build
+ls
+bk
+ls
+cd dist
+ls
+brave index.html
+clear
+clear
+clear
+ls
+clear
+ls
+bk
+ls
+ls
+cd src
+ls
+vim myModule.js
+clear
+ls
+clear
+ls
+vim index.js
+npm run build
+clear
+clear
+ls
+bk
+bk
+bk
+git add .
+git revert
+git revert --skip
+git revert --abort
+git revert --continue
+git commit -m 'oops'
+git reset HEAD~
+clear
+ls
+cd javascript
+ls
+cd es6modules
+bk
+ls
+vim .gitignore
+clear
+bk
+git add .
+git commit -m 'learning webpack'
+git-token
+git push
+clear
+ls
+cd javascript
+ls
+mkd asset-management
+npm init -y
+npm install webpack webpack-cli --save-dev
+clear
+ls
+vim package.json
+clear
+ls
+mkdir src dist
+ls
+clear
+ls
+vim src/index.js
+clear
+npm install --save lodash
+ls
+vim package.json
+npm install --save lodash
+clear
+ls
+vim src/index.js
+clear
+ls
+clear
+ls
+cd dist
+ls
+vim index.html
+clear
+ls
+bk
+ls
+vim webpack.config.js
+npm run build
+clear
+ls
+cd dist
+ls
+vim index.html
+clear
+ls
+bk
+npm install --save-dev style-loader css-loader
+clear
+ls
+vim webpack.config.js
+clear
+clear
+ls
+ls
+cd src
+ls
+vim style.css
+vim index.js
+clear
+bk
+npm run build
+clear
+ls
+cd dist
+ls
+brave index.html
+clear
+ls
+bk
+ls
+vim src/index.js
+npm run build
+ls
+cd dist
+ls
+brave index.html
+clear
+ls
+bk
+ls
+webpack
+ls
+vim webpack.config.js
+clear
+ls
+Thunar .
+clear
+clear
+ls
+cs src
+ls
+cd src
+ls
+vim index.js
+npm run build
+bk
+cd dist
+ls
+brave index.html
+ls
+bk
+ls
+cd src
+ls
+vim index.js
+clear
+clear
+ls
+bk
+vim webpack.config.js
+clear
+ls
+cs src
+ls
+cd src
+ls
+rm -rf my-font.ttf
+ls
+cd hussar
+ls
+cd misc
+ls
+cp HussarBoldWeb-bf92.woff ../../my-font.woff
+mv HussarBoldWeb-bf92.woff ../../my-font.woff
+ls
+bk
+bk
+ls
+vim style.css
+bk
+npm run build
+clear
+ls
+vim src/index.js
+ls
+vim webpack.config.js
+clear
+npm run build
+clear
+ls
+cd src
+ls
+bk
+vim webpack.config.js
+npm run build
+vim webpack.config.js
+npm run build
+ear
+clear
+npm run build
+ls
+cd src
+ls
+bk
+clear
+ls
+clear
+ls
+cd cd src
+ls
+cd src
+ls
+thunar .
+ls
+rm -rf my-font.woff
+rm -rf hussar
+ls
+ls
+vim style.css
+npm run build
+clear
+bk
+ls
+cd dist
+ls
+brave index.html
+brave index.html
+clear
+ls
+bk
+ls
+cd src
+ls
+vim style.css
+ls
+vim index.js
+bk
+vim webpack.config.js
+clear
+clear
+ls
+npm run build
+clear
+ls
+cd dist
+ls
+brave index.html
+ls
+npm run build
+ls
+brave index.html
+clear
+ls
+clear
+ls
+bk
+ls
+ls
+vim src/index.js
+clear
+ls
+cd src
+ls
+vim style.css
+bk
+npm run build
+clear
+ls
+cd src
+ls
+vim style.css
+npm run build
+clear
+ls
+vim index.js
+ls
+vim style.css
+npm run build
+clear
+ls
+ls
+vim style.css
+clear
+npm run build
+clear
+npm run build
+claer
+clear
+npm run build
+clear
+ls
+vim style.css
+clear
+bk
+npm run build
+clear
+ls
+npm install --save-dev csv-loader xml-loader
+clear
+ls
+vim webpack.config.js
+clear
+clear
+cd src
+ls
+vim data.xml
+vim data.csv
+clear
+ls
+vim index.js
+bk
+npm run build
+clear
+clear
+ls
+cd src
+ls
+vim data.toml
+vim data.yaml
+vim data.json5
+clear
+npm install toml yamljs json5 --save-dev
+clear
+ls
+bk
+vim webpack.config.js
+clear
+ls
+npm run build
+clear
+ls
+vim webpack.config.js
+npm run build
+clear
+clear
+ls
+bk
+ls
+cp es6modules html-webpack-plugin-test -r
+ls
+cd html-webpack-plugin-test
+ls
+vim webpack.config.js
+bk
+ls
+rm -rf html-webpack-plugin-test
+ls
+cd webpack-demo
+ls
+vim webpack.config.js
+bk
+ls
+cd asset-management
+ls
+vim webpack.config.js
+clear
+ls
+bk
+ls
+cp -r webpack-demo webpack-plugin-demo
+cd webpack-
+bk
+cd webpack-plugin-demo
+ls
+vim webpack.config.js
+npm install --save-dev html-webpack-plugin
+vim webpack.config.js
+clear
+ls
+cd dist
+ls
+mv index.html ../src
+rm -rf *
+ls
+bk
+ls
+cd src
+ls
+bk
+npm run build
+ls
+cd dist
+ls
+clear
+ls
+bk
+ls
+vim webpack.config.js
+npm run build
+ls
+cd dist
+ls
+bk
+ls
+vim webpack.config.js
+npm run build
+clear
+ls
+cd dist
+ls
+rm -rf bundle
+ls
+rm -rf main.js.LICENSE.txt
+ls
+rm -rf main.js
+ls
+bk
+ls
+ls
+cd dist
+ls
+vim index.html
+ls
+bk
+ls
+vim webpack.config.js
+clear
+ls
+npm run build
+ls
+cd dist
+ls
+vim index.html
+clear
+clear
+ls
+bk
+bk
+git add .
+git commit -m 'more webpack files'
+git-token
+git push
+clear
+clear
+bk
+ls
+clear
+ls
+cd java
+ls
+cd classes
+ls
+vim class-
+vim class-getset.js
+clear
+ls
+vim check-for-new.js
+clear
+ls
+vim check-for-new.js
+clear
+ls
+vim class-introspection.js
+clear
+clear
+ls
+bk
+ls
+ls
+clear
+ls
+clear
+lz
+clear
+ls
+cp webpack-demo webpack-dev-demo
+cp webpack-demo webpack-dev-demo -r
+ls
+cd webpack-dev-demo
+ls
+cd dist
+ls
+bk
+bk
+ls
+clear
+ls
+bk
+ls
+cd javascript
+ls
+rm -rf webpack-dev-demo
+ls
+cd webpack-plugin-demo
+ls
+cd dist
+ls
+bk
+ls
+bk
+ls
+clear
+ls
+ls
+cd asset-management
+ls
+bk
+mv asset-management webpack-asset-management
+ls
+cp -r webpack-asset-management webpack-output-management
+ls
+cd webpack-output-management
+ls
+clear
+cd src
+ls
+rm -rf data.*
+ls
+rm -rf my-font.ttf m2k.jpg style.css
+ls
+bk
+ls
+vim webpack.config.js
+clear
+ls
+ls -a
+npm uninstall css-loader csv-loader json5 style-loader toml xml-loader yamljs
+clear
+clear
+ls
+cd src
+ls
+vim print.js
+ls
+bk
+ls
+cd dist
+ls
+bk
+cd dist
+vim index.html
+clear
+ls
+bk
+ls
+vim webpack.config.js
+npm run build
+ls
+cd dist
+ls
+rm -rf 7cecd0da606d25b0905d.ttf
+rm -rf 8a3a7382a18df51697ba.jpg
+rm -rf bundle.js
+ls
+rm -rf bundle.js.LICENSE.txt
+clear
+ls
+brave index.html
+bk
+ls
+npm install --save-dev html-webpack-plugin
+ls
+vim webpack.config.js
+clear
+ls
+npm run
+npm run build
+ls
+brave dist/index.
+brave dist/index.html
+bk
+ls
+cp -r webpack-output-management webpack-development
+ls
+cd webpack-development/
+ls
+clear
+ls
+cd webpack.config.js
+vim webpack.config.js
+clear
+ls
+cd src
+ls
+vim print.js
+npm run build
+bk
+brave dist/index.html
+vim package
+vim package.json
+clear
+ls
+cd src
+ls
+vim print.js
+clear
+bk
+zsh
+cd tmux
+ls
+vim tmux.conf
+clear
+cd lucas
+ls
+vim snips.lua
+ls
+cd kitty
+ls
+vim kitty.conf
+vim kitty.conf
+clear
+ls
+clear
+ls
+clear
+clear
+clear
+ls
+v4l2
+v4l2ctrl
+sudo pacman -S v4l-utils
+v4l2-ctl
+v4l2-ctl --list-devices
+v4l2-ctl -d video1
+v4l2-ctl -d /dev/video1
+v4l2-ctl -d /dev/video1 --list-ctrls
+clear
+v4l2-ctl -d /dev/video1 --list-ctrls
+v4l2-ctl -d /dev/video1 -c white_balance_automatic=0,auto_exposure=0
+v4l2-ctl -d /dev/video1 -c white_balance_automatic=0 auto_exposure=0
+v4l2-ctl -d /dev/video1 -c auto_exposure=0
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,focus_auto=0
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,exposure_auto=0
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,auto_exposure=0
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,exposure_auto=1
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,exposure_auto=0
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,exposure_absolute=240
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,exposure_time_absolute=250
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,exposure_time_absolute=250
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,auto_exposure=0
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,auto_exposure=0
+v4l2-ctl -d /dev/video1 --list-ctrls
+v4l2-ctl -d /dev/video1 --get-ctrl
+v4l2-ctl -d /dev/video1 --get-ctrl auto_exposure
+clear
+ls
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,auto_exposure=0
+sudo v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,auto_exposure=0
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,auto_exposure=0
+clear
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,focus_auto=0
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,auto_focus=0
+v4l2-ctl -d /dev/video1 -c exposure_dynamic_framerate=0,white_balance_temperature=3500,auto_focus=1
+clear
+clear
+clear
+ls
+cd plugins
+ls
+vim stackmap.nvim
+clear
+\:q
+l
+cd c-modern-approach
+ls
+cd 02
+ls
+cd projects
+ls
+b
+vim celsius.c
+clear
+ls
+vim dweight
+ls
+rm -rf dweight
+vim dweigh2.c
+vim dweight2.c
+clear
+ls
+vim punc
+vim punc.c
+vim pun.c
+bk
+ls
+b
+ls
+cd 05
+ls
+vim broker_commission.c
+ls
+vim date.c
+clear
+clear
+ls
+vim date.c
+clear
+dle
+cd
+clear
+ls
+life
+ls
+cd youtube
+ls
+cd scripts
+ls
+vim 20240802_study-pc-workflow.md
+clear
+clear
+tp
+clear
+v4l2-ctl -d /dev/video1 --list-ctrls
+clear
+ts
+clear
+neofetch
+clear
+cd kitty
+ls
+vim kitty.conf
+clear
+clear
+clear
+cd zsh
+ls
+ls -a
+vim zshenv
+vim .zshenv
+clear
+ls
+cd
+clear
+ts
+clear
+vim
+cd lucas
+ls
+vim keymaps.lua
+clear
+vim .
+clear
+ls
+vim .
+clear
+ls
+vim snips.lua
+clear
+ls
+vim snips.lua
+clear
+ls
+cd lazy
+ls
+vim cmp.lua
+vim cmp.lua
+clear
+vim
+clear
+ls
+vim .
+claer
+clear
+ls
+bk
+ls
+bk
+b
+vim init.lua
+clear
+ts
+ts
+clear
+vim
+ls
+vim init.lua
+clear
+vim 
+clear
+ls
+cd lazy
+ls
+vim cmp.lua
+clear
+clear
+cd
+clearls
+ls
+cd code
+ls
+cd web
+ls
+rm -rf M_PLUS_1p,Noto_Emoji,Oswald,Ubuntu
+clear
+ls
+mkd asdf
+vim index.html
+clear
+bk
+b
+clear
+neofetch
+clear
+neofetch
+clear
+b
+ls
+cd exercises-for-programmers
+ls
+clear
+cd
+cd awesome
+vim rc.lua
+clear
+clear
+cd zsh
+ls
+ls -a
+clear
+vim
+clear
+cd nvim
+ls
+ls -a
+ls
+cd lua
+ls
+cd cd lucas
+cd lucas
+ls
+bb
+vim init.lua
+ls
+cd lua
+ls
+cd lucas
+ls
+cd web
+ls
+cd asdf
+ls
+rm -rf *
+clear
+vim index.html index.js 
+ls
+clear
+bk
+bb
+cd exercises-for-programmers
+ls
+cd 04
+ls
+vim rust/src
+clear
+clear
+syu
+reclear
+refup
+syu
+sudo pacman -Scc
+y
+clear
+syu
+sudo ncdu /
+sudo paru -Scc
+sudo pacman -Rcns shotcut
+sudo pacman -Syu
+clear
+ls
+sudo ncdu /
+sudo pacman -Rcns wine
+sudo pacman -Syu
+clear
+vim
+clear
+clear
+cd tmux
+vim tmux.conf
+clear
+clear
+ls
+vim tmux.conf
+clear
+ clear
+cd
+clear
+clear
+sudo pacman -S vifm
+vifm
+vifm
+clear
+clear
+sudo pacman -R vifm
+clear
+clear
+clear
+syu
+ clear
+vim
+clear
+syu
+clear
+clear
+ls
+clear
+cd code
+ls
+cd exeer
+cd exercises-for-programmers
+ls
+mkd 05
+cn math
+clear
+ls
+clear
+ls
+cd math
+ls
+vim src/main.rs
+clear
+clear
+b
+b
+git add .
+ls
+cd 04
+ls
+ls
+ls -a
+cd rust
+ls
+ls -a
+b
+b
+ls
+cd 05
+git reset .
+b
+ls
+vim .gitignore
+clear
+git add .
+git commit -m 'global .gitignore, did question 5'
+git-token
+git push
+clear
+ls
+mkd 06
+cd rust
+b
+ls
+b
+ls
+ls
+cd 06
+ls
+cn rust
+cd rust
+ls
+cargo add chrono
+vim src/main.rs
+clear
+ls
+cargo build
+vim src/main.rs
+clear
+ls
+bk
+bb
+git add .
+git commit -m 'did question 6'
+git-token
+git push
+clear
+cd 05
+ls
+mv math rust
+b
+git add .
+git commit -m 'renamed 05/math -> 05/rust'
+git push
+clear
+clear
+clear
+ls
+mkd 07
+cn rust
+ls
+cd rust
+ls
+vim src/main.rs
+clear
+bb
+git add .
+git commit -m 'finished 07'
+git-token
+git push
+clear
+ls
+cd 07
+ls
+cn rust_challenge
+cd rust_challenge
+ls
+vim src/main.rs
+clear
+bb
+git add .
+git commit -m 'working on the challenge for 07\
+'
+git push
+clear
+clear
+neofetch
+clear
+syu
+clear
+poweroff
+ls
+mkd rust-cli
+ls
+clear
+ls
+clear
+ls
+cn hello
+ls
+clear
+cd hello
+ls
+vim Cargo.toml
+clear
+vim src/main.rs
+clear
+ls
+mkd test
+ls
+b
+ls
+mv test tests
+cd tests
+ls
+vim cli.rs
+cargo build
+clear
+ls
+vim cli.rs
+clear
+cargo test
+clear
+ls
+vim cli.rs
+cargo test
+clear
+clear
+cargo test
+vim cli.rs
+cargo test
+clear
+hello
+clear
+clear
+ls
+bk
+b
+ls
+vim Cargo.toml
+clear
+clear
+ls
+vim tests/cli.rs
+clear
+ls
+vim Cargo.
+vim .
+cargo test
+clear
+true
+clear
+s
+b
+cn pseudo-true
+cd pseudo-true
+ls
+vim src/main.rs
+cargo run
+cargo run
+echo $?
+clear
+clear
+mkd tests
+vim cli.rs
+cargo run
+cargo build
+cargo run
+vim cli.rs
+clear
+b
+ls
+vim Cargo.toml
+cargo build
+vim .
+clear
+cargo test
+clear
+clear
+ls
+vim tests
+cargo test
+vim tests
+cargo test
+bk
+b
+cn pseudo-false
+ls
+cd pseudo-
+b
+cd pseudo-false
+vim src/main.rs
+clear
+mkd tests
+vim cli.rs
+ls
+b
+ls
+vim Cargo.
+vim Cargo.toml
+cd tests
+vim cli.rs
+cargo build
+cargo test
+clear
+ls
+vim cli.rs
+clear
+b
+cargo run
+echo $?
+vim tests/cli.rs
+clear
+ls
+cargo test
+clear
+clear
+ls
+b
+ls
+cd hello
+ls
+vim src/main.rs
+clear
+ls
+cd tests/cli.rs
+vim tests/cli.rs
+vim tests/cli.rs
+cargo test
+clear
+clear
+b
+ls
+b
+ls
+cd rust-
+ls
+mkdir 01
+mv hello pseudo-false pseudo-true 01
+ls
+cd 01
+ls
+b
+ls
+mkd 02
+ls
+clear
+ls
+cargo new echor
+clear
+ls
+cd echor
+l
+lz
+clear
+lz
+b
+ls
+ls
+rm -rf echor
+cn echor
+cd echor
+ls
+cargo run 
+clear
+ls
+clear
+ls
+vim src/main.rs
+clear
+cargo run
+cargo run hello
+clear
+clear
+ls
+vim Cargo.toml
+cargo build
+clear
+clear
+ls
+vim src/main.rs
+cargo run
+cargo run -- -h
+cargo run -- -h
+ear
+clear
+cargo run -- -h
+cargo run -- -v
+cargo run -- -V
+clear
+vim .
+cargo run
+cargo run hi
+cargo run hello world
+cargo run -- -n hello world
+clear
+clear
+clear
+ls
+vim src/main.rs
+cargo run
+cargo run -h hello
+cargo run -- hello world
+cargo run -- -n hello world
+clear
+clear
+ls
+mkd tests
+b
+vim Cargo.toml
+cargo build
+vim tests
+cargo test
+clear
+clear
+clear
+ls
+cd fullstack/javascript/projects
+ls
+cd restaurant/ls
+cd restaurant/
+ls
+cd src
+ls
+vim index.
+vim index.html
+vim index.html
+npm install --save-dev csv-loader
+vim webpack
+b
+ls
+vim webpack.config.js
+vim src.
+vim src .
+vim src .
+clear
+ls
+cd src
+ls
+cd pages
+ls
+vim .
+clear
+ls
+clear
+ls
+b
+ls
+b
+ls
+vim webpack.config.js
+ls
+vim webpack.config.js
+vim webpack.config.js
+clear
+ls
+cd src
+ls
+cd pages
+ls
+vim menu.csv
+b
+b
+ls
+vim webpack.config.js
+clear
+cd src/pages
+ls
+vim menu.js
+clear
+b
+b
+clear
+ls
+git add .
+git commit -m 'functionally done, stylistically far from done'
+git-token
+git push
+ clear
+ls
+cd src
+ls
+vim style.css
+ls
+vim style.css
+ls
+cd fullstack
+ls
+cd javascript
+ls
+cd projects
+ls
+cd restaurant
+ls
+clear
+ls
+clear
+ls
+vim package
+vi package.json
+clear
+ls
+vim webpakc.conf
+vim webpack.config.js
+clear
+ls
+vim src
+ls
+npm watch
+npm run watch
+ls
+vim package.json
+npm start
+npm start
+npm start
+npm start
+npm start
+npm start
+npm start
+ear
+clear
+clear
+monitor
+xrandr
+xrandr
+monitor
+clear
+syu
+clear
+clear
+syu
+clear
+htop
+vim
+clear
+htop
+clear
+syu
+clear
+cd tmux
+vim tmux.conf
+clear
+syu
+tp
+syu
+clear
+cd
+clear
+neofetch
+clea
+clear
+clear
+syu
+clear
+clear
+ls
+tree
+clear
+ts
+susp
+clear
+syu
+clear
+xrandr
+clear
+neofetch
+clear
+tp
+clear
+syu
+clear
+clear
+ts
+git-token
+bb
+ls
+cd js
+ls
+mv javascript ../web/odin/fullstack
+ls
+git-token
+ls
+cd rust-cli
+ls
+cd 02
+ls
+cd echor
+ls
+cd tests
+ls
+vim cli.rs
+clear
+;s
+ls
+b
+ls
+vim Cargo.toml
+clear
+clear
+ls
+vim mk-outs.sh
+clear
+vim mk-outs.sh
+clear
+./mk-outs.sh
+ls
+cd tests
+ls
+cd expected
+ls
+vim hello1.n.txt
+clear
+ls
+b
+ls
+b
+ls
+clear
+claer
+ls
+clear
+ls
+vim src/main.rs 
+claer
+clear
+cargo test
+clear
+clear
+ls
+vim src/main.rs
+lear
+clear
+ls
+cd tests
+ls
+vim cli.rs
+cargo test
+ls
+bb
+ls
+cd echor
+ls
+cd tets
+ls
+cd tests
+ls
+rm -rf expected
+bb
+ls
+cd echo
+ls
+./mk-outs.sh
+cargo test
+vim tests/cli.rs
+cargo test
+clear
+cat
+clear
+cd
+clear
+git-token
+b
+ls
+cd restaurant
+ls
+vim webpack.config.js
+vim package.json
+node
+node 
+node
+clear
+clear
+ls
+cd fullstack/javascript
+ls
+cd projects
+ls
+cd restaurant
+ls
+git add .
+git commit -m 'added css so it looks alright'
+git-token
+git push
+clear
+clear
+ls
+vim .git
+vim .gitignore
+git add .
+git add dist && git commit -m 'initial dist subtree commit'
+git subtree push --prefix dist origin gh-pages
+clear
+ls
+vim package.json
+npm run
+npm run pages
+clear
+git add .
+git commit -m 'added script in package.json'
+git push
+npm build
+npm run build
+npm run pages
+git add .
+git commit -m 'a'
+git pages
+npm run pages
+clear
+ls
+cd dist
+ls
+bat index.html
+clear
+b
+ls
+vim package
+vim package.json
+clear
+ls
+vim webpack.config.js
+clear
+ls
+cd dist
+ls
+vim runtime.js
+clear
+clear
+ls
+webpack
+clear
+ls
+b
+ld
+ls
+vim package.json
+npm run build
+clear
+npm run pages
+clear
+ls
+cd dist
+npm pages
+npm run pages
+clear
+b
+git commit -m 'a'
+b
+clear
+ls
+ls
+cd restaurant
+git add 
+git add  .
+git commit -m 'a\
+'
+git push
+clear
+ls
+npm run watch
+npm run test
+npm run start
+clear
+clear
+ls
+vim package
+vim package.json
+clear
+ls
+vim webpack.config.js
+npm run build
+npm run pages
+git add .
+git commit -m 'a'
+git push
+npm run pages
+clear
+ls 
+clear
+ls
+vim package.json
+clear
+ls
+cd src
+ls
+vim index.js
+clear
+ls
+cd pages
+ls
+b
+ls
+cd assets
+ls
+b
+ls
+b
+git add .
+git commit -m 'huh'
+git push
+clear
+npm run build
+git add .
+git commit -m 'please'
+git push
+npm run pages
+clear
+ls
+vim package
+vim package.json
+vim webpack.config.js
+clear
+npm run build
+npm run pages
+git add .
+git commit -m 'a'
+git push
+npm run pages
+clear
+b
+b
+b
+git add .
+git commit -m 'some stuff i forgot to commit'
+git push
+clear
+syu
+clear
+claer
+clear
+syu
+clear
+tp
+ls
+cd java
+ls
+mkd json
+ls
+mkd learning-area
+ls
+vim index.html
+vim style.css
+clear
+ls
+vim superheroes.json
+clear
+ls
+ls
+vim main.js
+clear
+bb
+ls
+clear
+ls
+ls
+cd json
+ls
+mkd kitten
+ls
+vim index.html
+clear
+bb
+ls
+clear
+syu
+clear
+clear
+ls
+clear
+ls
+mkd SOLID
+ls
+vim 1.js
+clear
+ls
+mkdir lesson_1
+ls
+mv lesson_1/ lesson1
+ls
+mv 1.js logger.js
+ls
+ls
+cd logger.js
+vim logger.js
+ls
+mv logger.js lesson1
+ls
+cd lesson1
+ls
+npm init
+s
+vim package.json
+clear
+ls
+vim main.js
+mv logger.js main.js
+touch index.html
+vim index.html
+vim index.html
+ls
+rm -rf index.html package.json
+ls
+ls -a
+vim main.js
+clear
+ls
+b
+ls
+mkd lesson2
+clear
+ls
+clear
+ls
+syu
+clear
+neofetch
+clear
+pacman -Rns $(pacman -Qtdq)
+sudo pacman -Rns $(pacman -Qtdq)
+sudo pacman -Scc
+du
+du -sh
+clear
+ls
+clear
+ls
+clear
+ls
+ls
+vim main.js
+clear
+ls
+bbb
+ls
+git add .
+git commit -m 'jeez'
+git-token
+git push
+b
+git add .
+b
+cd odin
+ls
+cd fullstack
+ls
+cd javascript
+ls
+cd projects
+ls
+cd restaurant
+git add .
+git commit -m 'don remember'
+git push
+bb
+git add .
+git commit -m 'committed restaurant'
+git push
+clear
+ls
+SOLID
+ls
+cd SOLID
+ls
+cd lesson2
+ls
+clear
+ls
+b
+ls
+mkd 5
+b
+rm -rf 5
+mkd lesson5
+clear
+ls
+vim main.js
+clear
+ls
+clear
+b
+b
+git add .
+git commit -m 'starting todo list now'
+git-token
+git push
+clear
+ls
+b
+ls
+cd javascript
+ls
+cd projects
+ls
+bb
+ls
+mv javascript ../../../js/
+ls
+ls
+mv javascript/projects ../../../js
+ls
+cd javascript
+ls
+bb
+ls
+git add .
+git commit -m 'moved projects'
+git push
+bb
+ls
+cd js
+ls
+cd projects
+ls
+mkd muistilista
+ls
+git init
+vim readme.md
+git add .
+git commit -m 'beginning of the end'
+git-email
+git add .
+git commit -m 'beginning of the end'
+git remote add origin https://github.com/tokisuno/muistilista.git
+git branch -M main
+git push -u origin main
+clear
+ls
+bb
+ls
+cd
+clear
+ls
+clear
+clear
+clear
+ls
+ts
+ls
+cd js
+ls
+cd projects
+ls
+cd muistilista
+ls
+npm init -y
+npm install webpack webpack-cli --save-dev
+ls
+clear
+ls
+mkdir src dist
+ls
+cd src
+touch index.html index.js
+b
+ls
+vim package
+vim package.json
+clear
+ls
+vim webpack.config.js
+clear
+clear
+ls
+cd src
+ls
+touch index.css
+ clear
+ls
+mkd modules
+touch app.js dom.js
+bb
+ls
+git add .
+git revert 
+git reset .
+git init
+clear
+ls
+vim .gitignore
+clear
+git add .
+git commit -m 'file structure'
+git-token
+git push
+clear
+clear
+ls
+cd src
+ls
+vim index.html
+clear
+b
+ls
+vim package.json
+ls
+vim package
+bat package.json
+\:q
+clear
+npm start
+ls
+vim package
+vim package.json
+vim package.json
+clear
+npm start
+clear
+ls
+cd src
+ls
+vim index.
+vim index.html
+clear
+ls
+vim index.html
+clear
+ls
+cd modules
+ls
+vim app.js
+clear
+ls
+vim init.js
+ls
+clear
+ls
+b
+ld
+d
+ls
+b
+ls
+cd src
+ls
+clear
+mkdir data
+ls
+clear
+ls
+cd index.
+cd modules
+ls
+vim app.js
+vim app.js
+clear
+ls
+bb
+ls
+cd src
+ls
+vim index.js
+clear
+ls
+clear
+ls
+vim modules
+npm install fs
+clear
+vim modules
+clear
+ls
+vim index.js modules/*
+clear
+coAgit
+b
+npm run build
+clear
+ls
+cd dist
+ls
+vim index.html
+brave index.html
+ls
+ls
+clear
+ls
+b
+ls
+cd src
+ls
+cd data
+ls
+b
+ls
+cd data
+ls
+b
+rm -rf data
+ls
+vim index.js modules/*
+clear
+b
+git add .
+git commit -m 'base todo functionality almost done. webstorage is a big tricky tho'
+git-token
+git push
+clear
+clear
+syu
+clear
+ls
+npm run watch
+ls
+vim package
+bat package.json
+npm start
+npm start
+clear
+ls
+cd src
+ls
+cd modules
+ls
+vim app.js
+clear
+ls
+git-token
+npm start
+ls
+clear
+ls
+npm init -y
+clear
+ls
+ls
+vim package.json
+npm install css-loader style-loader html-webpack-plugin webpack webpack-dev-server webpack-cli
+npm install --save-dev webpack webpack-dev-server webpack-cli
+clear
+ls
+mkdir src dist
+ls
+clear
+ls
+vim webpack.config.js
+npm build
+npm run build
+cd src
+ls
+vim index.js
+webpack build
+npm run build
+vim index.html
+npm run build
+clear
+ls
+ear
+clear
+ls
+bb
+npm start
+clear
+clear
+ls
+cd muistilista
+ls
+clear
+clear
+ls
+cd src
+ls
+vim index.
+vim index.js
+vim index.js
+npm install css-loader
+npm install style-loader
+clear
+ls
+b
+ls
+vim package.json
+vim webpack.config.js
+clear
+ls
+b
+ls
+mkd todolist
+b
+ls
+cd muistilista
+ls
+vim package.json
+clear
+ls
+cd src
+ls
+cd modules
+ls
+vim .
+clear
+ls
+vim dom.js
+clear
+ls
+b
+ls
+vim index.css
+clear
+b
+git add .
+git commit -m 'i am so lost in what i am doing'
+git-token
+git push
+clear
+clear
+ls
+cd src
+ls
+vim index.css
+clear
+ls
+vim modules
+clear
+clear
+clear
+ls
+cd modules
+ls
+clear
+ls
+vim storage.js
+npm install date-fns --save
+clear
+ls
+vim app.js
+clear
+bb
+git add .
+git commit -m 'local storage works, everything displays to dom'
+git-token
+git push
+clearls
+clear
+ls
+cd src
+ls
+cd modules
+ls
+vim dom.js
+clear
+clear
+ls
+vim dom.js
+clear
+ls
+bb
+git add .
+git commit -m 'you can show and hide lists now with a button'
+git-token
+git push
+clear
+ls
+cd src
+ls
+vim modules
+clear
+clear
+vim modules
+b
+git add .
+git commit -m 'im getting tired looking at my code for this long // might have to refactor dom generator into classes?'
+git-token
+git push
+tp
+ghci
+clear
+clear
+ghci
+clear
+clear
+b
+b
+npm start
+clear
+ls
+npm start
+npm start
+clear
+ls
+b
+ls
+cd muistilista/
+ls
+vim webpack.config.js
+clear
+ls
+vim package
+bat package.json
+ls
+vim .gitignore
+clear
+ls
+b
+ls
+cd scuffed-carousel
+ls
+npm start
+npm start
+npm start
+clear
+ghci
+clear
+ls
+cd haskell
+l
+clear
+ls
+cd 01-intro.lhs
+rm -rf *
+clear
+s
+clear
+ls
+clear
+vim sumtorial.hs
+clear
+ls
+vim foo.hs
+clea
+rls
+clear
+ls
+ghc foo.hs -o foo
+vim foo.hs
+ghc foo.hs -o foo
+ghc-pkg check
+clear
+ghc-pkg check
+cleaer
+clear
+clear
+clear
+ls
+vim hello.hs
+ghc -o hello hello.hs
+sudo pacman -S ghci
+sudo pacman -S ghc
+paru -Rs ghcup-hs-static-git
+paru -Rs ghcup-hs-static
+paru -Rscn ghcup-hs-static-git
+clear
+sudo pacman -S haskell-base-prelude
+sudo pacman -Syu
+sudo pacman -S haskell-*
+sudo pacman -S haskell*
+sudo pacman -S haskell-*
+sudo pacman -S haskell-
+sudo pacman -S haskell
+sudo pacman -S ghc
+sudo pacman -S ghc-libs
+cd odin
+cd muistilista
+clear
+clear
+ls
+clear
+ls
+clear
+ls
+cd src
+ls
+vim modules
+clear
+clear
+b
+git add .
+git commit -m 'okay almost almost done'
+git-token
+git push
+ear
+clear
+clear
+ls
+npm start 
+clear
+clear
+clear
+cd src
+ls
+vim modules
+clear
+ls
+git add .
+git commit -m '(feat) edit todo items, expand and collapse todo items'
+clear
+ls
+ls
+b
+ls
+clear
+ls
+cd src
+ls
+git-token
+git push
+clear
+cd src
+ls
+b
+aa
+bb
+bb
+cd js
+cd
+cd js
+cd
+cd code js
+cd
+cd code js projects
+ls
+cd muistilista
+ls
+cd src
+ls
+cd modules
+ls
+vim .
+bb
+git add .
+git commit -m '(feat) remove todo items from todolist, i am done with this'
+git-token
+git push
+clear
+ls
+vim readme.md
+clear
+git add.
+ga
+gc readme changes
+gc 'readme changes'
+git-token
+git push
+clear
+b
+clear
+ls
+clear
+cd odin
+ls
+cd fullstack
+ls
+cd javascript
+ls
+mkd dynamic-ui
+clear
+ls
+mkd dropdown
+ls
+touch index.html index.js
+vim index.html index.js
+clear
+bbb
+git add .
+git commit -m 'hardcoded dropdown menu'
+git push
+clear
+clear
+ls
+cd javascript
+ls
+cd dynamic-ui
+ls
+ls
+cd dropdown
+ls
+vim .
+clear
+bb
+clear
+git add .
+git commit -m 'dropdown works with multiple menus now\
+'
+git push
+clear
+clear
+ls
+cd
+cd proj
+ls
+claer
+ls
+clear
+clear
+ls
+mkd scuffed-carousel
+clear
+ls
+clear
+b
+ls
+git-token
+ls
+cd scuffed-carousel
+ls
+clear
+echo "# scuffed-carousel" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git branch -M main\
+git remote add origin https://github.com/tokisuno/scuffed-carousel.git\
+git push -u origin main
+git-email
+git push -u origin main
+git commit -m 'beginning of the end'
+git branch -M main
+git remote add origin https://github.com/tokisuno/scuffed-carousel.git
+git push
+git push -u origin main
+clear
+clear
+ls
+mv README.md readme.md
+clear
+ls
+npm init -y
+clear
+ls
+ear
+clear
+ls
+mkdir src dist
+vim webpack.config.js
+npm install webpack webpack-cli webpack---save-dev
+npm install webpack webpack-cli --save-dev
+clear
+npm install style-loader css-loader
+npm install html-webpack-plugin
+clear
+ls
+vim package.json
+npm install webpack-dev-server
+vim .gitignore
+clear
+git add .
+git commit -m 'setting up webpack'
+git push
+ls
+cd src
+ls
+touch index.html index.js
+b
+ls
+vim package.json
+clear
+ls
+cd src
+ls
+vim index.q
+vim index.html
+clear
+ls
+vim index.js
+clear
+ls
+clear
+ls
+vim index.js
+vim .
+npm install file-loader
+clear
+ls
+b
+ls
+vim webpack.config.js
+ls
+cd src
+ls
+vim index.js
+clear
+ls
+vim index.js
+clear
+ls
+b
+git add .
+git commit -m 'imported images within /images folder'
+git-token
+git push'
+git push
+bb
+ls
+b
+ls
+cd golang
+ls
+cd phat
+ls
+bat main.go
+clear
+ls
+cd cmd
+ls
+cd assets
+ls
+b
+ls
+vim root.go
+ka spotify
+paru -S ghcup-hs-git
+paru -S ghcup-hs-bin
+paru -Scc
+clear
+ls
+ls
+ghc -dynamic hello.hs
+ls
+./hello
+cat hello.hi
+clear
+ls
+rm -rf hello hello.hi hello.o
+clear
+ls
+cabal
+clear
+clear
+ls
+vim even.hs
+clear
+ls
+vim pairs.hs
+vim pairs.hs
+clear
+ls
+ghc -dynamic pairs.hs
+./pairs
+clear
+ls
+rm -rf pairs pairs.hi pairs.o
+clear
+ls
+clear
+ls
+mkdir 01
+mv *.hs 1
+mv *.hs 01
+ls
+cd 01
+ls
+vim lists.hs
+clear
+ls
+ghc -dynamic lists.hs
+./lists
+ls
+rm -rf lists lists.hi lists.o
+clear
+ls
+clear
+ls
+vim lists.hs
+clear
+ls
+ghci
+clear
+clear
+ls
+vim pairs.hs
+vim even.hs
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+vim functionsOnLists.hs
+clear
+monitor
+clear
+syu
+clear
+syu
+ls -l /dev/video*
+uvcvideo
+sudo pacman -S uvcvideo
+clear
+guvcview
+sudo pacman -S guvcvideo
+v4l2-ctl --list-devices
+qv4l2
+clear
+ffmpeg -f v4l2 -i /dev/video0 -f "vflip" -f v4l2 /dev/video1
+clear
+usbtop
+paru -S usbtop
+claer
+usbtop
+sudo modprobe usbmon
+usbtop
+sudo modprobe usbtop
+sudo modprobe usbmon
+clear
+mpv av://v4l2:/dev/video0 --profile=low-latency --untimed
+clear
+clear
+cd nvim
+ls
+cd
+clear
+ls
+cd dot
+ls
+git add.
+git add .
+git changes
+git commit -m 'a'
+git push
+clear
+clear
+cd
+clear
+syu
+pmpm
+pnpm
+clear
+clear
+cd kitty
+vim kitty.conf
+clear
+vim
+clear
+sl
+vim
+cd vim
+ls
+cd lucas
+cd lazy
+ls
+vim colorscheme.lua
+clear
+vim
+ls
+vim
+clear
+ls
+clear
+ls
+vim
+clear
+cd
+clear
+syu
+clear
+clear
+neofetch
+clear
+cd tmux
+ls
+vim tmux.conf
+vim tmux.conf
+clear
+tp
+clear
+syu
+clear
+paru
+cd .cache
+ls
+cd bazel
+ls
+b
+rm -rf bazel
+ls
+clear
+sudo pacman -Rs helix
+clear
+cd
+zse
+refup
+clear
+refup
+syu
+clear
+neofetch
+clear
+syu
+susp
+syu
+clear
+cd go
+ls
+cd
+cd code
+ls
+cd golang
+ls
+vi
+mkd gin-test
+b
+rm -rf gin-test
+clear
+ls
+mkd gin-test
+gmod gin-test
+clear
+ls
+vim main.go
+go tidy
+go
+go get
+clear
+ls
+vim main.go
+go run
+ls
+go
+go build
+ls
+./gin-test
+clear
+ls
+vim main.go
+clear
+ls
+cht.sh
+cht.sh/go/LoadHTMLFiles
+cht.sh go
+cht.sh/go/templates
+cht.sh
+clear
+clear
+ls
+go build
+go run
+ls
+./gin-test
+clear
+clear
+ls
+vim mani.go
+vim main.go
+go run main.go
+clear
+ls
+vim templates
+clear
+go run main.g
+go run main.go
+clear
+b
+ls
+b
+ls
+mkd projects
+mkd igen
+gmod igen
+clear
+ls
+vim main.go
+clear
+vim main.go
+go build
+go get
+clear
+go build
+cobra-cli
+cobra-cli init
+clear
+ls
+vim main.go
+go build
+go run
+go run .
+go run . --help
+ls
+./igen
+./igen -h
+clear
+ls
+cd cmd
+ls
+ls
+vim root.go
+b
+go build
+go run . t
+go run . -t
+go run . --t
+go run . -t
+go run . 
+go run . -t
+go run . --toggle
+go run . 
+go run . -h
+go run . --hwlp
+clear
+ls
+cobra-cli create new
+ls
+cd cmd
+ls
+vim root.go
+b
+ls
+cd new
+ls
+b
+rm -rf new
+cobra-cli add new
+ls
+cd cmd
+ls
+vim new.gi
+vim new.go
+go get
+ls
+vim new.go
+clear
+ls
+clear
+ls
+b
+ls
+vim main.go
+clear
+ls
+cd cmd
+ls
+clear
+ls
+vim root.go
+go build
+b
+go build
+ls
+go run .
+go run . --help
+clear
+ls
+cd cmd
+ls
+vim new.go
+go build
+go run ../.
+clear
+ls
+go run
+go run .
+b
+ls
+go run .
+go run . --help
+ls
+vim main.go
+vim
+ls
+vim 
+clear
+ls
+vim main.go
+cd cmd
+ls
+vim root.go
+ls
+vim enw.go
+vim new.go
+go build
+go run ../.
+go run ../. new
+go run ../. help
+go run ../. completion
+go run ../. completion zsh
+clear
+ls
+go run ../.
+clear
+ls
+go run ../.
+go run ../. help
+go run ../. new
+clear
+clear
+ls
+vim version.go
+ls
+b
+cobra-cli add version
+ls
+cd cmd
+ls
+vim version.go
+clear
+ls
+go build
+go build ../
+b
+ls
+./igen
+./igen help
+ls
+rm -rf igen
+ls
+go build
+ls
+./igen
+./igen help
+./igen version
+./igen version help
+./igen version h
+./igen --help version
+./igen help new
+./igen new
+./igen new language
+clear
+ls
+cd cmd
+ls
+rm -rf igen
+ls
+clear
+ls
+vim new.go
+ls
+cd templates
+ls
+b
+rm -rf templates
+ls
+ls
+clear
+ls
+mkd templates
+ls
+mkdir rust webpack
+ls
+cd webpack
+vim .gitignore
+clear
+ls
+ls
+b
+ls
+cd webpack
+ls
+ls -a
+ls
+b
+ls
+b
+ls
+clear
+ls
+vim new.go
+clear
+ls
+b
+go build
+./igen
+./igen new
+./igen new language
+./igen new a
+clear
+igen new
+./igen new 
+./igen new -h
+./igen new -l languag
+./igen new -l language
+clear
+ls
+clear
+ls
+cd cmd
+ls
+vim new.go
+b
+go build
+./igen
+rm -rf igen
+go build
+./igen
+./igen new
+./igen new -l 
+./igen new -l language
+clear
+ls
+clear
+cd cms
+cd cmd
+ls
+vim new.go
+clear
+b
+rm -rf igen
+go build
+ls
+./igen
+./igen -l
+./igen -l language
+./igen -l lang
+./igen new -l language
+cd cmd
+ls
+rm -rf langs.json
+../igen
+../igen new -l language
+clear
+ls
+vim new.go
+b
+go build
+./igen
+./igen new -l language
+clear
+ls
+cd cmd
+ls
+vim new.go
+b
+vim cmd
+go build
+go run
+./igen
+./igen new -l language
+ls
+vim cmd
+clear
+ls
+go build
+./igen
+./igen new -l language
+vim cmd
+clear
+go build
+./igen new -l language
+b
+./igen/igen new -l language
+clear
+ls
+cd igen
+ls
+vim cmd
+go build
+./igen new -l language
+b
+./igen/igen new -l language
+clear
+clear
+cd igen
+ls
+vim cmd
+go build
+./igen new -l language
+ls
+vim main.go
+vim cmd
+go build
+./igen new -l language
+clear
+ls
+vim cmd
+clear
+ls
+go build
+./igen new -l language
+./igen new -l rust
+claer
+claer
+ls
+clear
+ls
+vim cmd
+clear
+ls
+vim readme.md
+clear
+ls
+git init
+clear
+ls
+cd cmd
+ls
+vim templates
+ls
+cd templates
+ls
+cd node
+ls
+vim .gitignore
+clear
+clear
+ls
+vim .gitignore
+clear
+ls
+b
+b
+b
+clear
+git add .
+git-email
+git commit -m 'beginning of the end'
+git remote add origin https://github.com/tokisuno/igen.git
+git branch -M main
+git-token
+git push -u origin main
+clear
+ls
+vim readme.md
+clear
+ls
+cd cmd
+ls
+vim templates
+clear
+cd templates
+ls
+mkd rust
+ls
+vim .gitignore
+b
+mkd go
+vim .gitignore
+clear
+b
+b
+clear
+b
+git add .
+git commit -m '(feat) added go, rust, and node support'
+git push
+clear
+ls
+vim readme.md
+git add .
+git commit -m '(doc) readme update, added planning to make this work for tomorrow'
+git push
+clear
+clear
+clear
+syu
+clear
+susp
+syu
+clear
+tp
+syu
+clear
+cd nvim
+ls
+cd lua
+ls
+cd lucasls
+cd lucas
+ls
+cd lazy
+ls
+vim lint.lua
+rm -rf lint.lua
+vim
+clear
+cd
+clear
+ls
+clear
+l
+clear
+lz
+clear
+cd code
+ls
+cd projects
+ls
+b
+cd js
+ls
+cd projects
+ls
+mv * ../../projects
+ls
+b
+rm -rf projects
+b
+ls
+cd golang
+ls
+mv gin-test phat ../projects
+b
+ls
+cd projects
+ls
+cd library
+ls
+vim class.js
+clear
+clear
+ls
+b
+clear
+ls
+clear
+ls
+cd igen
+ls
+clear
+ls
+vim main.go
+clear
+cd cmd
+ls
+b
+vim new.go
+ls
+vim cmd/new.go
+go build
+./igen
+igen go
+./igen go
+./igen rust
+igen --new 
+./igen --new
+clear
+ls
+cd cmd
+b
+ls
+cd cmd
+ls
+b
+clear
+ls
+rm -rf igen
+cd cmd
+ls
+rm -rf new.go
+b
+go build
+./igen
+clear
+ls
+vim .
+clear
+ls
+cd cmd
+ls
+vim root.go
+b
+vim cmd
+clear
+go build
+./igen
+./igen -n
+./igen -
+./igen --new
+./igen new
+clear
+clear
+ls
+vim .
+clear
+rm -rf igen
+go build
+./igen
+./igen -h
+igen igen
+./igen igen
+clear
+clear
+ls
+./igen
+./igen new
+./igen igen
+clear
+ls
+cd cmd
+ls
+vim enw
+vim new.gol
+vim new.go
+clear
+ls
+b
+rm -rf igen
+go build 
+./igen
+./igen 
+./igen language
+./igen new
+./igen -h
+clear
+ls
+cd cmd
+ls
+b
+vim cmd.
+vim cmd
+clear
+go build
+./igen
+./igen new
+./igen n
+./igen n language
+./igen n --new language
+clear
+cd cmd
+ls
+vim new.go
+rm -rf new.go
+b
+clear
+go build
+clear
+ls
+vim .
+go build
+/.igen
+./igen
+./igen n language
+./igen language
+./n
+./igen n
+./igen n --help
+clear
+ls
+vim cmd
+clear
+go build
+igen
+./igen
+./igen language
+./igen -n language
+vim cmd
+clear
+go build
+./igen -n language
+clear
+clear
+igen -v
+clear
+ls
+./igen -v
+igen version
+./igen version
+clear
+ls
+vim cmd
+clear
+go build
+./igen version
+./igen v
+clear
+./igen
+./igen -n webpack
+clear
+ls
+vim cmd
+go build
+./igen -n webpack
+clear
+ls
+vim cmd
+go build
+./igen -n webpack
+clear
+ls
+clear
+ls
+vim cmd
+clear
+go build
+./igen -n webpack
+clear
+vim cmd
+clear
+go build
+./igen
+./igen new
+./igen -n 
+./igen -n webpack
+ls
+cd cmd
+ls
+b
+ls
+lz
+cd cmd
+ls
+ear
+clear
+ls
+vim root.go
+go build
+./igen
+b
+ls
+cd cmd
+ls
+b
+./igen
+./igen -n webpack
+ls
+cd cmdls
+cd cmd
+ls
+b
+ls
+cd cmd
+ls
+vim root.go
+clear
+ls
+go build
+vim root.go
+clear
+go build
+b
+ls
+./igen
+./igen -n webpack
+clear
+ls
+ls
+./igen -n webpack
+bb
+./projects/igen/igen -n webpack
+clear
+ls
+cd projects/igen
+ls
+b
+./igen/igen -n webpack
+clear
+ls
+cd igen
+ls
+vim cmd
+go build
+./igen -n webpack
+bb
+./projects/igen/igen -n webpack
+clear
+ls
+cd projects/igen
+ls
+vim cmd
+clear
+ls
+go build
+./igen -n webpack
+clear
+ls
+clear
+./igen -n webpack
+go build
+./igen -n webpack
+go build
+./igen -n webpack
+ls
+cd tmp
+ls
+vim file
+go build
+b
+rm -rf tmp
+go run 
+go build
+./igen -n webpack
+ls
+cd tmp
+ls
+vim file
+go build
+b
+go build
+./igen -n webpack
+ls
+rm -rf .gitignore
+./igen -n webpack
+clear
+ls
+go build
+rm -rf tmp
+clear
+ls
+./igen -n webpack
+clear
+ls
+bat .gitignore
+./igen -n rust
+clear
+ls
+bat .gitignore
+clear
+go build
+./igen -n rust
+./igen -n 
+./igen -n rust -o
+git add .
+git commit -m 
+git commit
+git-token
+git push
+lear
+clear
+clear
+rm -rf .gitignore
+./igen -n go
+clear
+ls
+clear
+ls
+go build
+./igen -n go
+rm -rf .gitignore
+./igen -n go
+clear
+ls
+vim .gitignore
+clear
+git add .
+git commit -m '(test) used igen to generate .gitignore for this LMAO'
+git push
+vim read
+vim readme.md
+git add .
+git commit -m '(doc) readme updated'
+git push
+lear
+ls
+clear
+ls
+rm -rf igen
+git rm --cached igen -r
+git add .
+git commit -m '(cleanup) removed igen binary'
+git push
+clear
+ls
+vim readme.md
+clear
+git add .
+git commit -m '(doc) added todo items in readme'
+git push
+path
+clear
+zsh
+clear
+sudo pcman
+fk
+sudo pacman
+sudo pacman -S
+sudo paman -S
+fk
+sudo pacman -S
+clear
+cd
+clear
+cd builds
+ls
+git clone AmoabaKelvin/Medium-Anti-Member-Only
+git clone https://github.com/AmoabaKelvin/Medium-Anti-Member-Only
+cd Medium-Anti-Member-Only
+ls
+cd chromium
+ls
+cd
+clear
+syu
+syu
+clear
+neofetch
+clear
+neofetch
+clear
+clear
+clear
+clear
+ls
+cd code
+ls
+cd rust
+ls
+b
+ls
+cd exercises-for-programmers
+ls
+cd 07
+ls
+b
+ls
+mkd 08
+ls
+ls
+clear
+ls
+cn rust
+cd rust
+ls
+vim src/main.rs
+vim src/main.rs
+clear
+b
+ls
+mkd 09
+ls
+b
+ls
+rm -rf 09
+b
+ls
+mkd 09
+cn rust
+cd rust
+vim src/main.rs
+clear
+clear
+ls
+vim src/main.rs
+clear
+b
+ls
+b
+ls
+clear
+ls
+mkd 10
+cn rust
+cd rust
+vim src/main.rs
+clear
+b
+b
+git add .
+git commit -m 'exercise 8 9 10 done: 10 has maybe the ugliest hashmap i have ever seen but idk how to do it well in rust'
+git-token
+git push
+clear
+clear
+syu
+clear
+clear
+cd odin
+ls
+cd js
+ls
+cd
+ls
+cd code
+ls
+cd js
+ls
+cd projects
+ls
+cd muistilist
+git add .
+git commit -m 'confused but we are getting there LMAO'
+git-token
+git push
+clear
+git pus
+git push
+clear
+clear
+susp
+syu
+clear
+tp
+clear
+syu
+clear
+clear
+zsh
+clear
+ls
+cd
+clear
+ls
+clear
+cd nvim
+ls
+cd dot
+ls
+git add .
+git commit -m 'a'
+git push
+clear
+clear
+ts
+syu
+cd muistilista
+ls
+git add .
+git commit -m 'okay i feel like i am getting somewhere now...'
+git-token
+git push
+clear
+clear
+cd
+clear
+ls
+susp
+tp
+clear
+syu
+clear
+clear
+vim
+clear
+ls
+cd lucas
+ls
+cd lazy
+vim ui.lua
+vim ui.lua
+vim ui.lua
+vim ui.lua
+clear
+ls
+vim ui.lua
+vim ui.lua
+vim ui.lua
+clear
+syu
+lear
+clear
+vim
+clear
+ls
+clear
+neofetch
+susp
+clear
+susp
+clear
+b
+ls
+b
+git add .
+git commit -m 'theme changing plugin\
+'
+git-token
+git push
+clear
+cd
+cd code
+ls
+mkd haskell
+clear
+ghci
+clear
+sudo pacman -S weechat
+weechat
+clear
+paru -S weechat-vimode-git
+clear
+weechat
+weechat
+weechat
+ka weechat
+weechat
+ka weechat
+weechat
+weechat --dir
+weechat --dir .
+clear
+htop
+htop
+htop
+clear
+weechat
+clear
+clear
+susp
+sdf
+clear
+shige
+syu
+clear
+paru
+paru -R sunroof
+paru
+paru -S mozc-ut
+clear
+sudo pacman -S gedit
+sudo pacman -R gedit
+sudo pacman -S kate
+clear
+clear
+vim 01-intro.lhs
+sudo pacman -S sudo pacman -S gcup
+sudo pacman -S sudo pacman -S ghcup
+sudo pacman -S ghcup
+yay -S ghcup-hs-bin
+paru -S ghcup-hs-bin
+paru -S ghcup-hs-static-bin
+paru -S ghcup-hs-static-git
+paru -S ghcup-hs-bin
+zsh
+clear
+ls
+clear
+ts
+clear
+syu
+clear
+cd nvim
+git add .
+git commit -m 'a'
+git push
+clear
+susp
+clear
+ls
+cd .dot
+ls
+git add .
+git commit -m 'a'
+git-token
+git push
+clear
+clear
+cd
+clea
+clear
+syu
+clear
+vlc
+clear
+clear
+syu
+cleart
+clear
+clear
+ls
+cd lucas
+ls
+cd lazy
+ls
+vim neorg.lua
+clear
+ls
+vim
+clear
+vim
+vim
+clear
+clear
+cd
+clear
+ls
+clear
+cd Dropbox
+ls
+cd org
+ls
+bat scripts
+bat scripts.org
+clear
+ls
+b
+ls
+mkd norg
+vim what-is-norg.norg
+vim what-is-norg.norg
+clear
+clear
+ls
+clear
+vim
+ls
+vim test.norg
+clear
+vim
+clear
+clear
+ls
+cd lucas
+ls
+vim lazy
+vim lazy
+vim lazy
+vim
+clear
+vim lazy
+clear
+vim
+clear
+ls
+cd
+clear
+ls
+clear
+ls
+jq
+clear
+clear
+cd lucas
+ls
+vim keymaps.lua
+clear
+ls
+vim globals.lua
+vim
+vim
+clear
+vim
+clear
+clear
+cd
+clear
+ls
+ts
+cd tmux
+vim tmux.conf
+syu
+clear
+sudo pacman -Rcns thunderbird
+clear
+ls
+cd
+clear
+cd dot
+ls
+git add .
+git commit -m 'lmao'
+git push
+clear
+ tp
+clear
+clear
+clear
+cd zsh
+ls
+vim .zshrc
+vim .zshenv
+clear
+vim
+clear
+clear
+ls
+vim
+clear
+syu
+clear
+cd emacs
+cd nvim
+git add .
+git commit -m 'a'
+git push
+ear
+clear
+clear
+cd odin
+ls
+cd fullstack
+ls
+cd javascript
+ls
+cd SOLID
+ls
+cd lesson5
+ls
+vim main.js
+bb
+ls
+b
+ls
+bb
+ls
+b
+ls
+cd js
+ls
+cd projects
+ls
+cd restaurant
+ls
+cd src
+ls
+vim index.js
+clear
+ls
+cd pages
+ls
+vim init.js
+clear
+ls
+clear
+ls
+vim init.js
+clear
+xrandr
+xinput
+lsusb
+clear
+v4l2-ctl -d /dev/video1 --list-ctrls
+v4l2-ctl -d /dev/video1 
+v4l2-ctl 
+v4l2-ctl -d /dev/video0
+v4l2-ctl -d /dev/video
+v4l2-ctl -d /dev/video1
+v4l2-ctl -d /dev/video2
+v4l2-ctl -d /dev/video0
+v4l2-ctl -d /dev/video0 --list-ctrls
+clear
+syu
+clear
+vim
+clear
+tp
+clear
+cd
+clear
+clear
+tp
+clear
+syu
+clear
+ld
+clear
+ls
+sudo pacman -S spac
+sudo pacman -S spack
+paru -S thefuck
+clear
+ls
+thefuck
+clear
+clear
+cd zsh
+ls
+vim .zshrc
+clear
+zsh
+clear
+zse
+path
+zse
+zsh
+b
+clear
+npm start
+clear
+clear
+ls
+cd src
+ls
+clear
+ls
+vim index.js
+clear
+syu
+susp
+git add .
+git commit -m 'old commit'
+git-token
+git push
+clear
+clear
+clear
+ear
+clear
+clear
+ls
+b
+ls
+npm start
+npm start
+npm start
+clear
+ls
+vim src
+clear
+clear
+git add .
+git commit -m 'done'
+git-token
+git push
+clear
+ls
+vim package.json
+npm run build
+npm run pages
+git add .
+git commit -m 'pages'
+git push
+clear
+ls
+vim .gitignore
+clear
+git add dist && git commit -m 'initial dist subtree commit'
+git subtree push --prefix dist origin gh-pages
+clear
+clear
+ls
+vim package
+vim package.json
+clear
+git add .
+git commit -m 'fixed package.json'
+git pus
+git push
+clear
+ls
+clear
+ls
+cd dist
+ls
+brave index.html
+b
+ls
+cd src
+ls
+b
+npm start
+clear
+ls
+vim package.json
+npm start
+clear
+ls
+vim src
+git clear
+npm build
+npm run build
+git subtree push --prefix dist origin gh-pages
+git add .
+git commit -m 'oops fixed logic bug'
+git push
+git subtree push --prefix dist origin gh-pages
+clear
+clear
+syu
+clear
+clear
+ls
+clear
+ls
+cd cmd
+ls
+ear
+clear
+vim cmd
+b
+vim cmd
+clear
+vim cmd
+clear
+go build
+./igen -n webpack
+clear
+ls
+touch .gitignore
+./igen -n webpack
+clear
+ls
+vim cmd
+vim cmd
+clear
+vim cmd
+clear
+clear
+ts
+clear
+cd
+clear
+syu
+tp
+syu
+clear
+clear
+syu
+clear
+clear
+clear
+cd tmux
+lls
+clear
+ls
+vim tmux.conf
+clear
+clear
+vim tmux.conf
+clear
+clear
+clear
+syu
+refup
+refup
+syu
+clear
+cd dot
+ls
+git add .
+git commit -m 'new tmux status plugin'
+git-token
+git push
+git push
+cd nvim
+clear
+git add .
+git commit -m 'nice'
+git push
+clear
+clear
+clear
+clear
+clear
+cd
+clear
+clear
+clear
+syu
+clear
+clear
+clear
+macd
+clear
+emacs
+cd config
+ls
+cd emacs
+ls
+b
+clear
+rip
+ls
+macdr
+vim macd
+clear
+bat macd
+emacs -q -l ~/.config/emacs/init.el --daemon
+clear
+clear
+cd config
+cd emacs
+ls
+cd
+cd .config
+ls
+cd emacs
+ls
+b
+ls
+cd rip
+ls
+dotfilelinks
+clear
+cd emacs
+ls
+bbb
+ls
+cd org
+ls
+clear
+b
+ls
+cd org
+ls
+b
+cd org
+ls
+mkd tmp
+clear
+ls
+b
+clear
+clear
+cd
+clear
+clear
+ls
+clear
+cd
+clear
+ts
+clear
+syu
+clear
+clear
+cd odin
+s
+ls
+cd fullstack
+ls
+cd javascript
+ls
+mkd validation
+ls
+clear
+ls
+mkd basic-email
+vim index.html
+clear
+b
+clear
+ls
+clear
+ls
+mkd 01
+vim index.html
+clear
+ls
+b
+rm -rf 01
+mkd 03
+vim index.html
+clear
+clear
+neofetch
+clear
+aa
+aa
+aa
+clear
+cd validation
+ls
+cd test
+ls
+vim main.js
+git-token
+cd
+clear
+cd Dropbox
+ls
+cd norg
+ls
+b
+rm -rf norg
+ls
+cd latex
+ls
+b
+clear
+ls
+rm -rf planning.xopp
+cd asdf
+ls
+b
+clear
+ls
+rm -rf habits_2024.ods
+clear
+ls
+cd ira
+ls
+b
+clear
+ls
+mkdir tasks
+ls
+ls
+cd tasks
+ls
+b
+clear
+clear
+ls
+cd fullstack
+ls
+clear
+ls
+cd javascript
+ls
+clear
+ls
+cd validation
+ls
+vi
+clear
+ls
+cd detailed
+ls
+vim detailed.
+vim .
+clear
+neofetch
+clear
+htop
+susp
+cd lucas
+ls
+cd lazy
+vim lsp.lua
+vim lsp.lua
+vim lsp.lua
+vim lsp.lua
+vim 
+vim lsp.lua
+clear
+cd
+clear
+vim
+cd lucas
+cd lazy
+vim ui.lua
+clear
+vim
+claer
+clear
+cd
+clear
+susp
+susp
+syu
+clear
+tp
+clear
+syu
+clear
+clear
+ls
+sz A-Common-Sense-Guide-to-Data-Structures-and-Algorithms-Level-Up-Your-Core-Programming-Skills.pdf
+clear
+ls
+clear
+clear
+ls
+cd nvim
+ls
+cd lucas
+ls
+cd lazy
+ls
+vim ui.lua
+vim ui.lua
+vim ui.lua
+vim
+bb
+cd lucas
+vim keymaps.lua
+vim keymaps.lua
+vim keymaps.lua
+vim keymaps.lua
+vim keymaps.lua
+vim keymaps.lua
+vim keymaps.lua
+vim keymaps.lua
+vim
+cd lazy
+vim 
+vim ui.lua
+clear
+vim
+clear
+cd
+clear
+st
+clear
+clear
+ts
+clear
+ls
+clear
+ls
+ts
+cd lucas
+cd lazy
+vim ui.lua
+vim ui.lua
+vim
+b
+ls
+vim init.lua
+clear
+b
+b
+git add .
+git commit -m 'remaps'
+git push
+cd
+cd dots
+cd dot
+git add .
+git commit -m 'a'
+git push
+cd emacs
+git add .
+git commit -m 'planning on turning this into an IWE (integrated writing environment)'
+git push
+cd
+clear
+syu
+clear
+bazel
+clear
+clear
+syu
+clear
+clear
+cd lucas
+ls
+cd lazy
+ls
+vim telescope.lua
+b
+vim .
+vim
+vim
+cd lazy
+ls
+vim telescope.lua
+vim telescope.lua
+vim telescope.lua
+vim telescope.lua
+vim telescope.lua
+vim telescope.lua
+vim telescope.lua
+vim telescope.lua
+clear
+ls
+vim ui
+vim ui.lua
+vim ui.lua
+vim colorscheme.lua
+vim colorscheme.lua
+clear
+syu
+clear
+ git add .
+git commit -m "i don't remember'
+git commit -m "i don't remember"
+git push
+clear
+b
+git add .
+git commit -m 'added more telescope keymaps'
+git push
+susp
+syu
+clear
+clear
+cd
+clear
+clear
+tp
+clear
+cd blog
+ls
+clear
+ls
+cd content
+ls
+cd posts
+ls
+vim 20240728.md
+clear
+ls
+vim 20240701
+vim 20240701.md
+clear
+ls
+vim 20240820.md
+ls
+b
+b
+hugo new posts/20240820.md
+ls
+cd content
+cd posts
+ls
+vim 20240820.md
+clear
+ls
+cd wip
+ls
+b
+ls
+mv 20240820.md wip/goalsuntil2024
+bat 20240728.md
+mv 20240728.md wip/fearofburnout.md
+cd wip
+ls
+mv goalsuntil2024 goalsuntil2024.md
+b
+clear
+ls
+vim 20240820.md
+\:q
+b
+b
+clear
+hugo new posts/20240820.md
+cd content/posts
+ls
+vim 20240820.md
+b
+b
+hugo
+clear
+clear
+ls
+cd public
+git add .
+git commit -m 'new post'
+git-token
+git push
+b
+git add .
+git commit -m 'new post'
+git push
+cd public
+b
+ls
+git add .
+clear
+ls
+cd public
+git add .
+b
+clear
+ls
+cd themes
+ls
+cd hugo-classic
+git add 
+git add .
+git commit -m 'i do not remember what i did oh god'
+git-email
+git commit -m 'i do not remember what i did oh god'
+git push
+git rebase
+git fetch master
+git fetch
+b
+b
+hugo
+cd public
+ls
+b
+clear
+clear
+cd
+clear
+ls
+clear
+clear
+paru
+clear
+clear
+clear
+ls
+taskwarrior
+sudo pacman -S taskwarrior
+clear
+sudo pacman -S taskwarrior-tui
+task
+task
+clear
+taskd
+clear
+task version
+clear
+cd config
+ls
+bb
+clear
+ls
+cd poto
+task rc:~/.config/taskwarrior/.taskrc
+cd .config
+ls
+mkdir taskwarrior
+task rc:~/.config/taskwarrior/.taskrc
+clear
+task
+cd taskwarrior
+ls
+ls -a
+vim .taskrc
+b
+rm -rf taskwarrior
+task rc:~/.config/taskwarrior/taskrc
+mkdir taskwarrior
+task rc:~/.config/taskwarrior/taskrc
+cd taskwarrior
+ls
+vim taskrc
+clear
+task
+task config
+task config regex off
+clear
+task add read documentation
+task add priority:H pay bills
+task list
+task 2 done
+task
+clear
+task 1 delete
+clear
+clear
+ls
+vim taskrc
+task
+clear
+ls
+clear
+cd
+clear
+task
+task add project:blog Retheme blog from scratch
+clear
+ls
+task
+clear
+ls
+clear
+task
+clear
+ls
+vim ideas.md
+nice
+nice
+clear
+thot
+zse
+life
+ls
+cd FLEETING
+ls
+vim ideas.md
+clear
+task add project:yt Remake all my thumbnails due:eom
+task add project:yt Change titles when needed due:eom
+clear
+ls
+tasks
+task
+clear
+ls
+cd
+clear
+task add project:yt Change pfp due:eom
+clear
+ls
+clear
+man task
+task add journal recur:daily
+task add journal recur:daily due:today
+clear
+ls
+task
+task done 6
+clear
+ls
+task 
+clear
+task list
+clear
+clear
+ls
+clear
+clear
+ls
+clear
+clear
+clear
+fuck
+zse
+sudo pacman -R thefuck
+fuck
+cear
+clear
+vim
+clear
+ls
+haskell
+clear
+clear
+syu
+clear
+clear
+vim
+ls
+cd lucas
+ls
+cd lazy
+ls
+vim neorg.lua
+rm -rf neorg.lua
+clear
+ls
+vim 
+vim 
+vim ui.lua
+clear
+vim
+clear
+ls
+bb
+git add .
+git commit -m 'removed some plugins'
+git-token
+git push
+clear
+b
+ls
+cd browserform
+ls
+b
+ls
+cd library
+ls
+b
+clear
+ls
+cd restaurant
+ls
+vim vim webpack.config.js
+ls
+vim webpack.config.js
+clear
+ls
+bat package.json
+clear
+ls
+clear
+cd igen
+ls
+clear
+ls
+go build
+ls
+mv igen ~/.local/bin/
+clear
+ls
+cd
+cd igen
+ls
+cd local bin
+ls
+rm -rf igen
+clear
+cd igen
+ls
+go build
+clera
+ls
+clear
+ls
+ls
+cd
+clear
+cd code
+ls
+cd projects
+ls
+cd igen
+ls
+./igen
+clear
+ls
+clear
+ls
+clear
+ls
+ls
+cd cmd
+ls
+cd templates
+ls
+cd webpack
+ls
+vim .gitignore
+clear
+clear
+ls
+cd fullstack
+ls
+cd javascript
+ls
+cd validation
+ls
+rm -rf basic-email 03
+clear
+ls
+clear
+ls
+vim basic.html
+clear
+vim detailed.html
+vim detailed.html
+clear
+ls
+mkdir basic 
+mv basic validate.js basic/
+mv basic validate.js basic
+clear
+ls
+mv basic.html basic
+ls
+mkdir detailed
+mv detailed.* detailed
+ls
+clear
+ls
+mkd sans-api
+vim index.html
+vim index.html
+vim main.js
+clear
+clear
+ls
+b
+clear
+ls
+ls
+mkd test
+vim index.html
+clear
+ls
+vim main.js
+vim main.js
+clear
+clear
+bbb
+git add .
+git commit -m 'form validation exercises'
+git-token
+git push
+clear
+ls
+cd
+clear
+ls
+cd lirbary
+cd library
+ls
+git add .
+git commit -m 'i have no idea what changed here. i opened the file and it has one unstaged change'
+git push
+clear
+ls
+git branch validation
+git checkout -b validation
+git checkout validation
+clear
+ls
+vim class.js
+clear
+git add .
+git commit -m 'working javascript validation'
+git-token
+git push
+git push -u origin validation
+b
+clear
+ls
+clear
+ls
+mkd browserform
+touch index.html style.css main.js
+clear
+ls
+clear
+ls
+vim index.html
+vim index.html
+clear
+ls
+vim .
+vim .
+clear
+clear
+clear
+syu
+clear
+cd
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+aa
+clear
+clear
+ls
+vim .
+clear
+clear
+git init
+git-email
+git remote add origin https://github.com/tokisuno/scuffed-browser-form.git
+git add .
+git commit -m 'beginning of the end'
+git branch -M main
+git push -u origin main
+git-token
+git push -u origin main
+clear
+clear
+task
+task new Setup kobo for Ira due:eod
+task add Setup kobo for Ira due:eod
+clear
+task
+clear
+todo
+b
+clear
+ls
+cd gin-test
+ls
+b
+clear
+ls
+cd restaurant
+ls
+vi package.json
+vim webpack.config.js
+npm run build
+npm install babel
+npm install --save-dev babel-loader @babel/core @babel/preset-env webpack
+npm audit fix
+npm audit fix --force
+clear
+npm run build
+clear
+git add .
+git commit -m 'babel'
+git push
+clear
+ls
+cd dist
+ls
+vim main.js
+clear
+b
+ls
+vim package.json
+vim webpack.config.js
+vim package.json
+npm run build
+clear
+clear
+syu
+b
+b
+clear
+clear
+clear
+clear
+vim
+vim
+clear
+clear
+syu
+clear
+ear
+clear
+ls
+clear
+ls
+cd exercises-for-programmers
+ls
+b
+clear
+ls
+cd haskell
+ls
+rm -rf *.conf
+ls
+cd 01
+ls
+vim foo.hs
+clear
+bb
+clear
+syu
+clear
+neofetch
+clear
+clear
+ls
+clear
+clear
+ls
+cd projects
+ls
+cd browserform
+clear
+ls
+b
+clear
+ls
+b
+clear
+cd javascript
+clear
+ls
+mkd promises
+vim scratch
+vim scratch.js
+clear
+b
+cd proj
+ls
+clear
+curl -X POST  "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/burlington%20ontario?unitGroup=metric&key=D8APCPL4XYH6U7888V47PGE8W&contentType=json"
+curl -X POST  "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/burlington%20ontario?unitGroup=metric&key=D8APCPL4XYH6U7888V47PGE8W&contentType=json"curl -X POST  "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/burlington%20ontario?unitGroup=metric&key=D8APCPL4XYH6U7888V47PGE8W&contentType=json"
+curl -X POST  "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/burlington%20ontario?unitGroup=metric&key=D8APCPL4XYH6U7888V47PGE8W&contentType=json"
+clear
+cd javascript
+ls
+mkd apis
+mkd first
+b
+mv first giffy
+cd giffy
+ls
+vim index.html
+clear
+ls
+clear
+ls
+clear
+tp
+ls
+vim main.js
+clear
+git add 
+git add .
+git commit -m 'forgot to commit yesterday ffs'
+git push
+git-token
+git push
+clear
+clear
+vim main.js
+clear
+git add .
+git commit -m 'api stuff is so different'
+git push
+clear
+curl https://raw.githubusercontent.com/zed-industries/zed/82ad7f2b/script/install.sh | sh -s uninstall
+clear
+zed
+clear
+clear
+ls
+b
+clear
+ls
+ls
+mkd async
+vim ex
+vim ex.js
+clear
+clear
+clear
+ls
+ls
+b
+ls
+vim giffy
+clear
+vim task3.js
+clear
+clear
+ls
+cd async
+b
+clear
+mkd async-by-example
+vim 01.js
+clear
+clear
+bbb
+git add .
+git commit -m 'some async stuff'
+git-token
+git commit 
+git push
+cler
+clear
+gitui
+cd
+clear
+cd async
+ls
+clear
+b
+ls
+clear
+clear
+syu
+clear
+paru
+clear
+syu
+clear
+fastfetch
+clear
+clear
+lmao
+cd
+clear
+ls
+aa
+clear
+ls
+b
+cd
+cd code
+ls
+cd projects
+ls
+mkd scuffed-weather
+clear
+touch index.html style.css main.js
+git init
+clear
+ls
+vim main.js
+clear
+ls
+rm -rf *
+clear
+npm init -y
+clear
+ls
+npm install --save-dev webpack webpack-dev-server webpack-cli
+npm audio
+npm audit
+clear
+ls
+ls
+vim webpack.config.js
+clear
+npm install html-
+npm install html-webpack-plugin
+clear
+ls
+vim webpack.config.js
+mkdir src dist
+vim webpack.config.js
+clear
+ls
+vim package.json
+ls
+cd src
+ls
+touch index.html style.css main.js
+clear
+clear
+npm start
+b
+clear
+ls
+npm start
+vim package.json
+clear
+npm start
+clear
+ls
+cd src
+ls
+mv main.js index.js
+b
+npm start
+npm start
+npm start
+npm start
+npm start
+npm start
+igen
+clear
+clear
+ls
+vim .gitignore
+clear
+ls
+cd src
+clear
+ls
+vim index.js
+ls
+b
+mv .env src
+ls
+vim src
+cd src
+lz
+clear
+ls
+mv .env ../
+ls
+vim index.js
+clear
+b
+npm install --save-dev dotenv
+clear
+clear
+vim webpack.config.js
+npm uninstall dotenv
+npm install --save-dev dotenv-webpack
+clear
+ls
+vim webpack.config.js
+clear
+clear
+ls
+clear
+ls
+cd src
+ls
+vim index.js
+clear
+ls
+b
+clear
+ls
+vim .env
+clear
+clear
+ls
+clear
+ls
+cd src
+ls
+vim index.js
+npm install -D dotenv
+b
+vim webpack.config.js
+clear
+ls
+vim src
+ls
+vim src
+clear
+clear
+ls
+vim webpack.config.js
+npm install process
+clear
+ls
+vim src
+clear
+ls
+vim .env
+vim .env
+clear
+ls
+vim src
+clear
+git init
+git add .
+git-email
+git commit -m 'beginning of the end'
+git remote add origin https://github.com/tokisuno/scuffed-weather.git
+git branch -M main
+git push -u origin main
+git-token
+git push -u origin main
+clear
+ls
+vim src
+clear
+ear
+clear
+clear
+ls
+cd src
+ls
+clear
+ls
+vim index.js
+vim .env
+clear
+ls
+clear
+ls
+ls -a
+mv .env ../
+ls
+b
+ls
+vim .env
+vim .gitignore
+igen
+igen -n webpack
+.~/code/projects/igen/igen
+./code/projects/igen/igen
+./home/poto/code/projects/igen/igen
+$PWD
+$CWD
+echo $PWD
+./home/poto/code/projects/igen/igen
+./home/poto/code/projects/igen/igen 
+clear
+ls
+clear
+zse
+zsh
+igen
+zse
+clear
+zsh
+clear
+ls
+cd scuffed-weather
+ls
+clear
+ls
+npm start
+npm start
+git-token
+cd awesome
+ls
+vim rc.lua
+clear
+clear
+ls
+vim src
+clear
+ls
+cd dist
+ls
+ls -a
+clear
+webpack
+npm build
+npm start build
+npm run build
+clear
+ls
+b
+clear
+ls
+npm install --save-dev css-loader style-loader
+clear
+ls
+b
+ls
+cd library
+ls
+b
+cd muistilista
+ls
+cd src
+ls
+b
+clear
+ls
+vim webpack.config.js
+clear
+ls
+b
+cd scuffed-weather
+ls
+cd src
+ls
+vim index.js
+clear
+git add .
+b
+git add .
+git commit -m 'finished'
+git-token
+git push
+clear
+cd
+clear
+cd code
+clear
+syu
+clear
+clear
+clear
+clear
+vim
+vim
+clear
+ls
+cd awesome
+clear
+clear
+ls
+vim log
+rm -rf log
+clear
+ls
+clear
+ls
+vim rc.lua
+clear
+clear
+cd
+cd github
+cd dot
+ls
+git add .
+git commit -m 'a'
+git push
+clear
+cd code
+ls
+cd cpp
+ls
+b
+clear
+ls
+cd odin
+ls
+cd fullstack
+ls
+clear
+clear
+fastfetch
+clear
+cd
+aa
+clear
+ls
+cd javascript
+ls
+b
+cd javascript
+mkd cs
+mkd recursive-methods
+vim example.js
+clear
+ls
+clear
+ls
+vim sumToGivenNumber.js
+clear
+vim factorial.js
+clear
+clear
+clear
+ls
+vim fib.js
+clear
+vim output-single-linked-list.js
+clear
+ls
+vim reverse-linked-list.js
+clear
+syu
+clear
+neofetch
+clear
+clear
+ls
+clar
+clear
+clar
+klar
+clear
+ls
+vim factorial.js
+clear
+ls
+mkd test
+vim 1.js
+claer
+ls
+vim 6.js
+clear
+cd
+clear
+cd code
+ls
+cd projects
+ls
+vim ttt-nodejs
+clear
+ls
+clear
+ls
+clear
+cd conf
+vim kitty/kitty.conf
+clear
+ls
+cd Meltytech
+ls
+b
+rm -rf Meltytech
+rm -rf matplotlib
+rm -rf kate
+rm -rf exercism
+rm -rf equibop
+rm -rf spicetify
+rm -rf weechat
+sudo pacman -R weechat
+sudo pacman -R weechat-vimode-git
+sudo pacman -R weechat
+clear
+ls
+cd Mousepad
+ls
+b
+rm -rf Mousepad
+sudo pacman -R mousepad
+clear
+clear
+cd recursion
+cd odin
+cd fullstack
+ls
+cd javascript
+ls
+cd cs
+ls
+cd recursive-methods
+ls
+cd test
+cd test
+ls
+a
+clear
+aa
+clear
+ls
+vim 6.js
+clear
+vim 7.js
+bb
+git add .
+git commit -m 'god question 6 sucks'
+git-token
+git push
+clear
+ls
+clear
+ls
+bb
+gita dd .
+git add .
+git commit -m 'idk'
+git push
+clear
+syu
+clear
+fastfetch
+clear
+clear
+ls
+cd java
+ls
+clear
+ls
+cd cs
+ls
+cd recursive-methods
+clear
+clear
+syu
+clear
+clear
+ls
+vim fibseq.js
+clear
+cd ..
+ls
+cd
+cd code proj
+ls
+cd recursion
+ls
+vim fib.js
+clear
+cd Dropbox
+ls
+cd journal
+ls
+ls
+ls
+vim 2024-08-25.md
+ls
+cd conf vie
+ls
+mv config.yaml config.toml
+ls
+clear
+clear
+ls
+vim config.toml
+go build
+ls
+vim config.toml
+clear
+clear
+cd Dropbox
+ls
+vim journal
+cd journal
+clear
+ls
+mkd journal
+ls
+clear
+ls
+b
+clear
+ccli add now
+ls
+vim cmd
+vim cmd
+go build
+go get 
+clear
+vim cmd
+clear
+go build
+clear
+ls
+./vie
+./vie --viper
+./vie --config
+./vie --config=".home'
+./vie --config=".home"
+clear
+ls
+vim main.go
+clear
+ls
+vim cmd/root.go
+clear
+go build
+./vie now
+clear
+ls
+vim cmd/now.go
+go build
+./vie now
+clear
+vim cmd
+go build
+./vie now
+clear
+cd
+cd .config
+ls
+mkd vie
+vim config.yaml
+go build
+ls
+aa
+aa
+aa
+cd vie
+cd proj vie
+ls
+go build
+./vie now
+clear
+ls
+./vie now
+clear
+ls
+clear
+ls
+ls
+vim cmd
+vim cmd
+vim cmd
+clear
+ls
+go build
+./vie now
+clear
+ls
+vim cmd
+vie
+./vie
+./vie --help
+./vie config --help
+./vie config 
+./vie --help config
+clear
+ls
+./vie
+./vie now
+clear
+vim cmd
+./vie now
+clear
+go build
+./vie
+./vie now
+clear
+./vie
+clear
+ls
+vim cmd
+go build
+./vie now
+clear
+ls
+vim cmd/now.go
+go build
+./vie now
+clear
+ls
+vim cmd/now.go
+go build
+go run main.go now
+clear
+ls
+vim cmd/now.go
+go build && go run main.go now
+clear
+ls
+go run main.go now
+clear
+ls
+vim cmd/now.go
+go build && go run main.go now
+clear
+ls
+ls
+vim cmd/now.go
+go build && go run main.go now
+clear
+clear
+ls
+vim cmd/now.go
+go build && go run main.go now
+clear
+clear
+ls
+vim cmd/now.go
+clear
+go build && go run main.go now
+vim cmd/now.go
+go build && go run main.go now
+clear
+ls
+vim cmd/now.go
+clear
+ls
+clear
+go build
+cp vie ~/.local/bin/
+vie
+vie now
+vie now
+clear
+clear
+clear
+ls
+clear
+cd
+clear
+vie
+clear
+vie
+cd vie
+ls
+git add .
+git init
+git add .
+ls
+vim .gitignore
+clear
+ls
+git rm --cached vie 
+clear
+ls
+git add .
+git commit -m 'beginning of the end'
+git-email
+git commit -m 'beginning of the end'
+clear
+ls
+vim readme.md
+git add .
+git commit -m 'readme'
+git-token
+gitp ush
+git push
+git remote add origin https://github.com/tokisuno/vie.git
+git branch -M main
+git push -u origin main
+clear
+vie
+clear
+clear
+clear
+cd
+clear
+clear
+clear
+ls
+ts
+vim
+susp
+syu
+syu
+clear
+vie
+clear
+susp
+syusyu
+syu
+sudo pacman -R kate
+clear
+tp
+clear
+tp
+clear
+news
+newsboat
+clear
+tmux
+clear
+cd tmux
+vim tmux.conf
+clear
+clear
+vim tmux.conf
+clear
+clear
+clear
+vie
+vie now
+clear
+cd
+clear
+ls
+cd Dropbox
+ls
+rm -rf journal2024-08-25.md
+cd journal
+ls
+vim 2024-08-25.md
+rm -rf 2024-08-25.md
+clear
+ls
+bat 2024-08-26.md
+b
+clear
+cd
+clear
+syu
+clear
+cd tmux
+ls
+vim tmux.conf
+clear
+tmux kill-server
+oh-my-push upgrade
+oh-my-posh upgrade
+clear
+ls
+cd merge.js
+vim merge.js
+clear
+syu
+clear
+git init
+git-email
+git add .
+git commit -m 'beginning of the end'
+git remote add origin https://github.com/tokisuno/scuffed-recursion.git
+git branch -M main
+git push -u origin main
+clear
+clear
+clear
+syu
+cler
+clear
+perl
+perl
+man perl
+clear
+clear
+susp
+paru -S vencord
+paru -S vesktop
+paru -S vesktop
+clear
+syu
+clear
+tp
+clear
+clear
+clear
+cd .confg
+ls
+cd cnof
+ls
+cd conf
+ls
+cd picom.conf
+ls
+vim picom.conf
+clear
+picom
+vim picom.conf
+picom
+clear
+picom -b
+clear
+ka picom
+clear
+ls
+vim picom.conf
+picom
+clear
+vim picom.conf
+picom
+claer
+ls
+clear
+ls
+vim picom.conf
+picom
+clear
+picom
+vim picom.conf
+picom
+clear
+vim picom.conf
+clear
+redshift
+redshift -O 4500
+clear
+ls
+clear
+cd awesome
+ls
+vim rc.lua
+clear
+cd
+cd
+cd dot
+cd
+clear
+syu
+clear
+neofetch
+clear
+cd awesome
+ls
+vim autostart.sh
+clear
+clear
+task
+task 6 done
+clear
+ls
+task
+clear
+task
+clear
+cd
+clear
+cd blog
+clear
+ls
+cd
+clear
+clear
+ls
+cd awesome
+vim rc.lua
+clear
+ls
+clear
+ls
+vim rc.lua
+clear
+ls
+cd awesome-wm-widgets
+ls
+b
+clear
+ls
+cd rc.lua
+vim rclua
+vim rc
+vim rc.lua
+clear
+ls
+mkd widg
+b
+ls
+cd awesome-wm-widgets
+ls
+cd apt-widget
+ls
+b
+b
+clear
+ls
+cd widg
+vim get-cursor.lua
+clear
+ls
+b
+clear
+ls
+ls -a
+clear
+lz
+clear
+clear
+ls
+cd widg
+ls
+clear
+ls
+vim get-cursor.lua
+clear
+clear
+ls
+b
+clear
+rm -rf widg
+clear
+ls
+vim rc.lua
+syu
+pacman -Rns $(pacman -Qtdq)
+sudo pacman -Rns $(sudo pacman -Qtdq)
+clear
+clear
+ls
+vim rc.lua
+clear
+ls
+cd
+clear
+clear
+ls
+ka firefox
+ka brave
+syu
+clear
+neofetch
+clear
+htop
+bot
+bottom
+btm
+clear
+clear
+cd javascript api
+ls
+vim giffy
+clear
+clear
+setxkbmap
+setxkbmap --option="ctrl:nocap"
+setxkbmap --option="ctrl:nocaps"
+setxkbmap --option "ctrl:nocaps"
+setxkbmap --options "ctrl:nocaps"
+setxkbmap -option "ctrl:nocaps"
+sudo pacman -S calibre
+lsusb
+paru -S calibre-plugin-kobo-driver
+lsusb
+lsusb
+lsusb
+lsusb
+sudo mkdir /mnt/kobo
+sudo chown -R poto:poto /mnt/kobo
+sudo chmod -R 775 /mnt/kobo
+man setfacl
+mount -l
+mount
+clear
+ls
+lsusb
+lsusb
+claer
+cd
+cd
+clear
+cd builds
+ls
+git clone https://github.com/kevinboone/kobo
+cd kobo
+ls
+udisksctl
+clear
+make
+git clone https://github.com/kevinboone/ebookinfo
+cd ebookinfo
+ls
+make
+sudo make install
+b
+make
+sudo make install
+kobo
+kobo --list
+journal
+journalctl -b
+qclear
+fdisk
+fdisk -l
+fdisk -a
+fdisk -l
+sudo fdisk -l
+mesg
+demsg
+dmesg
+sudo dmesg
+sudo dmesg || grep "kobo"
+sudo dmesg | grep "kobo"
+sudo dmesg | grep "Kobo"
+mount | grep kobo
+readlink -e
+clear
+ls
+cd /dev/disk
+ls
+cd by-id
+ls
+ls
+sudo dmesg
+kobo
+kobo --list
+journalctl
+sudo pacman -S gvfs-mtp gvfs gvfs-nfs gvfs-smb
+clear
+cd
+clear
+clear
+lsusb
+lsusb
+lsusb
+lsusb
+clear
+sudo dmesg
+calibre
+calibre-
+clear
+lsusb
+clear
+clear
+clear
+lsusb
+lsusb
+lsusb
+lsusb
+lsusb
+lsusb
+lsusb
+lsusb
+lsusb
+clear
+lsusb 
+clear
+ls
+cd
+clear
+sudo dmesg
+clear
+susp
+clear
+syu
+clear
+cowsay
+clear
+cowsay hi
+clear
+ls
+vim log
+rm -rf log
+clear
+cd
+clear
+clear
+cd awesome
+ls
+cd lucas
+ls
+vim find-cursor.lua
+clear
+cd
+clear
+cd awesome
+ls
+vim rc.lua
+syu
+clear
+claro
+claor
+clear
+fastfetch
+sudo pacman -S fastfetch
+fastfetch
+clear
+clear
+fastfetch
+clear
+clear
+tp
+clear
+cd
+clear
+task
+task 6 done
+task
+taskwarrior-tui
+clear
+clear
+cd blog
+clear
+ls
+cd content
+ls
+cd posts
+ls
+cd
+clear
+hugo new posts/20240822.md
+cd blog
+hugo new posts/20240822.md
+vim blog/content/posts
+vim content/posts
+clear
+cd
+clear
+clear
+ls
+taks
+task
+clear
+task
+clear
+syu
+clear
+refup
+clear
+clear
+ckear
+clear
+clear
+ls
+cd code
+ls
+cd projects
+ls
+mkd nodebot
+ls
+npm init -y
+npm install discord.js
+ls
+vim .env
+node --env-file .env
+clear
+ls
+vim .env
+clear
+ls
+vim config.json
+clear
+ls -a
+git init
+igen
+clear
+vim .gitignore
+clear
+clear
+ls
+vim index.js
+npm run 
+clear
+ls
+node index.js
+ls
+vim package.json
+clear
+clear
+ls
+vim config.json
+vim .env
+clear
+ls
+vim index.js
+ls
+vim .gitignore
+clear
+ls
+node index.js
+clear
+vim index.js
+clear
+node .
+clear
+ls
+vim index.js
+clear
+ls
+mkdir events
+cd events
+touch ready.js interactionCreate.js
+ls
+vim ready.js
+clear
+b
+clear
+cd
+clear
+clear
+cd javascript
+ls
+cd apis
+ls
+vim async-by-example
+ls
+vim task3.js
+clear
+ls
+cd tasks
+ls
+vim task1.js
+ls
+vim task2.js
+clear
+ls
+b
+clear
+ls
+cd giffy
+ls
+vim main.js
+clear
+ls
+b
+ls
+b
+ls
+cd promises
+ls
+vim scratch.js
+clear
+clear
+ls
+clear
+ls
+vim promises.js
+clear
+cd
+clear
+susp
+syu
+syu
+ka spotify
+clear
+cd .Xresources
+vim .Xresources
+clear
+xrdb ~/.Xresources
+task
+task done 6
+clear
+ls
+task
+task-tui
+taskwarrior-tui
+clear
+tp
+clear
+syu
+clear
+vim
+clear
+clear
+ts
+clear
+cd code
+ls
+cd
+cd awesome
+vim rc.lua
+clear
+susp
+syu
+clear
+cd nvim
+ls
+mv README.md readme.md
+clear
+ls
+vim readme.md
+clear
+ls
+mkdir images
+clear
+ls
+clear
+clear
+ls
+vim
+clear
+ls
+vim readme.lua
+vim readme.md
+clear
+ls
+git add .
+git commit -m 'updated readme'
+git-token
+git push
+clear
+cd
+clear
+susp
+syu
+clear
+tp
+clear
+syu
+clear
+task
+task delete 6
+clear
+ls
+task
+clar
+clear
+emacs
+macd
+clear
+clear
+ls
+clear
+ls
+cd Dropbox
+ls
+ls -a
+clear
+ls
+cd life
+ls
+cd FLEETING
+ls
+b
+clear
+ls
+b
+clear
+ls
+vim org-ideas.md
+vim org-ideas.md
+clear
+ls
+cd kitty
+ls
+vim kitty.conf
+clear
+ls
+vim
+ls
+vim kitty.conf
+ clear
+cd emacs
+ls
+ls
+cd
+cd Dropbox
+ls
+cd life
+ls
+b
+clear
+vim org-ideas.md
+clear
+task
+task 6 done
+clear
+ls
+task
+taskwarrior-tui
+taskwarrior-tui
+clear
+clear
+ls
+susp
+clear
+clear
+clear
+tp
+ssup
+susp
+syu
+clear
+susp
+syu
+clear
+ls
+vim org-ideas.md
+clear
+clear
+cd
+clear
+clear
+susp
+clear
+clear
+task
+syu
+fd
+clear
+tp
+clear
+clear
+sfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfs
+clear
+fastfetch
+clear
+vim
+clear
+syu
+clear
+ls
+cd proj
+ls
+vie
+clear
+mkd vie
+gmod vie
+clear
+ls
+b
+rm -rf vie
+mkd vie
+cobra-cli init
+cobra-cli init 
+gmod vie
+cobra-cli init 
+clear
+ls
+go run main.go
+clear
+ls
+cd cmd
+ls
+vim root.go
+ccli
+clear
+zse
+clear
+zsh
+clear
+ls
+clear
+ear
+clear
+ls
+cd tmux
+vim tmux.conf
+clear
+tp
+clear
+clear
+vim tmux.conf
+tmux kill-server
+node
+node
+clear
+clear
+ls
+clear
+vim tmux.conf
+cd tmux
+vim tmux.conf
+clear
+vim tmux.conf
+clear
+ls
+clear
+cd
+clear
+clear
+tp
+tp
+clear
+cle
+clear
+task
+task 6 done
+task 7 done
+clear
+ls
+task
+clear
+clear
+ls
+ts
+clear
+ls
+aa
+clear
+cd
+clear
+clear
+ls
+susp
+susp
+syu
+clear
+clear
+tp
+clear
+vim
+clear
+ls
+vie
+vie now
+clear
+clear
+vie now
+clear
+ls
+clear
+clear
+ls
+cd Downloads
+ls
+cd
+cd Dropbox
+ls
+cd life
+ls
+b
+clear
+ls
+cd
+clear
+ls
+cd Downloads
+ls
+sz 9781552386682.pdf
+sz 159-Book\ Manuscript-962-1-10-20171219.pdf
+clear
+ls
+sz book.pdf
+clear
+susp
+clear
+syu
+clear
+tp
+vim
+claer
+vim
+clear
+vim
+clear
+ls
+cd lucas
+vim set.lua
+clear
+redshift -O 4500
+clear
+syu
+cear
+clear
+refup
+clear
+clear
+cd
+clear
+ls
+clear
+syu
+clear
+ls
+clear
+clear
+vim
+clear
+clear
+neofetch
+clear
+fastfetch
+clear
+clear
+clear
+clear
+python
+clear
+clear
+clear
+clar
+clear
+jq
+clear
+clear
+clear
+susp
+syu
+clear
+ls
+cd tmux
+ls
+ls
+curl tmux.snazzy.theme https://raw.githubusercontent.com/ivnvxd/tmux-snazzy/main/.tmux.snazzy.theme
+https://raw.githubusercontent.com/ivnvxd/tmux-snazzy/main/.tmux.snazzy.theme
+lcear
+clear
+clear
+ls
+vim tmux.conf
+clear
+tmux kill-server
+clear
+ls
+clear
+vim merge.js
+clear
+ls
+vim mergetest.js
+vim mergetest.js
+clear
+clear
+ls
+vim merge.js
+rm -rf merge.js
+mv mergetest.js merge.js
+clear
+ls
+clear
+ls
+vim ex.js
+clear
+ls
+mv merge.js mergeSort.js
+clear
+ls
+vim merge.js
+clear
+git add .
+git commit -m 'kill me'
+git-token
+git push
+clear
+syu
+nnn
+clear
+zed
+clear
+clear
+whereis zed
+zed
+find / -name zed
+sudo find / -name zed
+clear
+clear
+ls
+vim mergeSort.js
+clear
+ls
+vim ex.js
+clear
+ls
+vim ex.js
+clear
+git add .
+git commit -m 'kill me again'
+git push
+ear
+clear
+ls
+mkd notes
+ls
+mkd javascript.info
+ls
+b
+clear
+ls
+cd javascript.info
+ls
+vim compare-methods.js
+clear
+clear
+ls
+vim recursive-traversals.js
+clear
+clear
+ls
+mkd tasks
+vim sumall.js
+clear
+clear
+ls
+vim factorial.js
+clear
+clear
+ls
+vim fibonacci.js
+clear
+vim fibonacci.js
+clear
+bb
+clear
+ls
+mkd codinggame.com
+clear
+ls
+clear
+ls
+vim power.js
+clear
+clear
+ls
+vim checkValues.js
+clear
+ls
+vim checkValues_ANSWER.js
+clear
+ls
+vim checkValues_ANSWER
+vim checkValues_ANSWER.js
+clear
+clear
+ls
+vim checkValues_ANSWER.js
+clear
+ls
+vim searchObject.js
+clear
+vim searchObject_ANSWER.js
+clear
+clear
+clear
+ls
+vim totalIntegers.js
+clear
+ls
+clear
+ls
+vim totalIntegers.js
+clear
+vim totalIntegers_ANSWER.js
+clear
+ls
+mv arrayProduct.js arra_product.js
+mv arra_product.js array_product.js
+clear
+ls
+mv checkValues check_values.js
+mv checkValues.js check_values.js
+mv checkValues_ANSWER.js check_values-answer.js
+clear
+ls
+mv searchObject.js search_object.js
+clear
+ls
+mv searchObject_ANSWER.js search_object-answer.js
+clear
+ls
+clear
+ls
+clear
+ls
+mv totalIntegers.js total_integers.js
+clear
+ls
+mv totalIntegers_ANSWER.js total_integers-answer.js
+clear
+ls
+clear
+ls
+vim total_integers-answer.js
+clear
+clear
+ls
+vim replicate.js
+clear
+vim replicate-answer.js
+clear
+ls
+b
+b
+git add .
+git commit -m 'forgot to commit for some time now'
+git-token
+git push
+clear
+ls
+mv mergeSort.js merge_sort.js
+clear
+ls
+cd notes
+ls
+cd javascript.info
+ls
+mv compare-methods.js compare_methods.js
+mv recursive-traversals.js recursive_traversals.js
+clear
+ls
+cd tasks
+ls
+bb
+clera
+ls
+clear
+ls
+b
+clear
+clear
+ls
+clear
+ls
+vim ex.js
+clear
+ls
+vim merge.js
+clear
+vim merge_sort.js
+clear
+ls
+vim fib.js
+clear
+clear
+ls
+clear
+vim fib.js
+clear
+ls
+mv fib.js no.js
+vim fib.js
+clear
+vim
+node fib.js
+clear
+ls
+vim fib.js
+clear
+ls
+git add .
+git commit -m 'i am so lost in recursion'
+git push
+clear
+clear
+ls
+vim fib.js
+vim no.js
+clear
+ls
+vim fib.js
+rm -rf fib.js
+mv no.jo fib.js
+clear
+mv no.js fib.js
+clear
+ls
+vim merge_sort.js
+clear
+ls
+clear
+ls
+vim merge_sort.js
+clear
+vim merge.js
+clear
+ls
+vim ex.js
+clear
+vim scratch.js
+clear
+ls
+rm -rf scratch*
+clear
+ls
+vim ex.js
+clear
+ls
+mv ex.js merge_mergesort.js
+clear
+ls
+git add .
+git commit -m 'I DID IT'
+git-token
+git push
+git push
+git push
+git push
+clear
+clear
+b
+clear
+clear
+clear
+ls
+clear
+cd tmux
+ls
+vim tmux.conf
+tmux kill-server
+clear
+ls
+clear
+cd tmux
+ls
+clear
+vim tmux.conf
+tmux kill-server
+cd sent
+ls
+clear
+ls
+clear
+btm
+clear
+ear
+htop
+claer
+clear
+ls
+cd tmux
+ls
+vim tmux.conf
+clear
+cd
+clear
+syus
+syu
+clear
+nvim
+clear
+tp
+clear
+clear
+clear
+vie
+vie new
+vie now
+clear
+vie now
+clear
+vie now
+clear
+clear
+clear
+syu
+clear
+vim
+clear
+duktape
+clear
+tp
+clear
+ls
+clear
+ls
+clear
+clear
+vie now
+clear
+gzip
+clear
+gunzip
+clear
+man gzip
+clear
+sudo pacman -S gawk
+sudo pacman -S bison
+sudo pacman -S sed
+sudo pacman -S xz
+sudo pacman -S texinfo
+sudo pacman -S m4
+clear
+ls
+vim checkver.s
+vim checkver.sh
+clear
+vim checkver.sh
+clear
+./checkver.sh
+clear
+ls
+clear
+cd builds
+ls
+clear
+st
+sudo pacman -R st
+paru -R st
+clear
+ls
+git clone git clone https://git.suckless.org/dwm
+git clone https://git.suckless.org/dwm
+clear
+ls
+cd dwm
+ls
+git clone https://git.suckless.org/dmenu
+clear
+ls
+b
+clear
+ls
+mkd suckless
+b
+clear
+ls
+cd dwm
+ls
+mv dmenu ..
+b
+clear
+ls
+ls
+mv dwm dmenu suckless
+cd suckless
+clear
+ls
+cd dwm
+sudo make clean install
+b
+git clone https://git.suckless.org/st
+clear
+cd st
+ls
+sudo make clean install
+b
+clear
+ls
+cd dmenu
+sudo make clean install
+clear
+dwm
+claer
+clear
+b
+clear
+ls
+cd
+vim .xinitrc
+clear
+ls
+clear
+clear
+idea
+clear
+thot
+clear
+lf
+clear
+clear
+cd Dropbox
+ls
+cd life
+ls
+vim studies.md
+clear
+ls
+cd code
+ls
+cd python
+ls
+cd
+cd proj
+clear
+ls
+mkd sentiment-analysis
+ear
+clear
+clear
+ls
+c;ear
+;s
+c;ear
+clear
+clear
+ls
+vim readme.md
+clear
+git init
+git-email
+git add .
+git commit -m 'first commit'
+git remote add origin https://github.com/tokisuno/sentiment-analysis-paper.git
+git branch -M main
+git push -u origin main
+git-token
+gitoken
+clear
+ls
+clear
+ls
+clear
+git-token
+git push -u origin main
+clear
+clear
+clear
+ls
+sources.md
+vim sources.md
+clear
+ls
+rm -rf sources.md
+vim sources.toml
+clear
+ls
+vim sources.md
+clear
+ls
+clear
+ls
+python -m venv venv
+ls
+venv
+clear
+ls
+vim start.sh
+clear
+vim start.sh
+clear
+ls 
+vim start.sh
+clear
+./start
+clear
+ls
+./start.sh
+clear
+ls
+pip install praw
+clear
+ls
+source venv/bin/activate
+clear
+pip install praw
+clear
+ls
+rm -rf start.sh
+clear
+ls
+clear
+ls
+vim test.py
+clear
+clear
+ls
+vim test.py
+pip install neovim
+vim test.py
+python test.py
+clear
+ls
+vim test.py
+clear
+python test.py
+clear
+vim test.py
+vim test.py
+python test.py
+clear
+vim test.py
+python test.py
+vim test.py
+clear
+vim test.py
+python test.py
+clera
+ls
+clear
+ls
+vim test.py
+python test.py
+clear
+ls
+clear
+ls
+mkdir data
+clear
+ls
+clear
+clear
+clear
+clear
+ls
+vim test.py
+clear
+ls
+python test.py
+clear
+ls
+vim test.py 
+clear
+python test.py
+clear
+vim test.py 
+python test.py
+clear
+python test.py
+vim test.py
+clear
+vim test.py
+python test.py
+clear
+ls
+vim test.py
+python test.py
+clear
+ls
+vim test.py
+clear
+pip install nltk
+clear
+vim test.py
+clear
+ls
+mv test.py scrape.py
+vim main.py
+py main.py
+python main.py
+clear
+ls
+vim main.py
+pip install pandas
+clear
+vim main.py
+python main.py
+python main.py
+vim main.py
+python main.py
+vim main.py
+clear
+python main.py
+clear
+ls
+vim main.py
+clear
+python main.py
+clear
+ls
+vim main.py
+python a.py
+vim main.py
+python a.py
+claer
+vim main.py
+vim a.py
+python a.py
+vim a.py
+python a.py
+vim a.py
+vim main.py
+clear
+python scrape.py
+clear
+ls
+vim amouranth_0.csv
+clear
+ls
+rm -rf amouranth_0.csv
+clear
+ls
+vim scrape.py
+vim amouranth_0.csv
+python scrape.py
+clear
+ls
+vim amouranth_0.json
+clear
+ls
+vim scrape.py
+rm -rf amouranth_0.csv
+rm -rf amouranth_0.json
+clear
+python scrape.py
+clear
+ls
+vim amor
+vim amouranth_0.json
+vim scrape.py
+python scrape.py
+clear
+ls
+rm -rf amouranth_0.json
+python scrape.py
+clear
+ls
+vim amouranth_0.json
+clear
+ls
+clear
+ls
+vim scrape.py
+python scrape.py
+rm -rf amouranth_0.json
+python scrape.py
+vim amouranth_0.json
+rm -rf amouranth_0.json
+clear
+ls
+vim scrape.py
+rm -rf amouranth_0.json
+python scrape.py
+clear
+ls
+vim scrape.py
+python scrape.py
+clear
+ls
+vim amouranth_0.json
+clear
+vim scrape.py
+python scrape.py
+rm -rf amouranth_0.json
+python scrape.py
+vim amouranth_0.json
+rm -rf amouranth_0.json
+python scrape.py
+vim amouranth_0.json
+clear
+python scrape.py
+vim amouranth_0.json
+vim scrape.py
+python scrape.py
+rm -rf amouranth_0.json
+python scrape.py
+vim amouranth_0.json
+clear
+clear
+ls
+vim scrape.py
+clear
+ls
+rm -rf amouranth_0.json
+ls
+python scrape.py
+clear
+ls
+vim amouranth_0.json
+rm -rf amouranth_0.json
+python scrape.py
+vim amouranth_0.json
+rm -rf amouranth_0.json
+python scrape.py
+vim amouranth_0.json
+clear
+ls
+vim scrape.py
+python scrape.py
+clear
+ls
+vim data
+vim data.json
+vim data.json
+rm -rf data.json
+python scrape.py
+vim data.json
+clear
+ls
+vim scrape.py
+clear
+ls
+rm -rf data.json
+claer
+clear
+clear
+python scrape.py
+jq . data.json
+clear
+clear
+ls
+jq . data.json
+clear
+ls
+rm -rf amouranth_0.json
+clear
+ls
+vim scrape.py
+ls
+rm -rf data.json
+python scrape.py
+clear
+jq . data.json
+clear
+ls
+rm -rf a.py
+clear
+ls
+clear
+ls
+vim main.py
+python main.py
+clear
+clear
+ls
+vim data.json
+claer
+ls
+clear
+ls
+vim scrape.py
+clear
+ls
+jq . output.csv
+column -s, -t < output.csv | less -#2 -N -S
+csvtool
+sudo pacman -S csvtool
+clear
+ls
+vim output.csv
+clear
+ls
+npm i =g tty-table
+npm i -g tty-table
+cat output.csv | tty-type
+cat output.csv | tty-table
+cat output.csv | ttytable
+tty-table
+npm install -g tty-table
+npm install -g tty-table
+tty-table
+xsm
+xsv
+clear
+sudo pacman -S xsv
+xsv stats output.csv --everything | xsv table
+xsv stats output.csv --everything 
+sudo pacman -S csvlens
+csvlens output.csv
+clear
+ls
+vim main.py
+clear
+ls
+csvlens output.csv
+clear
+ls
+vim scrape.py
+clear
+ls
+rm -rf data.json output.csv output.json
+clear
+ls
+python scrape.py
+claer
+ls
+clear
+csvlens output.csv
+csvlens data.csv
+clear
+ls
+rm -rf data.csv
+claer
+ls
+clear
+ls
+vim scrape.py
+clear
+python scrape.py
+csvlens data.csv
+clear
+ls
+vim main.py
+clear
+csvlens data.csv
+python scrape.py
+clear
+ls
+csvlens data.csv
+vim data.csv
+clear
+ls
+vim main.py
+csvlens data.csv
+csvlens anal.csv
+clear
+ls
+vim main.py
+clear
+clear
+clear
+ls
+vim main.py
+xsv stats anal.csv --everything 
+xsv stats anal.csv --everything | xsv table
+clear
+clear
+ls
+clear
+csvlens anal.csv
+clear
+ls
+clear
+ls
+git add .
+clear
+ls
+vim .gitignore
+clear
+ls
+git ad d.
+git add .
+git revert
+git reset
+git rm --cached venv
+clear
+ls
+clear
+ls
+vim .gitignore
+git add .
+git commit -m 'a'
+git-token
+git push
+syu
+clear
+cd
+clear
+claer
+clear
+tp
+clear
+clear
+clear
+clear
+vie
+clear
+today
+task
+clear
+task clear
+task help
+task remove *
+task delete all
+clear
+task
+clear
+clear
+ls
+./checkver.sh
+clear
+ls
+vim
+clear
+cd lucas
+ls
+cd set.lua
+sudo pacman -S epdfinfo
+cd
+clear
+ls
+cd builds
+ls
+\
+
+clear
+git clone https://github.com/vedang/pdf-tools
+cd pdf-tools
+ls
+make -s
+sudo make -s
+clear
+ls
+sudo pacman -S cask
+make -s
+b
+clear
+rm -rf pdf-tools
+pdf-tools
+sudo pacman -S pdf-tools
+paru -S emacs-pdf-tools-git
+pdf-tools
+clear
+epdftools
+clear
+git clone https://github.com/vedang/pdf-tools
+cd pdf-tools
+ls
+b
+rm -rf pdf-tools
+clear
+ls
+vim readme.md
+clear
+htop
+clear
+bot
+btn
+btm
+clear
+clear
+aa
+clear
+aa
+aa
+cd lucas
+vim set.lua
+vim set.lua
+vim set.lua
+vim set.lua
+vim set.lua
+vim set.lua
+vim set.lua
+vim set.lua
+clear
+vie now
+clear
+neofetch
+clear
+clear
+cd
+clear
+vim kit
+cd kitt
+ls
+vim kitty.conf
+bat kitty.conf.bak
+rm -rf kitty.conf.bak
+clear
+ls
+cd
+clear
+clear
+neofetch
+clear
+clear
+clear
+clear
+ls
+clear
+ls
+mv 2024-09-01\ 11-03-37.mp4 videos
+clear
+ls
+clear
+ls
+clear
+ruby
+clear
+man ruby
+clear
+vim
+vim
+cd
+clear
+ls
+vim checkver.sh
+clear
+clear
+clear
+clear
+clear
+ls
+cd odin
+ls
+cd fullstack
+ls
+cd javascript
+ls
+mkd dsa
+vim binary_tree.cpp
+clear
+ls
+g++ binary_tree.cpp
+clear
+ls
+./a.out
+clear
+ls
+clear
+clear
+clear
+ls
+pre_in_post.cpp
+vim pre_in_post.cpp
+clear
+clear
+g++ pre_in_post.cpp
+clear
+ls
+vim pre_in_post.cpp
+clear
+ls
+clear
+ls
+vim pre_in_post.cpp
+clear
+syu
+clear
+paru -S
+paru
+sudo pacman -S yay
+clear
+cd builds
+ls
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
+yay
+clear
+sudo pacman -R paru
+clear
+yay
+yay -R calibre-plugin-kobo-driver
+yay -R spicetify-cli
+clear
+yay
+clear
+clear
+clear
+tp
+clear
+clear
+cd proj
+ls
+mkd linked-list
+clear
+clear
+ls
+b
+clear
+mv linked-list scuffed-linked-list
+clear
+ls
+cd scuffed-
+git init
+git-email
+echo "# scuffed-linked-list" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git branch -M main\
+git remote add origin https://github.com/tokisuno/scuffed-linked-list.git\
+git push -u origin main
+git-token
+git push -u origin main
+clear
+ls
+b
+clear
+ls
+cd scuffed-linked-list
+echo "# scuffed-linked-list" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git branch -M main\
+git remote add origin https://github.com/tokisuno/scuffed-linked-list.git\
+git push -u origin main
+git-email
+echo "# scuffed-linked-list" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git branch -M main\
+git remote add origin https://github.com/tokisuno/scuffed-linked-list.git\
+git push -u origin main
+clear
+ls
+clear
+ls
+clear
+ls
+vim main.js
+clear
+clear
+cd
+clear
+syu
+clear
+python
+node
+clear
+susp
+clear
+syu
+clear
+clear
+tp
+c;ear
+clear
+cd proj
+cd vie
+ls
+cd cmd
+ls
+vim now.go
+clear
+ls
+b
+clear
+ls
+vim readme.md
+clear
+cd
+clear
+clear
+clear
+clear
+ls
+cd code
+ls
+cd projects
+ls
+cd strt
+clear
+ls
+b
+mv strt ../projects
+clear
+b
+cd projects
+ls
+cd strt
+ls
+git checkout dev
+git checkout -b dev
+clear
+ls
+vim index.
+vim index.js
+clear
+ls
+vim Ubuntu
+ls
+clear
+ls
+vim index.
+vim index.html
+clear
+git add .
+git commit -m 'i did something'
+git-token
+git push
+git push -u origin dev
+clear
+ls
+vim index.html style.css
+clear
+git add .
+git commit -m 'gruvbox styling'
+git push
+git-token
+git push
+clear
+rm -rf Ubuntu
+clear
+ls
+git add .
+git commit -m 'only default fonts'
+git-token
+git push
+clear
+ls
+git checkout main
+git merge dev
+git push -u origin main
+clear
+fastfetch
+uptime
+clear
+sudo pacman -S unetbootin
+yay -S unetbootin
+clear
+unetbootin
+yay -R unetbootin
+yay -S tuxboot
+yay -S tuxboot
+clear
+cd builds
+ls
+rm -rf suckless
+dwm
+cd
+clear
+cd .config
+ls
+mkd suckless
+b
+rm -rf suckless
+cd
+rip
+ls
+vim dotfilelinks
+clear
+cd
+cd .config
+ls
+cd dropbox
+ls
+cd .config
+ls
+bb
+cd .dotfiles
+ls
+cd .config
+ls
+mkd suckless
+dotfilelinks
+cd
+clear
+ls
+cd .config
+ls
+cd suckless
+ls
+git clone https://git.suckless.org/dwm 
+git clone https://git.suckless.org/st
+git clone https://git.suckless.org/dmenu
+clear
+ls
+cd dwm
+ls
+sudo make clean install
+clear
+ls
+b
+clear
+ls
+cd dmenu
+sudo make clean install
+b
+clear
+ls
+cd st
+sudo make clean install
+clear
+sudo tuxboot
+yay -R tuxboot
+cd code
+ls
+chmod +x unetbootin-linux64-702.bin
+./unetbootin-linux64-702.bin
+sudo ./unetbootin-linux64-702.bin
+sudo ./unetbootin-linux64-702.bin
+fdisk -l /dev/sdd
+fdisk -l /dev/
+fdisk -l 
+sudo fdisk
+sudo fdisk -l
+clear
+lsusb
+sudo fdisk -l
+sudo fdisk -l
+sudo fdisk -l
+sudo fdisk -l
+sudo fdisk -l
+clear
+fastfetch
+ff
+clear
+clear
+monitor
+clear
+cd
+vim .xinitrc
+ls
+gpg --list-secret-keys
+gpg --delete-secret-key ultimate
+gpg --delete-secret-key 
+gpg --delete-secret-key lucaswmei@gmail.com
+clear
+monitor
+cd local share app
+ls
+vim dwm.desktop
+startx
+clear
+monitor
+clear
+ls
+vim dwm.desktop
+xdg-desktop-menu install dwm.desktop
+xdg-desktop-menu forceupdate
+clear
+clear
+xdg-desktop-menu install 
+xdg-desktop-menu install dwm.desktop
+xdg-desktop-menu install dwm
+xdg-desktop-menu install dwm.desktop
+mv dwm.desktop dwm-twm.desktop
+xdg-desktop-menu install dwm-twm.desktop
+clear
+dwm
+clear
+monitor
+cat /usr/share/xsessions
+cd /usr/share/xsessions
+ls
+vim dwm.desktop
+vi dwm.desktop
+sudo vim dwm.desktop
+clear
+chmod +x dwm.desktop
+sudo chmod +x dwm.desktop
+ls -l
+sudo chmod -x dwm.desktop
+ls -l
+clear
+monitor
+update-desktop-database /usr/share/xsessions/
+sudo update-desktop-database /usr/share/xsessions/
+dawm
+dwm
+clear
+monitor
+sudo pacman -S lightdm
+sudo systemctl enable lightdm
+sudo systemctl disable ly.service
+sudo systemctl enable lightdm
+sudo systemctl start lightdm
+systemctl status lightdm.service
+sudo dpkg
+sudo dpkg-configure
+journalctl -xeu lightdm.service
+reboot
+clear
+journalctl 
+clear
+clear
+sudo pacman -S lemurs
+sudo systemctl stop lightdm
+sudo systemctl disable lightdm
+sudo systemctl enable lemurs
+sudo systemctl start lemurs
+clear
+lemurs
+vim /var/log/lemurs.log
+clear
+reboot
+lemurs
+clear
+vim /var/log/lemurs.log
+sudo systemctl disable lemurs
+sudo systemctl stop lemurs
+sudo pacman -S sddm
+sudo systemctl enable sddm
+sudo systemctl start sddm
+clear
+nitrogen
+nitrogen --restore
+clear
+nitrogen --restore
+monitor
+xrandr
+xrandr -q
+xrandr --output
+xrandr --outputs
+xrandr --output HDMI-1
+xrandr 
+xrandr
+xrandr list
+monitor
+ear
+clear
+monitor
+clear
+xrandr
+ear
+clear
+monitors
+monitor
+clear
+reboot
+anki
+ka anki
+htop
+clear
+ka anki
+ts
+python scrape.py
+source venv/bin/activate
+python scrape.py
+clear
+ls
+rm -rf data.csv
+python scrape.py
+clear
+ls
+csvlens data.csv
+clear
+ls
+git add .
+git commit -m 'sketch'
+clear
+ls
+git-token
+git push
+git push -u origin sketch
+clear
+clear
+ls
+clear
+ls
+mkd data
+b
+python scrape.py
+python scrape.py
+python scrape.py
+python scrape.py
+python scrape.py
+python scrape.py
+python scrape.py
+clear
+ls
+cd data
+ls
+csvlens livestreamfail.csv
+csvlens outoftheloop.csv
+csvlens youtubedrama.csv
+clear
+ls
+csvlens youtubedrama.csv
+clear
+clear
+ls
+rm -rf *
+b
+clear
+python scrape.py
+clear
+ls
+cd data
+ls
+vim youtubedrama.csv
+csvlens youtubedrama.csv
+csvlens outoftheloop.csv
+csvlens livestreamfail.csv
+clear
+ls
+clear
+clear
+b
+git add .
+git commit -m 'data per subreddit'
+ls
+mv contemporary_semantic_theory.pdf ~/Dropbox
+git add .
+git commit -m 'get this god damn pdf out of here'
+git-token
+git push
+clear
+clear
+clear
+cd
+cd code
+ls
+tar xaf anki-24.06.3-linux-qt6.tar.zst
+cd anki-24.06.3-linux-qt6
+sudo ./uninstall.sh
+sudo ./install.sh
+clear
+ls
+htop
+ka anki
+anki
+anki
+ka anki
+ka anki
+ka anki
+anki
+htop
+anki
+clear
+ls
+git add .
+git commit -m 'idr what i added last'
+git push
+git-token
+git push
+clear
+ls
+cd main.js
+vim main.js
+vim main.js
+git add .
+git commit -m 'append works, toString() works'
+git-token
+git push
+vim main.js
+clear
+git add .
+git commit -m 'finished with extras!'
+git-token
+git push
+clear
+cd
+clear
+clear
+cd .dot
+ls
+cd
+clear
+syu
+clear
+poweroff
+clear
+clear
+cd
+zsh
+clear
+ls
+vim intro-activity.md
+hhkb
+cd dropbox
+ls
+cd zk
+vim hello.md
+clear
+ls
+zsh
+cdl
+cd
+clear
+cd zk
+ls
+vim hello.md
+rm -rf hello.md
+clear
+zk init .
+clear
+ls
+ls -a
+clear
+vim
+clear
+ls
+ls
+rm -rf lwbu.md 
+ls
+vim .zk
+clear
+cd
+clear
+clear
+rip
+ls
+hhkb
+clear
+vim hhkb
+vim hhkb
+hhkb
+sadfa||\\|a
+clear
+vim
+clear
+clear
+cd
+macd
+sudo pacman -S emacs
+clear
+ka emacs
+emacs kill-server
+macd
+emacsclient
+clear
+clear
+cd lucas
+ls
+cd lazy
+ls
+vim zk.lua
+vim zk.lua
+vim zk.lua
+zshenv
+zsenv
+zenv
+zse
+path
+clear
+cd
+cd Dropbox
+ls
+mk zk
+mkd zk
+clear
+clear
+cd lucas
+ls
+vim keymaps.lua
+vim keymaps.lua
+clear
+clear
+ls
+vim keymaps.lua
+vim keymaps.lua
+vim
+yay -S arc-gtk-theme-git
+yay -Scc
+sudo pacman -S arc-icon-theme
+yay -Scc
+clear
+syu
+refup
+clear
+syu
+clear
+clear
+htop
+htop
+clear
+brave
+clear
+htop
+brave
+brave
+brave
+clear
+yay -S brave-bin
+clear
+syu
+clear
+clear
+cd
+clear
+zsh
